@@ -1,7 +1,7 @@
 ﻿// Program.cs
 using System;
 
-namespace MyApp
+namespace Appdevhb25.MarcelSimma
 {
     internal class Program
     {
@@ -9,6 +9,7 @@ namespace MyApp
         /*
         Die static void Main Funktion bleibt IMMER in der Program.cs. 
         */
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hallo Welt!");
