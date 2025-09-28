@@ -28,4 +28,4 @@ dotnet sln ../appdevhb25.sln add LauraKatharinaBertsch/LauraKatharinaBertsch.csp
 dotnet sln ../appdevhb25.sln add JonaSchnell/JonaSchnell.csproj
 dotnet sln ../appdevhb25.sln add NoahHois/NoahHois.csproj
 dotnet sln ../appdevhb25.sln add SashaLeonardoMattes/SashaLeonardoMattes.csproj
-dotnet sln ../appdevhb.sln add OliverBedogg/OliverBedogg
+dotnet sln ../appdevhb.sln add OliverBedogg/OliverBedogg.csproj

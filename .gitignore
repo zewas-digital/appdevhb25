@@ -428,3 +428,4 @@ FodyWeavers.xsd
 *.msp
 
 *vorbereitung
+*.DS_Store
