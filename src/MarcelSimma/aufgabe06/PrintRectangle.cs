@@ -26,8 +26,6 @@ namespace Appdevhb25.MarcelSimma.Aufgabe06
 
             if (Bedingungen: a == b)
             {
-
-
                 int c = 0;
             }
             else if (Alternative Bedingungen) {
