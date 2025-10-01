@@ -1,38 +1,32 @@
 using System;
+using System.Data;
 using System.Globalization;
 
 namespace Appdevhb25.SashaLeonardoMattes.Aufgabe07
 {
 
-    public class PrintEmptySqare
+    public class PrintTriangle
     {
 
-        public static void StartPrintEmptySqare()
+        public static void StartPrintTriangle()
         {
-            Console.WriteLine("----------Aufgabe 07----------");
+            Console.WriteLine("----------Aufgabe 08----------");
             int size;
+
 
             Console.WriteLine("Gib eine Größe ein:");
             size = checkUserInput();
 
-            WriteEmptySqare(size);
+            CreateTriangle(size);
         }
 
-        static void WriteEmptySqare(int size)
+        static void CreateTriangle(int size)
         {
             for (int i = 0; i < size; i++)
             {
-                for (int counter = 0; counter < size; counter++)
+                for (int j = 0; j < size - i; j++)
                 {
-                    if(i == 0 || i == size-1 || counter == 0 || counter == size-1)
-                    {
-                        Console.Write("x");
-                    }
-                    else
-                    {
-                        Console.Write(" ");
-                    }
-                    
+                    Console.Write("x");
                 }
                 Console.WriteLine("");
             }
