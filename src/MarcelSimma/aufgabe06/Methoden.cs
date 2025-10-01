@@ -10,7 +10,7 @@ namespace Appdevhb25.MarcelSimma.Aufgabe06
             Console.WriteLine("Methoden");
 
             // camelCase für Variablen
-            int meineTolleZahl = 5;
+            //int meineTolleZahl = 5;
 
         }
 
