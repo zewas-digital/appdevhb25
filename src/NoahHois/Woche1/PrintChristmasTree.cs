@@ -32,12 +32,6 @@ namespace Appdevhb25.NoahHois.Aufgabe15
                 Console.Write("0");
             }
             Console.WriteLine();
-            int g = size - 2;
-            while (g > 0)
-            {
-                Console.Write("+");
-                g--;
-            }
         }
     }
 }
