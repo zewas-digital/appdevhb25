@@ -9,7 +9,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe09
 
         public static void StartPrintEmptySqare()
         {
-            Console.WriteLine("----------Aufgabe 07----------");
+            Console.WriteLine("----------Aufgabe 09----------");
             int size;
 
             Console.WriteLine("Gib eine Größe ein:");
