@@ -1,7 +1,7 @@
 
 using System;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe04
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
     public class Teilbarkeit
     {

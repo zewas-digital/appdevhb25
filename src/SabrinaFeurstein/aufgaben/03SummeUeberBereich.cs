@@ -1,7 +1,7 @@
 // See https://aka.ms/new-console-template for more information
 using System;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe03
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
     public class SummeUeberBereich
     {

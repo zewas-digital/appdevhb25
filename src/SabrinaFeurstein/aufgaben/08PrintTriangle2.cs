@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Runtime.CompilerServices;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe08
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
     public class PrintTriangle2
     {

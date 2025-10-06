@@ -3,9 +3,9 @@ using System;
 using System.Data;
 using System.Runtime.CompilerServices;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe10
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
-    public class PrintTriangle
+    public class PrintTriangle3
     {
         public static void Triangle(int length)
         {

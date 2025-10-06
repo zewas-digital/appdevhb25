@@ -2,7 +2,7 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe05
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
     public class PrintLine
     {

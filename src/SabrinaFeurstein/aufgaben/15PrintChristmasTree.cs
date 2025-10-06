@@ -4,7 +4,7 @@ using System.Data;
 using System.Globalization;
 using System.Runtime.CompilerServices;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe15
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
     public class PrintChristmasTree
     {

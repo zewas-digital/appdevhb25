@@ -1,7 +1,7 @@
 
 using System;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe06
+namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
     public class PrintRectangle
     {
