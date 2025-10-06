@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Appdevhb25.NoahHois.Aufgabe15
 {
@@ -15,7 +16,7 @@ namespace Appdevhb25.NoahHois.Aufgabe15
                 for (int x = size * -1 + 1; x < size; x++)
                 {
                     // Console.WriteLine(Math.Abs(x) + "-" + Math.Abs(y));
-                    if (Math.Abs(x) == Math.Abs(y)||(x <= y && Math.Abs(x)<= y))
+                    if (Math.Abs(x) == Math.Abs(y) || (x <= y && Math.Abs(x) <= y))
                     {
                         Console.Write("*");
                     }
@@ -26,9 +27,16 @@ namespace Appdevhb25.NoahHois.Aufgabe15
                 }
                 Console.WriteLine();
             }
-            for (int b = size*-1 +1; b < size; b++)
+            for (int b = size * -1 + 1; b < size; b++)
             {
-            Console.Write("0");
+                Console.Write("0");
+            }
+            Console.WriteLine();
+            int g = size - 2;
+            while (g > 0)
+            {
+                Console.Write("+");
+                g--;
             }
         }
     }
