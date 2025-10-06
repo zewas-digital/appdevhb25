@@ -1,11 +1,11 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Appdevhb25.NoahHois.Aufgabe15
+namespace Appdevhb25.NoahHois.BonusAufgabe3
 {
     public class PrintChristmasTree
     {
-        public static void Aufgabe15()
+        public static void BonusAufgabe3()
         {
             Console.Write("Geben Sie die Groeße des Baums ein: ");
             int size = Convert.ToInt32(Console.ReadLine());

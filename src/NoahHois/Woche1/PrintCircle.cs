@@ -1,10 +1,10 @@
 using System;
 
-namespace Appdevhb25.NoahHois.Aufgabe14
+namespace Appdevhb25.NoahHois.BonusAufgabe2
 {
     public class PrintCricle
     {
-        public static void Aufgabe14(int radius)
+        public static void BonusAufgabe2(int radius)
         {
             for (int y = -radius; y <= radius; y++)
             {

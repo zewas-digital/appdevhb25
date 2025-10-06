@@ -1,10 +1,10 @@
 using System;
 
-namespace Appdevhb25.NoahHois.Aufgabe13
+namespace Appdevhb25.NoahHois.BonusAufgabe1
 {
     public class PrintDeltoid
     {
-        public static void Aufgabe13()
+        public static void BonusAufgabe1()
         {
             Console.Write("Geben Sie die Hoehe des Deltoids ein: ");
             int height = Convert.ToInt32(Console.ReadLine());
