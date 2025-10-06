@@ -24,6 +24,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe05
             {
                 Console.Write("x");
             }
+            Console.WriteLine("");
         }
 
         static int checkUserInput()

@@ -1,6 +1,6 @@
 using System;
 
-namespace OliverBedogg.datatypes
+namespace Appdevhb25.OliverBedogg.datatypes
 {
     public class PrimitiveDatatypes
     {
