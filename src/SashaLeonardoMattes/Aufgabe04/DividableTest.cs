@@ -14,9 +14,23 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe04
             int divider;
             int start;
             int end;
+            bool isZero;
 
-            Console.WriteLine("Gib einen Teiler ein:");
-            divider = checkUserInput();
+            do
+            {
+                Console.WriteLine("Gib einen Teiler ein:");
+                divider = checkUserInput();
+                if (divider == 0)
+                {
+                    Console.WriteLine("Der Teiler darf nicht 0 sein!");
+                    isZero = true;
+                }
+                else
+                {
+                    isZero = false;
+                }
+            } while (isZero);
+            
 
             Console.WriteLine("Gib einen Startwert für das Intervall ein:");
             start = checkUserInput();

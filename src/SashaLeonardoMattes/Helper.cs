@@ -40,6 +40,23 @@ namespace Appdevhb25.SashaLeonardoMattes
             return result;
         }
 
+        public static ulong checkUserInputULong()
+        {
+            bool checkInput;
+            ulong result;
+            do
+            {
+                checkInput = ulong.TryParse(Console.ReadLine(), out result);
+
+                if (checkInput == false)
+                {
+                    Console.WriteLine("Bitte nur positive Ganzzahlen eingeben");
+                }
+            } while (checkInput == false);
+
+            return result;
+        }
+
     }
 }
 
