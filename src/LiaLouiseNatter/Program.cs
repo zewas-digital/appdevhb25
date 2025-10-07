@@ -1,4 +1,5 @@
 using System;
+using Appdevhb25.LiaLouiseNatter.Aufgabe21;
 
 namespace Appdevhb25.LiaLouiseNatter
 {
@@ -23,7 +24,13 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe11.CheckPrim.Start(9567383303);
             // Aufgabe12.Fibonacci.FibonacciFolge(20);
             // BonusAufgabe4.HigherOrLower.Start();
-            Bonusaufgabe17.BerechnungVonPi.Project();
+            // Bonusaufgabe17.BerechnungVonPi.Project();
+            // Bonusaufgabe18.BerechnungVonPiV2.Project();
+            // Aufgabe19.Summe.Start();
+            // Aufgabe20.Faktorial.Start();
+            // Aufgabe21.FaktorialErweitert.Start();
+            // Aufgabe22.CountInSteps.Start();
+            Aufgabe23.TeilenUndHerrschen.Start();
         }
     }
 }
