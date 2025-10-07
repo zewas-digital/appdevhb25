@@ -15,6 +15,8 @@ namespace Appdevhb25.OliverBedogg
         {
             Console.Clear();
             datatypes.PrimitiveDatatypes.Start();
+            // aufgabe20.Factorial.Start();
+            // aufgabe17.Pi.Start();
         }
     }
 }
