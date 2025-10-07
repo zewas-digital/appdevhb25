@@ -10,11 +10,9 @@ namespace Appdevhb25.SashaLeonardoMattes.BonusAufgabe04
         public static void StartHigherOrLower()
         {
             Random rndGen = new Random();
-            Console.WriteLine("----------Aufgabe 05----------");
+            Console.WriteLine("----------BonusAufgabe 04----------");
             int zufallsZahl = rndGen.Next(0, 100 + 1);
             int guess;
-
-            
 
             do
             {

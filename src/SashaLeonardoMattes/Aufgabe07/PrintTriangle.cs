@@ -10,7 +10,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe07
 
         public static void StartPrintTriangle()
         {
-            Console.WriteLine("----------Aufgabe 08----------");
+            Console.WriteLine("----------Aufgabe 07----------");
             int size;
 
 
@@ -20,7 +20,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe07
             CreateTriangle(size);
         }
 
-        static void CreateTriangle(int size)
+        public static void CreateTriangle(int size)
         {
             for (int i = 0; i < size; i++)
             {
@@ -32,7 +32,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe07
             }
         }
 
-        static int checkUserInput()
+        public static int checkUserInput()
         {
             bool checkInput;
             int result;

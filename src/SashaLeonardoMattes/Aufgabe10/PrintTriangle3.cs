@@ -23,15 +23,16 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe10
         static void CreateTriangle(int size)
         {
             int mid = size / 2;
+            
             for (int i = 0; i < size / 2; i++)
             {
                 for (int j = 0; j < size + 1; j++)
                 {
-                    if (j == mid - i || j == (mid - i) * -1 || j == size - (mid - i) ||i == size /2 -1)
+                    if (j == mid - i || i == size / 2 -1)
                     {
                         Console.Write("x");
                     }
-                    else if (j == mid + (size - i))
+                    else if (j == mid + i)
                     {
                         Console.Write("x");
                     }
@@ -45,6 +46,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe10
 
             }
             Console.WriteLine();
+            
         }
 
     }
