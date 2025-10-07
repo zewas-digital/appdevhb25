@@ -1,6 +1,7 @@
 ﻿// Program.cs
 using System;
 using System.ComponentModel;
+using Appdevhb25.MarcelSimma.week02;
 
 namespace Appdevhb25.MarcelSimma
 {
@@ -34,7 +35,8 @@ namespace Appdevhb25.MarcelSimma
             Teil von WiederholungMethodenUndSchleifen.cs
             kombinierte Ausgabe mit $ und @ ist auch möglich 
             */
-      
+
+            /*
             Aufgabe09.WiederholungMethodenUndSchleifen.Start();
             Aufgabe09.WiederholungMethodenUndSchleifen.PrintX(7);
 
@@ -43,6 +45,11 @@ namespace Appdevhb25.MarcelSimma
             {Aufgabe09.WiederholungMethodenUndSchleifen.Compoare(11)}
             {Aufgabe09.WiederholungMethodenUndSchleifen.Compoare(11)}
             ");
+            */
+
+            //ConsoleInput.ConsoleInput.Start();
+            Round.Start(55.55555, 2);
+
         }
     }
 }
