@@ -30,7 +30,11 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe20.Faktorial.Start();
             // Aufgabe21.FaktorialErweitert.Start();
             // Aufgabe22.CountInSteps.Start();
-            Aufgabe23.TeilenUndHerrschen.Start();
+            // Aufgabe23.TeilenUndHerrschen.Start();
+            // Aufgabe24.Runden.Start();
+            // Aufgabe25.InputValidieren.Start();
+            // Aufgabe26.Fuehrerschein.Start();
+            Aufgabe27.Generationen.Start();
         }
     }
 }
