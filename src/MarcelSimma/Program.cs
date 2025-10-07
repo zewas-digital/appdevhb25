@@ -20,14 +20,14 @@ namespace Appdevhb25.MarcelSimma
             //Aufgabe05.PrintLine.Start();
 
             /*
-            Aufgabe06.Methoden.PrintVorname("Marcel");
-            Aufgabe06.Methoden.PrintRectangle(6, 2);
+            Aufgabe06.Methods.PrintVorname("Marcel");
+            Aufgabe06.Methods.PrintRectangle(6, 2);
             Console.WriteLine();
-            Aufgabe06.Methoden.PrintRectangle(3, 4);
+            Aufgabe06.Methods.PrintRectangle(3, 4);
             Console.WriteLine();
-            Aufgabe06.Methoden.PrintRectangle(10, 5);
+            Aufgabe06.Methods.PrintRectangle(10, 5);
             
-            int summe = Aufgabe06.Methoden.Add(6, 5);
+            int summe = Aufgabe06.Methods.Add(6, 5);
             Console.WriteLine(summe);
             */
 
@@ -48,7 +48,8 @@ namespace Appdevhb25.MarcelSimma
             */
 
             //ConsoleInput.ConsoleInput.Start();
-            Round.Start(55.55555, 2);
+            //Round.Start(55.55555, 2);
+            LogicalOperators.LogicalOperators.Start();
 
         }
     }
