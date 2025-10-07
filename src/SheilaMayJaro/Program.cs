@@ -35,8 +35,14 @@ namespace Appdevhb25.SheilaMayJaro
             //Aufgabe13.PrintDeltoid.PrintRhombus(5); 
             // Aufgabe14.PrintCircle.Start(); 
             // Aufgabe14.PrintCircle.PrintCircleMethod(10);
-            Aufgabe15.ChristmasTree.Start();
-            //Aufgabe15.ChristmasTree.PrintChristmasTree(9); 
+            // Aufgabe15.ChristmasTree.Start();
+            // Aufgabe19.PrimitiveDatatypes.Start();
+            // Console.WriteLine();
+            // Aufgabe20.Factorial.Start();
+            // Console.WriteLine();
+            // Aufgabe22.DivideAndRule.Start();
+            // Console.WriteLine();
+            Aufgabe23.CountInSmallSteps.Start(); 
             
             
         
