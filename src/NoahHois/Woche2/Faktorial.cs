@@ -7,7 +7,7 @@ namespace Appdevhb25.NoahHois.Aufgabe14
     {
         public static void Aufgabe14()
         {
-            for (int i = 1; i <= 20; i++)
+            for (int i = 1; i <= 50; i++)
             {
                 long fakult = 1;
                 for (int x = 1; x <= i; x++)
