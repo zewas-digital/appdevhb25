@@ -34,8 +34,16 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe24.Runden.Start();
             // Aufgabe25.InputValidieren.Start();
             // Aufgabe26.Fuehrerschein.Start();
-            Aufgabe27.Generationen.Start();
-        }
+            // Aufgabe27.Generationen.Start();
+            // Aufgabe28.Teilnehmer.Aufzaehlung();
+            // Aufgabe29.Teilnehmer2.Aufzaehlung2();
+            // Aufgabe30.Teilnehmer3.Start();
+            // Aufgabe31.RandomNumberArray.Start();
+            // BonusAufgabe32.Ziffernsumme.Start();
+            // Aufgabe33.Copy.Start();
+            // Aufgabe34.CopyReverse.Start();
+            BonusAufgabe35.BubbleSort.Start();
+        }  
     }
 }
 
