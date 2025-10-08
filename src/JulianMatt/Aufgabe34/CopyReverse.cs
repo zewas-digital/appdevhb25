@@ -6,17 +6,16 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Xml;
 
-namespace Appdevhb25.JulianMatt.Aufgabe33
+namespace Appdevhb25.JulianMatt.Aufgabe34
 {
-    public class Copy
+    public class CopyReverse
     {
 
-        public static void Start33()
+        public static void Start34()
         {
             int[] number = OgVar();
             Console.Clear();
-            int[] copy = CopyVar(number);
-            number[0] = -1;
+            int[] copy = CopyVarFlipped(number);
 
 
             Console.WriteLine("Der ursprüngliche array:");
@@ -52,13 +51,13 @@ namespace Appdevhb25.JulianMatt.Aufgabe33
             return countOfNumbers;
         }
 
-        public static int[] CopyVar(int[] number)
+        public static int[] CopyVarFlipped(int[] number)
         {
             int[] copy = new int[number.Length];
 
-            for (int i = 0; i < copy.Length; i++)
+            for (int i = 0; i < number.Length; i++)
             {
-                copy[i] = number[i];
+                copy[i] = number[number.Length - 1 - i];
             }
             return copy;
         }
