@@ -7,6 +7,7 @@ namespace Appdevhb25.JulianMatt
     {
         public static void Main(string[] args)
         {
+            //Console.Clear();
             //Aufgabe01.PrintA.Start();
             //Aufgabe02.Malreihen.Start02();
             //Aufgabe03.SummeUeberBereich.Start03();
@@ -28,12 +29,19 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe22.TeilenUndHerrschen.start22();
             //Aufgabe23.Von0Bis100.Program();
             //Aufgabe24.Runden.Start24();
-            Aufgabe25.InputValidieren.Start25();
-            //Bonusaufgabe01.PrintDeltoids.BonusStart01();
+            //Aufgabe25.InputValidieren.Start25();
+            //Aufgabe26.Führerschein02.Start2601();
+            //Aufgabe27.Generationen.Start27();
+            //Aufgabe28.Teilnehmer.Start28();
+            //Aufgabe29.Teilnehmer02.Start29();
+            //Aufgabe30.Teilnehmer03.Start30();
+            //Aufgabe31.RandomNumberArray.Start31();
+            Aufgabe33.Copy.Start33();
+            //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
             //Bonusaufgabe07.Faktorialerweitert.BonusStart07();
-
+            //Bonusaufgabe32.Ziffernsumme.Start32();
 
             //Üben.Test.Teststart02();
 
