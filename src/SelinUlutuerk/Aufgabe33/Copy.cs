@@ -8,7 +8,10 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe33
         {
             Console.WriteLine("Wie viele Werte soll es geben?");
             int anzahl = Convert.ToInt32(Console.ReadLine());
+
             Random zahl = new Random();
+
+            
 
             int[] originalArray = new int[anzahl];
 
@@ -27,6 +30,8 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe33
             }
 
             //copiedArray1
+            Console.WriteLine();
+
             int[] copiedArray = CopyArray(originalArray);
 
             foreach (int elem in copiedArray)
@@ -34,7 +39,10 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe33
                 System.Console.WriteLine(elem);
             }
 
+
             //copiedArray2
+            Console.WriteLine();
+            
             int[] copiedArray2 = CopyArray2(originalArray);
 
             foreach (int elem in copiedArray2)
@@ -47,7 +55,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe33
         public static int[] CopyArray(int[] array)
         {
             int[] copy = array;
-            return copy[];
+            return copy;
         }
 
         // richtige art
@@ -59,7 +67,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe33
             {
                 copy[i] = array[i];
             }
-            return copy[];
+            return copy;
         }
     }
 }
