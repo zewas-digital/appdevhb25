@@ -32,7 +32,11 @@ namespace Appdevhb25.SelinUlutuerk
             //Aufgabe29.Teilnehmer2.Start();
             //Aufgabe30.Teilnehmer3.Start();
             //Aufgabe31.RandomNumberArray.Start();
-            Aufgabe33.Copy.Start();
+            //Aufgabe33.Copy.Start();
+            //Aufgabe34.CopyReverse.Copy2();
+            //Aufgabe37.Array2d.Start();
+            Bonusaufgabe35.BubbleSort.Start();
+
 
             //Bonusaufgabe13.PrintDeltoid.Deltoid(7);
             //Bonusaufgabe14.PrintCircle.Start();
