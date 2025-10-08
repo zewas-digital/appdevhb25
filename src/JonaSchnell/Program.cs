@@ -26,7 +26,7 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe30.Aufgabe30.Start30();
             Aufgabe31.Aufgabe31.Start31();
             //Aufgabe33.Aufgabe33.Start33();
-             
+
         }
     }
 }

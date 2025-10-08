@@ -12,6 +12,7 @@ namespace Appdevhb25.JonaSchnell.Aufgabe04
                 if (i % 3 == 0)
                 {
                     Console.WriteLine(i);
+
                 }
             }
         }
