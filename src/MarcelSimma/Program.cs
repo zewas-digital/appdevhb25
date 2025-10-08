@@ -51,7 +51,9 @@ namespace Appdevhb25.MarcelSimma
             //Round.Start(55.55555, 2);
             //LogicalOperators.LogicalOperators.Start();
             //Arrays.Start();
-            Teilnehmer3.Start();
+            //Teilnehmer3.Start();
+
+            Copy.Start();
 
         }
     }

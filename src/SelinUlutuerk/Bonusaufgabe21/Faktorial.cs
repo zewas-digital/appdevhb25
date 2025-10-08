@@ -15,7 +15,6 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe21
 
                 Console.WriteLine($"{i}! = {produkt, 20}");
             }
-            
         }
     }
 }

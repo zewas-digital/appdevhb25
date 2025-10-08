@@ -24,9 +24,15 @@ namespace Appdevhb25.SelinUlutuerk
             //Aufgabe20.Faktorial.Start(20);
             //Aufgabe22.TeilenundHerrschen.Start();
             //Aufgabe23.bis100.Start();
-            Console.WriteLine(Aufgabe24.Runden.round(66.6644, 3));
+            //Console.WriteLine(Aufgabe24.Runden.round(66.6644, 3));
             //Console.WriteLine(InputValidieren.Start());
             //Aufgabe26.Fuehrerschein.Start();
+            //Aufgabe27.Generationen.Start();
+            //Aufgabe28.Teilnehmer.Start();
+            //Aufgabe29.Teilnehmer2.Start();
+            //Aufgabe30.Teilnehmer3.Start();
+            //Aufgabe31.RandomNumberArray.Start();
+            Aufgabe33.Copy.Start();
 
             //Bonusaufgabe13.PrintDeltoid.Deltoid(7);
             //Bonusaufgabe14.PrintCircle.Start();
@@ -34,6 +40,8 @@ namespace Appdevhb25.SelinUlutuerk
             //Bonusaufgabe16.HigherOrLower.RandomNumber();
             //Bonusaufgabe17.Leipniz.Start();
             //Bonusaufgabe18.Nilakantha.Start();
+            //Bonusaufgabe21.Faktorial.Start(20);
+            //Bonusaufgabe32.Ziffernsumme.Start();
 
 
             //docs.PrimitiveDatentypen.Start();
