@@ -7,7 +7,7 @@ namespace Appdevhb25.JulianMatt
     {
         public static void Main(string[] args)
         {
-            //Console.Clear();
+            Console.Clear();
             //Aufgabe01.PrintA.Start();
             //Aufgabe02.Malreihen.Start02();
             //Aufgabe03.SummeUeberBereich.Start03();
@@ -38,13 +38,13 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe31.RandomNumberArray.Start31();
             //Aufgabe33.Copy.Start33();
             //Aufgabe34.CopyReverse.Start34();
-            Aufgabe37.TwodArrayArray.Start37();
+            //Aufgabe37.TwodArrayArray.Start37();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
             //Bonusaufgabe07.Faktorialerweitert.BonusStart07();
             //Bonusaufgabe32.Ziffernsumme.Start32();
-
+            Bonusaufgabe35.BubbleSort.Start35();
             //Üben.Test.Teststart02();
 
         }
