@@ -49,7 +49,8 @@ namespace Appdevhb25.MarcelSimma
 
             //ConsoleInput.ConsoleInput.Start();
             //Round.Start(55.55555, 2);
-            LogicalOperators.LogicalOperators.Start();
+            //LogicalOperators.LogicalOperators.Start();
+            Arrays.Start();
 
         }
     }
