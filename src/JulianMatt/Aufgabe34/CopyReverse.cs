@@ -14,7 +14,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe34
         public static void Start34()
         {
             int[] number = OgVar();
-            Console.Clear();
+            //Console.Clear();
             int[] copy = CopyVarFlipped(number);
 
 

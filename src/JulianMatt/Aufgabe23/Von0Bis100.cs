@@ -63,7 +63,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe23
         }
 
         public static void Process()
-        { 
+        {
             double fr = 0.0;
             int t = 100;
 
@@ -73,7 +73,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe23
                 fr += 0.1;
             }
         }
-   
+
     }
 }
 

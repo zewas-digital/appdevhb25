@@ -16,7 +16,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe26
             {
                 LicenceCheck();
                 string answer = ReapeatTheLoop();
-                if ( answer == "ja")
+                if (answer == "ja")
                 {
 
                 }

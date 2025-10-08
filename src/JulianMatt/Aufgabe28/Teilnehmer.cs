@@ -18,9 +18,9 @@ namespace Appdevhb25.JulianMatt.Aufgabe28
             {
                 Console.WriteLine(name[i]);
             }
-            Console.WriteLine("Es sind "+name.Length+" Teilnehmer angemeldet.");
+            Console.WriteLine("Es sind " + name.Length + " Teilnehmer angemeldet.");
         }
-            
+
 
     }
 }

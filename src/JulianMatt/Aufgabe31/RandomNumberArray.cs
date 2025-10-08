@@ -45,7 +45,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe31
             }
             return number;
         }
-       
+
         public static void NumberListing(int[] number)
         {
             Console.WriteLine("Anzahl der Elemente: " + number.Length);
@@ -55,7 +55,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe31
             }
 
         }
-       
+
         public static void NumberChoosing(int[] number)
         {
             Max(number);
@@ -68,7 +68,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe31
 
         public static void Max(int[] number)
         {
-           int whatIsMax = number[0];
+            int whatIsMax = number[0];
 
             for (int i = 1; i < number.Length; i++)
             {
@@ -79,11 +79,11 @@ namespace Appdevhb25.JulianMatt.Aufgabe31
             }
 
             Console.WriteLine("Der größte Wert ist: " + whatIsMax);
-        }    
+        }
 
         public static void Min(int[] number)
         {
-             int whatIsMin = number[0];
+            int whatIsMin = number[0];
 
             for (int i = 1; i < number.Length; i++)
             {
@@ -118,7 +118,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe31
             Console.WriteLine("Die Summe ist: " + whatIsSum);
         }
     }
-    
-    
+
+
 
 }
