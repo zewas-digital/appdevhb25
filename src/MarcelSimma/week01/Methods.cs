@@ -2,7 +2,7 @@ using System;
 
 namespace Appdevhb25.MarcelSimma.Aufgabe06
 {
-    public class Methoden
+    public class Methods
     {
 
         public static void Start()
