@@ -6,8 +6,6 @@ namespace Appdevhb25.KerimAlkis
     {
         static void Main(string[] args)
         {
-            Console.Clear();
-
             #region Bonusaufgaben
             //---Woche 1---
             //Bonusaufgabe01.PrintDeltoid.Start(22);
@@ -20,7 +18,8 @@ namespace Appdevhb25.KerimAlkis
             //Bonusaufgabe06.BerechnungVonPi_Nilakantha.Start();
             //Bonusaufgabe07.Fakorial.Start();
             //Bonusaufgabe08.Ziffernsumme.Start();
-
+            //Bonusaufgabe09.BubbleSort.Start();
+            Bonusaufgabe10.SortingAlorithmen.Start();
 
             #endregion
 
