@@ -13,7 +13,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe30
         public static void Start30()
         {
             string[] name = TeilnehmerListe();
-            TeilnehmerAnzeigen(name);           
+            TeilnehmerAnzeigen(name);
         }
 
         public static int TeilnehmerAnzahl()
@@ -51,6 +51,6 @@ namespace Appdevhb25.JulianMatt.Aufgabe30
             Console.WriteLine("Es sind " + name.Length + " Teilnehmer angemeldet.");
         }
     }
-    
+
 
 }

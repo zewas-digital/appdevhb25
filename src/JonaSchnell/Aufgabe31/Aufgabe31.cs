@@ -3,10 +3,8 @@ using System.Security.Cryptography;
 
 namespace Appdevhb25.JonaSchnell.Aufgabe31
 {
-    public class Aufgabe31
+        public class Aufgabe31
     {
-
-
         public static void Start31()
         {
             int[] numbers = new int[5];
@@ -41,6 +39,7 @@ namespace Appdevhb25.JonaSchnell.Aufgabe31
                 }
             }
             Console.WriteLine("Die grösste Zahl ist: " + lowest);
+            Console.WriteLine("Die Zahlen sind:" + numbers[0] + ", " + numbers[1] + ", " + numbers[2] + ", " + numbers[3] + ", " + numbers[4]);
         }
     }
 }

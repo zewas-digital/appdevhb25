@@ -16,11 +16,11 @@ namespace Appdevhb25.JulianMatt.Aufgabe29
 
             for (int i = 0; i < name.Length; i++)
             {
-                Console.WriteLine((i + 1)+". "+name[i]);
+                Console.WriteLine((i + 1) + ". " + name[i]);
             }
-            Console.WriteLine("Es sind "+name.Length+" Teilnehmer angemeldet.");
+            Console.WriteLine("Es sind " + name.Length + " Teilnehmer angemeldet.");
         }
-            
+
 
     }
 }

@@ -19,9 +19,9 @@ namespace Appdevhb25.JulianMatt.Bonusaufgabe32
                 Console.WriteLine("Die Ziffernsumme ist: " + summe);
                 Console.WriteLine();
             }
-         
 
-           
+
+
         }
         public static int GetNumber()
         {
@@ -42,14 +42,14 @@ namespace Appdevhb25.JulianMatt.Bonusaufgabe32
         public static int BerechneZiffernsumme(int zahl)
         {
             if (zahl < 0)
-                zahl = -zahl; 
+                zahl = -zahl;
             int summe = 0;
 
             while (zahl > 0)
             {
-                int letzteZiffer = zahl % 10; 
-                summe += letzteZiffer;        
-                zahl /= 10;                   
+                int letzteZiffer = zahl % 10;
+                summe += letzteZiffer;
+                zahl /= 10;
             }
 
             return summe;
