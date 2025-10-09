@@ -9,13 +9,23 @@ namespace Appdevhb25.KerimAlkis
             Console.Clear();
             
             #region Bonusaufgaben
+            //---Woche 1---
             //Bonusaufgabe01.PrintDeltoid.Start(22);
             //Bonusaufgabe02.PrintCircle.Start();
             //Bonusaufgabe03.PrintChristmasTree.Start();
-            Bonusaufgabe04.HigherOrLower.Start();
+            //Bonusaufgabe04.HigherOrLower.Start();
+
+            //---Woche 2---
+            //Bonusaufgabe05.BerechnungVonPi_Leibniz.Start();
+            //Bonusaufgabe06.BerechnungVonPi_Nilakantha.Start();
+            //Bonusaufgabe07.Fakorial.Start();
+            //Bonusaufgabe08.Ziffernsumme.Start();
+
+
             #endregion
 
             #region Aufgaben
+            //---Woche 1---
             //Aufgabe01.PrintA.Start();
             //Aufgabe02.Malreihen.Start();
             //Aufgabe03.SummeUeberBereich.Start();
@@ -28,6 +38,9 @@ namespace Appdevhb25.KerimAlkis
             //Aufgabe10.PrintTriangle.Start();
             //Aufgabe11.CheckPrim.Start();
             //Aufgabe12.Fibonacci.Start();
+
+            //---Woche 2---
+
             #endregion
 
 
