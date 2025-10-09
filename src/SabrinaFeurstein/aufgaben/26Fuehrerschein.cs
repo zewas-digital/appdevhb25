@@ -10,7 +10,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
     public class Fuehrerschein
 
     {
-        // int alter = Convert.ToInt32(Console.ReadLine());
+        // ohne mehrere Methoden
         public static void scheinog()
         {
             for (int i = 0; i < 5; i++)
@@ -47,189 +47,68 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         }
 
 
-        //In Bearbeitung
-        public static int schein()
+        //mit mehreren Methoden
+        public static void Schein()
         {
-            int alter = 15;
-            return alter;
+            Console.Write("Anzahl der Personen: ");
+            int anzahl = Convert.ToInt32(Console.ReadLine());
+
+            string[] name = new string[anzahl];
+            for (int i = 0; i < name.Length; i++)
+            {
+                Console.Write("Name eingeben: ");
+                name[i] = Console.ReadLine();    
+            }
+
+            int[] alter = new int[anzahl];
+            for (int i = 0; i < alter.Length; i++)
+            {
+                Console.Write("Alter eingeben: ");
+                alter[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < anzahl; i++)
+            {
+                Console.Write($"{name[i]} {alter[i]} Moped {Moped(alter[i])}, Auto {Auto(alter[i])}, für beide Fahrzeuge: {Beide(alter[i])}");
+                Console.WriteLine();
+            }
         }
 
-        public static void moped(int alter)
+        public static string Moped(int alter)
         {
-            moped(schein());
             if (alter >= 16)
             {
-                Console.Write("Moped Ja, ");
+                return "Ja";
+
             }
             else
             {
-                Console.Write("Moped Nein, ");
+                return "Nein";
             }
         }
 
-        public static void auto(int alter)
+        public static string Auto(int alter)
         {
             if (alter >= 18)
             {
-                Console.Write("Auto Ja, für beide Fahrzeuge: Ja");
+                return "Ja";
             }
             else
             {
-                Console.Write("Auto Nein, für beide Fahrzeuge: Nein");
+                return "Nein";
             }
-            Console.WriteLine();
+        }
+
+        public static string Beide(int alter)
+        {
+            if (alter >= 18)
+            {
+                return "Ja";
+            }
+            else
+            {
+                return "Nein";
+            }
         }
     }
 }
-
-
-
-
-
-
-// class FuehrerscheinPruefung
-// {
-//     static bool DarfMopedFahren(int alter)
-//     {
-//         return alter >= 15;
-//     }
-
-//     static bool DarfAutoFahren(int alter)
-//     {
-//         return alter >= 18;
-//     }
-
-//     // static void Main1()
-//     // {
-//     //     var personen = new Dictionary<string, int>
-//     //     {
-//     //         { "Anna", 14 },
-//     //         { "Ben", 16 },
-//     //         { "Clara", 18 },
-//     //         { "David", 20 },
-//     //         { "Eva", 17 }
-//     //     };
-
-//         foreach (var person in personen)
-//         {
-//             string name = person.Key;
-//             int alter = person.Value;
-
-//             bool moped = DarfMopedFahren(alter);
-//             bool auto = DarfAutoFahren(alter);
-
-//             string berechtigung;
-//             if (moped && auto)
-//                 berechtigung = "Moped und Auto";
-//             else if (moped)
-//                 berechtigung = "nur Moped";
-//             else if (auto)
-//                 berechtigung = "nur Auto";
-//             else
-//                 berechtigung = "keines von beiden";
-
-//             Console.WriteLine($"{name} ({alter} Jahre): {berechtigung}");
-//         }
-//     }
-// }
-
-
-
-// class FuehrerscheinPruefung2
-// {
-//     static bool DarfMopedFahren(int alter)
-//     {
-//         return alter >= 15;
-//     }
-
-//     static bool DarfAutoFahren(int alter)
-//     {
-//         return alter >= 18;
-//     }
-
-//     static void Main2()
-//     {
-//         Console.WriteLine("Wie viele Personen möchten Sie prüfen?");
-//         int anzahl = int.Parse(Console.ReadLine());
-
-//         for (int i = 1; i <= anzahl; i++)
-//         {
-//             Console.WriteLine($"\nPerson {i}:");
-//             Console.Write("Name: ");
-//             string name = Console.ReadLine();
-
-//             Console.Write("Alter: ");
-//             int alter = int.Parse(Console.ReadLine());
-
-//             bool moped = DarfMopedFahren(alter);
-//             bool auto = DarfAutoFahren(alter);
-
-//             string berechtigung;
-//             if (moped && auto)
-//                 berechtigung = "Moped und Auto";
-//             else if (moped)
-//                 berechtigung = "nur Moped";
-//             else if (auto)
-//                 berechtigung = "nur Auto";
-//             else
-//                 berechtigung = "keines von beiden";
-
-//             Console.WriteLine($"{name} ({alter} Jahre): {berechtigung}");
-//         }
-//     }
-// }
-
-// class FuehrerscheinPruefung3
-// {
-//     static bool DarfMopedFahren(int alter)
-//     {
-//         return alter >= 15;
-//     }
-
-//     static bool DarfAutoFahren(int alter)
-//     {
-//         return alter >= 18;
-//     }
-
-//     static void Main3()
-//     {
-//         string antwort;
-
-//         do
-//         {
-//             Console.WriteLine("Wie viele Personen möchten Sie prüfen?");
-//             int anzahl = int.Parse(Console.ReadLine());
-
-//             for (int i = 1; i <= anzahl; i++)
-//             {
-//                 Console.WriteLine($"\nPerson {i}:");
-//                 Console.Write("Name: ");
-//                 string name = Console.ReadLine();
-
-//                 Console.Write("Alter: ");
-//                 int alter = int.Parse(Console.ReadLine());
-
-//                 bool moped = DarfMopedFahren(alter);
-//                 bool auto = DarfAutoFahren(alter);
-
-//                 string berechtigung;
-//                 if (moped && auto)
-//                     berechtigung = "Moped und Auto";
-//                 else if (moped)
-//                     berechtigung = "nur Moped";
-//                 else if (auto)
-//                     berechtigung = "nur Auto";
-//                 else
-//                     berechtigung = "keines von beiden";
-
-//                 Console.WriteLine($"{name} ({alter} Jahre): {berechtigung}");
-//             }
-
-//             Console.WriteLine("\nMöchten Sie weitere Personen prüfen? (ja/nein)");
-//             antwort = Console.ReadLine().ToLower();
-
-//         } while (antwort == "ja");
-
-//         Console.WriteLine("Programm beendet.");
-//     }
-// }

@@ -18,7 +18,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             {
                 produkt = produkt * faktor;
                 faktor = faktor + 1;
-                Console.WriteLine($"{j}! = " + "{0,35}", produkt);
+                Console.WriteLine($"{j}! = {produkt, 20}");
             }
         }
     }

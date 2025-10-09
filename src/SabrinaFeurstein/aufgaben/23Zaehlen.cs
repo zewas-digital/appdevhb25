@@ -45,12 +45,12 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             double ergebnis = min;
 
             Console.WriteLine("ToString Variante:");
-            for (int i = min; i < max; i++)
+            for (double i = min; i < max; i += 0.1)
             {
                 ergebnis = ergebnis + 0.1;
 
                 Console.WriteLine($"Result 1 digit = {ergebnis.ToString("F1")}");
-                Console.WriteLine("Result 2 digit = " + "{0,7}", ergebnis.ToString("F2"));
+                Console.WriteLine($"Result 2 digit = {ergebnis,6:F2}");
             }
         }
     }
