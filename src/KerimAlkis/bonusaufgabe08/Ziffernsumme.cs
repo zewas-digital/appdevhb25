@@ -30,12 +30,6 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe08
             }
             System.Console.WriteLine($"Die Ziffernsumme von {ImmutableNum} ist {singleNumSum}");
 
-
-
-            ghajdskfausf
-
-
-
         }
     }
 }
