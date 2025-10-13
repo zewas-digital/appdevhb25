@@ -52,9 +52,9 @@ namespace Appdevhb25.OliverBedogg.datatypes
             double number4 = 3.2;
             nIsInt = number4 is int;
 
-            if (number4 is int)
+            if (number4 is int && !bigger)
             {
-                Console.WriteLine("number4 is an integer");
+                Console.WriteLine("number4 is an integer and number is smaller");
             }
 
             // Integer = Ganzzahl
@@ -100,6 +100,10 @@ namespace Appdevhb25.OliverBedogg.datatypes
             {
                 Console.WriteLine("isTrue is true! " + isTrue);
             }
+
+            Console.WriteLine("Character " + character);
+            Console.WriteLine("Text "+ text +" / "+ zeichen);
+            Console.WriteLine("--------------------");
 
             // TODO:
             // Ergänze float und long und Kommentiere den Unterschied zu double und int

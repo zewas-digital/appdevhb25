@@ -1,10 +1,27 @@
 using System;
-// See https://aka.ms/new-console-template for more information
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
-namespace Appdevhb25.SashaLeonardoMattes
+namespace Appdevhb25.SashaLeonardoMattes.Aufgabe25
 {
-    public static class Helper
+
+    public class Validation
     {
+
+        public static void StartValidation()
+        {
+            Console.WriteLine("----------Aufgabe 25----------");
+            Console.WriteLine("Gib einen Integer ein:");
+            int number = checkUserInputInteger();
+            Console.WriteLine("Gib einen Char ein:");
+            char character = checkUserInputChar();
+            Console.WriteLine("Gib einen Double ein:");
+            double numberComma = checkUserInputDouble();
+            Console.WriteLine("Gib einen Long ein:");
+            ulong numberUlong = checkUserInputULong();
+            
+        }
+
         public static int checkUserInputInteger()
         {
             bool checkInput;
@@ -74,26 +91,5 @@ namespace Appdevhb25.SashaLeonardoMattes
             return result;
         }
 
-        public static string checkUserInputString()
-        {
-            bool checkInput;            
-            string? result;
-            int notRelevant;
-
-            do
-            {
-                result = Console.ReadLine();
-                checkInput = int.TryParse(result, out notRelevant);
-                if (checkInput)
-                {
-                    Console.WriteLine("Bitte gib einen gültigen Namen ein (keine Zahl, weil die Deutschen das leider nicht erlauben und Österreich sieht es auch etwas kritisch) (WICHTIG: Ich fände es ok):");
-                }
-            } while (checkInput || string.IsNullOrEmpty(result));
-
-            return result;
-        }
-
-
     }
 }
-
