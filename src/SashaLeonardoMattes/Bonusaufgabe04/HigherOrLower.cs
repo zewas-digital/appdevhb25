@@ -11,7 +11,7 @@ namespace Appdevhb25.SashaLeonardoMattes.BonusAufgabe04
         {
             Random rndGen = new Random();
             Console.WriteLine("----------BonusAufgabe 04----------");
-            int zufallsZahl = rndGen.Next(0, 100 + 1);
+            int zufallsZahl = rndGen.Next(0, 100 + 1); //rndGen ist Untergrenze, Obergrenze allerdings Obergrenze exklusiv also +1 wenn 100 möglich sein soll
             int guess;
 
             do
