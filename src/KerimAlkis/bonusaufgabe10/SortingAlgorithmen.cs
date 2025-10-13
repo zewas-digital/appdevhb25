@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 {
@@ -25,7 +26,7 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             for (int i = 0; i < number; i++)
             {
-                numberArray[i] = rndZahl.Next(0, 100);
+                numberArray[i] = rndZahl.Next(0, 1000);
             }
 
             Console.WriteLine();
@@ -40,7 +41,11 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             //InsertionSort(numberArray);
 
-            MergeSort(numberArray);
+            //MergeSort(numberArray);
+
+            //QuickSort(numberArray, 0, numberArray.Length-1);
+
+            QuickSortTernary(numberArray, 0, numberArray.Length-1);
 
 
             Console.WriteLine("Auflistung:");
@@ -48,9 +53,6 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
             {
                 Console.WriteLine(zahl);
             }
-
-
-
         }
 
 
@@ -130,11 +132,11 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
             }
             MergeSort(links);
             MergeSort(rechts);
-            MergeSortHelp(links, rechts, numberArray);
+            MergeSortHelper(links, rechts, numberArray);
 
             return numberArray;
         }
-        public static int[] MergeSortHelp(int[] links, int[] rechts , int[] numberarray)
+        public static int[] MergeSortHelper(int[] links, int[] rechts, int[] numberarray)
         {
             int l = 0;
             int r = 0;
@@ -156,13 +158,93 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
                 i++;
                 l++;
             }
-            while(r < rechts.Length)
+            while (r < rechts.Length)
             {
                 numberarray[i] = rechts[r];
                 i++;
                 r++;
             }
             return numberarray;
+        }
+        public static int[] QuickSort(int[] numberArray, int start, int ende)
+        {
+            if (ende <= start)
+            {
+                return numberArray;
+            }
+            int p = QuickSortPartition(numberArray, start, ende);
+            QuickSort(numberArray, start, p - 1);
+            QuickSort(numberArray, p + 1, ende);
+
+            return numberArray;
+        }
+        public static int QuickSortPartition(int[] numberarray, int start, int ende)
+        {
+            int pivot = numberarray[ende];
+            int i = start - 1;
+            for (int j = start; j < ende; j++)
+            {
+                if (numberarray[j] < pivot)
+                {
+                    i++;
+                    int temp = numberarray[j];
+                    numberarray[j] = numberarray[i];
+                    numberarray[i] = temp;
+                }
+            }
+            i++;
+            int temp2 = numberarray[i];
+            numberarray[i] = numberarray[ende];
+            numberarray[ende] = temp2;
+
+            return i;
+        }
+        public static int[] QuickSortTernary(int[] numberArray, int start, int ende)
+        {
+            if (ende <= start)
+            {
+                return numberArray;
+            }
+            (int i, int j) = QuickSortTernaryPartition(numberArray, start, ende);
+            QuickSort(numberArray, start, i - 1);
+            QuickSort(numberArray, j + 1, ende);
+
+            return numberArray;
+        }
+        public static (int, int) QuickSortTernaryPartition(int[] numberarray, int start, int ende)
+        {
+            int pivot = numberarray[ende];
+            int i = start - 1;
+            int j = start;
+            int k = ende;
+
+            while(j <= k)
+            {
+                if (numberarray[j] < pivot)
+                {
+                    i++;
+                    int temp = numberarray[j];
+                    numberarray[j] = numberarray[i];
+                    numberarray[i] = temp;
+                    j++;
+                }
+                else if(numberarray[j] > pivot)
+                {
+                    k--;
+                    int temp = numberarray[j];
+                    numberarray[j] = numberarray[k];
+                    numberarray[k] = temp;
+                }
+                else
+                {
+                    j++;
+                }
+            }
+            int temp2 = numberarray[j];
+            numberarray[j] = numberarray[ende];
+            numberarray[ende] = temp2;
+
+            return (i, j);
         }
     }    
 }
