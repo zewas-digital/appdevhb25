@@ -7,7 +7,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe14
     {
         public static void Start()
         {
-            int radius = 5;
+            int radius = 10;
             double dist;
 
             for (int x = 0; x <= 2 * radius; x++)
