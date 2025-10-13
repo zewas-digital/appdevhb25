@@ -1,4 +1,6 @@
-using System;
+using System.Security.Cryptography.X509Certificates;
+using Appdevhb25.KatjaHaemmerli.Aufgabe20;
+
 
 namespace Appdevhb25.KatjaHaemmerli.Aufgabe04
 {    
@@ -6,7 +8,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe04
     {
         /*Gib alle Zahlen innerhalb eines bestimmten Intervalls aus, 
         die durch eine andere Zahl ohne Rest teilbar sind.*/       
-        public static void Start()
+        public static void Fakt()
         {
             int intervallStart = 8;
             int internallEnde = 10;

@@ -50,7 +50,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe08
             {
                 for (int x = size; x > 0; x--)
                 {
-                    if (x - 1 > y) // x - 1 weil max 4 Leerzeichen
+                    if (x  > y) // x - 1 weil max 4 Leerzeichen
                     {
                         Console.Write(" ");
                     }
