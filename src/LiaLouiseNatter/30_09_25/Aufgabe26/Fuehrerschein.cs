@@ -4,91 +4,97 @@ using System.Globalization;
 
 namespace Appdevhb25.LiaLouiseNatter.Aufgabe26
 {
+
     public class Fuehrerschein
     {
         public static void Start()
         {
-            AgeChecker();
+            string name = EnterName();
+            int age = EnterAge();
+            bool car = CarAge(age);
+            bool moped = MopedAge(age);
+            AgeChecker(name, age, car, moped);
 
         }
 
-        public static void AgeChecker()
+        public static void AgeChecker(string name, int age, bool car, bool moped)
         {
-
-            bool moped = false;
-            bool car = false;
-
             
+            printOutput(name, age, car, moped);
+            
+        }
 
+        public static string EnterName()
+        {
+            Console.Write("Please enter your name: ");
+            string? name;
+            while (true)
+            {
+                name = Console.ReadLine();
+                if (string.IsNullOrEmpty(name) || int.TryParse(name, out int _))
+                {
+                    System.Console.WriteLine("Please enter a valid name");
+                    continue;
+                }
+                break;
+            }
+            return name;
+        }
+        
+           public static int EnterAge()
+        {
             Console.Write("Please enter your Age: ");
             int age;
             
-            while (!int.TryParse(Console.ReadLine(), out age) || int.IsNegative(age))
+            while(!int.TryParse(Console.ReadLine(), out age))
             {
-                Console.WriteLine("Enter a valid age!");
+                Console.WriteLine("Enter a valid number.");
             }
-
-            Console.Write("Please enter your name: ");
-            string? name;
-            do
-            {
-                name = Console.ReadLine();
-              
-                if (int.TryParse(name, out int n))
-                {
-                    Console.Write("Enter a valid name!");
-                }
-                //else { break; }
-            } while (true || string.IsNullOrEmpty(name));
+            return age;
+        }
 
 
-            if (age >= 15 && age < 18)
-            {
-                moped = true;
-                car = false;
-            }
+        public static bool CarAge(int age)
+        {
             if (age >= 18)
             {
-                moped = true;
-                car = true;
+                return true;
             }
-
-            if (age < 15)
+            return false;
+        }
+        
+        public static bool MopedAge(int age)
+        {
+            if (age >= 15)
             {
-                moped = false;
-                car = false;
+                return true;
             }
-            printOutput(name, age, car, moped);
-
+            return false;
         }
 
         public static string carCheck(bool car)
         {
-            if (car == true)
+            if (car)
             {
                 return "Auto Ja,";
             }
-            else
-            {
-                return "Auto Nein,";
-            }
+            return "Auto Nein,";
+        
         }
         public static string mopedCheck(bool moped)
         {
-            if (moped == true)
+            if (moped)
             {
                 return "Moped Ja,";
             }
-            else
-            {
-                return "Moped Nein,";
-            }
+            return "Moped Nein,";
+            
             
         }
 
         public static string bothCheck(bool car, bool moped)
         {
-            if (car == true && moped == true)
+            if (car && moped)
             {
                 return "für Beide Fahrzeuge: Ja";
             }
@@ -105,3 +111,4 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe26
         }
     }
 }
+// in SRP umbauen (in weitere FUnktionen aufteilen)
