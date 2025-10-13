@@ -7,11 +7,11 @@ namespace Appdevhb25.OliverBedogg.arrays
     {
         public static void Start()
         {
-            int[][] zweiDArray = new int[3][3];
-            zweiDArray[0][0] = 34;
-            zweiDArray[0][1] = 23;
-            zweiDArray[0][2] = 12;
-            zweiDArray[1][0] = 45;
+            int[,] zweiDArray = new int[3, 4];
+            zweiDArray[0, 0] = 34;
+            zweiDArray[0, 1] = 23;
+            zweiDArray[0, 2] = 12;
+            zweiDArray[1, 0] = 45;
             // usw.
 
             // 2D Array, Matrix
