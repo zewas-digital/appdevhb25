@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 // See https://aka.ms/new-console-template for more information
 
 namespace Appdevhb25.SashaLeonardoMattes
@@ -76,7 +77,7 @@ namespace Appdevhb25.SashaLeonardoMattes
 
         public static string checkUserInputString()
         {
-            bool checkInput;            
+            bool checkInput;
             string? result;
             int notRelevant;
 
@@ -93,7 +94,41 @@ namespace Appdevhb25.SashaLeonardoMattes
             return result;
         }
 
+        public static void Print2DArrayInteger(int[,] arr)
+        {
+            int maxLength = GetMax2DArray(arr).ToString().Length;
 
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    System.Console.Write("{0," + maxLength + "} ", arr[i, j]);
+                    /*0 ist Platzhalter für 0. Variable nach "," also arr[i, j] 
+                    maxLenght gibt zu reservierenden Platz an
+                    Diesie beiden müssen in geschwungene Klammern
+                    Abstand nach geschwungener Klammer ist wichitg --> sonst stehen Zahlen direkt hintereinander 
+                    "}", ist also falsch (würde 14 und 3 als 143 ausgeben) für Abstand ziwschen Zahlen "} " (dann wird 14 3 ausgegeben)
+                    */
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        public static int GetMax2DArray(int[,] arr)
+        {
+            int max = arr[0, 0];
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if (arr[i, j] > max)
+                    {
+                        max = arr[i, j];
+                    }
+                }
+            }
+            return max;
+        }
     }
 }
 

@@ -5,12 +5,12 @@ using System.Security.Cryptography.X509Certificates;
 namespace Appdevhb25.SashaLeonardoMattes.Aufgabe33
 {
 
-    public class TwoDArray
+    public class TicTacToe
     {
 
-        public static void StartTwoDArray()
+        public static void StartTicTacToe()
         {
-            Console.WriteLine("----------Aufgabe 33----------");
+            Console.WriteLine("----------Aufgabe 35----------");
 
             Random rndGen = new Random();
             int[,] table = new int[3, 3]; //1. Zeilen, 2. Spalten
