@@ -26,7 +26,37 @@ namespace Appdevhb25.LiaLouiseNatter.BonusAufgabe35
 
 
             }
-            System.Console.WriteLine(unsortetArray);
+            for (int i = 0; i < unsortetArray.Length; i++)
+            {
+                System.Console.Write(unsortetArray[i]);
+            }
+
+            for (int i = 0; i < unsortetArray.Length; i++)
+            {
+                for (int j = 0; j < unsortetArray.Length + 1; j++)
+                {
+                    if (j == unsortetArray.Length - 1)
+                    {
+                        break;
+                    }
+                    if (unsortetArray[j] > unsortetArray[j + 1])
+                    {
+                        var holder = unsortetArray[j];
+                        unsortetArray[j] = unsortetArray[j + 1];
+                        unsortetArray[j + 1] = holder;
+                    }
+                }
+                
+            }
+            System.Console.WriteLine();
+            System.Console.Write("Your Sorted numbers: ");
+            for (int k = 0; k < unsortetArray.Length; k++)
+            {
+                System.Console.Write(unsortetArray[k]);
+            }
+            
+
+
 
 
         }
