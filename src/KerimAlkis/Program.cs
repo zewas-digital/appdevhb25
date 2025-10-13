@@ -53,7 +53,8 @@ namespace Appdevhb25.KerimAlkis
             //Aufgabe24.RandomNumberArray.Start();
             //Aufgabe25.Copy.Start();
             //Aufgabe26.CopyReverse.Start();
-
+            //Aufgabe27.Array2d.Start();
+            //Aufgabe28.PascalDreieck.Start();
             #endregion
 
 

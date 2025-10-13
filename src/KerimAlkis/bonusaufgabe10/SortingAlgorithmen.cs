@@ -26,7 +26,7 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             for (int i = 0; i < number; i++)
             {
-                numberArray[i] = rndZahl.Next(0, 1000);
+                numberArray[i] = rndZahl.Next(0, 10);
             }
 
             Console.WriteLine();
@@ -45,7 +45,9 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             //QuickSort(numberArray, 0, numberArray.Length-1);
 
-            QuickSortTernary(numberArray, 0, numberArray.Length-1);
+            //QuickSortTernary(numberArray, 0, numberArray.Length-1);
+
+            HeapSort(numberArray);
 
 
             Console.WriteLine("Auflistung:");
@@ -218,7 +220,7 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
             int j = start;
             int k = ende;
 
-            while(j <= k)
+            while (j <= k)
             {
                 if (numberarray[j] < pivot)
                 {
@@ -228,7 +230,7 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
                     numberarray[i] = temp;
                     j++;
                 }
-                else if(numberarray[j] > pivot)
+                else if (numberarray[j] > pivot)
                 {
                     k--;
                     int temp = numberarray[j];
@@ -245,6 +247,55 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
             numberarray[ende] = temp2;
 
             return (i, j);
+        }
+        public static int[] HeapSort(int[] numberArray)
+        {
+            if(numberArray.Length <= 1)
+            {
+                return numberArray;
+            }
+            int heapSize = numberArray.Length;
+
+            for(int i = heapSize /2 -1; i >= 0; i++)
+            {
+                SiftDown(numberArray, heapSize, i);
+            }
+
+            for(int i = heapSize -1; i >= 0; i++)
+            {
+                int temp = numberArray[0];
+                numberArray[0] = numberArray[i];
+                numberArray[i] = temp;
+
+                heapSize--;
+                SiftDown(numberArray, i, 0);
+            }
+
+            return numberArray;
+        }
+        public static void SiftDown(int[] numberArray, int size, int index)
+        {
+            int large = size;
+            int left = 2 * size + 1;
+            int right = 2 * size + 2;
+
+
+            if (left < index && numberArray[left] > numberArray[large])
+            {
+                large = left;
+            }
+            if (right < index && numberArray[right] > numberArray[large])
+            {
+                large = right;
+            }
+            if(large != size)
+            {
+                int temp = numberArray[size];
+                numberArray[size] = numberArray[large];
+                numberArray[large] = temp;
+
+                SiftDown(numberArray, size, large);
+            }
         }
     }    
 }
