@@ -10,12 +10,12 @@ namespace Appdevhb25.OliverBedogg.arrays
             int[] arr = CreateArrayRandom(10, 0, 1000);
             PrintArrayForEach(arr);
 
-            int[] result = MergeSort(arr, 0, arr.Length, "");
+            int[] result = Merge(arr, 0, arr.Length, "");
             Console.WriteLine("Sorted:");
             PrintArrayForEach(result);
         }
 
-        public static int[] MergeSort(int[] arr, int start, int end, string prefix)
+        public static int[] Merge(int[] arr, int start, int end, string prefix)
         {
             //Console.WriteLine("{2}MergeSort(..., {0}, {1})", start, end, prefix);
             int[] result = new int[end - start];
@@ -26,8 +26,8 @@ namespace Appdevhb25.OliverBedogg.arrays
             }
 
 
-            int[] mergeLeft = MergeSort(arr, start, start + (end - start) / 2, prefix + "    ");
-            int[] mergeRight = MergeSort(arr, start + (end - start) / 2, end, prefix + "    ");
+            int[] mergeLeft = Merge(arr, start, start + (end - start) / 2, prefix + "    ");
+            int[] mergeRight = Merge(arr, start + (end - start) / 2, end, prefix + "    ");
 
             int iLeft = 0;
             int iRight = 0;

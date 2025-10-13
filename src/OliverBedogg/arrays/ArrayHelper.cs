@@ -5,6 +5,7 @@ namespace Appdevhb25.OliverBedogg.arrays
 
     public class ArrayHelper
     {
+        public static Random rand = new Random();
         public static void print2DIntArray(int[,] array)
         {
             for (int i = 0; i < array.GetLength(0); i++)
