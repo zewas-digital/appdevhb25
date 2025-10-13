@@ -36,20 +36,46 @@ namespace Appdevhb25.SheilaMayJaro
             // Aufgabe14.PrintCircle.Start(); 
             // Aufgabe14.PrintCircle.PrintCircleMethod(10);
             // Aufgabe15.ChristmasTree.Start();
+            //Console.WriteLine(); 
+            // Aufgabe16.HigherOrLower.Start();
+            // Console.WriteLine(); 
+            // Aufgabe17.CalculationOfPiLeibnizSeries.Start();
+            // Console.WriteLine(); 
             // Aufgabe19.PrimitiveDatatypes.Start();
             // Console.WriteLine();
             // Aufgabe20.Factorial.Start();
             // Console.WriteLine();
             // Aufgabe22.DivideAndRule.Start();
             // Console.WriteLine();
-            Aufgabe23.CountInSmallSteps.Start(); 
-            
-            
-        
-            
+            //Aufgabe23.CountInSmallSteps.Start(); 
+            // Console.WriteLine(); 
+            //Aufgabe24.RoundNumbers.Start(); 
+            //Console.WriteLine(); 
+            // Aufgabe25.ValidateInput.Start();
+            // Console.WriteLine(); 
+            // Aufgabe26.DriversLicense.Start();
+            // Console.WriteLine(); 
+            // Aufgabe27.Generations.Start();
+            // Console.WriteLine(); 
+            // Aufgabe28.Participants.Start(); 
+            // Console.WriteLine(); 
+            // Aufgabe29.ParticipantsTwo.Start();
+            // Console.WriteLine(); 
+            // Aufgabe30.ParticipantsThree.Start();
+            // Console.WriteLine(); 
+            // Aufgabe31.RandomNumberArray.Start();
+            // Console.WriteLine(); 
+            // Aufgabe33.CopyArray.Start();
+            // Console.WriteLine();
+            // Aufgabe34.CopyReverse.Start();
+            // Console.WriteLine(); 
+            // Aufgabe35.BubbleSort.Start(); 
+            // Console.WriteLine();
+            Aufgabe37.TwoDimensionalArray.Start();
+            Console.WriteLine(); 
 
 
-         
+
         }
     }
 }

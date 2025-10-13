@@ -7,16 +7,15 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe23
         public static void Start()
         {
             Console.WriteLine("Aufgabe 23)");
-            PrintCountInSmallSteps(10); 
+            PrintCountInSmallSteps(100); 
 
         }
         public static void PrintCountInSmallSteps(int length)
         {
-            for (double i = 0.0d; i < length; i+=0.1d)
+            for (double i = 0.0d; i <= length; i += 0.1d)
             {
-                Console.WriteLine(i.ToString("F"));
-                Console.WriteLine(i.ToString("F2")); 
-                Console.WriteLine($"Result 1 digit = {i}"); 
+                Console.WriteLine($"Result with 1 digit = {i.ToString("F1")}"); 
+                Console.WriteLine($"Result with 2 digit = {i.ToString("F2")}"); 
             }
         }
     }

@@ -14,13 +14,18 @@ namespace Appdevhb25.JulianMatt.Aufgabe33
         public static void Start33()
         {
             int[] number = OgVar();
+            Console.Clear();
             int[] copy = CopyVar(number);
             number[0] = -1;
 
-            Console.WriteLine("Originaler Array " + number);
-      
-            Console.WriteLine("-1");
-            for (int j = 1; j < copy.Length; j++)
+
+            Console.WriteLine("Der ursprüngliche array:");
+            for (int j = 0; j < number.Length; j++)
+            {
+                Console.WriteLine(number[j]);
+            }
+            Console.WriteLine("Der Kopierte Array:");
+            for (int j = 0; j < copy.Length; j++)
             {
                 Console.WriteLine(copy[j]);
             }
@@ -49,8 +54,12 @@ namespace Appdevhb25.JulianMatt.Aufgabe33
 
         public static int[] CopyVar(int[] number)
         {
-            int[] copy = number;
+            int[] copy = new int[number.Length];
 
+            for (int i = 0; i < copy.Length; i++)
+            {
+                copy[i] = number[i];
+            }
             return copy;
         }
     }

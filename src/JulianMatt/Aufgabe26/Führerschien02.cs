@@ -34,7 +34,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe26
             CanDriveBoth(age);
         }
 
-         public static void Bike(int age)
+        public static void Bike(int age)
         {
             if (age >= 15)
             {
@@ -59,7 +59,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe26
             }
         }
 
-       public static void CanDriveBoth(int age)
+        public static void CanDriveBoth(int age)
         {
             if (age >= 18)
             {

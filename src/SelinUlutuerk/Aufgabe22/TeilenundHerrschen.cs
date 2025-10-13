@@ -8,10 +8,12 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe22
         {
             for (int x = 0; x <= 20; x++)
             {
-                Console.WriteLine($"{x} / 5   = {x / 5}");
-                Console.WriteLine($"{x} / 5.0 = {x / 5.0}");   
+                var erg1 = x / 5;
+                var erg2 = x / 5.0;
+                Console.WriteLine($"{x} / 5   = {erg1}");
+                
+                Console.WriteLine($"{x} / 5.0 = {erg2}");   
             }
-
         }
     }
 }

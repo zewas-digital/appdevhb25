@@ -1,9 +1,9 @@
 using System;
-using Appdevhb25.JonaSchnell.Aufgabe33;
+using Appdevhb25.JonaSchnell.Aufgabe31;
 
 namespace Appdevhb25.JonaSchnell
 {
-    internal class Programm33
+    internal class Programm31
     {
         public static void Main(string[] args)
         {
@@ -24,9 +24,9 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe28.Aufgabe28.Start28();
             //Aufgabe29.Aufgabe29.Start29();
             //Aufgabe30.Aufgabe30.Start30();
-            //Aufgabe31.Aufgabe31.Start31();
-            Aufgabe33.Aufgabe33.Start33();
-             
+            Aufgabe31.Aufgabe31.Start31();
+            //Aufgabe33.Aufgabe33.Start33();
+
         }
     }
 }
