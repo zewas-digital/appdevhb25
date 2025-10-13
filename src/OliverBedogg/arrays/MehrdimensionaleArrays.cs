@@ -1,4 +1,5 @@
 using System;
+using static Appdevhb25.OliverBedogg.arrays.ArrayHelper;
 
 namespace Appdevhb25.OliverBedogg.arrays
 {
@@ -7,12 +8,15 @@ namespace Appdevhb25.OliverBedogg.arrays
     {
         public static void Start()
         {
+            Console.WriteLine();
+            Console.WriteLine("# Zweidimensionale Arrays:");
             int[,] zweiDArray = new int[3, 4];
             zweiDArray[0, 0] = 34;
             zweiDArray[0, 1] = 23;
             zweiDArray[0, 2] = 12;
             zweiDArray[1, 0] = 45;
             // usw.
+            ArrayHelper.print2DIntArray(zweiDArray);
 
             // 2D Array, Matrix
             int[,] mehrdimArray = new int[3, 2]
@@ -30,7 +34,7 @@ namespace Appdevhb25.OliverBedogg.arrays
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine();
+            Console.WriteLine("---");
 
             // Jagged Array
             int[][] jaggedArray = new int[3][];
@@ -46,6 +50,7 @@ namespace Appdevhb25.OliverBedogg.arrays
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("---");
         }
     }
 
