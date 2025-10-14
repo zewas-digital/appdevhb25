@@ -24,12 +24,11 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe38
                 triangeArray[0, i] = 1; // spalten
             }
 
-            for (int i = 1; i < number; i++)
+            for (int i = 0; i < number; i++)
             {
-                for(int j = 1; j < number; j++)
+                for(int j = 0; j < number; j++)
                 {
-                    triangeArray[i, j] = triangeArray[i - 1, j] + triangeArray[i, j-1];
-
+                    System.Console.Write(triangeArray[i, j] + " ");
                 }
             }
             
@@ -48,7 +47,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe38
         
         public static int UserInput()
         {
-            int number;
+             int number;
             Console.WriteLine("Bitte eine Zahl eingeben: ");
             while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
             {
