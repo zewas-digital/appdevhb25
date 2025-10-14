@@ -1,0 +1,22 @@
+using System; 
+
+namespace Appdevhb25.SheilaMayJaro.Aufgabe23
+{
+    public class CountInSmallSteps
+    {
+        public static void Start()
+        {
+            Console.WriteLine("Aufgabe 23)");
+            PrintCountInSmallSteps(100); 
+
+        }
+        public static void PrintCountInSmallSteps(int length)
+        {
+            for (double i = 0.0d; i <= length; i += 0.1d)
+            {
+                Console.WriteLine($"Result with 1 digit = {i.ToString("F1")}"); 
+                Console.WriteLine($"Result with 2 digit = {i.ToString("F2")}"); 
+            }
+        }
+    }
+}
