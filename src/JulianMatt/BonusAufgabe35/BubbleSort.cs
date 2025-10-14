@@ -40,7 +40,7 @@ namespace Appdevhb25.JulianMatt.Bonusaufgabe35
             return countOfNumbers;
         }
 
-        public static void SortArry(int[] number)
+        public static void SortArry(int[] Array)
         {
             bool swapped;
             int temp;
@@ -48,23 +48,22 @@ namespace Appdevhb25.JulianMatt.Bonusaufgabe35
             do
             {
                 swapped = false;
-                for (int i = 0; i < number.Length - 1; i++)
+                for (int i = 0; i < Array.Length - 1; i++)
                 {
-                    if (number[i] > number[i + 1]) 
+                    if (Array[i] > Array[i + 1]) 
                     {
                       
-                        temp = number[i];
-                        number[i] = number[i + 1];
-                        number[i + 1] = temp;
-
+                        temp = Array[i];
+                        Array[i] = Array[i + 1];
+                        Array[i + 1] = temp;
                         swapped = true;
                     }
                 }
             } while (swapped); 
             Console.WriteLine("Sortiertes Array (aufsteigend):");
-            for (int i = 0; i < number.Length; i++)
+            for (int i = 0; i < Array.Length; i++)
             {
-                Console.WriteLine(number[i]);
+                Console.WriteLine(Array[i]);
             }
         }
        

@@ -55,33 +55,131 @@ namespace Appdevhb25.JulianMatt.Bonusaufgabe40
             Console.WriteLine("Das Spiel beginnt:");
             Console.WriteLine("Entscheiden sie wer spieler X und wer spieler O ist: ");
             Console.WriteLine("Um dieses Spiel zu spielen nenen sie die Koordinaten die oben und an den seiten stehen und dan wir ihr symbol da plaziert ");
+            int row1 = 6;
+            int row2 = 6;
+            int row3 = 6;
+            int row4 = 6;
+            int row5 = 6;
+            int row6 = 6;
+
+            int lastRow = 0;
+            int lastColum = 0;
+
             bool playerChange = false;
             while (true)
             {
+
                 if (playerChange == false)
                 {
                     Console.WriteLine("Spieler X ist drann");
-                    Console.Write("X Spalte Zahl:");
+                    Console.Write("Welche Spalte Wählen sie aus?");
                     int Y = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Y Zeilen Zahl:");
-                    int X = Convert.ToInt32(Console.ReadLine());
-                    mainArray[X, Y] = "[X]";
+                    if (Y == 1)
+                    {
+                        mainArray[row1, 0] = "[X]";
+                        lastColum = 0;
+                        lastRow = row1;
+                        row1 -= 1;
+
+                    }
+                    if (Y == 2)
+                    {
+                        mainArray[row2, 1] = "[X]";
+                        lastColum = 1;
+                        lastRow = row2;
+                        row2 -= 1;
+                    }
+                    if (Y == 3)
+                    {
+                        mainArray[row3, 2] = "[X]";
+                        lastColum = 2;
+                        lastRow = row3;
+                        row3 -= 1;
+                    }
+                    if (Y == 4)
+                    {
+                        mainArray[row4, 3] = "[X]";
+                        lastColum = 3;
+                        lastRow = row4;
+                        row4 -= 1;
+                    }
+                    if (Y == 5)
+                    {
+                        mainArray[row5, 4] = "[X]";
+                        lastColum = 4;
+                        lastRow = row5;
+                        row5 -= 1;
+                    }
+                    if (Y == 6)
+                    {
+                        mainArray[row6, 5] = "[X]";
+                        lastColum = 5;
+                        lastRow = row6;
+                        row6 -= 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalide Eingabe sie wollen wohl das ihr gegner gewinnt");
+                    }
                     playerChange = true;
                 }
                 else if (playerChange == true)
                 {
                     Console.WriteLine("Spieler O ist drann");
-                    Console.Write("X Spalte Zahl:");
+                    Console.Write("Welche Spalte Wählen sie aus?");
                     int Y = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Y Zeilen Zahl:");
-                    int X = Convert.ToInt32(Console.ReadLine());
-                    mainArray[X, Y] = "[O]";
+                    if (Y == 1)
+                    {
+                        mainArray[row1, 0] = "[O]";
+                        lastColum = 0;
+                        lastRow = row1;
+                        row1 -= 1;
+                    }
+                    if (Y == 2)
+                    {
+                        mainArray[row2, 1] = "[O]";
+                        lastColum = 1;
+                        lastRow = row2;
+                        row2 -= 1;
+                    }
+                    if (Y == 3)
+                    {
+                        mainArray[row3, 2] = "[O]";
+                        lastColum = 2;
+                        lastRow = row3;
+                        row3 -= 1;
+                    }
+                    if (Y == 4)
+                    {
+                        mainArray[row4, 3] = "[O]";
+                        lastColum = 3;
+                        lastRow = row4;
+                        row4 -= 1;
+                    }
+                    if (Y == 5)
+                    {
+                        mainArray[row5, 4] = "[O]";
+                        lastColum = 4;
+                        lastRow = row5;
+                        row5 -= 1;
+                    }
+                    if (Y == 6)
+                    {
+                        mainArray[row6, 5] = "[O]";
+                        lastColum = 5;
+                        lastRow = row6;
+                        row6 -= 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalide Eingabe sie wollen wohl das ihr gegner gewinnt");
+                    }
                     playerChange = false;
                 }
 
                 Console.Clear();
                 Print(mainArray);
-                if (CheckWinner(mainArray))
+                if (CheckWinner(mainArray, lastRow, lastColum))
                 {
                     Console.Write("Der Spieler ");
                     if (playerChange == false)
@@ -101,32 +199,36 @@ namespace Appdevhb25.JulianMatt.Bonusaufgabe40
 
         }
 
-        public static bool CheckWinner(string[,] mainArray)
+        public static bool CheckWinner(string[,] mainArray, int lastRow, int lastColum)
         {
-            bool winner = false;
-            for (int i = 0; i < 3; i++)
+            string symbol = mainArray[lastRow, lastColum];
+            if (symbol == "[ ]") return false;
+            int count;
+
+            count = 0;
+            for (int i = 0; i < mainArray.GetLength(1); i++)
             {
+                if (mainArray[lastRow, i] == symbol)
+                    count++;
+                else
+                    count = 0;
 
-                if (mainArray[i, 0] == "[X]" && mainArray[i, 1] == "[X]" && mainArray[i, 2] == "[X]" || mainArray[i, 0] == "[O]" && mainArray[i, 1] == "[O]" && mainArray[i, 2] == "[O]")
-                {
-                    winner = true;
-                }
-                if (mainArray[0, i] == "[X]" && mainArray[1, i] == "[X]" && mainArray[2, i] == "[X]" || mainArray[0, i] == "[O]" && mainArray[1, i] == "[O]" && mainArray[2, i] == "[O]")
-                {
-                    winner = true;
-                }
-
+                if (count >= 4)
+                    return true;
             }
 
-            if (mainArray[0, 0] == "[X]" && mainArray[1, 1] == "[X]" && mainArray[2, 2] == "[X]" || mainArray[0, 2] == "[O]" && mainArray[1, 1] == "[O]" && mainArray[2, 0] == "[O]")
+            count = 0;
+            for (int i = -3; i < 3; i++)
             {
-                winner = true;
+                if (mainArray[i, lastColum] == symbol)
+                    count++;
+                else
+                    count = 0;
+
+                if (count >= 4)
+                    return true;
             }
-            if (mainArray[0, 0] == "[O]" && mainArray[1, 1] == "[O]" && mainArray[2, 2] == "[O]" || mainArray[0, 2] == "[X]" && mainArray[1, 1] == "[X]" && mainArray[2, 0] == "[X]")
-            {
-                winner = true;
-            }
-            return winner;
+            return false;
         }
 
 
