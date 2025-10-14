@@ -1,6 +1,4 @@
-
 using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {

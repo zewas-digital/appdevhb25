@@ -1,9 +1,5 @@
-
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
+
 
 namespace Appdevhb25.SabrinaFeurstein.aufgaben
 {
@@ -65,4 +61,3 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         }
     }
 }
-

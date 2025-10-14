@@ -24,7 +24,7 @@ namespace Appdevhb25.SabrinaFeurstein
             // Console.WriteLine(aufgaben.Runden.Round(11.111111, 3));
             // Console.WriteLine(aufgaben.Runden.Round(-6.666666, 3));
             // Console.WriteLine(aufgaben.Runden.Round(-2.2222222, 3));
-            aufgaben.Fuehrerschein.Schein();
+            // aufgaben.Fuehrerschein.Schein();
             // aufgaben.Generationen.jahr();
             // aufgaben.RandomNumberArray.array();
             // aufgaben.Copy.Array();
@@ -32,6 +32,13 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.Reverse.Array();
             // Console.WriteLine();
             // aufgaben.BubbleSort.Sorter();
+            // aufgaben.Algorithmen.SelectionSort();
+            // aufgaben.Algorithmen.InsertionSort();
+            // aufgaben.Algorithmen.CocktailShakerSort();
+            // aufgaben._2dArray.Array();
+            // aufgaben.PascalDreieck.Dreieck();
+            // aufgaben.TicTacToe.Game();
+            aufgaben._4inRows.Game();
         }
     }
 }
