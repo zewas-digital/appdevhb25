@@ -26,7 +26,7 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             for (int i = 0; i < number; i++)
             {
-                numberArray[i] = rndZahl.Next(0, 10);
+                numberArray[i] = rndZahl.Next(0, 1000);
             }
 
             Console.WriteLine();
@@ -47,7 +47,9 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             //QuickSortTernary(numberArray, 0, numberArray.Length-1);
 
-            HeapSort(numberArray);
+            //HeapSort(numberArray);
+
+            CockTailShakerSort(numberArray);
 
 
             Console.WriteLine("Auflistung:");
@@ -250,52 +252,73 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
         }
         public static int[] HeapSort(int[] numberArray)
         {
-            if(numberArray.Length <= 1)
+            if (numberArray.Length <= 1)
             {
                 return numberArray;
             }
-            int heapSize = numberArray.Length;
+            int n = numberArray.Length;
 
-            for(int i = heapSize /2 -1; i >= 0; i++)
+            for (int i = n / 2 - 1; i >= 0; i--)
             {
-                SiftDown(numberArray, heapSize, i);
+                SiftDown(numberArray, n, i);
             }
 
-            for(int i = heapSize -1; i >= 0; i++)
+
+            for (int i = n - 1; i > 0; i--)
             {
                 int temp = numberArray[0];
                 numberArray[0] = numberArray[i];
                 numberArray[i] = temp;
-
-                heapSize--;
                 SiftDown(numberArray, i, 0);
             }
 
             return numberArray;
         }
-        public static void SiftDown(int[] numberArray, int size, int index)
+        public static void SiftDown(int[] numberArray, int n, int i)
         {
-            int large = size;
-            int left = 2 * size + 1;
-            int right = 2 * size + 2;
+            int largest = i;
+            int left = 2 * i + 1;
+            int right = 2 * i + 2;
 
 
-            if (left < index && numberArray[left] > numberArray[large])
+            if (left < n && numberArray[left] > numberArray[largest])
             {
-                large = left;
+                largest = left;
             }
-            if (right < index && numberArray[right] > numberArray[large])
+            if (right < n && numberArray[right] > numberArray[largest])
             {
-                large = right;
+                largest = right;
             }
-            if(large != size)
+            if (largest != i)
             {
-                int temp = numberArray[size];
-                numberArray[size] = numberArray[large];
-                numberArray[large] = temp;
+                int temp = numberArray[i];
+                numberArray[i] = numberArray[largest];
+                numberArray[largest] = temp;
 
-                SiftDown(numberArray, size, large);
+                SiftDown(numberArray, n, largest);
             }
+        }
+        public static int[] CockTailShakerSort(int[] numberArray)
+        {
+            int l = 0;
+            int mov = l;
+            while(l < numberArray.Length)
+            {
+                for(int i = numberArray.Length-1; i >= l + 1; i--)
+                {
+                    if(numberArray[i-1] > numberArray[i])
+                    {
+                        int temp = numberArray[i - 1];
+                        numberArray[i - 1] = numberArray[i];
+                        numberArray[i] = temp;
+                        mov = i;
+                    }
+                }
+            }
+
+
+
+            return numberArray;
         }
     }    
 }
