@@ -35,7 +35,9 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe33.Copy.Start();
             // Aufgabe34.CopyReverse.Copy2();
             // Aufgabe37.Array2d.Start();
-            // Bonusaufgabe35.BubbleSort.Start();
+            // Aufgabe38.PascalDreieck.Start();
+            Aufgabe39.TicTacToe.Start();
+
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
@@ -46,9 +48,12 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe18.Nilakantha.Start();
             // Bonusaufgabe21.Faktorial.Start(20);
             // Bonusaufgabe32.Ziffernsumme.Start();
-            Bonusaufgabe36.Algorithmen.Start();
+            // Bonusaufgabe35.BubbleSort.Start();
+            // Bonusaufgabe36.Algorithmen.Start();
+            // Bonusaufgabe40.InRow.Start();
 
-            // //docs.PrimitiveDatentypen.Start();
+
+            // docs.PrimitiveDatentypen.Start();
 
         }
     }

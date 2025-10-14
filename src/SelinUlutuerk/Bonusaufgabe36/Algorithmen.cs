@@ -26,7 +26,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe36
         // Selection Sort
         public static void selectionSort()
         {
-            int[] sort = [22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6];
+            int[] sort = new int[] { 22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6 };
             int n = sort.Length;
 
             for (int i = 0; i < n - 1; i++)
@@ -57,7 +57,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe36
         // Insertion Sort
         public static void insertionSort()
         {
-            int[] sort = [22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6];
+            int[] sort = new int[] { 22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6 };
             int n = sort.Length;
 
             for (int i = 1; i < n; i++)
@@ -85,7 +85,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe36
         // Gnome Sort
         public static void gnomeSort()
         {
-            int[] sort = [22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6];
+            int[] sort = new int[] { 22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6 };
             int n = sort.Length;
             int i = 1;
 
@@ -123,7 +123,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe36
         //  Shaker Sort
         public static void shakerSort()
         {
-            int[] sort = [22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6];
+            int[] sort = new int[] { 22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6 };
             int n = sort.Length;
 
             int lo = 1;
@@ -173,7 +173,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe36
         //  Merge Sort
         // public static void mergeSort()
         // {
-        //     int[] sort = [22, 7, 3, 10, 20, 55, 1, 2, 33, 80, 23, 4, 24, 21, 6];
+        //     int[] sort = new int[] { 22, 7, 3, 10, 20, 55, 1, 33, 80, 23, 4, 24, 21, 6 };
         //     int n = sort.Length;
             
         //     int hi = n - 1;
