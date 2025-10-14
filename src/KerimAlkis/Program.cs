@@ -19,7 +19,8 @@ namespace Appdevhb25.KerimAlkis
             //Bonusaufgabe07.Fakorial.Start();
             //Bonusaufgabe08.Ziffernsumme.Start();
             //Bonusaufgabe09.BubbleSort.Start();
-            Bonusaufgabe10.SortingAlorithmen.Start();
+            //Bonusaufgabe10.SortingAlorithmen.Start();
+            Bonusaufgabe11.FourInRows.Start();
 
             #endregion
 
@@ -53,7 +54,9 @@ namespace Appdevhb25.KerimAlkis
             //Aufgabe24.RandomNumberArray.Start();
             //Aufgabe25.Copy.Start();
             //Aufgabe26.CopyReverse.Start();
-
+            //Aufgabe27.Array2d.Start();
+            //Aufgabe28.PascalDreieck.Start();
+            //Aufgabe29.TicTacToe.Start();
             #endregion
 
 

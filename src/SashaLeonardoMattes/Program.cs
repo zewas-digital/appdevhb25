@@ -34,6 +34,7 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe31.CopyArray.StartCopyArray();
             //Aufgabe32.CopyArrayReverse.StartCopyArrayReverse();
             //Aufgabe33.TwoDArray.StartTwoDArray();
+            //Aufgabe34.PascalTriangle.StartPascalTriangle();
 
 
             // BonusAufgabe01.PrintDeltoid.StartPrintDeltoid();

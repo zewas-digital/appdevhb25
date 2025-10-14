@@ -53,7 +53,12 @@ namespace Appdevhb25.MarcelSimma
             //Arrays.Start();
             //Teilnehmer3.Start();
 
-            Copy.Start();
+            //Copy.Start();
+
+            //RepetitionArrays.Start();
+
+            //Aufgabe38.PascalTriangle.Start();
+            Aufgabe39.TicTacToe.Start();
 
         }
     }

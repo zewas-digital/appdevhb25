@@ -14,7 +14,8 @@ namespace Appdevhb25.OliverBedogg
         static void Main(string[] args)
         {
             Console.Clear();
-            arrays.MehrdimensionaleArrays.Start();
+            arrays.MergeSort.Start();
+            // arrays.MehrdimensionaleArrays.Start();
             // datatypes.PrimitiveDatatypes.Start();
             // aufgabe20.Factorial.Start();
             // aufgabe17.Pi.Start();

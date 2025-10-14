@@ -19,7 +19,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe33
 
 
 
-            for (int i = 0; i < table.GetLength(0); i++) //.GetLength(0) gibt Anzahl der Zeilen
+            for (int i = 0; i < table.GetLength(0); i++) //.GetLength(0) gibt Anzahl der Zeilen (.Lenght würde zeilen*spalten also gesamte Größe zurückgeben)
             {
                 for (int j = 0; j < table.GetLength(1); j++) //.GetLength(0) gibt Anzahl der Spalten
                 {
@@ -27,14 +27,9 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe33
                 }
             }
 
-            for (int i = 0; i < table.GetLength(0); i++) //.GetLength(0) gibt Anzahl der Zeilen
-            {
-                for (int j = 0; j < table.GetLength(1); j++) //.GetLength(0) gibt Anzahl der Spalten
-                {
-                    System.Console.Write(table[i, j] + " ");
-                }
-                System.Console.WriteLine();
-            }
+
+            Helper.Print2DArrayInteger(table);
+            
 
             for (int i = 0; i < table.GetLength(0); i++)
             {
@@ -60,9 +55,6 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe33
             }
            
 
-        }
-
-     
-        
+        }   
     }
 }
