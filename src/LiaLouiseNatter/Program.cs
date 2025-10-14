@@ -42,7 +42,10 @@ namespace Appdevhb25.LiaLouiseNatter
             // BonusAufgabe32.Ziffernsumme.Start();
             // Aufgabe33.Copy.Start();
             // Aufgabe34.CopyReverse.Start();
-            BonusAufgabe35.BubbleSort.Start();
+            // BonusAufgabe35.BubbleSort.Start();
+            // BonusAufgabe36.Algorithmen.Start();
+            // BonusAufgabeLiaMonopoly.Monopoly.Start();
+            // Aufgabe38.PascalDreieck.Start();
         }  
     }
 }
