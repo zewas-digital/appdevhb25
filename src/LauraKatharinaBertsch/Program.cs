@@ -16,9 +16,36 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe07.PrintTriangle.Start();
             //Aufgabe08.PrintTriangle2.Start(5);
             //Aufgabe09.PrintEmptySquare.Start(5);
-            Aufgabe10.PrintTriangle3.Start(5);
-            
-
+            //Aufgabe10.PrintTriangle3.Start(5);
+            /*int result = Aufgabe11.CheckPrim.Start(5);
+            Console.WriteLine(result);*/
+            //Aufgabe12.Fibonacci.Start(12);
+            //Aufgabe16.HigherOrLower.Start(4);
+            //Aufgabe13.PrintDeltoid.Start(5);
+            //Aufgabe15.PrintChristmasTree.Start(5);
+            //Aufgabe19.Summe.Start();
+            //Aufgabe20.Faktoral.Start();
+            //Aufgabe22.TeilenUndHerrschen.Start();
+            //Aufgabe23.ZählenIn01erSchritten.Start();
+            //Aufgabe28.Teilnehmer.Start();
+            //Aufgabe29.Teilnehmer2.Start();
+            //Aufgabe30.Teilnehmer3.Start();
+            //Aufgabe31.RandomNumberArray.Start();
+            //Aufgabe33.Copy.Start();
+            //Aufgabe26.Führerschein.Start();
+            //Aufgabe34.CopyReverse.Start();
+            //Aufgabe24.Runden.Start();
+            //Aufgabe26.Führerschein.Start();
+            //Aufgabe25.InputValidieren.Start();
+            //Aufgabe27.Generationen.Start();
+            //Aufgabe37.TwoDArray.Start();
+            //Aufgabe32.Ziffernsumme.Start();
+            //Aufgabe35.BubbleSort.Start();
+            //Aufgabe27.Generationen.Start();
+            //Aufgabe21.FaktoralErweitert.Start();
+            //Aufgabe38.PascalDreieck.Start();
+            //Aufgabe39.TicTacToe.Start();
+            Aufgabe41.CinemaRevenue.Start();
         }
     }
 }
