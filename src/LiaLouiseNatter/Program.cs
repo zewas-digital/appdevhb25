@@ -46,6 +46,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // BonusAufgabe36.Algorithmen.Start();
             // BonusAufgabeLiaMonopoly.Monopoly.Start();
             // Aufgabe38.PascalDreieck.Start();
+            // Aufgabe39.TicTacToe.Start();
+            Aufgabe40.FourInRows.Start();
         }  
     }
 }

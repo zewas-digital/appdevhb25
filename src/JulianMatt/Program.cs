@@ -38,14 +38,21 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe31.RandomNumberArray.Start31();
             //Aufgabe33.Copy.Start33();
             //Aufgabe34.CopyReverse.Start34();
-            Aufgabe37.TwodArrayArray.Start37();
+            //Aufgabe37.TwodArrayArray.Start37();
+            //Aufgabe38.PascalDreieck.Start38();
+            //Aufgabe39.TicTacToe.Start39();
+            Aufgabe41.CinemaRevenue.Start41();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
             //Bonusaufgabe07.Faktorialerweitert.BonusStart07();
             //Bonusaufgabe32.Ziffernsumme.Start32();
+            //Bonusaufgabe35.BubbleSort.Start35();
+            //Bonusaufgabe36.Algotithmen.BonusStart36();
+            //Bonusaufgabe40.FourInRows.BonusStart40();
 
             //Üben.Test.Teststart02();
+            //SelbstGemachtesProjekt.TheLastOfUs.StartTheLastOfUs();
 
         }
 
