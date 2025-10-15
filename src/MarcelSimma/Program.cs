@@ -58,7 +58,9 @@ namespace Appdevhb25.MarcelSimma
             //RepetitionArrays.Start();
 
             //Aufgabe38.PascalTriangle.Start();
-            Aufgabe39.TicTacToe.Start();
+            //Aufgabe39.TicTacToe2.Game();
+            StringIntro.Start();
+            
 
         }
     }
