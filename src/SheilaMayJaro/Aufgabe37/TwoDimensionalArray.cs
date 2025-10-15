@@ -21,7 +21,6 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe37
             int rowSumTwo = numbers[2, 0] + numbers[2, 1] + numbers[2, 2];
 
             //Methode mit Schleife
-            
             Console.WriteLine("Die Zeilensumme von links nach rechts");
             for (int i = 0; i < numbers.GetLength(0); i++)
             {   int rowSum = 0;
@@ -38,7 +37,6 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe37
             int columnSumTwo = numbers[0, 2] + numbers[1, 2] + numbers[2, 2];
 
             //Methode mit Schleife
-            
             Console.WriteLine("Die Spaltensumme von oben nach unten"); 
             for (int i = 0; i < numbers.GetLength(0); i++)
             {   int columnSum = 0;
