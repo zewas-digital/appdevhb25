@@ -28,7 +28,6 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe37
 
             for (int i = 0; i < tabelle.GetLength(0); i++)
             {
-
                 for (int j = 0; j < tabelle.GetLength(1); j++)
                 {
                     summeZeile += tabelle[i, j];
