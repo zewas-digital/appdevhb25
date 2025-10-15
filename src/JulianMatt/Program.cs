@@ -41,7 +41,7 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe37.TwodArrayArray.Start37();
             //Aufgabe38.PascalDreieck.Start38();
             //Aufgabe39.TicTacToe.Start39();
-            Aufgabe41.CinemaRevenue.Start41();
+            //Aufgabe41.CinemaRevenue.Start41();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
