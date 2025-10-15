@@ -127,7 +127,7 @@ namespace Appdevhb25.MarcelSimma
             string temp = "Hallo";
             // temp2 und temp zeigen auf dasselbe Objekt im Speicher
             string temp2 = temp;
-            // Strings sind unveränderbar. Untenstehende Anweisung führt also dazu, dass ein neuest String Objekt im Speicher erzeugt wird und temp nun auf das neue Objekt zeigt. 
+            // Strings sind unveränderbar. Untenstehende Anweisung führt also dazu, dass ein neues String-Objekt im Speicher erzeugt wird und temp nun auf das neue Objekt zeigt. 
             temp = "Hallo Welt";
 
             System.Console.WriteLine(temp2);
