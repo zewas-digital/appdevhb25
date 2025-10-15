@@ -1,6 +1,7 @@
 ﻿// Program.cs
 using System;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Appdevhb25.MarcelSimma.week02;
 
 namespace Appdevhb25.MarcelSimma
@@ -59,7 +60,9 @@ namespace Appdevhb25.MarcelSimma
 
             //Aufgabe38.PascalTriangle.Start();
             //Aufgabe39.TicTacToe2.Game();
-            StringIntro.Start();
+            //StringIntro.Start();
+            //StringFormat.Start();
+            SearchArray2.Start();
             
 
         }
