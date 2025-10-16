@@ -115,6 +115,7 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe11
         }
         public static int Checker(int[,] spielfeld)
         {
+            //WinConditions Zeile/Horizontal
             for (int i = 0; i < spielfeld.GetLength(0); i++)
             {
                 int player1zaehlerZeile = 0;
@@ -127,6 +128,8 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe11
                     if (player1zaehlerZeile == 4 || player2zaehlerZeile == 4) { return 3; }
                 }
             }
+
+            //WinConditions Spalte/Vertikal
             for (int i = 0; i < spielfeld.GetLength(1); i++)
             {
                 int player1zaehlerSpalte = 0;
@@ -142,23 +145,27 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe11
 
 
 
+            //ab hier Windconditions Diagonalle
+
 
             int zeile = 0;
             int spalte = 0;
-
+            //links oben --> rechts unten / Zeilen
             while (zeile < spielfeld.GetLength(0))
             {
                 int player1zaehlerZeile = 0;
                 int player2zaehlerZeile = 0;
-                for (int j = 0; j < spielfeld.GetLength(0)-zeile; j++)
+                for (int j = 0; j < spielfeld.GetLength(0) - zeile; j++)
                 {
-                    if (spielfeld[zeile+j, j] == 1) { player1zaehlerZeile++; }
-                    if (spielfeld[zeile+j, j] == 2) { player2zaehlerZeile++; }
-                    if (spielfeld[zeile+j, j] == 0) { player1zaehlerZeile = 0; player2zaehlerZeile = 0; }
+                    if (spielfeld[zeile + j, j] == 1) { player1zaehlerZeile++; }
+                    if (spielfeld[zeile + j, j] == 2) { player2zaehlerZeile++; }
+                    if (spielfeld[zeile + j, j] == 0) { player1zaehlerZeile = 0; player2zaehlerZeile = 0; }
                     if (player1zaehlerZeile == 4 || player2zaehlerZeile == 4) { return 3; }
                 }
                 zeile++;
             }
+
+            //links oben --> rechts unten / Spalten
             while (spalte < spielfeld.GetLength(0))
             {
                 int player1zaehlerSpalte = 0;
@@ -175,38 +182,40 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe11
             
             
             
+            
 
-            //rechts oben nach links unten reihen check
+            
 
             zeile = 0;
             spalte = spielfeld.GetLength(1) -1;
-
-            while (zeile < spielfeld.GetLength(1))
+            //rechts oben --> links unten / Zeilen
+            while (zeile < 3)
             {
                 int player1zaehlerZeile = 0;
                 int player2zaehlerZeile = 0;
                 int zaehler = 0;
-                for (int j = spielfeld.GetLength(1)-1; j > 0 + zeile + 1; j--)
+                for (int j = zeile; j < spielfeld.GetLength(0)-1; j++)
                 {
-                    if (spielfeld[zeile + zaehler, j] == 1) { player1zaehlerZeile++; }
-                    if (spielfeld[zeile + zaehler, j] == 2) { player2zaehlerZeile++; }
-                    if (spielfeld[zeile + zaehler, j] == 0) { player1zaehlerZeile = 0; player2zaehlerZeile = 0; }
+                    if (spielfeld[j, spielfeld.GetLength(1)-1-zeile] == 1) { player1zaehlerZeile++; }
+                    if (spielfeld[j, spielfeld.GetLength(1)-1-zeile] == 2) { player2zaehlerZeile++; }
+                    if (spielfeld[j, spielfeld.GetLength(1)-1-zeile] == 0) { player1zaehlerZeile = 0; player2zaehlerZeile = 0; }
                     if (player1zaehlerZeile == 4 || player2zaehlerZeile == 4) { return 3; }
                     zaehler++;
                 }
                 zeile++;
             }
             
-            while (spalte < spielfeld.GetLength(0))
+            //rechts oben --> links unten / Spalten
+            while (spalte >= 2)
             {
                 int player1zaehlerSpalte = 0;
                 int player2zaehlerSpalte = 0;
                 int zaehler = 0;
-                for (int j = 0; j < spielfeld.GetLength(0)-spalte; j++)
+                for (int j = spalte; j > spielfeld.GetLength(0)-1; j--)
                 {
-                    if (spielfeld[j, spalte - zaehler] == 1) { player1zaehlerSpalte++; }
-                    if (spielfeld[j, spalte - zaehler] == 2) { player2zaehlerSpalte++; }
-                    if (spielfeld[j, spalte - zaehler] == 0) { player1zaehlerSpalte = 0; player2zaehlerSpalte = 0; }
+                    if (spielfeld[j -j + zaehler, j] == 1) { player1zaehlerSpalte++; }
+                    if (spielfeld[j -j + zaehler, j] == 2) { player2zaehlerSpalte++; }
+                    if (spielfeld[j -j + zaehler, j] == 0) { player1zaehlerSpalte = 0; player2zaehlerSpalte = 0; }
                     if (player1zaehlerSpalte == 4 || player2zaehlerSpalte == 4) { return 3; }
                     zaehler++;
                 }

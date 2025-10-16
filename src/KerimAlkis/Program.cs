@@ -19,6 +19,8 @@ namespace Appdevhb25.KerimAlkis
             //Bonusaufgabe07.Fakorial.Start();
             //Bonusaufgabe08.Ziffernsumme.Start();
             //Bonusaufgabe09.BubbleSort.Start();
+
+            //---Woche 3---
             //Bonusaufgabe10.SortingAlorithmen.Start();
             Bonusaufgabe11.FourInRows.Start();
 
@@ -55,8 +57,16 @@ namespace Appdevhb25.KerimAlkis
             //Aufgabe25.Copy.Start();
             //Aufgabe26.CopyReverse.Start();
             //Aufgabe27.Array2d.Start();
+
+            //---Woche 3---
             //Aufgabe28.PascalDreieck.Start();
             //Aufgabe29.TicTacToe.Start();
+            //Aufgabe30.CinemaRevenue.Start();
+            //Aufgabe31.Reverse.Start();
+            //Aufgabe32.ArraySearch.Start();
+            //Aufgabe33.HesseHervorheben.Start();
+            //Aufgabe34.CountLettersAndSymbols.Start();
+            //Aufgabe35.ReplaceString.Start();
             #endregion
 
 
