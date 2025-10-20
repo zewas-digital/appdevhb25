@@ -45,7 +45,7 @@ namespace Appdevhb25.MarcelSimma.Aufgabe39 {
             }
             */
 
-
+            // Alternative zur obenstehenden foreach-Schleife
             for (int i = 0; i < text.Length; i++)
             {
                 char currentLetter = text[i];
@@ -53,7 +53,7 @@ namespace Appdevhb25.MarcelSimma.Aufgabe39 {
                 asciiTable[(int)currentLetter]++;
             }
             
-            // 32 < i < 
+            // 32 < i < 127: Die Befehle in der ASCII-Tabelle werden übersprungen.
             for (int i = 32; i < asciiTable.Length - 1; i++)
             {
                 // nur gefundene Zeichen ausgeben
