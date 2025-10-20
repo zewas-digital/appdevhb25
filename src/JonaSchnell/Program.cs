@@ -1,5 +1,5 @@
 using System;
-using Appdevhb25.JonaSchnell.Aufgabe45;
+using Appdevhb25.JonaSchnell.Aufgabe46;
 
 namespace Appdevhb25.JonaSchnell
 {
@@ -35,7 +35,10 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe41.Aufgabe41.Start41();
             //Aufgabe42.Aufgabe42.Start42();
             //Aufgabe43.Aufgabe43.Start43();
-            Aufgabe45.Aufgabe45.Start45();
+            //Aufgabe45.Aufgabe45.Start45();
+            //Aufgabe46.Aufgabe46.Start46();
+            Aufgabe46.Aufgabe46.RemoveAsciiLowercase();
+            //Aufgabe46.Aufgabe46.RemoveAsciiUppercase();
         }
     }
 }
