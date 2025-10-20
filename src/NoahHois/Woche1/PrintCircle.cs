@@ -11,7 +11,7 @@ namespace Appdevhb25.NoahHois.BonusAufgabe2
                 for (int x = -radius; x <= radius; x++)
                 {
                     double c = Math.Sqrt(x * x + y * y);
-                    if ((radius >= c) && (c > (radius - 2)))
+                    if ((radius >= c) && (c > (radius - 0.8)))
                     {
                         Console.Write("*");
                     }

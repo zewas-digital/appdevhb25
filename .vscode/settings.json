@@ -1,0 +1,4 @@
+{
+    "debug.hideLauncherWhileDebugging": false,
+    "csharp.debug.logging.diagnosticsLog.debugRuntimeEventTracing": false
+}

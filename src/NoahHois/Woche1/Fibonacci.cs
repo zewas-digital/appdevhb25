@@ -9,15 +9,20 @@ namespace Appdevhb25.NoahHois.Aufgabe12
             /*Console.Write("Gib mir eine Zahl: ");
              string? input = Console.ReadLine();
              int maxNumber = int.Parse(input ?? "0");*/
-            int fibonacciNumber = 0, oldNumber = 1, oldOldNumber = 0;
-            for (int i = 0; i < zahl; i++)
+            int fibo0 = 0;
+            int fibo1 = 1;
+            int fibo2 = fibo0 + fibo1;
+            Console.WriteLine(fibo0);
+            Console.WriteLine(fibo1);
+            for (int i = 0; i < zahl - 2; i++)
             {
-                fibonacciNumber = oldNumber + oldOldNumber;
-                oldOldNumber = oldNumber;
-                oldNumber = fibonacciNumber;
-                Console.Write(fibonacciNumber + ",");
+                fibo2 = fibo0 + fibo1;
+                fibo0 = fibo1;
+                fibo1 = fibo2;
+
+                Console.WriteLine(fibo2);
+                
             }
-            Console.WriteLine();
         }
     }
 }
