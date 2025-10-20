@@ -42,6 +42,11 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe38.PascalDreieck.Start38();
             //Aufgabe39.TicTacToe.Start39();
             //Aufgabe41.CinemaRevenue.Start41();
+            //Aufgabe42.Reverse.Start42();
+            //Afgabe43.ArraySearch.Start43();
+            //Aufgabe44.Hessenhervorheben.Start44();
+            //Aufgabe45.CountLettersAndSymbols.Start45();
+            //Aufgabe46.ReplaceString.Start46();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
@@ -50,7 +55,9 @@ namespace Appdevhb25.JulianMatt
             //Bonusaufgabe35.BubbleSort.Start35();
             //Bonusaufgabe36.Algotithmen.BonusStart36();
             //Bonusaufgabe40.FourInRows.BonusStart40();
-
+            //Bonusaufgabe47.ReplaceStringRegex.BonusStart47();
+            //BonusAufgabe48.CheckTeleNumber.BonusStart48();
+            //BonusAufgabe49.CheckEMail.BonusStart49();
             //Üben.Test.Teststart02();
             //SelbstGemachtesProjekt.TheLastOfUs.StartTheLastOfUs();
 
