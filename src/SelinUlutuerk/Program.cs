@@ -36,8 +36,12 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe34.CopyReverse.Copy2();
             // Aufgabe37.Array2d.Start();
             // Aufgabe38.PascalDreieck.Start();
-            Aufgabe39.TicTacToe.Start();
-
+            // Aufgabe39.TicTacToe.Start();
+            // Aufgabe41.CinemaRevenue.Start();
+            // Aufgabe42.Reverse.Start();
+            // Aufgabe43.ArraySearch.Start();
+            // Aufgabe44.HesseHervorheben.Start();
+            Aufgabe45.CountLettersAndSymbols.Start();
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);

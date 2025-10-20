@@ -71,9 +71,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe37
                     spaltenSumme += zeileSpalte[i, j];
                 }
             }
-            Console.WriteLine($"Summe von Spalten:\n{spaltenSumme}");            
-
-            
+            Console.WriteLine($"Summe von Spalten:\n{spaltenSumme}");
 
             // Console.WriteLine($"Summe 1. Spalte:\n{spaltenSumme}");
             // Console.WriteLine($"Summe 2. Spalte:\n{spaltenSumme2}");
