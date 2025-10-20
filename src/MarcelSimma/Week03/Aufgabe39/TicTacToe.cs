@@ -116,14 +116,14 @@ namespace Appdevhb25.MarcelSimma.Aufgabe39
                     }
 
                     //. Prüfung, ob 3 gleiche Zeichen in einer Spalte sind
-                    for (int x = 0; x < playground.GetLength(0); x++)
+                    for (int x = 0; x < playground.GetLength(1); x++)
                     {
                         if (playground[0, x] == 1 && playground[1, x] == 1 && playground[2, x] == 1)
                         {
                             System.Console.WriteLine("Spieler 1 hat gewonnen.");
                             validRoundsCounter = 10; ;
                         }
-                        else if (playground[0, x] == 1 && playground[1, x] == 1 && playground[2, x] == 1)
+                        else if (playground[0, x] == 2 && playground[1, x] == 2 && playground[2, x] == 2)
                         {
                             System.Console.WriteLine("Spieler 2 hat gewonnen.");
                             validRoundsCounter = 10; ;
