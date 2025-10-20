@@ -9,7 +9,6 @@ namespace Appdevhb25.SheilaMayJaro
     {
         static void Main(string[] args)
         {
-
             // Aufgabe01.PrintA.Start();
             // Aufgabe02.TimeTable.Start();
             // Aufgabe03.SumOverRange.Start();
@@ -71,9 +70,15 @@ namespace Appdevhb25.SheilaMayJaro
             // Console.WriteLine(); 
             // Aufgabe35.BubbleSort.Start(); 
             // Console.WriteLine();
-            Aufgabe37.TwoDimensionalArray.Start();
+            // Aufgabe37.TwoDimensionalArray.Start();
+            // Console.WriteLine(); 
+            // Aufgabe38.PascalTriangle.Start();
+            // Console.WriteLine(); 
+            // Aufgabe39.TicTacToe.Start();
+            // Console.WriteLine(); 
+            Aufgabe41.CinemaRevenueExercise.Start();
+            //Aufgabe41.JaggedArrayRepetition.Start(); 
             Console.WriteLine(); 
-
 
 
         }

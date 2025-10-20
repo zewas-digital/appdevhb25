@@ -7,7 +7,7 @@ namespace Appdevhb25.SashaLeonardoMattes
     {
         static void Main(string[] args)
         {
-
+            //Console.Clear();
             // Aufgabe01.PrintA.StartPrintA();
             // Aufgabe02.MultiplicationTable.StartMultiplicationTable();
             // Aufgabe03.SumInterval.StartSumInterval();
@@ -35,6 +35,14 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe32.CopyArrayReverse.StartCopyArrayReverse();
             //Aufgabe33.TwoDArray.StartTwoDArray();
             //Aufgabe34.PascalTriangle.StartPascalTriangle();
+            //Aufgabe35.TicTacToe.StartTicTacToe();
+            //Aufgabe36.CinemaRevenue.StartCinemaRevenue();
+            //Aufgabe37.ReverseWord.StartReverseWord();
+            //Aufgabe38.ArraySearch.StartArraySearch();
+            //Aufgabe39.HighLightWord.StartHighLightWord();
+            Aufgabe40.CountLettersAndSymbols.StartCountLettersAndSymbols();
+            //Aufgabe41.ReplaceString.StartReplaceString();
+
 
 
             // BonusAufgabe01.PrintDeltoid.StartPrintDeltoid();
@@ -47,6 +55,7 @@ namespace Appdevhb25.SashaLeonardoMattes
             //BonusAufgabe08.DigitSum.StartDigitSum();
             //BonusAufgabe09.BubbleSort.StartBubbleSort();
             //BonusAufgabe10.SortAlgorithms.StartSortAlgorithms();
+            //BonusAufgabe11.FourInRows.StartFourInRows();
 
         }
     }

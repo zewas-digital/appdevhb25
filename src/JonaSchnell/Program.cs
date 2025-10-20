@@ -1,9 +1,9 @@
 using System;
-using Appdevhb25.JonaSchnell.Aufgabe31;
+using Appdevhb25.JonaSchnell.Aufgabe46;
 
 namespace Appdevhb25.JonaSchnell
 {
-    internal class Programm31
+    internal class Programm
     {
         public static void Main(string[] args)
         {
@@ -24,9 +24,21 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe28.Aufgabe28.Start28();
             //Aufgabe29.Aufgabe29.Start29();
             //Aufgabe30.Aufgabe30.Start30();
-            Aufgabe31.Aufgabe31.Start31();
+            //Aufgabe31.Aufgabe31.Start31();
             //Aufgabe33.Aufgabe33.Start33();
-
+            //Aufgabe34.Aufgabe34.Start34();
+            //Aufgabe35.Aufgabe35.Start35();
+            //Aufgabe37.Aufgabe37.Start37();
+            //Aufgabe38.Aufgabe38.Start38();
+            //Aufgabe39.Aufgabe39.Start39();
+            //Aufgabe40.Aufgabe40.Start40();
+            //Aufgabe41.Aufgabe41.Start41();
+            //Aufgabe42.Aufgabe42.Start42();
+            //Aufgabe43.Aufgabe43.Start43();
+            //Aufgabe45.Aufgabe45.Start45();
+            //Aufgabe46.Aufgabe46.Start46();
+            Aufgabe46.Aufgabe46.RemoveAsciiLowercase();
+            //Aufgabe46.Aufgabe46.RemoveAsciiUppercase();
         }
     }
 }

@@ -49,7 +49,9 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
 
             //HeapSort(numberArray);
 
-            CockTailShakerSort(numberArray);
+            //CockTailShakerSort(numberArray);
+
+            GnomeSort(numberArray);
 
 
             Console.WriteLine("Auflistung:");
@@ -300,24 +302,63 @@ namespace Appdevhb25.KerimAlkis.Bonusaufgabe10
         }
         public static int[] CockTailShakerSort(int[] numberArray)
         {
-            int l = 0;
-            int mov = l;
-            while(l < numberArray.Length)
+
+
+            int lastElement = numberArray.Length;
+
+
+            bool swap = true;
+
+
+            while (swap == true)
             {
-                for(int i = numberArray.Length-1; i >= l + 1; i--)
+                swap = false;
+                for (int i = 0; i < lastElement - 1; i++)
                 {
-                    if(numberArray[i-1] > numberArray[i])
+                    if (numberArray[i] > numberArray[i + 1])
                     {
-                        int temp = numberArray[i - 1];
-                        numberArray[i - 1] = numberArray[i];
-                        numberArray[i] = temp;
-                        mov = i;
+                        int temp = numberArray[i];
+                        numberArray[i] = numberArray[i + 1];
+                        numberArray[i + 1] = temp;
+                        swap = true;
+                    }
+                }
+                lastElement--;
+
+
+                for (int i = lastElement - 1; i > 0; i--)
+                {
+                    if (numberArray[i] < numberArray[i - 1])
+                    {
+                        int temp = numberArray[i];
+                        numberArray[i] = numberArray[i - 1];
+                        numberArray[i - 1] = temp;
+                        swap = true;
                     }
                 }
             }
 
 
 
+            return numberArray;
+        }
+        public static int[] GnomeSort(int[] numberArray)
+        {
+            int i = 1;
+            while(i < numberArray.Length)
+            {
+                if (numberArray[i] < numberArray[i - 1])
+                {
+                    int temp = numberArray[i];
+                    numberArray[i] = numberArray[i - 1];
+                    numberArray[i - 1] = temp;
+                    if (i >= 2)
+                    {
+                        i--;
+                    }
+                }
+                else{ i++; }
+            }
             return numberArray;
         }
     }    

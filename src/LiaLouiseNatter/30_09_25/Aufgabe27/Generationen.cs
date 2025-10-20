@@ -44,7 +44,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe27
         }
         
 
-        public static string getGenerationByAge(int age)
+        public static string? getGenerationByAge(int age)
         {
             if (age < 15)
             {
