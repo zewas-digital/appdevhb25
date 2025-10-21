@@ -4,7 +4,7 @@ namespace Appdevhb25.NoahHois.Aufgabe35
 {
     public class CountLettersAndSymbols
     {
-        public static void Start35()
+        public static void Start()
         {
             string s = "The quick brown fox jumps over the lazy dog. You can't get rid of me! Assign the address of number to a pointer.";
             int[] characterCounter = new int[128];

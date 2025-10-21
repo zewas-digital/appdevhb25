@@ -4,7 +4,7 @@ namespace Appdevhb25.NoahHois.Aufgabe32
 {
     public class Reverse
     {
-        public static void Start32()
+        public static void Start()
         {
             string message1;
 

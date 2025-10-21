@@ -1,8 +1,8 @@
-namespace Appdevhb25.NoahHois.aufgabe36
+namespace Appdevhb25.NoahHois.Aufgabe36
 {
     public class ReplaceString
     {
-        public static void Start36()
+        public static void Start()
         {
             string input = "Heute wird ein guter Tag! Heute wird ein noch guterer Tag! Heute wird ein spitzen guter Tag!";
 
