@@ -56,7 +56,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe46.ReplaceString.Start();
             // AufgabeHangman.Hangman.Start();
             // Aufgabe47.ReplaceStringRegex.Start();
-            
+            // Aufgabe51.MyBirthday.Start();
+            Aufgabe52.CalculateSundays.Start();
         }  
     }
 }
