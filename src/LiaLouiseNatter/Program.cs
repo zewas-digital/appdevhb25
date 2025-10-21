@@ -53,7 +53,10 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe43.Arrayearch.Start();
             // Aufgabe44.HesseHervorheben.Start();
             // Aufgabe45.CountLettersAndSymbols.Start();
-            Aufgabe46.ReplaceString.Start();
+            // Aufgabe46.ReplaceString.Start();
+            // AufgabeHangman.Hangman.Start();
+            // Aufgabe47.ReplaceStringRegex.Start();
+            
         }  
     }
 }
