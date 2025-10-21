@@ -64,7 +64,8 @@ namespace Appdevhb25.MarcelSimma
             //StringIntro.Start();
             //StringFormat.Start();
             //SearchArray2.Start();
-            CountLetters.Start();
+            //CountLetters.Start();
+            CalendarIntro.Start();
 
             //RepetitionStringMethodsDocumentation.Start();
         
