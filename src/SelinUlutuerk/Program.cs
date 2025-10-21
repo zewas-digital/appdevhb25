@@ -41,7 +41,11 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe42.Reverse.Start();
             // Aufgabe43.ArraySearch.Start();
             // Aufgabe44.HesseHervorheben.Start();
-            Aufgabe45.CountLettersAndSymbols.Start();
+            // Aufgabe45.CountLettersAndSymbols.Start();
+            // Aufgabe46.ReplaceString.Start();
+            Aufgabe51.MyBirthday.Start();
+            // Aufgabe52.CalculateSundays.Start();
+
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
@@ -55,6 +59,9 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe35.BubbleSort.Start();
             // Bonusaufgabe36.Algorithmen.Start();
             // Bonusaufgabe40.InRow.Start();
+            // Bonusaufgabe47.ReplaceStringRegex.Start();
+            // Bonusaufgabe48.ValidatePhoneNumber.Start();
+            // Bonusaufgabe49.ValidateEmail.Start();
 
 
             // docs.PrimitiveDatentypen.Start();
