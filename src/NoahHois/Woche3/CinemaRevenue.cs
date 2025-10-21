@@ -5,7 +5,7 @@ namespace Appdevhb25.NoahHois.Aufgabe31
 {
     public class CinemaRevenue
     {
-        public static void Start31()
+        public static void Start()
         {
             int[][] ticketsPerMovie = new int[5][];
 

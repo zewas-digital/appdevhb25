@@ -45,7 +45,15 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe21.FaktoralErweitert.Start();
             //Aufgabe38.PascalDreieck.Start();
             //Aufgabe39.TicTacToe.Start();
-            Aufgabe41.CinemaRevenue.Start();
+            //Aufgabe41.CinemaRevenue.Start();
+            //Aufgabe42.Reverse.Start();
+            //Aufgabe43.ArraySearch.Start();
+            //Aufgabe44.HesseHervorheben.Start();
+            //Aufgabe45.CountLettersAndSymbols.Start();
+            //Aufgabe46.ReplaceString.Start();
+            //Aufgabe50.WhenAndWhere.Start();
+            //Aufgabe51.MyBirthday.Start();
+            Aufgabe52.CalculateSundays.Start();
         }
     }
 }

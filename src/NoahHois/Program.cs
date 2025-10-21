@@ -39,19 +39,26 @@ namespace Appdevhb25.NoahHois
             // Aufgabe27.Array2d.Output();
             //  Aufgabe28.PascalDreieck.Output();
             // Aufgabe29.TicTacToe.Start();
-            // Aufgabe30.TicTacToe2.Start30();
-            // Aufgabe31.CinemaRevenue.Start31();
-            // Aufgabe32.Reverse.Start32();
-            // Aufgabe33.ArraySearch.Start33();
-            Aufgabe34.HesseHervorheben.Start34();
-            // Aufgabe35.CountLettersAndSymbols.Start35();
-            // aufgabe36.ReplaceString.Start36();
+            // Aufgabe30.TicTacToe2.Start();
+            // Aufgabe31.CinemaRevenue.Start();
+            // Aufgabe32.Reverse.Start();
+            // Aufgabe33.ArraySearch.Start();
+            // Aufgabe34.HesseHervorheben.Start();
+            // Aufgabe35.CountLettersAndSymbols.Start();
+            // Aufgabe36.ReplaceString.Start();
+            // Aufgabe37.MyBirthday.Start();
+            // Aufgabe37.MyBirthday.Start();
+            // Aufgabe38.WhenAndWhere.Start();
+            Aufgabe39.CalculateSundays.Start();
+            // Aufgabe40.CalculateWorkingDays.Start();
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();
             // BonusAufgabe2.PrintCricle.BonusAufgabe2(20);
             // BonusAufgabe3.PrintChristmasTree.BonusAufgabe3();
             // BonusAufgabe4.BubbleSort.SortArray();
+            // BonusAufgabe5.Ziffernsumme.DigitSumArray();
 
+            // CodewarsAufgabe1.Codewars1.Solution("abc", "bc");
         }
     }
 }

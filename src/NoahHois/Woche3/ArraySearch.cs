@@ -5,7 +5,7 @@ namespace Appdevhb25.NoahHois.Aufgabe33
 {
     public class ArraySearch
     {
-        public static void Start33()
+        public static void Start()
         {
             string[] mainArray = { "Datum", "Tee", "Auto", "Kamin", "Grundstuecksverkehrsgenehmigungszustaendigkeitsuebertragungsverordnung", "Erlebnis", "Sieben", "Kochlöffel", "Zebra", "Maus", "Haus", "Parallel", "Qualle", "Berg", "Vogel" };
             Console.WriteLine("Gib bitte einen Wert von 1 - 15 ein: ");
