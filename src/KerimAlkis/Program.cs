@@ -22,8 +22,11 @@ namespace Appdevhb25.KerimAlkis
 
             //---Woche 3---
             //Bonusaufgabe10.SortingAlorithmen.Start();
-            Bonusaufgabe11.FourInRows.Start();
+            //Bonusaufgabe11.FourInRows.Start();
 
+            //---Woche 4---
+            //Bonusaufgabe12.ReplaceStringRegex.Start();
+            //Bonusaufgabe14.ValidateEmail.Start();
             #endregion
 
             #region Aufgaben
@@ -67,6 +70,10 @@ namespace Appdevhb25.KerimAlkis
             //Aufgabe33.HesseHervorheben.Start();
             //Aufgabe34.CountLettersAndSymbols.Start();
             //Aufgabe35.ReplaceString.Start();
+
+            //---Woche 4---
+            Aufgabe36.MyBirthday.Start();
+
             #endregion
 
 
