@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Appdevhb25.MarcelSimma.Aufgabe39;
+using Appdevhb25.MarcelSimma.Aufgabe41;
 using Appdevhb25.MarcelSimma.Aufgabe52;
 using Appdevhb25.MarcelSimma.week02;
 
@@ -71,7 +72,11 @@ namespace Appdevhb25.MarcelSimma
             //RepetitionStringMethodsDocumentation.Start();
 
             //CalendarIntro.Start();
-            CalculateSundays.Start();
+            //CalculateSundays.Start();
+
+            //DataStreamsIntro.Start();
+            //ParticipantsList.Start();
+            CinemaRevenue.Start();
         
             
 

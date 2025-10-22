@@ -9,14 +9,14 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         {
             int[,] game = new int[3, 3];
             int win = 0;
-            int spieler = 0;
+            int spieler;
 
             Board(game);
 
             for (int i = 0; i < 9;)
             {
-                int spalte1 = 0;
-                int zeile1 = 0;
+                int spalte1;
+                int zeile1;
 
                 do
                 {
@@ -41,8 +41,8 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
                 if (win == 1 || i == 9)
                     break;
 
-                int spalte2 = 0;
-                int zeile2 = 0;
+                int spalte2;
+                int zeile2;
 
                 do
                 {

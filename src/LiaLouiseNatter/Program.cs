@@ -56,9 +56,17 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe46.ReplaceString.Start();
             // AufgabeHangman.Hangman.Start();
             // Aufgabe47.ReplaceStringRegex.Start();
+            // Aufgabe48.ValidatePhoneNumber.Start();
+            // Aufgabe49.ValidateEmail.Start();
             // Aufgabe51.MyBirthday.Start();
             // Aufgabe52.CalculateSundays.Start();
-            Aufgabe53.CalculateTheWorkingDays.Start();
+            // Aufgabe53.CalculateTheWorkingDays.Start();
+            // Aufgabe54.DrawCalendar.Start();
+            // Aufgabe55.ParticipantsList.Start();
+            // Aufgabe56.ParticipantsList2.Start();
+            Aufgabe57.Quadrieren.Start();
+
+            // Monopoly.MonopolyOnConsole.MonopolyStart();
         }  
     }
 }

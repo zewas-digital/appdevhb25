@@ -1,0 +1,5 @@
+Teilnehmer | Groesse | Alter
+--------------------------------
+Max        |  165.43 |     22
+Julia      |  188.00 |      9
+Jeremias   |  200.23 |     21
