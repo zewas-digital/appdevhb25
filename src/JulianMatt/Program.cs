@@ -46,7 +46,16 @@ namespace Appdevhb25.JulianMatt
             //Afgabe43.ArraySearch.Start43();
             //Aufgabe44.Hessenhervorheben.Start44();
             //Aufgabe45.CountLettersAndSymbols.Start45();
-            //Aufgabe46.ReplaceString.Start46();
+            //Aufgabe46.ReplaceString.Start46();  
+            //Aufgabe50.WhenAndWhere.Start50();
+            //Aufgabe51.MyBirthday.Start51();
+            //Aufgabe52.CalculatSundays.Start52();
+            //Aufgabe53.CalculateWorkingDays.Start53();
+            //Aufgabe54.DrawCalender.Start54();
+            //Aufgabe55.ParticipantsList.Start55();
+            //Aufgabe56.ParticipantsListTwo.Start56();
+            //Aufgabe57.Quadrieren.Start57();
+            Aufgabe58.PrintFileFormatted.Start58();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
