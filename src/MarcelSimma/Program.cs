@@ -70,10 +70,10 @@ namespace Appdevhb25.MarcelSimma
 
             //RepetitionStringMethodsDocumentation.Start();
 
-            CalendarIntro.Start();
+            //CalendarIntro.Start();
             //CalculateSundays.Start();
 
-            //DataStreamsIntro.Start();
+            DataStreamsIntro.Start();
         
             
 

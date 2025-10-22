@@ -1,4 +1,6 @@
 Teilnehmer 3
 Joachim
 ClemensJakob
-Marcel Simma, 24 Jahre altMarcel Simma, 24 Jahre alt
+vorname; nachname; alter
+Marcel Anton; Simma; 24
+Marcel; Simma; 24
