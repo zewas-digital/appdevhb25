@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using Appdevhb25.LauraKatharinaBertsch.Aufgabe55;
 
 namespace Appdevhb25.LauraKatharinaBertsch
 {
@@ -53,7 +54,12 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe46.ReplaceString.Start();
             //Aufgabe50.WhenAndWhere.Start();
             //Aufgabe51.MyBirthday.Start();
-            Aufgabe52.CalculateSundays.Start();
+            //Aufgabe52.CalculateSundays.Start();
+            //Aufgabe53.CalculateWorkingDays.Start();
+            //Aufgabe47.ReplaceStringReggex.Start();
+            //Aufgabe55.ParticipantsList.Start();
+            //Aufgabe56.ParticipantsList2.Start(); 
+            //Aufgabe57.Quadrieren.Start();
         }
     }
 }
