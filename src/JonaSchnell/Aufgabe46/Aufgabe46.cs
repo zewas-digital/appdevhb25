@@ -7,10 +7,11 @@ namespace Appdevhb25.JonaSchnell.Aufgabe46
     {
         public static void Start46()
         {
-            //1
-            string text = "Heute wird ein guter Tag! Heute wird ein noch guterer Tag! Heute wird ein spitzen guter Tag!";
+            System.Console.WriteLine("");
 
-            string[] words = { " war ", " ist " };
+            string text = "Gestern wird ein guter Tag! Heute wird ein noch besserer Tag! Morgen wird ein spitzen guter Tag!";
+
+            string[] words = { "ist", "ist" };
 
             int i = 0;
 
@@ -23,38 +24,76 @@ namespace Appdevhb25.JonaSchnell.Aufgabe46
             i++;
 
             Console.WriteLine($"{replacement}");
+            System.Console.WriteLine("");
         }
 
         public static void RemoveAsciiLowercase()
         {
-            string text = "Heute wird ein guter Tag! Heute wird ein noch guterer Tag! Heute wird ein spitzen guter Tag!";
-
-            char[] ka = new char[text.Length];
-            int j = 0;
-            foreach (char letters in text)
+            string text = "Gestern wird ein guter Tag! Heute wird ein noch guterer Tag! Morgen wird ein spitzen guter Tag!";
+            foreach (char elem in text)
             {
-                if (letters < 97 || letters > 122)
+                if (elem >= 97 && elem <= 122)
                 {
-                    ka[j++] = letters;
+                    System.Console.Write(elem);
+                }
+                else
+                {
+                    System.Console.Write(" ");
                 }
             }
-            Console.Write(ka[j]);
+            System.Console.WriteLine("");
+            System.Console.WriteLine("");
         }
-
         public static void RemoveAsciiUppercase()
         {
-        string text = "Heute wird ein guter Tag! Heute wird ein noch guterer Tag! Heute wird ein spitzen guter Tag!";
-
-            char[] ka = new char[text.Length];
-            int j = 0;
-            foreach (char letters in text)
+            string text = "Gestern wird ein guter Tag! Heute wird ein noch guterer Tag! Morgen wird ein spitzen guter Tag!";
+            foreach (char elem in text)
             {
-                if (letters < 65 || letters > 90)
+                if (elem >= 65 && elem <= 90)
                 {
-                    ka[j++] = letters;
+                    System.Console.Write(elem);
+                }
+                else
+                {
+                    System.Console.Write("");
                 }
             }
-            Console.Write(ka[j]);
+            System.Console.WriteLine("");
+            System.Console.WriteLine("");
+        }
+        public static void RemoveAsciiBlanks()
+        {
+            string text = "Gestern wird ein guter Tag! Heute wird ein noch guterer Tag! Morgen wird ein spitzen guter Tag!";
+            foreach (char elem in text)
+            {
+                if (elem > 32 || elem < 32)
+                {
+                    System.Console.Write(elem);
+                }
+                else
+                {
+                    System.Console.Write("");
+                }
+            }
+            System.Console.WriteLine("");
+            System.Console.WriteLine("");
+        }
+        public static void RemoveAsciiExclamationMark()
+        {
+            string text = "Gestern wird ein guter Tag! Heute wird ein noch guterer Tag! Morgen wird ein spitzen guter Tag!";
+            foreach (char elem in text)
+            {
+                if (elem > 33 || elem < 33)
+                {
+                    System.Console.Write(elem);
+                }
+                else
+                {
+                    System.Console.Write(" ");
+                }
+            }
+            System.Console.WriteLine("");
+            System.Console.WriteLine("");
         }
     }
 }

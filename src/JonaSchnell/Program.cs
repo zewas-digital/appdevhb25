@@ -36,9 +36,22 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe42.Aufgabe42.Start42();
             //Aufgabe43.Aufgabe43.Start43();
             //Aufgabe45.Aufgabe45.Start45();
-            //Aufgabe46.Aufgabe46.Start46();
+            /*
+            Aufgabe46.Aufgabe46.Start46();
             Aufgabe46.Aufgabe46.RemoveAsciiLowercase();
-            //Aufgabe46.Aufgabe46.RemoveAsciiUppercase();
+            Aufgabe46.Aufgabe46.RemoveAsciiUppercase();
+            Aufgabe46.Aufgabe46.RemoveAsciiBlanks();
+            Aufgabe46.Aufgabe46.RemoveAsciiExclamationMark();
+            */
+            /*
+            Aufgabe50.Aufgabe50.Date();
+            Aufgabe50.Aufgabe50.Time();
+            Aufgabe50.Aufgabe50.DateAndTime();
+            Aufgabe50.Aufgabe50.TimeZone();
+            Aufgabe50.Aufgabe50.Millisecond();
+            */
+            Aufgabe51.Aufgabe51.MyBirthday();
+
         }
     }
 }
