@@ -1,0 +1,30 @@
+Apfel  20  0.50
+Banane  15  0.30
+Karotten  10  1.00
+Kartoffeln  30  0.40
+Zwiebeln  25  0.80
+Tomaten  18  1.20
+Gurken  12  0.90
+Brokkoli  8  1.50
+Salat  5  1.70
+Paprika  22  1.10
+Kirschen  10  2.00
+Trauben  15  1.80
+Orangen  13  0.60
+Äpfel (Bio)  7  1.00
+Birnen  20  0.75
+Erdbeeren  5  2.50
+Heidelbeeren  8  3.00
+Pfirsiche  12  1.30
+Wassermelone  6  4.00
+Mango  4  2.80
+Ananas  3  3.50
+Melone  10  3.00
+Kiwi  15  1.50
+Papaya  6  2.20
+Granatapfel  8  2.70
+Avocado  14  2.10
+Limetten  20  0.40
+Kiwis (Bio)  12  1.90
+Mandarinen  18  0.80
+Knoblauch  10  1.10
