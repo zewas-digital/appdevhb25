@@ -7,7 +7,7 @@ namespace Appdevhb25.NoahHois.Aufgabe29
 {
     public class TicTacToe
     {
-        public static void Start29()
+        public static void Start()
         {
             int[,] playingField = new int[3, 3];
 

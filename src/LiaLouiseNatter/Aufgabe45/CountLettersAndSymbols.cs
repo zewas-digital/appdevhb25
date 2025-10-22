@@ -30,13 +30,17 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe45
                 {
                     counter[c]++;
                 }
+                else
+                {
+                    System.Console.WriteLine("Fehler");
+                }
             }
 
             for(int i = 0; i < counter.Length; i++)
             {
                 if(counter[i] > 0)
                 {
-                    System.Console.WriteLine($"{(char)i} : {counter[i]}");
+                    System.Console.WriteLine($"{(char)i} : {counter[i]}, ASCII Wert: {Convert.ToInt32(hesseText[i])}");
                 }
             }
         }

@@ -35,8 +35,9 @@ namespace Appdevhb25.MarcelSimma
 
 
 
-            Zeitpunkt();
-            // Zeitspanne();
+            // Zeitpunkt();
+            //Zeitspanne();
+            ZeitInput();
         }
 
         public static void Zeitpunkt()
@@ -70,7 +71,7 @@ namespace Appdevhb25.MarcelSimma
             DateTime morgen = today.AddDays(1);
             // Ein Tag in Millisekunden = 24*60*60*1000
             System.Console.WriteLine(morgen.ToString());
-            
+
             if (morgen > today)
             {
                 System.Console.WriteLine("Morgen ist größer als heute.");
@@ -98,7 +99,7 @@ namespace Appdevhb25.MarcelSimma
             - Sprache
 
             */
-            
+
             // de ist die Sprache
             // AT ist das Land
             CultureInfo austrian = new CultureInfo("de-AT");
@@ -138,7 +139,7 @@ namespace Appdevhb25.MarcelSimma
             TimeSpan ts = new TimeSpan(25, 20, 55); // Stunden, Minuten, Sekunden
             DateTime jetzt = DateTime.Now;
 
-            jetzt.AddHours(25.5);
+            jetzt = jetzt.AddHours(-25.5);
 
             Console.WriteLine(jetzt.ToString());
 
@@ -148,9 +149,65 @@ namespace Appdevhb25.MarcelSimma
             // Beginn der Unix-Epoche
             // 1.1.1970 00:00 UTC
             DateTimeOffset dto = new DateTimeOffset(jetzt.ToUniversalTime());
-            long seconds = dto.ToUnixTimeSeconds();
+            long seconds = dto.ToUnixTimeMilliseconds();
             Console.WriteLine(seconds);
             Console.WriteLine("\n--------------------");
+        }
+
+        public static void ZeitInput()
+        {
+            //Variant1();
+            //Variant2();
+            Variant3();
+
+        }
+
+        public static void Variant1()
+        {
+            // Variante 1: drei Integer einlesen
+            Console.WriteLine("Bitte gib ein Jahr ein:");
+
+            string yearAsString = Console.ReadLine();
+            int year = Convert.ToInt32(yearAsString);
+
+            Console.WriteLine("Bitte gib einen Monat ein:");
+            string monthAsString = Console.ReadLine();
+            int.TryParse(monthAsString, out int month);
+
+            Console.WriteLine("Bitte gib einen Tag ein:");
+            int.TryParse(Console.ReadLine(), out int day);
+
+            int hour = 0;
+            do
+            {
+                Console.WriteLine("Bitte gib die Stunde ein (0-23): ");
+            } while (!int.TryParse(Console.ReadLine(), out hour));
+
+            DateTime result = new DateTime(year, month, day, hour, 0, 0);
+            Console.WriteLine("Das eingegebene Datum ist: " + result.ToString("dddd, dd.MM.yyyy HH:mm"));
+        }
+
+        public static void Variant2()
+        {
+            // Varaiante 2: ganzes Datum einlesen und mit CultureInfo verarbeiten
+            string inputAsString = Console.ReadLine();
+            DateTime.TryParse(inputAsString, new CultureInfo("de-AT"), out DateTime result);
+            Console.WriteLine("Das eingegebene Datum ist: " + result.ToString("dddd, dd.MM.yyyy HH:mm"));
+        }
+
+        public static void Variant3()
+        {
+            string inputAsString = Console.ReadLine();
+            // Variante 3:
+            try
+            {
+                DateTime result = DateTime.ParseExact(inputAsString, "dd.MM.yyyy", new CultureInfo("de-AT"));
+                Console.WriteLine("Das eingegebene Datum ist: " + result.ToString("dddd, dd.MM.yyyy HH:mm"));
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Das Datum hat nicht das richtige Format.");
+            }
         }
     }
 }
