@@ -31,11 +31,11 @@ namespace Appdevhb25.SheilaMayJaro
             // Console.WriteLine(); 
             // Aufgabe13.PrintDeltoid.PrintRhombus(7);
             // Console.WriteLine(); 
-            //Aufgabe13.PrintDeltoid.PrintRhombus(5); 
+            // Aufgabe13.PrintDeltoid.PrintRhombus(5); 
             // Aufgabe14.PrintCircle.Start(); 
             // Aufgabe14.PrintCircle.PrintCircleMethod(10);
             // Aufgabe15.ChristmasTree.Start();
-            //Console.WriteLine(); 
+            // Console.WriteLine(); 
             // Aufgabe16.HigherOrLower.Start();
             // Console.WriteLine(); 
             // Aufgabe17.CalculationOfPiLeibnizSeries.Start();
@@ -76,11 +76,36 @@ namespace Appdevhb25.SheilaMayJaro
             // Console.WriteLine(); 
             // Aufgabe39.TicTacToe.Start();
             // Console.WriteLine(); 
-            Aufgabe41.CinemaRevenueExercise.Start();
+            // Aufgabe41.CinemaRevenueExercise.Start();
+            // Console.WriteLine(); 
             //Aufgabe41.JaggedArrayRepetition.Start(); 
-            Console.WriteLine(); 
-
-
+            // Console.WriteLine(); 
+            // Aufgabe42.ReverseString.Start();
+            // Console.WriteLine(); 
+            // Aufgabe43.ArraySearch.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe44.HighlightHesse.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe45.CountLettersAndSymbols.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe46.ReplaceString.Start();
+            // System.Console.WriteLine();
+            // CalendarIntroTODO.CalendarIntro.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe50.WhenAndWhere.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe51.MyBirthday.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe52.ClaculateSundays.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe53.CalculateWorkingDays.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe55.ParticipantsList.Start();
+            // System.Console.WriteLine();
+            // Aufgabe56.ParticipantsList2.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe57.Square.Start(); 
+            // System.Console.WriteLine();
         }
     }
 }
