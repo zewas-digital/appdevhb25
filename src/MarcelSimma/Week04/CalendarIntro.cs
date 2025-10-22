@@ -35,9 +35,9 @@ namespace Appdevhb25.MarcelSimma
 
 
 
-            // Zeitpunkt();
-            //Zeitspanne();
-            ZeitInput();
+            //Zeitpunkt();
+            Zeitspanne();
+            //ZeitInput();
         }
 
         public static void Zeitpunkt()
@@ -158,7 +158,7 @@ namespace Appdevhb25.MarcelSimma
         {
             //Variant1();
             //Variant2();
-            Variant3();
+            //Variant3();
 
         }
 
