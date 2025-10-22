@@ -61,7 +61,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe51.MyBirthday.Start();
             // Aufgabe52.CalculateSundays.Start();
             // Aufgabe53.CalculateTheWorkingDays.Start();
-            Aufgabe54.DrawCalendar.Start();
+            // Aufgabe54.DrawCalendar.Start();
+            Aufgabe55.ParticipantsList.Start();
         }  
     }
 }
