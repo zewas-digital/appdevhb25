@@ -7,7 +7,7 @@ namespace Appdevhb25.NoahHois.Aufgabe30
 {
     public class TicTacToe2
     {
-        public static void Start29()
+        public static void Start()
         {
             string[,] mainArray = Arraycreator();
             Print(mainArray);

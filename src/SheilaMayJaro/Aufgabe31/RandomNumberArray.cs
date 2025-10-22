@@ -32,7 +32,8 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe31
             }
             Console.WriteLine($"Der größte Wert ist {maxVal}.");
             //Kleinster Wert berechnen 
-            int minVal = numbers.Min();
+            //int minVal = numbers.Min();
+            int minVal = 100; 
             foreach ( int num in numbers)
             {
                 if (num < minVal)

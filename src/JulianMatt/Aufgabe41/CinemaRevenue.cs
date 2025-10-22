@@ -16,6 +16,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe41
         public static void Start41()
         {
             int[][] mainArray = Arraycreator();
+            Console.Clear();
             Calculation(mainArray);
         }
 
@@ -39,46 +40,50 @@ namespace Appdevhb25.JulianMatt.Aufgabe41
 
         public static void Calculation(int[][] cinemaTickets)
         {
-            double tempsumm = 0;
-            double summ = 0;
+            double tempSave = 0;
+            double mainSave = 0;
             double allTogehter;
+
+            // 1. Die Anzahl der verkauften Tickets pro Raum und ingsesamt.
             for (int i = 0; i < 5; i++)
             {
-                tempsumm = 0;
+                tempSave = 0;
                 Console.Write("Anzahl der verkauften Tickets pro Raum " + (i + 1) + ": ");
                 for (int k = 0; k < cinemaTickets[i].Length; k++)
                 {
-                    tempsumm = tempsumm + cinemaTickets[i][k];
-                    summ = tempsumm;
+                    tempSave = tempSave + cinemaTickets[i][k];
+                    mainSave = tempSave;
                 }
-                Console.WriteLine(summ);
+                Console.WriteLine(mainSave);
             }
-            tempsumm = 0;
-            summ = 0;
+            tempSave = 0;
+            mainSave = 0;
             for (int i = 0; i < 5; i++)
             {
 
                 for (int k = 0; k < cinemaTickets[i].Length; k++)
                 {
 
-                    tempsumm = tempsumm + cinemaTickets[i][k];
-                    summ = tempsumm;
+                    tempSave = tempSave + cinemaTickets[i][k];
+                    mainSave = tempSave;
                 }
 
             }
             Console.Write("Insgesammt: ");
-            Console.WriteLine(summ);
-            allTogehter = summ;
+            Console.WriteLine(mainSave);
+            allTogehter = mainSave;
 
+            Console.WriteLine();
 
-            tempsumm = 0;
-            summ = 0;
+            // 2. Die durchschnittliche Anzahl der Tickets pro Raum und über alle Räume hinweg.
+            tempSave = 0;
+            mainSave = 0;
             for (int i = 0; i < 5; i++)
             {
                 Console.Write("Durchschnitt der Verkauften Tickets pro Raum " + (i + 1) + ": ");
                 double avg = cinemaTickets[i].Average();
-                summ = avg;
-                Console.WriteLine(summ);
+                mainSave = avg;
+                Console.WriteLine(mainSave);
             }
 
 
@@ -87,9 +92,63 @@ namespace Appdevhb25.JulianMatt.Aufgabe41
             Console.Write("Durchschnitt der Verkauften Tickets Insgesammt: ");
             Console.WriteLine(allTogehter);
 
+            Console.WriteLine();
 
+            // 3. Die Vorstellung mt den meisten verkauften Tickets pro Raum und insgesammt
+            tempSave = 0;
+            mainSave = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Die Meisten verkauften Tickets pro Raum " + (i + 1) + ": ");
+                double max = cinemaTickets[i].Max();
+                mainSave = max;
+                Console.WriteLine(mainSave);
+                if (mainSave > tempSave)
+                {
+                    tempSave = mainSave;
+                }
+            }
 
+            Console.Write("Die Meisten verkauften Tickets insgesamt:");
+            Console.WriteLine(tempSave);
 
+            Console.WriteLine();
+
+            // 4. Die Vorstellung mit den wenigsten verkauften Tickets pro Raum und insgesammt.
+            tempSave = 1000;
+            mainSave = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Die wenigsten verkauften Tickets pro Raum " + (i + 1) + ": ");
+                double min = cinemaTickets[i].Min();
+                mainSave = min;
+                Console.WriteLine(mainSave);
+                if (mainSave < tempSave)
+                {
+                    tempSave = mainSave;
+                }
+            }
+
+            Console.Write("Die wenigsten verkauften Tickets insgesamt:");
+            Console.WriteLine(tempSave);
+
+            Console.WriteLine();
+
+            // Der Umsatz.
+
+            tempSave = 0;
+            mainSave = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Die Umsatz pro Raum " + (i + 1) + ": ");
+                mainSave = cinemaTickets[i].Sum();
+                mainSave *= 13;
+                Console.WriteLine(mainSave);
+                tempSave = tempSave + mainSave;
+            }
+
+            Console.Write("Der insgesamte Umsatz: ");
+            Console.WriteLine(tempSave);
         }
 
 
