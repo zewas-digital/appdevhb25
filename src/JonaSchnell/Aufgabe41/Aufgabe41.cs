@@ -8,7 +8,6 @@ namespace Appdevhb25.JonaSchnell.Aufgabe41
     {
         public static void Start41()
         {
-            //Säle
             var rnd = new Random();
             int reservated = 5;
             int[][] jagged = new int[reservated][];
@@ -24,7 +23,7 @@ namespace Appdevhb25.JonaSchnell.Aufgabe41
 
             //Filme für die Vorstellungen
             string[] filmIdeas = { "The Exorcist", "Halloween", "A Nightmare on Elm Street", "Psycho", "The Shining", "It", "The Texas Chain Saw Massacre", "The Blair Witch Project", "Candyman", "Hereditary", "Get Out", "The Ring", "The Conjuring", "The Witch", "Midsommar", "Insidious", "The Babadook", "Paranormal Activity", "Scream", "The Others", "Sinister", "The Cabin in the Woods", "Dawn of the Dead", "Carrie" };
-            
+
             for (int i = 0; i < reservated; i++)
             {
                 //Vorstellungen
@@ -67,10 +66,10 @@ namespace Appdevhb25.JonaSchnell.Aufgabe41
 
                     if (globalMin > jagged[i][j])
                     {
-                    globalMin = jagged[i][j];
+                        globalMin = jagged[i][j];
                         leastPeopleRoom = i + 1;
                     }
-                    
+
                 }
                 allTickets = allTickets + tickets;
                 Console.WriteLine("Für den Raum " + (i + 1) + " wurden " + tickets + " Tickets verkaut.");
@@ -79,7 +78,7 @@ namespace Appdevhb25.JonaSchnell.Aufgabe41
                 tickets = 0;
             }
 
-            Console.WriteLine("In allen Sälen wurden Insgesamt " + allTickets + " verkauft. Das sind durchschnittlich " + (allTickets / 6) +". Damit wurden " + money + "€ gemacht.");
+            Console.WriteLine("In allen Sälen wurden Insgesamt " + allTickets + " verkauft. Das sind durchschnittlich " + (allTickets / 6) + ". Damit wurden " + money + "€ gemacht.");
             Console.WriteLine("Die meisten Leute waren " + globalMax + " und sie waren im Saal " + mostPeopleRoom + ".");
             Console.WriteLine("Die wenigsten Leute waren " + globalMin + " und sie waren im Saal " + leastPeopleRoom + ".");
         }

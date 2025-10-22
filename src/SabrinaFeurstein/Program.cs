@@ -38,7 +38,26 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben._2dArray.Array();
             // aufgaben.PascalDreieck.Dreieck();
             // aufgaben.TicTacToe.Game();
-            aufgaben._4inRows.Game();
+            // aufgaben._4inRows.Game();
+            // aufgaben.CinemaRevenue.Vorstellungen();
+            // aufgaben.ReversedWord.Start();
+            // aufgaben.ArraySearch.Search();
+            // aufgaben.HesseHervorheben.Hervorheben();
+            // uebung.CopyReverse.Start();
+            // uebung.PascalDreieck.Pascal();
+            // aufgaben.ReplaceString.Start();
+            // aufgaben.CountLettersAndSymbols.Start();
+            // aufgaben.Hangman.Start();
+            // aufgaben.ReplaceStringRegex.Start();
+            // aufgaben.ValidatePhoneNumber.Start();
+            // aufgaben.ValidateEmail.Start();
+            // aufgaben.DateTimeUebung.Start();
+            // aufgaben.MyBirthday.Start();
+            // aufgaben.CalculateSundays.OhneZeitspanne();
+            // aufgaben.CalculateSundays.MitZeitspanne();
+            // aufgaben.WorkingDays.Start();
+            // aufgaben.DrawCalendar.Start();
+            aufgaben.ParticipantsList.Start();
         }
     }
 }

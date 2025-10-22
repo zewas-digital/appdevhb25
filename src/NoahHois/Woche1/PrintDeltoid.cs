@@ -8,7 +8,7 @@ namespace Appdevhb25.NoahHois.BonusAufgabe1
         {
             Console.Write("Geben Sie die Hoehe des Deltoids ein: ");
             int height = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(">>>>>>>>" + height);
+            Console.WriteLine(">" + height);
 
             for (int y = 0; y < height; y++)
             {
@@ -22,7 +22,7 @@ namespace Appdevhb25.NoahHois.BonusAufgabe1
                     }
                     else
                     {
-                        Console.Write(".");
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();
@@ -40,7 +40,7 @@ namespace Appdevhb25.NoahHois.BonusAufgabe1
                     }
                     else
                     {
-                        Console.Write(".");
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();

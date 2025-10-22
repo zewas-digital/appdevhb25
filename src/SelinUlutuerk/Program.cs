@@ -7,7 +7,7 @@ namespace Appdevhb25.SelinUlutuerk
     {
         public static void Main(string[] args)
         {
-            Console.Clear();
+            // Console.Clear();
             // Aufgabe01.PrintA.Start();
             // Aufgabe02.Mahlreihen.Start();
             // Aufgabe03.SummeUeberBereich.Start();
@@ -36,7 +36,17 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe34.CopyReverse.Copy2();
             // Aufgabe37.Array2d.Start();
             // Aufgabe38.PascalDreieck.Start();
-            Aufgabe39.TicTacToe.Start();
+            // Aufgabe39.TicTacToe.Start();
+            // Aufgabe41.CinemaRevenue.Start();
+            // Aufgabe42.Reverse.Start();
+            // Aufgabe43.ArraySearch.Start();
+            // Aufgabe44.HesseHervorheben.Start();
+            // Aufgabe45.CountLettersAndSymbols.Start();
+            // Aufgabe46.ReplaceString.Start();
+            // Aufgabe50.WhenAndWhere.Start();
+            // Aufgabe51.MyBirthday.Start();
+            // Aufgabe52.CalculateSundays.Start();
+            // Aufgabe53.CalculateWorkingDays.Start();
 
 
 
@@ -51,6 +61,10 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe35.BubbleSort.Start();
             // Bonusaufgabe36.Algorithmen.Start();
             // Bonusaufgabe40.InRow.Start();
+            // Bonusaufgabe47.ReplaceStringRegex.Start();
+            // Bonusaufgabe48.ValidatePhoneNumber.Start();
+            // Bonusaufgabe49.ValidateEmail.Start();
+            Bonusaufgabe54.DrawCalendar.Start();
 
 
             // docs.PrimitiveDatentypen.Start();

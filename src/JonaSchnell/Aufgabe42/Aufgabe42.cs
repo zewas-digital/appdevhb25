@@ -15,11 +15,18 @@ namespace Appdevhb25.JonaSchnell.Aufgabe42
                 return;
             }
 
-            char[] charArray = original.ToCharArray();
+            int length = original.Length;
+            Console.WriteLine(length);
+
+            /*char[] charArray = original.ToCharArray();
             Array.Reverse(charArray);
 
             string reversed = new string(charArray);
             Console.WriteLine(reversed);
+            for ()
+            {
+                
+            }*/
         }
     }
 }

@@ -64,7 +64,6 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe15
                 }
                 Console.WriteLine();
             }
-
         }
     }
 }
