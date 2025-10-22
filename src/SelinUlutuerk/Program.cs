@@ -47,6 +47,10 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe51.MyBirthday.Start();
             // Aufgabe52.CalculateSundays.Start();
             // Aufgabe53.CalculateWorkingDays.Start();
+            // Aufgabe55.ParticipantsList.Start();
+            // Aufgabe56.ParticipantsList2.Start();
+            // Aufgabe57.Quadrien.Start();
+            AufgabeV58.PrintFileFormatted.Start();
 
 
 
@@ -64,7 +68,7 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe47.ReplaceStringRegex.Start();
             // Bonusaufgabe48.ValidatePhoneNumber.Start();
             // Bonusaufgabe49.ValidateEmail.Start();
-            Bonusaufgabe54.DrawCalendar.Start();
+            // Bonusaufgabe54.DrawCalendar.Start();
 
 
             // docs.PrimitiveDatentypen.Start();
