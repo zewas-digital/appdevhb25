@@ -44,7 +44,6 @@ namespace Appdevhb25.KerimAlkis.Vertiefungsaufgabe03
                 sw.WriteLine("billigster Artikel: " + billig);
                 sw.WriteLine("durschnittsPreis aller Artikel: " + durchschnittsPreis);
                 sw.WriteLine("Gesamtwert aller Artikel und Mengen: " + gesamtwertMenge);
-
             }
         }
     }

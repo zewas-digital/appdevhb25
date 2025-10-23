@@ -76,7 +76,7 @@ namespace Appdevhb25.KerimAlkis
 
             //---Woche 4---
             //Aufgabe36.MyBirthday.Start();
-            //Aufgabe37.CalculateSundays.Start();
+            Aufgabe37.CalculateSundays.Start();
             //Aufgabe38.ParticipantsList.Start();
             //Aufgabe39.ParticipantsList2.Start();
             //Aufgabe40.Quadrieren.Start();
@@ -86,7 +86,7 @@ namespace Appdevhb25.KerimAlkis
             //---Woche 4---
             //Vertiefungsaufgabe01.CalculateWorkingDays.Start();
             //Vertiefungsaufgabe02.PrintFileFormatted.Start();
-            Vertiefungsaufgabe03.Inventur.Start();
+            //Vertiefungsaufgabe03.Inventur.Start();
             #endregion
 
 
