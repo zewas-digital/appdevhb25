@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Appdevhb25.KerimAlkis
 {
@@ -26,7 +27,9 @@ namespace Appdevhb25.KerimAlkis
 
             //---Woche 4---
             //Bonusaufgabe12.ReplaceStringRegex.Start();
+            //Bonusaufgabe13.ValidatePhoneNumber.Start();
             //Bonusaufgabe14.ValidateEmail.Start();
+            //Bonusaufgabe15.DrawCalendar.Start();
             #endregion
 
             #region Aufgaben
@@ -68,12 +71,22 @@ namespace Appdevhb25.KerimAlkis
             //Aufgabe31.Reverse.Start();
             //Aufgabe32.ArraySearch.Start();
             //Aufgabe33.HesseHervorheben.Start();
-            //Aufgabe34.CountLettersAndSymbols.Start();
+            //Aufgabe34.CountLettersAndSymbols.Start();s
             //Aufgabe35.ReplaceString.Start();
 
             //---Woche 4---
-            Aufgabe36.MyBirthday.Start();
+            //Aufgabe36.MyBirthday.Start();
+            Aufgabe37.CalculateSundays.Start();
+            //Aufgabe38.ParticipantsList.Start();
+            //Aufgabe39.ParticipantsList2.Start();
+            //Aufgabe40.Quadrieren.Start();
+            #endregion
 
+            #region Vertiefungsaufgaben
+            //---Woche 4---
+            //Vertiefungsaufgabe01.CalculateWorkingDays.Start();
+            //Vertiefungsaufgabe02.PrintFileFormatted.Start();
+            //Vertiefungsaufgabe03.Inventur.Start();
             #endregion
 
 
