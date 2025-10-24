@@ -5,16 +5,16 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe46
 {
     public  class ReplaceString
     {
-        static string text = "Heute wird ein guter Tag! Heute wird ein noch guter Tag! Heute wird ein spitzen guter Tag!";      
+        static string text = "Heute wird ein guter Tag! Heute wird ein noch besserer Tag! Heute wird ein spitzen guter Tag!";      
 
         public static void ReplString()
         {
-            //ChangeWords();
-            // RemoveVariante();
-            // ReplaceVariante();
-            // ReplaceGrossbuchstaben();
+            ChangeWords();
+            RemoveVariante();
+            ReplaceVariante();
+            ReplaceGrossbuchstaben();
             KeineLeerzeichen();
-            //KeineAusrufezeichen();
+            KeineAusrufezeichen();
 
             static void ChangeWords()
             {
