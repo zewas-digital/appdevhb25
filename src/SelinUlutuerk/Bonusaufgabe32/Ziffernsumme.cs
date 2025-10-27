@@ -13,6 +13,9 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe32
                 Console.Write("Deine Zahl: ");
                 zahl = Console.ReadLine();
 
+                if (zahl == null)
+                    break;
+                    
                 // Prüfen, ob alle Zeichen Ziffern sind
                 bool istGueltig = true;
                 foreach (char c in zahl)

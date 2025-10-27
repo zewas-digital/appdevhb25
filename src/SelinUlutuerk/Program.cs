@@ -50,7 +50,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe55.ParticipantsList.Start();
             // Aufgabe56.ParticipantsList2.Start();
             // Aufgabe57.Quadrien.Start();
-            AufgabeV58.PrintFileFormatted.Start();
+            // AufgabeV58.PrintFileFormatted.Start();
+            // AufgabeV59.Inventur.Start();
 
 
 
@@ -69,6 +70,9 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe48.ValidatePhoneNumber.Start();
             // Bonusaufgabe49.ValidateEmail.Start();
             // Bonusaufgabe54.DrawCalendar.Start();
+            // Bonusaufgabe60.Directories.Start();
+            Bonusaufgabe61.MoreDirectories.Start();
+
 
 
             // docs.PrimitiveDatentypen.Start();
