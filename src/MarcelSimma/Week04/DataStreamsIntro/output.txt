@@ -1,0 +1,6 @@
+Teilnehmer 3
+Joachim
+ClemensJakob
+vorname; nachname; alter
+Marcel Anton; Simma; 24
+Marcel; Simma; 24

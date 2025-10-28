@@ -49,8 +49,8 @@ namespace Appdevhb25.NoahHois
             // Aufgabe37.MyBirthday.Start();
             // Aufgabe37.MyBirthday.Start();
             // Aufgabe38.WhenAndWhere.Start();
-            Aufgabe39.CalculateSundays.Start();
-            // Aufgabe40.CalculateWorkingDays.Start();
+            // Aufgabe39.CalculateSundays.Start();
+            Aufgabe40.CalculateWorkingDays.Start();
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();
             // BonusAufgabe2.PrintCricle.BonusAufgabe2(20);

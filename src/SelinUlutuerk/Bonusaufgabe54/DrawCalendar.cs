@@ -9,7 +9,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe54
         {
             CultureInfo austrian = new CultureInfo("de-AT");
             // DateTime moment = DateTime.Now;
-            DateTime moment = new DateTime(2004, 11, 27);
+            DateTime moment = new DateTime(2024, 04, 27);
             int year = moment.Year;
             int month = moment.Month;
 
@@ -20,7 +20,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe54
             System.Console.WriteLine(moment.ToString("yyyy MMMM"));
             System.Console.WriteLine("| Mo | Di | Mi | Do | Fr | Sa | So |");
 
-            int startDay = ((int)firstDay.DayOfWeek);
+            int startDay = ((int)firstDay.DayOfWeek + 6) % 7;
 
             int currentDay = 1;
 
