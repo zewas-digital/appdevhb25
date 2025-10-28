@@ -1,0 +1,36 @@
+Apfel: Menge = 20, Preis = 50,00 €
+Banane: Menge = 15, Preis = 30,00 €
+Karotten: Menge = 10, Preis = 100,00 €
+Kartoffeln: Menge = 30, Preis = 40,00 €
+Zwiebeln: Menge = 25, Preis = 80,00 €
+Tomaten: Menge = 18, Preis = 120,00 €
+Gurken: Menge = 12, Preis = 90,00 €
+Brokkoli: Menge = 8, Preis = 150,00 €
+Salat: Menge = 5, Preis = 170,00 €
+Paprika: Menge = 22, Preis = 110,00 €
+Kirschen: Menge = 10, Preis = 200,00 €
+Trauben: Menge = 15, Preis = 180,00 €
+Orangen: Menge = 13, Preis = 60,00 €
+Äpfel (Bio): Menge = 7, Preis = 100,00 €
+Birnen: Menge = 20, Preis = 75,00 €
+Erdbeeren: Menge = 5, Preis = 250,00 €
+Heidelbeeren: Menge = 8, Preis = 300,00 €
+Pfirsiche: Menge = 12, Preis = 130,00 €
+Wassermelone: Menge = 6, Preis = 400,00 €
+Mango: Menge = 4, Preis = 280,00 €
+Ananas: Menge = 3, Preis = 350,00 €
+Melone: Menge = 10, Preis = 300,00 €
+Kiwi: Menge = 15, Preis = 150,00 €
+Papaya: Menge = 6, Preis = 220,00 €
+Granatapfel: Menge = 8, Preis = 270,00 €
+Avocado: Menge = 14, Preis = 210,00 €
+Limetten: Menge = 20, Preis = 40,00 €
+Kiwis (Bio): Menge = 12, Preis = 190,00 €
+Mandarinen: Menge = 18, Preis = 80,00 €
+Knoblauch: Menge = 10, Preis = 110,00 €
+
+Teuerster Artikel: Wassermelone (400)
+Billigster Artikel: Banane (30)
+Durchschnittspreis aller Artikel: 161,16666666666666666666666667
+Gesamtwert aller Artikel und Mengen: 48110
+Gesamtmenge aller Artikel: 381

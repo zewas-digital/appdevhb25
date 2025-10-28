@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 // See https://aka.ms/new-console-template for more information
 
 namespace Appdevhb25.SashaLeonardoMattes
@@ -87,7 +88,7 @@ namespace Appdevhb25.SashaLeonardoMattes
                 checkInput = int.TryParse(result, out notRelevant);
                 if (checkInput)
                 {
-                    Console.WriteLine("Bitte gib einen gültigen Namen ein (keine Zahl, weil die Deutschen das leider nicht erlauben und Österreich sieht es auch etwas kritisch) (WICHTIG: Ich fände es ok):");
+                    Console.WriteLine("Deine Eingabe war ungültig. Bitte keine Zahlen eingeben!");
                 }
             } while (checkInput || string.IsNullOrEmpty(result));
 
@@ -128,6 +129,24 @@ namespace Appdevhb25.SashaLeonardoMattes
                 }
             }
             return max;
+        }
+    
+        public static DateTime checkUserInputDate()
+        {
+            bool checkInput;
+            DateTime result;
+            string format = "dd.MM.yyyy";
+            do
+            {
+                checkInput = DateTime.TryParseExact(Console.ReadLine(), format, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
+
+                if (checkInput == false)
+                {
+                    Console.WriteLine("Ungültige Eingabe. Bitte benutze das Format dd.MM.yyyy");
+                }
+            } while (checkInput == false);
+
+            return result;
         }
     }
 }
