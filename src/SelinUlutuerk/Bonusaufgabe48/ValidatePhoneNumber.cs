@@ -10,7 +10,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe48
         {
             System.Console.WriteLine("Gib eine gültige Telefonnummer in folgendem Format ein: \n [Ländervorwahl][Orts-/Netzvorwahl][Teilnehmernummer]");
             
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
             bool isValid = Number(input);
 
             if (isValid)
@@ -23,7 +23,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe48
             }
         }
 
-        public static bool Number(string input)
+        public static bool Number(string? input)
         {
             if (string.IsNullOrWhiteSpace(input))
                 return false;

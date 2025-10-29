@@ -8,7 +8,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe26
         public static void Start()
         {
             Console.WriteLine("Dein Name: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? "";
             Console.WriteLine("Dein Alter: ");
             int alter = Convert.ToInt32(Console.ReadLine());
 

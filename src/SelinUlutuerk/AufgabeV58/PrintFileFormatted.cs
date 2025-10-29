@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 
 namespace Appdevhb25.SelinUlutuerk.AufgabeV58
@@ -10,20 +11,23 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV58
             string outputPath = "C:/Users/aau28234/Documents/appdevneu/appdevhb25/src/SelinUlutuerk/AufgabeV58/output.txt";
             string inputPath = "C:/Users/aau28234/Documents/appdevneu/appdevhb25/src/SelinUlutuerk/AufgabeV58/input.txt";
 
-            string text = File.ReadAllLines(inputPath);
-            // string[] words = text.Split(' ');
-
-            string[] words = text.Split(new[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-
-            int counter = 0;
+            string[] lines = File.ReadAllLines(inputPath);
 
             using (StreamWriter writer = new StreamWriter(outputPath))
             {
-                foreach (var word in words)
+                writer.WriteLine("Teilnehmer  |    Größe   | Alter");
+                writer.WriteLine("---------------------------------");
+
+                for (int i = 1; i < lines.Length; i++)
                 {
-                    writer.WriteLine($"{word}\t|\t{word}\t|\t{word}");
-                    writer.WriteLine("------------------------------");
-                    counter++;
+                    string[] parts = lines[i].Split(' ');
+
+                    string name = parts[0];
+                    double groesse = double.Parse(parts[1], CultureInfo.InvariantCulture);
+                    int alter = int.Parse(parts[2]);
+
+                    writer.WriteLine($"{name,-12}|  {groesse,8}  |  {alter,4}");
+                    writer.WriteLine("---------------------------------");
                 }
             }
         }
