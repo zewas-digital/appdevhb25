@@ -10,6 +10,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe04
         die durch eine andere Zahl ohne Rest teilbar sind.*/       
         public static void Fakt()
         {
+            //TEST 
             int intervallStart = 8;
             int internallEnde = 10;
             int sum = 0;
