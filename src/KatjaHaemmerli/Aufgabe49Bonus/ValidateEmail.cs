@@ -6,11 +6,11 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe49Bonus
     {
         public static void ValidEmail()
         {
-            string input;
-            string pattern = @"^\S+@\S+\.\S+$";
+            string input;            
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
 
             System.Console.WriteLine("Pls enter your email address.");
-            
+
             do
             {
                 input = Console.ReadLine();
