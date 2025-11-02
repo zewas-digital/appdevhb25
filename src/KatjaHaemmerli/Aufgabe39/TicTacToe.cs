@@ -97,7 +97,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe39
 
                     }
 
-                    // prüfen ob 3 diagonal links oben nach rechts unten 
+                    // prüfen ob 3 diagonal links oben nach rechts unten.
                     
                         if (playground[0, 0] == 1 && playground[1, 1] == 1 && playground[2, 2] == 1)
                         {
