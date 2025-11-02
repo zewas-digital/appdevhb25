@@ -19,16 +19,16 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe54Bonus
             
             for(int i = 0; i < 4; i++)
             {
-               System.Console.WriteLine(new string('-', 36));
-                for (int j = 0; j <= 5; j++)
+                System.Console.WriteLine(new string('-', 36));
+                for (int j = 0; j <= 6; j++)
                 {
-                    System.Console.Write(new string('|', 1));
+                    System.Console.Write(new string("|"));
                     System.Console.Write(new string("zahl"));
-                    System.Console.Write("|");
                 }
+                System.Console.Write("|");
                 System.Console.WriteLine();               
             }
-                System.Console.Write(new string('-', 36)); 
+            System.Console.Write(new string('-', 36)); 
             
         }
     }
