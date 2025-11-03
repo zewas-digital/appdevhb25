@@ -17,43 +17,34 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe62
 
             using (StreamReader reader = new StreamReader(csvDateiInut))
             {                
-                // gesamte Inhalt der Datei auf einmal einlesen               
-
+                // gesamte Inhalt der Datei auf einmal einlesen
                 string input = reader.ReadToEnd();
-
-                System.Console.WriteLine(input);
+                
                 // StringSplitOptions.Remove sorgt dafür, dass leere Zeilen nicht in die lines-Variable gespeichert werden
                 string[] lines = input.Split('\n', StringSplitOptions.RemoveEmptyEntries);
 
-                // Zeilen auf der Konsole ausgeben
-                foreach (string line in lines)
+                // Die erste Zeile (Kopfzeile) an jedem ';' trennen,
+                // um die Spaltenüberschriften als Array zu erhalten.
+                // Das ';' ist wie die Trennlinie zwischen den Spalten.
+                string[] ueberschrift = lines[0].Split(';');
+
+                // Datensätze in Form von einzelnen Spalte aufteilen
+                string[,] werte = new string[lines.Length - 1, ueberschrift.Length]; // werte speichert alle Daten aus der CSV-Datei, ohne die Kopfzeile.
+                                                                                     // Zeilen: lines.Length - 1 = Anzahl der Datenzeilen (ohne Kopfzeile)
+                                                                                     // Spalten: ueberschrift.Length = Anzahl der Spalten
+
+                for (int i = 0; i < werte.GetLength(0); i++) // // Zeilen durchgehen
                 {
-                    System.Console.WriteLine(line);
-                }
+                    string[] datensatz = lines[i + 1].Split(';'); // aktuelle Zeile in Spalten aufteilen, die aktuelle Datenzeile (ohne Kopfzeile) an den Semikolons trennen
+                                                                 // und in ein Array umwandeln, sodass jede Spalte ein eigenes Element ist.
 
-                // Die Zeilen in einzelne Spalten aufteilen
-                string[] spaltenkopf = lines[0].Split(';');
-
-                foreach (string spalte in spaltenkopf)
-                {
-                    System.Console.WriteLine(spalte);
-                }
-
-                // Datensätze in Form von einzelne Spalte aufteilen
-                string[,] werte = new string[lines.Length - 1, spaltenkopf.Length];
-
-                for (int i = 0; i < werte.GetLength(0); i++) // int i = 1 um Zeilenkopf zu überspringen
-                {
-                    string[] datensatz = lines[i + 1].Split(';');
-
-                    for (int j = 0; j < werte.GetLength(1); j++)
-                    {
-                        // Die 0. Zeile im Wert -Array entspricht der 1. Zeile im Lines Array bzw. der 1. Zeile in der Input-Datei
-                        werte[i, j] = datensatz[j];
+                    for (int j = 0; j < werte.GetLength(1); j++) // Spalten durchgehen
+                    {                        
+                        werte[i, j] = datensatz[j]; // Wert in das 2D-Array speichern
                     }
                 }
                 // Ausgabe
-                System.Console.WriteLine(" {0, 2} | {1, -20} | {2, -20}", spaltenkopf[0], spaltenkopf[1], spaltenkopf[2]);
+                System.Console.WriteLine(" {0, 2} | {1, -20} | {2, -20}", ueberschrift[0], ueberschrift[1], ueberschrift[2]);
 
                 // Ausgabe der Datensätze
                 for(int i = 0; i < werte.GetLength(0); i++)
