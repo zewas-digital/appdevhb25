@@ -60,6 +60,10 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe55.ParticipantsList.Start();
             //Aufgabe56.ParticipantsList2.Start(); 
             //Aufgabe57.Quadrieren.Start();
+            //Aufgabe58.PrintFileFormatted.Start();
+            //Aufgabe62.ReadAndDisplayCSV.Start();
+            //Aufgabe63.ProcessNumbers.Start();
+            //Aufgabe59.Inventur.Start();
         }
     }
 }
