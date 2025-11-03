@@ -8,26 +8,31 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe61
     {
         public static void Start()
         {
-            string currentDirectory = Directory.GetCurrentDirectory();
-            System.Console.WriteLine(currentDirectory);
-
-            string path = @"C:\Users\aau28234\Documents\VS";
+            string path = @"C:\Users\aau28234\Documents\VS\tests";
             int counterDocs = 0;
             int counterFile = 0;
 
+            // Alle Unterordner
             IEnumerable<string> directories = Directory.EnumerateDirectories(path, "*", SearchOption.AllDirectories);
 
-            foreach (var doc in directories)
+            foreach (var dir in directories)
             {
-                System.Console.WriteLine($"- {doc.Substring(doc.LastIndexOf(Path.DirectorySeparatorChar) + 1)}");
+                System.Console.WriteLine($"- {Path.GetFileName(dir)}");
                 counterDocs++;
+
+                IEnumerable<string> files = Directory.EnumerateFiles(dir);
+                foreach (var file in files)
+                {
+                    System.Console.WriteLine($"---- {Path.GetFileName(file)}");
+                    counterFile++;
+                }
             }
 
-            IEnumerable<string> files = Directory.EnumerateFiles(path, "*", SearchOption.AllDirectories);
-
-            foreach (var file in files)
+            // Dateien im Hauptverzeichnis
+            IEnumerable<string> rootFiles = Directory.EnumerateFiles(path);
+            foreach (var file in rootFiles)
             {
-                System.Console.WriteLine($"- {file.Substring(file.LastIndexOf(Path.DirectorySeparatorChar) + 1)}");
+                System.Console.WriteLine($"- {Path.GetFileName(file)}");
                 counterFile++;
             }
 

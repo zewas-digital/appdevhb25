@@ -52,7 +52,7 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe57.Quadrien.Start();
             // AufgabeV58.PrintFileFormatted.Start();
             // AufgabeV59.Inventur.Start();
-
+            Aufgabe62.ReadAndDisplayCSV.Start();
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
@@ -71,7 +71,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe49.ValidateEmail.Start();
             // Bonusaufgabe54.DrawCalendar.Start();
             // Bonusaufgabe60.Directories.Start();
-            Bonusaufgabe61.MoreDirectories.Start();
+            // Bonusaufgabe61.MoreDirectories.Start();
+
 
 
 
