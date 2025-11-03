@@ -10,15 +10,15 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe55
         {
             using (StreamReader reader = new StreamReader("C:/Users/aau28234/Documents/appdevneu/appdevhb25/src/SelinUlutuerk/Aufgabe55/Teilnehmer.txt"))
             {
-                string line = reader.ReadLine();
-                line = reader.ReadLine();
+                string line = reader.ReadLine() ?? "";
+                line = reader.ReadLine() ?? "";
                 int counter = 1;
 
                 while (line != null)
                 {
                     Console.WriteLine($"{counter}. {line}");
                     counter++;
-                    line = reader.ReadLine();
+                    line = reader.ReadLine() ?? "";
                 }
                 reader.Close();
             }

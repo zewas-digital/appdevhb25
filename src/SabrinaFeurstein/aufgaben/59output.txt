@@ -1,0 +1,4 @@
+Durchschnittspreis aller Artikel: Wassermelone
+Durchschnittspreis aller Artikel: Banane
+Durchschnittspreis aller Artikel: 1.61
+Gesamtwert aller Artikel und Mengen: 48.35

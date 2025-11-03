@@ -11,19 +11,19 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe55
             using (StreamReader reader = new StreamReader(dateipfad))
             {
                 // ReadLine() liest die nächste Zeile aus der Datei, gibt die Zeile mit return zurück und speichert sie in die variable line.
-                string line = reader.ReadLine();
-                System.Console.WriteLine(line);
-                // Die Variable line ist ein Zwischenspeicher, weil ich den Wert für die while-Bedingung und für die Ausgabe brauche.
+                string line = reader.ReadLine();  // Die Variable line ist ein Zwischenspeicher, weil ich den Wert für die while-Bedingung und für die Ausgabe brauche.
 
+                System.Console.WriteLine(line);
+                
                 int nummerierung = 0;
                 
                 while(line != null) // Solange in der variable line ein Text gespeichert ist, soll dieser auf der Konsole ausgegeben und eine neue Zeile eingelesen werden.
                 {
-                    // Nachdem wir den Text ausgegeben haben, holen wir uns die nächste Zeile für die nächste Iteration.
+                    
                     line = reader.ReadLine();
-                   // Wenn ReadLine() einen Text zurückgibt, geben wir diesen auf der Konsole aus.
-                    Console.WriteLine($"{++nummerierung,2}. {line}");
-                    // Es werden immer zwei Zeichen für die Aufzählung reserviert und werden von rechts beginnend mit dem Wert der Variable aufgefüllt.
+                   
+                    Console.WriteLine($"{++nummerierung,2}. {line}"); // Es werden immer zwei Zeichen für die Aufzählung reserviert und werden von rechts beginnend mit dem Wert der Variable aufgefüllt.
+                    
                     
                 }
                 System.Console.WriteLine(line);                            

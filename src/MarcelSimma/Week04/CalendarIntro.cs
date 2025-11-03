@@ -39,8 +39,24 @@ namespace Appdevhb25.MarcelSimma
 
             */
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+            //Zeitpunkt();
+            Zeitspanne();
+=======
             //Zeitpunkt();
             //Zeitspanne();
+>>>>>>> 47015c44c54dbec522f645ab31336c080bd6f0eb
             //ZeitInput();
         }
 
