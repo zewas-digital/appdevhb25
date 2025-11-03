@@ -1,5 +1,5 @@
 using System;
-using Appdevhb25.JonaSchnell.AufgabenFirma;
+using Appdevhb25.JonaSchnell.Aufgabe62;
 
 namespace Appdevhb25.JonaSchnell
 {
@@ -53,8 +53,8 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe51.Aufgabe51.MyBirthday();
             //Aufgabe52.Aufgabe52.CalculateSundays();
             //Aufgabe55.Aufgabe55.PatricipantsList();
-            
-            AufgabenFirma.Aufgabe1.StartFirma1();
+
+            Aufgabe62.Aufgabe62.ReadAndDisplayCSV();
         }
     }
 }
