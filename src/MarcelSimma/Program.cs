@@ -1,11 +1,14 @@
 ﻿// Program.cs
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Appdevhb25.MarcelSimma.Aufgabe39;
 using Appdevhb25.MarcelSimma.Aufgabe41;
 using Appdevhb25.MarcelSimma.Aufgabe52;
 using Appdevhb25.MarcelSimma.week02;
+using MarcelSimma.Aufgabe63;
+
 
 namespace Appdevhb25.MarcelSimma
 {
@@ -76,7 +79,8 @@ namespace Appdevhb25.MarcelSimma
 
             //DataStreamsIntro.Start();
             //ParticipantsList.Start();
-            CinemaRevenue.Start();
+            //CinemaRevenue.Start();
+            ProcessNumbers.Start();
         
             
 
