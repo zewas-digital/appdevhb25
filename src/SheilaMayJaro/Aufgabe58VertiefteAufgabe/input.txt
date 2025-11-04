@@ -1,0 +1,4 @@
+Teilnehmer Größe Alter
+Max 165.43 22
+Julia 188.54 19
+Jeremias 200.23 21
