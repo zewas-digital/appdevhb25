@@ -41,8 +41,8 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe50
             System.Console.WriteLine("Aufgabe 50.4)");
             //4. Datum und Uhrzeit mit Zeitzone (z. B. 21.10.2025 11:39 +01:00) 
             DateTime timeStampOfExercise2 = new DateTime(2025, 10, 21, 11, 39, 37);
-            TimeZoneInfo localZone = TimeZoneInfo.Local;
-            System.Console.WriteLine(timeStampOfExercise2.ToString("G") + localZone);
+            DateTimeOffset dto = new DateTimeOffset(moment.ToUniversalTime()); 
+            System.Console.WriteLine(timeStampOfExercise2.ToString("G") + dto);
             System.Console.WriteLine();
 
             System.Console.WriteLine("Aufgabe 50.5)");
