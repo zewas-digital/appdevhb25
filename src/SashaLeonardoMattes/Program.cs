@@ -40,8 +40,14 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe37.ReverseWord.StartReverseWord();
             //Aufgabe38.ArraySearch.StartArraySearch();
             //Aufgabe39.HighLightWord.StartHighLightWord();
-            Aufgabe40.CountLettersAndSymbols.StartCountLettersAndSymbols();
+            //Aufgabe40.CountLettersAndSymbols.StartCountLettersAndSymbols();
             //Aufgabe41.ReplaceString.StartReplaceString();
+            //Aufgabe42.MyBirthday.StartMyBirthday();
+            //Aufgabe43.CalculateSundays.StartCalculateSundays();
+            //Aufgabe44.CalculateWorkingDays.StartCalculateWorkingDays();
+            //Aufgabe45.ParticipantList.StartParticipantList();
+            //Aufgabe46.ParticipantList2.StartParticipantList2();
+            Aufgabe47.Square.StartSquare();
 
 
 
@@ -56,6 +62,12 @@ namespace Appdevhb25.SashaLeonardoMattes
             //BonusAufgabe09.BubbleSort.StartBubbleSort();
             //BonusAufgabe10.SortAlgorithms.StartSortAlgorithms();
             //BonusAufgabe11.FourInRows.StartFourInRows();
+            //BonusAufgabe12.Hangman.StartHangman();
+            //BonusAufgabe13.ReplaceStringRegex.StartReplaceStringRegex();
+            //BonusAufgabe14.ValidatePhoneNumber.StartValidatePhoneNumber();
+            //BonusAufgabe15.ValidateEmail.StartValidateEmail();
+            //BonusAufgabe16.DrawCalendar.StartDrawCalendar();
+
 
         }
     }

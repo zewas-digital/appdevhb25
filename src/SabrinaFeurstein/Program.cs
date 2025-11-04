@@ -52,12 +52,19 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.ValidatePhoneNumber.Start();
             // aufgaben.ValidateEmail.Start();
             // aufgaben.DateTimeUebung.Start();
+            // aufgaben.WhenAndWhere.Start();
             // aufgaben.MyBirthday.Start();
             // aufgaben.CalculateSundays.OhneZeitspanne();
             // aufgaben.CalculateSundays.MitZeitspanne();
             // aufgaben.WorkingDays.Start();
             // aufgaben.DrawCalendar.Start();
-            aufgaben.ParticipantsList.Start();
+            // aufgaben.ParticipantsList.Start();
+            // aufgaben.ParticipantsList2.Start();
+            // aufgaben.Quadrieren.Start();
+            // aufgaben.PrintFileFormatted.Start();
+            // aufgaben.Inventur.Start();
+            // aufgaben.Directories.Start();
+            aufgaben.MoreDirectories.Start();
         }
     }
 }

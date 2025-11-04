@@ -24,14 +24,7 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe40
 
             for (int i = 0; i < chars.Length; i++)
             {
-                for (int j = 0; j < 128; j++)
-                {
-                    if (Convert.ToInt16(chars[i]) == j)
-                    {
-                        amountFound[j]++;
-                    }
-                }
-
+                amountFound[Convert.ToInt16(chars[i])]++;
             }
 
             for (int i = 0; i < amountFound.Length; i++)
@@ -42,12 +35,12 @@ namespace Appdevhb25.SashaLeonardoMattes.Aufgabe40
                 if (char.IsControl(c))
                 {
                     displayChar = Regex.Escape(c.ToString()); //für Sonderzeichen (tab, zeilenumbruch, ...)
-                    System.Console.WriteLine("Vorkommnisse " + displayChar + ": " + amountFound[i]);
+                    System.Console.WriteLine("Vorkommnisse \'" + displayChar + "\': " + amountFound[i] + " Integer Wert: " + i);
 
                 }
                 else
                 {
-                    System.Console.WriteLine("Vorkommnisse " + Convert.ToChar(i) + ": " + amountFound[i]);
+                    System.Console.WriteLine("Vorkommnisse \'" + Convert.ToChar(i) + "\': " + amountFound[i] + " Integer Wert: " + i);
                 }
                 
             }
