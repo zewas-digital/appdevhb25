@@ -1,5 +1,5 @@
 using System;
-using Appdevhb25.JonaSchnell.Aufgabe46;
+using Appdevhb25.JonaSchnell.Aufgabe62;
 
 namespace Appdevhb25.JonaSchnell
 {
@@ -50,8 +50,11 @@ namespace Appdevhb25.JonaSchnell
             Aufgabe50.Aufgabe50.TimeZone();
             Aufgabe50.Aufgabe50.Millisecond();
             */
-            Aufgabe51.Aufgabe51.MyBirthday();
+            //Aufgabe51.Aufgabe51.MyBirthday();
+            //Aufgabe52.Aufgabe52.CalculateSundays();
+            //Aufgabe55.Aufgabe55.PatricipantsList();
 
+            Aufgabe62.Aufgabe62.ReadAndDisplayCSV();
         }
     }
 }

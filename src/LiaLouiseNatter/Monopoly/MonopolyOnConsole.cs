@@ -4,13 +4,33 @@ public static class MonopolyOnConsole
 {
     private static int totalDiceCount;
     private static int bank;
+    private static int[] boughtGround = new int[40];
+
+
     public static void MonopolyStart()
     {
         Monopoly();
     }
 
+    public static int Player()
+    {
+
+        int maxPlayers;
+        System.Console.WriteLine("Wiviele Spieler? [2-8] ");
+        while (!int.TryParse(Console.ReadLine(), out maxPlayers))
+        {
+            System.Console.WriteLine("Nur Zahlen Erlaubt!!!!!");
+        }
+
+        return maxPlayers;
+
+
+    }
+
     public static void Monopoly()
     {
+        System.Console.WriteLine("TESTOBEN");
+        bank = 1500;
         string[] alleFelder = new string[]
         {
             "LOS", "Badstraße", "Gemeinschaftsfeld", "Turmstraße", "Einkommensteuer", "Südbahnhof",
@@ -25,7 +45,8 @@ public static class MonopolyOnConsole
             "Rathausplatz", "Hauptstraße", "Gemeinschaftsfeld", "Bahnhofstraße", "Hauptbahnhof",
             "Ereignisfeld", "Parkstraße", "Zusatzsteuer", "Schlossallee"
         };
-        ;
+
+
 
         int[] feldPreise = new int[]
         {
@@ -89,6 +110,7 @@ public static class MonopolyOnConsole
 
         string[] gameBoard = new string[]
         {
+
             "+----------------------------------------------------------------------------------------------------------------------------------------------------------+",
             "|Frei Parken|Theaterstraße|Museumstraße|Ereignisfeld|Opernplatz|Nordbahnhof|Lessingstraße|Schillerstraße|Wasserwerk|Goethestraße|Gehen Sie in das Gefängnis|",
             "|           |     220     |    220     |            |    240   |     200   |      260    |     260      |    150   |    280     |                          |",
@@ -124,23 +146,28 @@ public static class MonopolyOnConsole
             "|                            |    120   |    100     |            |     100      |   200    |      200      |    60    |                 |   60    |       |",
             "+----------------------------------------------------------------------------------------------------------------------------------------------------------+",
         };
-        int bank = 1500;
         bool gefaengnissFreischein = false;
-
+        int maxPlayers = Player();
+        int currentPlayer = 1;
         while (true)
         {
+            System.Console.WriteLine($"Spieler {currentPlayer} ist an der Reihe!");
+            if (currentPlayer > maxPlayers)
+            {
+                currentPlayer = 1;
+            }
+            System.Console.WriteLine();
             int number = Dicer(DiceFaces);
             totalDiceCount += number;
             totalDiceCount %= alleFelder.Length;
             Console.Clear();
-
-            boardDrawer(gameBoard, alleFelder);
+            boardDrawer(gameBoard, alleFelder, currentPlayer, feldPreise, boughtGround);
 
             System.Console.WriteLine();
             System.Console.WriteLine("Du hast Gewürfelt:");
             DrawDice(number, DiceFaces);
 
-           
+
             System.Console.WriteLine("-------------------------------");
 
             if (feldPreise[totalDiceCount] > 0)
@@ -148,49 +175,48 @@ public static class MonopolyOnConsole
                 Console.WriteLine($"Du stehst auf: {alleFelder[totalDiceCount]}.");
                 Console.WriteLine($"{alleFelder[totalDiceCount]} kostet: {feldPreise[totalDiceCount]}");
                 System.Console.WriteLine($"Du hast: {bank}");
-                Buyer(bank, feldPreise, totalDiceCount, alleFelder);
+                Buyer(feldPreise, totalDiceCount, alleFelder, currentPlayer, boughtGround);
             }
 
             else
             {
                 System.Console.WriteLine($"Du stehst auf: {alleFelder[totalDiceCount]}");
             }
-            EreignisFelder(bank, number, totalDiceCount, gefaengnissFreischein, alleFelder);
+            currentPlayer++;
+            EreignisFelder(number, totalDiceCount, gefaengnissFreischein, alleFelder);
 
-            
+
         }
     }
-    
-    public static void Buyer(int bank, int[] feldPreise, int totalDiceCount, string[] alleFelder)
+    public static string Buyer(int[] feldPreise, int totalDiceCount, string[] alleFelder, int currentPlayer, int[] boughtGround)
     {
-        if (feldPreise[totalDiceCount] == 0)
+        System.Console.WriteLine();
+        Console.WriteLine($"Möchtest du {alleFelder[totalDiceCount]} Kaufen?");
+        System.Console.WriteLine("-------------------------------");
+
+
+        Console.Write("[y/n]");
+        string yesNo = Console.ReadLine();
+
+        if (yesNo == "y" || yesNo == "Y")
+        {
+            if (bank >= feldPreise[totalDiceCount])
             {
-                System.Console.WriteLine();
+                boughtGround[totalDiceCount] = currentPlayer;
+                bank = bank - feldPreise[totalDiceCount];
+                System.Console.WriteLine($"Du hast noch: {bank}");
+
             }
             else
             {
-                Console.WriteLine($"Möchtest du {alleFelder[totalDiceCount]} Kaufen?");
-                System.Console.WriteLine("-------------------------------");
+                Console.WriteLine("You are Broke...");
             }
-
-            Console.Write("[y/n]");
-            string yesNo = Console.ReadLine();
-
-            if (yesNo == "y" || yesNo == "Y")
-            {
-                if (bank <= feldPreise[totalDiceCount])
-                {
-                    Console.WriteLine("You are Broke...");
-                }
-                else
-                {
-                    bank -= feldPreise[totalDiceCount];
-                }
-            }
-            else if (yesNo == "N".ToUpper())
-            {
-                bank = bank;
-            }
+        }
+        else if (yesNo == "N".ToUpper())
+        {
+            bank = bank + 0;
+        }
+        return yesNo;
     }
 
     public static int Dicer(string[] DiceFaces)
@@ -200,7 +226,7 @@ public static class MonopolyOnConsole
         int diceCount = 0;
 
         Console.WriteLine("Press any key to roll the dice.");
-        Console.ReadKey();
+        Console.ReadLine();
         DiceAnimator(DiceFaces);
 
         int number = random.Next(1, 7);
@@ -227,11 +253,11 @@ public static class MonopolyOnConsole
             System.Console.WriteLine("Würfeln...");
             DrawDice(randomThrow, DiceFaces);
             Thread.Sleep(500);
-            
+
         }
     }
 
-    public static void EreignisFelder(int bank, int number, int totalDiceCount, bool gefaengnissFreischein, string[] alleFelder)
+    public static void EreignisFelder(int number, int totalDiceCount, bool gefaengnissFreischein, string[] alleFelder)
     {
         string[] monopolyEreigniskarten = {
         "Rücke vor bis zur Seestraße. Wenn du über Los kommst, ziehe 2045 € ein.",
@@ -343,7 +369,23 @@ public static class MonopolyOnConsole
         }
 
     }
-    private static void boardDrawer(string[] gameBoard, string[] alleFelder)
+
+    private static void PlayerColor(int currentPlayer)
+    {
+        switch (currentPlayer)
+        {
+            case 1: Console.ForegroundColor = ConsoleColor.Magenta; break;
+            case 2: Console.ForegroundColor = ConsoleColor.Blue; break;
+            case 3: Console.ForegroundColor = ConsoleColor.Red; break;
+            case 4: Console.ForegroundColor = ConsoleColor.Green; break;
+            case 5: Console.ForegroundColor = ConsoleColor.Yellow; break;
+            case 6: Console.ForegroundColor = ConsoleColor.Cyan; break;
+            case 7: Console.ForegroundColor = ConsoleColor.DarkMagenta; break;
+            case 8: Console.ForegroundColor = ConsoleColor.DarkBlue; break;
+            default: Console.ForegroundColor = ConsoleColor.White; break;
+        }
+    }
+    private static void boardDrawer(string[] gameBoard, string[] alleFelder, int currentPlayer, int[] feldPreise, int[] boughtGround)
     {
         string currentField = alleFelder[totalDiceCount];
         foreach (string line in gameBoard)
@@ -351,20 +393,25 @@ public static class MonopolyOnConsole
             int fieldPos = line.IndexOf(currentField);
             if (fieldPos > 0)
             {
-                System.Console.Write(line.Substring(0, fieldPos));
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                System.Console.Write(currentField);
+                Console.Write(line.Substring(0, fieldPos));
+                int feldIndex = Array.IndexOf(alleFelder, currentField);
+                if (feldIndex == totalDiceCount)
+                    PlayerColor(currentPlayer); 
+                else if (boughtGround[feldIndex] != 0)
+                    PlayerColor(boughtGround[feldIndex]);  
+                else
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                Console.Write(currentField);
                 Console.ResetColor();
+
                 Console.WriteLine(line.Substring(fieldPos + currentField.Length));
-        }
-        else
-        {
-            Console.WriteLine(line);
+            }
+            else
+            {
+                Console.WriteLine(line);
+            }
         }
 
-        }
-        
-        
-        
     }
 }

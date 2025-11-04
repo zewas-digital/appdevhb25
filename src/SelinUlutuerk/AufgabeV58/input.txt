@@ -1,4 +1,4 @@
 Teilnehmer Größe Alter
 Max 165.4335 22
 Julia 188 9
-Jeremias 200.23 21ff
+Jeremias 200.23 21
