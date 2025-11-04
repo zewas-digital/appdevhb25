@@ -1,0 +1,4 @@
+Der teuerste Artikel 'Wassermelone' kostet € 4,00
+Der billigste Artikel 'Banane' kostet € 0,30
+Der Durchschnittspreis aller Artikel ist € 1,61
+Der Gesamtwert aller Artikel und Mengen ist € 481,10
