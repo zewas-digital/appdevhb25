@@ -52,7 +52,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe57.Quadrien.Start();
             // AufgabeV58.PrintFileFormatted.Start();
             // AufgabeV59.Inventur.Start();
-            Aufgabe62.ReadAndDisplayCSV.Start();
+            // Aufgabe62.ReadAndDisplayCSV.Start();
+            Aufgabe63.ProcessNumbers.Start();
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);

@@ -64,9 +64,10 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe54.DrawCalendar.Start();
             // Aufgabe55.ParticipantsList.Start();
             // Aufgabe56.ParticipantsList2.Start();
-            Aufgabe57.Quadrieren.Start();
-
-            // Monopoly.MonopolyOnConsole.MonopolyStart();
+            // Aufgabe57.Quadrieren.Start();
+            // Aufgabe62.ReadAndDisplayCSV.Start();
+            // Aufgabe63.ProcessNumbers.Start([100, -6, 23, -87, 1, 0, 77, -543]);
+            Monopoly.MonopolyOnConsole.MonopolyStart();
         }  
     }
 }
