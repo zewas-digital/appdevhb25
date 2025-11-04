@@ -21,7 +21,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe50
             DateTime time = DateTime.Now;
             DateTime time2 = new DateTime(2004, 3, 13);
             // Console.WriteLine(time2); 
-            Console.WriteLine(time2.ToString("yyyy,mm,dddd,hhhh"));
+            Console.WriteLine(time2.ToString("yyyy,MM,dddd,hhhh"));
             Console.WriteLine(time2.ToString("G"));
 
             //1.
