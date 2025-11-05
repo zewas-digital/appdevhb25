@@ -1,4 +1,5 @@
 ﻿
+using System.Security.Cryptography.X509Certificates;
 using Appdevhb25.SelinUlutuerk.Aufgabe25;
 
 namespace Appdevhb25.SelinUlutuerk
@@ -53,8 +54,11 @@ namespace Appdevhb25.SelinUlutuerk
             // AufgabeV58.PrintFileFormatted.Start();
             // AufgabeV59.Inventur.Start();
             // Aufgabe62.ReadAndDisplayCSV.Start();
-            Aufgabe63.ProcessNumbers.Start();
-
+            // Aufgabe63.ProcessNumbers.Start();
+            // Aufgabe64.Intro.Start();
+            // Aufgabe65.Intro.Start();
+            // Aufgabe66.Intro.Start();
+            // AufgabeV67.Intro.Start();
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
             // Bonusaufgabe14.PrintCircle.Start();
