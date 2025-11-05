@@ -15,7 +15,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe68
             Fotoapparat fotoapparat = new Fotoapparat();            
             fotoapparat.Brennweite = 55.5;
             fotoapparat.MacheEinFoto();
-            
+            fotoapparat.AusgabeBrennweite();            
         }
     }
 }
