@@ -17,7 +17,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe20
             {
                 product *= i;
             }
-            return product; 
+            return product;
         }
     }
 }

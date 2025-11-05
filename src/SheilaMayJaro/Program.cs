@@ -126,8 +126,17 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             // Aufgabe63.ProcessNumbers.Start(); 
             // System.Console.WriteLine();
-
-
+            // Aufgabe64and65.Cars.Start();
+            // System.Console.WriteLine();
+            // Aufgabe66.PersonalInformations.Start();
+            // System.Console.WriteLine();
+            // Aufgabe67.Inventory2.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe68.Aufgabe68.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe69.Aufgabe69.Start(); 
+            // System.Console.WriteLine();
+            
         }
     }
 }

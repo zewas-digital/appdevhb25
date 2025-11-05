@@ -25,16 +25,21 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe35
                 Console.Write($"{item}\t");
             }
             Console.WriteLine();
-            PrintBubbleSort(bigNumbers); 
+            PrintBubbleSort(bigNumbers);
+            int[] NumbersSorted = new int[] { 1, 2, 3, 4, 5 };
+            PrintBubbleSort(NumbersSorted); 
             
 
         }
         public static void PrintBubbleSort(int[] array) //kein Rückgabewert 
         {
+            int count = 0;
             int temp = 0;
+            bool wasSwitched = false; //um die Anzahl an Schleifen zu verringern, soll es mit dem bool erkennen, dass die Zahlenfolge schon sortiert ist 
             for (int i = array.Length; i > 0; i--)
             {
-                for (int j = 0; j < array.Length-1; j++)
+                wasSwitched = false;
+                for (int j = 0; j < array.Length - 1; j++)
                 {
                     if (array[j] > array[j + 1]) // j wird mit dem rechten Nachbar verglichen, wenn j größer ist, wird er nach rechts verschoben 
                     {
@@ -42,9 +47,17 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe35
                         array[j + 1] = array[j];
                         array[j] = temp;
                         //um die Zahlen zu tauschen, wird ein temporärer Speicherplatz mit temp gemacht, um j+1 dort zwischenzuspeichern
+                        wasSwitched = true;
                     }
+                    count++;
+                }
+                if (wasSwitched == false)
+                {
+                    break;
                 }
             }
+            System.Console.WriteLine();
+            System.Console.WriteLine($"Count: {count}");
             foreach (int item in array) //die foreach-Schleife dient dazu die einzelnen Elemente auszugeben 
             {
                 Console.Write($"{item}\t"); 

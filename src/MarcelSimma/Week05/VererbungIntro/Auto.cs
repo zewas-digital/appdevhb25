@@ -24,6 +24,13 @@ namespace Appdevhb25.MarcelSimma.Week05.VererbungIntro
         {
             AnzahlDerTueren = anzahlDerTueren;
             AnzahlDerProduziertenAutos++;
+            AnzahlDerProduziertenFahrzeuge++;
+
+        }
+
+        public override void Fahren(double distance)
+        {
+            Kilometerstand += distance;
         }
     }
 }
