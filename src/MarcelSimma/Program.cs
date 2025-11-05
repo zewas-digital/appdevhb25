@@ -7,6 +7,9 @@ using Appdevhb25.MarcelSimma.Aufgabe39;
 using Appdevhb25.MarcelSimma.Aufgabe41;
 using Appdevhb25.MarcelSimma.Aufgabe52;
 using Appdevhb25.MarcelSimma.week02;
+using Appdevhb25.MarcelSimma.Week05;
+using Appdevhb25.MarcelSimma.Week05.Aufgabe65;
+using Appdevhb25.MarcelSimma.Week05.GetterAndSetterIntro;
 using MarcelSimma.Aufgabe62;
 
 
@@ -21,6 +24,7 @@ namespace Appdevhb25.MarcelSimma
 
         static void Main(string[] args)
         {
+
             Console.Clear();
             //Aufgabe01.PrintA.Start();
             //Aufgabe02.Malreihen.Start();
@@ -80,8 +84,12 @@ namespace Appdevhb25.MarcelSimma
             //DataStreamsIntro.Start();
             //ParticipantsList.Start();
             //CinemaRevenue.Start();
-            ProcessNumbers.Start();
-        
+            //ProcessNumbers.Start();
+            //OOPIntro.Intro.Start();
+            //Aufgabe67.Aufgabe67.Start();
+            //GetterAndSetter.Start();
+            Vererbung.Start();
+            
             
 
         }
