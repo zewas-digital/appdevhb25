@@ -1,4 +1,4 @@
-namespace Appdevhb25.MarcelSimma.Week05.GetterAndSetter
+namespace Appdevhb25.MarcelSimma.Week05.GetterAndSetterIntro
 {
     public class GetterAndSetter
     {
