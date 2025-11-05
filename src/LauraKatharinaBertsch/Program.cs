@@ -64,6 +64,13 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe62.ReadAndDisplayCSV.Start();
             //Aufgabe63.ProcessNumbers.Start();
             //Aufgabe59.Inventur.Start();
+            //Aufgabe64.Intro.Start();
+            //Aufgabe65.Intro.Start();
+            //Aufgabe66.Intro.Start();
+            //Aufgabe67.Inventur2.Start();
+            //Aufgabe68.Intro.Start();
+            //Aufgabe69.Intro.Start();
+            Aufgabe70.Intro.Start();
         }
     }
 }
