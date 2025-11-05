@@ -7,7 +7,9 @@ using Appdevhb25.MarcelSimma.Aufgabe39;
 using Appdevhb25.MarcelSimma.Aufgabe41;
 using Appdevhb25.MarcelSimma.Aufgabe52;
 using Appdevhb25.MarcelSimma.week02;
-using Appdevhb25.MarcelSimma.Week05.GetterAndSetter;
+using Appdevhb25.MarcelSimma.Week05;
+using Appdevhb25.MarcelSimma.Week05.Aufgabe65;
+using Appdevhb25.MarcelSimma.Week05.GetterAndSetterIntro;
 using MarcelSimma.Aufgabe62;
 
 
@@ -85,7 +87,8 @@ namespace Appdevhb25.MarcelSimma
             //ProcessNumbers.Start();
             //OOPIntro.Intro.Start();
             //Aufgabe67.Aufgabe67.Start();
-            GetterAndSetter.Start();
+            //GetterAndSetter.Start();
+            Vererbung.Start();
             
             
 
