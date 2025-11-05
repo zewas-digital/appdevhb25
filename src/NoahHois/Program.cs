@@ -1,4 +1,5 @@
 ﻿using System;
+using Appdevhb25.NoahHois.Aufgabe64;
 
 namespace Appdevhb25.NoahHois
 {
@@ -52,16 +53,31 @@ namespace Appdevhb25.NoahHois
             // Aufgabe39.CalculateSundays.Start();
             // Aufgabe40.CalculateWorkingDays.Start();
             // Aufgabe55.ParticipantsList.Start();
-            Aufgabe56.ParticipantsList2.Start();
-
+            // Aufgabe56.ParticipantsList2.Start();
+            // Aufgabe57.Quadrieren.Start();
+            // Aufgabe58.PrintFileFormatted.Start();
+            // Aufgabe59.Inventur.Start();
+            // Aufgabe62.ReadAndDisplayCSV.Start();
+            // Aufgabe63.ProccesNumbers.Start([]);
+            // Aufgabe64.ProgramCar.Start();  //Aufgabe 64 und 65
+            // Aufgabe66.ProgramPerson.Start();
+            Aufgabe68.ProgramFotoapparat.Start();
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();
             // BonusAufgabe2.PrintCricle.BonusAufgabe2(20);
             // BonusAufgabe3.PrintChristmasTree.BonusAufgabe3();
             // BonusAufgabe4.BubbleSort.SortArray();
             // BonusAufgabe5.Ziffernsumme.DigitSumArray();
+            // BonusAufgabe6.ReplaceStringRegex.Start();
+            // BonusAufgabe7.ValidatePhoneNumber.Start();
+            // BonusAufgabe8.ValidateEmail.Start();
+            // BonusAufgabe9.DrawCalendar.Start();
+            // BonusAufgabe10.Directories.Start([]);
+            // BonusAufgabe11.MoreDirectories.Start([]);
 
             // CodewarsAufgabe1.Codewars1.Solution("abc", "bc");
+
+            // ZusatzAufgabe1.ZusatzAufgabe1.Start();
         }
     }
 }
