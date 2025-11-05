@@ -6,7 +6,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe66
     {
         // Felder
         public double Groesse;
-        public DateTime Geburtsdatum;
+        private DateTime _geburtsdatum;
         public string Name;
         public double Gewicht;
 
@@ -15,6 +15,28 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe66
         {
 
         }
+
+
+        public DateTime Geburtsdatum
+        {
+            get
+            {
+                return _geburtsdatum;
+            }
+
+            set
+            {
+                if (value < new DateTime(1900, 01, 01))
+                {
+                    _geburtsdatum = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Geburtsdatum liegt zu weit zurück!");
+                }
+            }
+        }
+
 
         // Instanz Methode, weil es nicht static ist
         public void PrintPersonen()

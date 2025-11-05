@@ -13,7 +13,14 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV67
         // Standardkonstruktor ist immer verfügbar
         public Artikel()
         {
-            
+
+        }
+        
+        public Artikel(string produktName, int menge, decimal oreis)
+        {
+            ProduktName = produktName;
+            Menge = menge;
+            Preis = oreis;
         }
     }
 }
