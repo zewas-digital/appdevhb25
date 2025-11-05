@@ -7,6 +7,7 @@ namespace Appdevhb25.KerimAlkis
     {
         static void Main(string[] args)
         {
+            #region StruktuierteProgrammierung
             #region Bonusaufgaben
             //---Woche 1---
             //Bonusaufgabe01.PrintDeltoid.Start(22);
@@ -30,8 +31,11 @@ namespace Appdevhb25.KerimAlkis
             //Bonusaufgabe13.ValidatePhoneNumber.Start();
             //Bonusaufgabe14.ValidateEmail.Start();
             //Bonusaufgabe15.DrawCalendar.Start();
-            #endregion
 
+            //---Woche 5---
+            //Bonusaufgabe16.Directories.Start();
+            //Bonusaufgabe17.MoreDirectories.Start();
+            #endregion
             #region Aufgaben
             //---Woche 1---
             //Aufgabe01.PrintA.Start();
@@ -76,18 +80,31 @@ namespace Appdevhb25.KerimAlkis
 
             //---Woche 4---
             //Aufgabe36.MyBirthday.Start();
-            Aufgabe37.CalculateSundays.Start();
+            //Aufgabe37.CalculateSundays.Start();
             //Aufgabe38.ParticipantsList.Start();
             //Aufgabe39.ParticipantsList2.Start();
             //Aufgabe40.Quadrieren.Start();
-            #endregion
 
+            //---Woche 5---
+            //Aufgabe41.ReadAndDisplayCSV.Start();
+            //Aufgabe42.ProcessNumbers.Start();
+            #endregion
             #region Vertiefungsaufgaben
             //---Woche 4---
             //Vertiefungsaufgabe01.CalculateWorkingDays.Start();
             //Vertiefungsaufgabe02.PrintFileFormatted.Start();
             //Vertiefungsaufgabe03.Inventur.Start();
             #endregion
+            #endregion
+
+
+
+            //OOP
+            //---Woche 5---
+            //Aufgabe64(65).Cars.Start();
+            Aufgabe66.Personen.Start();
+            
+
 
 
 
