@@ -1,5 +1,7 @@
 using System;
 using Appdevhb25.LiaLouiseNatter.Aufgabe21;
+using Appdevhb25.LiaLouiseNatter.Aufgabe64;
+using Appdevhb25.LiaLouiseNatter.Aufgabe66;
 
 namespace Appdevhb25.LiaLouiseNatter
 {
@@ -67,7 +69,54 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe57.Quadrieren.Start();
             // Aufgabe62.ReadAndDisplayCSV.Start();
             // Aufgabe63.ProcessNumbers.Start([100, -6, 23, -87, 1, 0, 77, -543]);
-            Monopoly.MonopolyOnConsole.MonopolyStart();
+            //Monopoly.MonopolyOnConsole.MonopolyStart();
+            /*
+            Car carInfo = new Car();
+            carInfo.PrintCar();
+            */
+
+            /*
+            Cars2 carDistance = new Cars2();
+            carDistance.Fahren(200);
+            */
+
+            // Personen persons = new Personen();
+
+            /*
+            List<Personen> persons = new List<Personen>();
+
+            Personen p1 = new Personen();
+            p1.Height = 200;
+            p1.Brithday = new DateTime(2005,02,03);
+            p1.Name = "peter";
+            p1.Weight = 45;
+
+            persons.Add(p1);
+            p1.Print();
+            p1.GetBirthday();
+
+
+            Personen p2 = new Personen();
+            p2.Height = 164;
+            p2.Brithday = new DateTime(2007,12,21);
+            p2.Name = "Lia";
+            p2.Weight = 50;
+            persons.Add(p2);
+            p2.Print();
+            p2.GetBirthday();
+            */
+            Aufgabe67.Inventur2.Start();
+
+
+
+           
+
+            
+            
+            
+
+
+
         }  
     }
 }
