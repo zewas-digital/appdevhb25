@@ -9,6 +9,8 @@ public static class MonopolyOnConsole
 
     public static void MonopolyStart()
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+        Console.ForegroundColor = ConsoleColor.White;
         Monopoly();
     }
 
@@ -240,6 +242,7 @@ public static class MonopolyOnConsole
         for (int i = 0; i < 5; i++)
         {
             Console.WriteLine(DiceFaces[indexNum + i]);
+
         }
     }
 
@@ -385,33 +388,64 @@ public static class MonopolyOnConsole
             default: Console.ForegroundColor = ConsoleColor.White; break;
         }
     }
+    
     private static void boardDrawer(string[] gameBoard, string[] alleFelder, int currentPlayer, int[] feldPreise, int[] boughtGround)
     {
-        string currentField = alleFelder[totalDiceCount];
+        Console.Clear();
+
         foreach (string line in gameBoard)
         {
-            int fieldPos = line.IndexOf(currentField);
-            if (fieldPos > 0)
-            {
-                Console.Write(line.Substring(0, fieldPos));
-                int feldIndex = Array.IndexOf(alleFelder, currentField);
-                if (feldIndex == totalDiceCount)
-                    PlayerColor(currentPlayer); 
-                else if (boughtGround[feldIndex] != 0)
-                    PlayerColor(boughtGround[feldIndex]);  
-                else
-                    Console.ForegroundColor = ConsoleColor.White;
+            int lastPos = 0;
+            string currentLine = line;
 
-                Console.Write(currentField);
+            while (true)
+            {
+                int nearestPos = -1;
+                int feldIndex = -1;
+
+                // Such das NÄCHSTE Feld, das in dieser Zeile vorkommt
+                for (int i = 0; i < alleFelder.Length; i++)
+                {
+                    int pos = currentLine.IndexOf(alleFelder[i]);
+                    if (pos >= 0 && (nearestPos == -1 || pos < nearestPos))
+                    {
+                        nearestPos = pos;
+                        feldIndex = i;
+                    }
+                }
+
+                // Wenn nix mehr gefunden -> Rest ausgeben & break
+                if (feldIndex == -1)
+                {
+                    Console.Write(currentLine);
+                    break;
+                }
+
+                // Text VOR dem Feld ausgeben
+                Console.Write(currentLine.Substring(0, nearestPos));
+
+                // Farb setzen
+                if (feldIndex == totalDiceCount)
+                    PlayerColor(currentPlayer);
+                else if (boughtGround[feldIndex] != 0)
+                    PlayerColor(boughtGround[feldIndex]);
+                else
+                    Console.ForegroundColor = ConsoleColor.Gray;
+
+                // Feldname farbig ausgeben
+                Console.Write(alleFelder[feldIndex]);
                 Console.ResetColor();
 
-                Console.WriteLine(line.Substring(fieldPos + currentField.Length));
+                // Alles nach dem Feld neu setzen
+                currentLine = currentLine.Substring(nearestPos + alleFelder[feldIndex].Length);
             }
-            else
-            {
-                Console.WriteLine(line);
-            }
+
+            Console.WriteLine();
         }
 
+        Console.ResetColor();
     }
+
+
+
 }
