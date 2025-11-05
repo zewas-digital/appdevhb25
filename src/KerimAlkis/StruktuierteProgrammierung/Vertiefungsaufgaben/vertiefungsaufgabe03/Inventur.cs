@@ -7,8 +7,8 @@ namespace Appdevhb25.KerimAlkis.Vertiefungsaufgabe03
     {
         public static void Start()
         {
-            string path = @"C:\Users\ALKIKER\Documents\appdevhb25\src\KerimAlkis\vertiefungsaufgabe03\input.txt";
-            string pathoutput = @"C:\Users\ALKIKER\Documents\appdevhb25\src\KerimAlkis\vertiefungsaufgabe03\output.txt";
+            string path = @"C:\Users\ALKIKER\Documents\appdevhb25\src\KerimAlkis\Vertiefungsaufgaben\vertiefungsaufgabe03\input.txt";
+            string pathoutput = @"C:\Users\ALKIKER\Documents\appdevhb25\src\KerimAlkis\Vertiefungsaufgaben\vertiefungsaufgabe03\output.txt";
             string[] articels = File.ReadAllLines(path);
 
             using(StreamWriter sw = new StreamWriter(pathoutput))
@@ -26,9 +26,9 @@ namespace Appdevhb25.KerimAlkis.Vertiefungsaufgabe03
                 double durchschnittsPreis = gesamtwert/articels.Length-1;
 
 
-                for (int i = 0; i < articels.Length; i++)
+                for (int i = 0; i < articels.Length-1; i++)
                 {
-                    string[] parts = articels[i].Split(' ');
+                    string[] parts = articels[i].Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                     string name = parts[0];
                     int menge = int.Parse(parts[1]);
