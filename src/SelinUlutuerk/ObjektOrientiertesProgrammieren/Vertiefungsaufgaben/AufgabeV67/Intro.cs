@@ -21,10 +21,13 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV67
             {
                 string[] parts = lines[i].Split("  ");
 
-                artikel[i] = new Artikel();
-                artikel[i].ProduktName = parts[0];
-                artikel[i].Menge = int.Parse(parts[1]);
-                artikel[i].Preis = decimal.Parse(parts[2], CultureInfo.InvariantCulture);
+                // artikel[i] = new Artikel();
+                // artikel[i].ProduktName = parts[0];
+                // artikel[i].Menge = int.Parse(parts[1]);
+                // artikel[i].Preis = decimal.Parse(parts[2], CultureInfo.InvariantCulture);
+
+                // macht dasselbe wie unten:
+                artikel[i] = new Artikel(parts[0], int.Parse(parts[1]), decimal.Parse(parts[2], CultureInfo.InvariantCulture));
             }
 
             for (int i = 0; i < artikel.Length; i++)
