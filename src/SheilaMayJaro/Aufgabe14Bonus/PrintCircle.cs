@@ -2,60 +2,35 @@ using System;
 
 namespace Appdevhb25.SheilaMayJaro.Aufgabe14
 {
-    public class PrintCircle
+    public class Circle
     {
         public static void Start()
         {
             Console.WriteLine("Aufgabe 14)");
+            PrintCircle(20);
 
         }
-        public static void PrintCircleMethod(int length)
+        public static bool IsPointOnCircle(int x, int y, int radius)
         {
-            // for (int y = length; y > length - 1; y--)
-            // {
-            //     for (int x = length * -1; x < length; x++)
-            //     {
-            //         if (y == length)
-            //         {
-            //             Console.Write("*");
-            //         }
-            //         else
-            //         {
-            //             Console.Write(".");
-            //         }
-            //     }
-            //     Console.WriteLine();
-            // }
-            // for (int y = length; y > (length * -1); y--)
-            // {
-            //     for (int x = length * -1; x < length; x++)
-            //     {
-            //         if (y + Math.Abs(x) == 13)
-            //         {
-            //             Console.Write("*");
-            //         }
-            //         else
-            //         {
-            //             Console.Write(".");
-            //         }
-            //     }
-            //     Console.WriteLine();
-            //}
-            // for (int y = length; y > length * -1; y--)
-            // {
-            //     for (int x = length * -1; x < length; x++)
-            //     {
-            //         if (Math.Abs(x) == length)
-            //         {
-            //             Console.Write("*");
-            //         }
-            //         else
-            //         {
-            //             Console.Write(".");
-            //         }
-            //     }
-            //     Console.WriteLine(); 
-            //}
+            return x*x + y*y == radius*radius; 
+        }
+        public static void PrintCircle(int radius)
+        {
+            for (int x = -radius; x <= radius; x++)
+            {
+                for (int y = -radius; y <= radius; y++)
+                {
+                    if (IsPointOnCircle(x, y, radius))
+                    {
+                        System.Console.Write("**");
+                    }
+                    else
+                    {
+                        System.Console.Write("  ");
+                    }
+                }
+                System.Console.WriteLine();
+            }
         }
     }
 }

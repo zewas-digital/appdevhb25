@@ -115,6 +115,30 @@ namespace Appdevhb25.SashaLeonardoMattes
             }
         }
 
+        public static void Print2DArrayAsTable(string[,] arr, int[]colSizes)
+        {
+            for (int i = 0; i < arr.GetLength(0) - 1; i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if (j == arr.GetLength(1) - 1)
+                    {
+                        System.Console.Write("{0,-" + colSizes[j] + "}", arr[i, j]); //wenn wir in der letzten Spalte sind kein " |" sondern "" 
+                    }
+                    else
+                    {
+                        System.Console.Write("{0,-" + colSizes[j] + "} |", arr[i, j]); //- nach 0 macht linksbündig statt rechtsbündig
+                    }
+                }
+                System.Console.WriteLine();
+
+                if (i != arr.GetLength(0)-1 -1) //nur wenn wir nicht in der letzten Zeile sind Trennstrich
+                {
+                    System.Console.WriteLine(new string('-', colSizes.Sum() + (colSizes.Length-1)*2)); //schreibt so viele "-" wie gesamte Spaltenbreite + pro Zeile 2 extra fpr leerzeichen und "|"
+                }
+            }
+        }
+
         public static int GetMax2DArray(int[,] arr)
         {
             int max = arr[0, 0];

@@ -32,8 +32,8 @@ namespace Appdevhb25.SheilaMayJaro
             // Aufgabe13.PrintDeltoid.PrintRhombus(7);
             // Console.WriteLine(); 
             // Aufgabe13.PrintDeltoid.PrintRhombus(5); 
-            // Aufgabe14.PrintCircle.Start(); 
-            // Aufgabe14.PrintCircle.PrintCircleMethod(10);
+            // Aufgabe14.Circle.Start(); 
+            // System.Console.WriteLine();
             // Aufgabe15.ChristmasTree.Start();
             // Console.WriteLine(); 
             // Aufgabe16.HigherOrLower.Start();
@@ -44,6 +44,8 @@ namespace Appdevhb25.SheilaMayJaro
             // Console.WriteLine();
             // Aufgabe20.Factorial.Start();
             // Console.WriteLine();
+            // Aufgabe21.FactorialExtended.Start(); 
+            // System.Console.WriteLine();
             // Aufgabe22.DivideAndRule.Start();
             // Console.WriteLine();
             //Aufgabe23.CountInSmallSteps.Start(); 
@@ -64,6 +66,8 @@ namespace Appdevhb25.SheilaMayJaro
             // Console.WriteLine(); 
             // Aufgabe31.RandomNumberArray.Start();
             // Console.WriteLine(); 
+            // Aufgabe32.SumOfDigits.Start(); 
+            // System.Console.WriteLine();
             // Aufgabe33.CopyArray.Start();
             // Console.WriteLine();
             // Aufgabe34.CopyReverse.Start();
@@ -90,6 +94,10 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             // Aufgabe46.ReplaceString.Start();
             // System.Console.WriteLine();
+            // Aufgabe47Bonus.ReplaceStringRegex.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe48.ValidatePhoneNumber.Start();
+            // System.Console.WriteLine();
             // CalendarIntroTODO.CalendarIntro.Start(); 
             // System.Console.WriteLine();
             // Aufgabe50.WhenAndWhere.Start(); 
@@ -106,6 +114,29 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             // Aufgabe57.Square.Start(); 
             // System.Console.WriteLine();
+            // Aufgabe58VertiefteAufgabe.PrintFileFormatted.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe59.Inventory.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe60Bonus.Directories.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe61Bonus.MoreDirectories.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe62.ReadAndDisplayCSV.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe63.ProcessNumbers.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe64and65.Cars.Start();
+            // System.Console.WriteLine();
+            // Aufgabe66.PersonalInformations.Start();
+            // System.Console.WriteLine();
+            // Aufgabe67.Inventory2.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe68.Aufgabe68.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe69.Aufgabe69.Start(); 
+            // System.Console.WriteLine();
+            
         }
     }
 }

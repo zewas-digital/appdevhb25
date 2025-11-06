@@ -1,4 +1,5 @@
 ﻿
+using System.Security.Cryptography.X509Certificates;
 using Appdevhb25.SelinUlutuerk.Aufgabe25;
 
 namespace Appdevhb25.SelinUlutuerk
@@ -52,6 +53,16 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe57.Quadrien.Start();
             // AufgabeV58.PrintFileFormatted.Start();
             // AufgabeV59.Inventur.Start();
+            // Aufgabe62.ReadAndDisplayCSV.Start();
+            // Aufgabe63.ProcessNumbers.Start();
+            // Aufgabe64.Intro.Start();
+            // Aufgabe65.Intro.Start();
+            // Aufgabe66.Intro.Start();
+            // AufgabeV67.Intro.Start();
+            // Aufgabe68.Intro.Start();
+            // Aufgabe69.Intro.Start();
+            // Aufgabe70.Vererbung.Start();
+            Aufgabe71.Vererbung.Start();
 
 
 
@@ -71,7 +82,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe49.ValidateEmail.Start();
             // Bonusaufgabe54.DrawCalendar.Start();
             // Bonusaufgabe60.Directories.Start();
-            Bonusaufgabe61.MoreDirectories.Start();
+            // Bonusaufgabe61.MoreDirectories.Start();
+
 
 
 

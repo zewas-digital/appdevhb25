@@ -1,0 +1,31 @@
+Name	Menge	Preis
+Apfel	1 kg	2.49
+Bananen	1 kg	1.99
+Vollmilch	1 l	1.29
+Mineralwasser still	1,5 l	0.79
+Butter	250 g	2.39
+Gouda Käse	200 g	2.89
+Eier	10 Stück	3.49
+Weizenmehl	1 kg	1.19
+Zucker	1 kg	1.29
+Spaghetti	500 g	1.49
+Tomatensauce	400 g	2.19
+Brot	750 g	2.79
+Kaffee gemahlen	500 g	6.99
+Schwarzer Tee	20 Beutel	2.49
+Orangensaft	1 l	2.59
+Kartoffeln	2,5 kg	3.99
+Zwiebeln	1 kg	1.59
+Karotten	1 kg	1.49
+Hähnchenbrustfilet	500 g	5.99
+Rinderhackfleisch	500 g	6.49
+Butterkekse	200 g	1.99
+Schokolade	100 g	1.59
+Joghurt	150 g	0.69
+Käsekuchen	1 Stück	3.49
+Waschmittel	1,5 l	6.49
+Toilettenpapier	8 Rollen	4.99
+Zahnpasta	75 ml	2.79
+Duschgel	250 ml	2.49
+Shampoo	300 ml	3.19
+Batterien AA	4 Stück	3.99

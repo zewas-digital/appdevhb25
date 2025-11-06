@@ -47,8 +47,9 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe44.CalculateWorkingDays.StartCalculateWorkingDays();
             //Aufgabe45.ParticipantList.StartParticipantList();
             //Aufgabe46.ParticipantList2.StartParticipantList2();
-            Aufgabe47.Square.StartSquare();
-
+            //Aufgabe47.Square.StartSquare();
+            //Aufgabe48.ReadAndDisplayCSV.StartReadAndDisplayCSV();
+            Aufgabe49.ProcessNumbers.StartProcessNumbers();
 
 
             // BonusAufgabe01.PrintDeltoid.StartPrintDeltoid();
