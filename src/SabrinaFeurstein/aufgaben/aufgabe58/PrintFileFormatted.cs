@@ -1,15 +1,15 @@
 using System;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben
+namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe58
 {
 
     public class PrintFileFormatted
     {
         public static void Start()
         {
-            using (StreamReader sr = new(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\58input.txt"))
+            using (StreamReader sr = new(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe58\input.txt"))
             {
-                using (StreamWriter sw = new(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\58output.txt"))
+                using (StreamWriter sw = new(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe58\output.txt"))
                 {
                     string line = sr.ReadLine();
                     string[] firstRow = line.Split(' ');
