@@ -102,11 +102,11 @@ namespace Appdevhb25.KerimAlkis
             //OOP
             //---Woche 5---
             //Aufgabe64(65).Cars.Start();
-            Aufgabe66.Personen.Start();
-            
-
-
-
+            //Aufgabe66.Personen.Start();
+            //Aufgabe67.Inventur2.Start();
+            //Aufgabe68.Fotoapparat.Start();
+            //Aufgabe69.MotorradAufgabe.Start();
+            Aufgabe71.Fahrzeuge.Start();
 
         }
     }
