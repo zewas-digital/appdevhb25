@@ -6,13 +6,14 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgab64
         {
 
             Car.Verbrauch = 7.7;
-            
-            Car car = new Car();
-            Car car2 = new Car();
-            car.Farbe = "schwarz";
-            car2.Farbe = "grün";
+
+            Car car = new Car("schwarz", 1234);            
+
+            car.PrintCarAttribute();
+
+            Car car2 = new Car("grün", 4321);
             car.Kennzeichen = "FK123HO";
-            
+            // car.seriennummer = 127389213; // kann im Nachhinein nicht verändert werden da auf privat gesetzt
             
             car.PrintCarAttribute();
             car2.PrintCarAttribute();
