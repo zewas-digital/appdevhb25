@@ -62,8 +62,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe68.Intro.Start();
             // Aufgabe69.Intro.Start();
             // Aufgabe70.Vererbung.Start();
-            Aufgabe71.Vererbung.Start();
-
+            // Aufgabe71.Vererbung.Start();
+            AufgabeV73.HardwareDerKamera.Start();
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
@@ -83,7 +83,7 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe54.DrawCalendar.Start();
             // Bonusaufgabe60.Directories.Start();
             // Bonusaufgabe61.MoreDirectories.Start();
-
+            // Bonusaufgabe72.Intro.Start();
 
 
 
