@@ -1,6 +1,3 @@
-using System;
-using Appdevhb25.JonaSchnell.Aufgabe63;
-
 namespace Appdevhb25.JonaSchnell
 {
     internal class Programm
@@ -56,7 +53,11 @@ namespace Appdevhb25.JonaSchnell
 
             //Aufgabe62.Aufgabe62.ReadAndDisplayCSV();
             //Aufgabe63.Aufgabe63.ProcessNumbers();
-            Aufgabe64.Aufgabe64.PrintCar();
+            //Aufgabe64.Aufgabe64.PrintCar();
+            //Aufgabe66.Aufgabe66.PrintPersonenAufgabe();
+            //Aufgabe68.Aufgabe68.FotoapparatAufgabe();
+            //Aufgabe68.AufgabeFotoapparat.StartFotoapparat();
+            Aufgabe69.AufgabeMotorrad.Moto();
         }
     }
 }
