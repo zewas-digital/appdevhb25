@@ -59,10 +59,11 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe65.Intro.Start();
             // Aufgabe66.Intro.Start();
             // AufgabeV67.Intro.Start();
-            Aufgabe68.Intro.Start();
-            {
-                
-            }
+            // Aufgabe68.Intro.Start();
+            // Aufgabe69.Intro.Start();
+            // Aufgabe70.Vererbung.Start();
+            Aufgabe71.Vererbung.Start();
+
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);

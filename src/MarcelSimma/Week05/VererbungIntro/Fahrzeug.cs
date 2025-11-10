@@ -1,8 +1,9 @@
 namespace Appdevhb25.MarcelSimma.Week05.VererbungIntro
 {
     // Fahrzeug ist die Basisklasse = Superklasse = Elternklasse = vererbende Klasse
-    public class Fahrzeug
+    public abstract class Fahrzeug
     {
+        // aus einer abstrakten Klasse können keine Objekte generiert werden. 
 
         /*
         Aufbau einer Klasse
@@ -97,7 +98,10 @@ namespace Appdevhb25.MarcelSimma.Week05.VererbungIntro
             System.Console.WriteLine("Farbe: " + Farbe);
             System.Console.WriteLine("Kennzeichen: " + Kennzeichen);
             System.Console.WriteLine("Kilometerstand: " + Kilometerstand);
-              
+
         }
+
+        public abstract void Fahren(double distance);
+
     }
 }

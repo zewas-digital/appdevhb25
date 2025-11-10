@@ -61,7 +61,10 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe64.Cars.Start64();
             //Aufgabe65.Cars2.Start65();
             //Aufgabe66.Personen.Start66();
-            Aufgabe68.FotoApparatA68.Start68();
+            //Aufgabe68.FotoApparatA68.Start68();
+            //Aufgabe69.MotorradA69.Start69();
+            //Aufgabe70.Output.Start70();
+            Aufgabe71.Output.Start71();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
