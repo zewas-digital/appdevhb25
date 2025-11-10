@@ -5,13 +5,13 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
 {
     public abstract class Fahrzeug
     {
-        private string _farbe;
-        private string _kennzeichen = "";
-        private double _kilometerstand = 0;
+        private string? _farbe;
+        private string? _kennzeichen ;
+        private double _kilometerstand;
         public static int AnzahlDerProduziertenFahrzeuge = 0;
 
 
-        public string Farbe
+        public string? Farbe
         {
             get
             {
@@ -23,7 +23,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
             }
         }
 
-        public string Kennzeichen
+        public string? Kennzeichen
         {
             get
             {
@@ -63,20 +63,33 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
             }
         }
 
-        public Fahrzeug(string farbe)
+        public Fahrzeug(string farbe, string kennzeichen, double kilometerstand )
         {
             Farbe = farbe;
-            Kilometerstand = 0;
-            Kennzeichen = "";
+            Kilometerstand = kilometerstand;
+            Kennzeichen = kennzeichen;
 
             AnzahlDerProduziertenFahrzeuge++;
         }
 
-        public virtual void DruckeDatenblatt()
+        public virtual string DruckeDatenblatt()
         {
-            System.Console.WriteLine("Farbe: " + Farbe);
-            System.Console.WriteLine("Kennzeichen: " + Kennzeichen);
-            System.Console.WriteLine("Kilometerstand: " + Kilometerstand);
+            return $"Farbe: {Farbe}\nKennzeichen: {Kennzeichen}\nKilometerstand: {Kilometerstand}\n";
+        }
+
+        public void Fahren(double distanz)
+        {
+            Kilometerstand += distanz;
+
+            // double alterKilometerstand = Kilometerstand;
+            // double neuerKilometerstand = alterKilometerstand + distanz;
+
+            // Console.WriteLine($"Alter Kilometerstand: {alterKilometerstand} km");
+            // Console.WriteLine($"Gefahrene Distanz: {distanz} km");
+            // Console.WriteLine($"Neuer Kilometerstand: {neuerKilometerstand} km");
+            // System.Console.WriteLine();
+            
+            // Kilometerstand = neuerKilometerstand;
         }
     }
 }

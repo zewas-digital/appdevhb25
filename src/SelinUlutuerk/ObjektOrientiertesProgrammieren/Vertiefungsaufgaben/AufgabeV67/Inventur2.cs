@@ -5,7 +5,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV67
     class Artikel
     {
         // Felder
-        public string ProduktName;
+        public string? ProduktName;
         public int Menge;
         public decimal Preis;
 
@@ -16,7 +16,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV67
 
         }
         
-        public Artikel(string produktName, int menge, decimal oreis)
+        public Artikel(string? produktName, int menge, decimal oreis)
         {
             ProduktName = produktName;
             Menge = menge;
