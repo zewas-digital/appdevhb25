@@ -5,8 +5,8 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe69
 {
     class Motorrad
     {
-        private string _farbe;
-        private string _kennzeichen;
+        private string? _farbe;
+        private string? _kennzeichen;
         private double _kilometerstand;
         private double _leistung;
         private double _kaufpreis;
@@ -15,7 +15,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe69
         public static double umsatz = 0;
 
 
-        public string Farbe
+        public string? Farbe
         {
             get
             {
@@ -27,7 +27,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe69
             }
         }
 
-        public string Kennzeichen
+        public string? Kennzeichen
         {
             get
             {
@@ -37,7 +37,8 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe69
             {
                 //\s? = kann Leerraum haben oder nicht
                 string pattern = @"^[A-Z]{1,2}-[A-Z]{1,2}\s?[0-9]{1,4}$";
-                if(Regex.IsMatch(value.ToUpper(), pattern))
+                // Value ist nie null desegen hier ! angewendet (könnte aber auch if verwenden)
+                if(Regex.IsMatch(value!.ToUpper(), pattern))
                 {
                     _kennzeichen = value.ToUpper();
                 }
