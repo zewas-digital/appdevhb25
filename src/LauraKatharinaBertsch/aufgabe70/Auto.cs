@@ -29,6 +29,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe70
         public void Fahren(double distanz)
         {
             Console.WriteLine("Distanz: " + distanz);
+            Console.WriteLine("neuer Kilometerstand: " + (Kilometerstand + distanz));
         }
         public void PrintAnzahlDerProduziertenAutos()
         {

@@ -52,7 +52,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe70
             Leistung = leistung;
             Kaufpreis = kaufpreis;
             AnzahlDerProduziertenMotorräder++;
-            Umsatz =Umsatz + Kaufpreis;
+            Umsatz = Umsatz + Kaufpreis;
         }
         public override void DruckeDatenblatt()
         {

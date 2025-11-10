@@ -5,8 +5,8 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe70
         public static void Start()
         {
             Auto auto1 = new Auto(5);
-            auto1.Fahren(1);
             auto1.DruckeDatenblatt();
+            auto1.Fahren(1);
             auto1.PrintAnzahlDerProduziertenAutos();
 
 

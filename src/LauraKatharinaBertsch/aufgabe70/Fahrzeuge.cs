@@ -6,6 +6,8 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe70
     {
         public static int AnzahlDerProduziertenFahrzeuge;
         private string _farbe;
+        public string _kennzeichen;
+        public double _kilometerstand;
         public string Farbe
         {
             get
@@ -17,7 +19,6 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe70
                 _farbe = value;
             }
         }
-        public string _kennzeichen;
         public string Kennzeichen
         {
             get
@@ -36,7 +37,6 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe70
                 }
             }
         }
-        public double _kilometerstand;
         public double Kilometerstand
         {
             get
