@@ -70,7 +70,8 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe67.Inventur2.Start();
             //Aufgabe68.Intro.Start();
             //Aufgabe69.Intro.Start();
-            Aufgabe70.Intro.Start();
+            //Aufgabe70.Intro.Start();
+            Aufgabe71.Intro.Start();
         }
     }
 }
