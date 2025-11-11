@@ -3,7 +3,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe73
     public class Fotoapparat : Hardware
     {
         public int AnzahlFotos;
-        private double AnzahlUebrigeFotos;
+        private int AnzahlUebrigeFotos;
         public Objektiv Objektiv;
         public Speicherkarte Speicherkarte;
 
@@ -39,9 +39,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe73
 
         public double AnzahlVerfuegbarerFotos()
         {
-            AnzahlUebrigeFotos = Speicherkarte.SpeicherkartenPLatz / 5;
-            Math.Round(AnzahlUebrigeFotos, 0);
-            return AnzahlUebrigeFotos;
+            return Speicherkarte.SpeicherkartenPLatz / 5;
         }
 
         public void WechsleObjektiv(Objektiv objektivKamera)
