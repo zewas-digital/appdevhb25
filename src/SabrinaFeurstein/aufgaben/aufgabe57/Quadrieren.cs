@@ -1,15 +1,15 @@
 using System;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben
+namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe57
 {
 
     public class Quadrieren
     {
         public static void Start()
         {
-            using (StreamReader sr = new StreamReader(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\57input.txt"))
+            using (StreamReader sr = new StreamReader(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe57\input.txt"))
             {
-                using (StreamWriter sw = new StreamWriter(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\57output.txt"))
+                using (StreamWriter sw = new StreamWriter(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe57\output.txt"))
                 {
                     string line = sr.ReadLine();
 

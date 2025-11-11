@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Appdevhb25.SabrinaFeurstein.aufgaben
+namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe59
 {
 
     public class Inventur
@@ -10,8 +10,8 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         {
             Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
 
-            string[] lines = File.ReadAllLines(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\59input.txt");
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\59output.txt"))
+            string[] lines = File.ReadAllLines(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe59.cs\input.txt");
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe59.cs\output.txt"))
             {
                 string[] artikel = new string[lines.Length];
                 int[] menge = new int[lines.Length];
@@ -19,7 +19,8 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
 
                 string teuerste = "";
                 double teuerstePreis = 0;
-                double durchschnittPreis = 0;
+                double durchschnittPreis;
+                double gesamtPreis = 0;
                 double gesamtWert = 0;
 
                 for (int i = 0; i < lines.Length; i++)
@@ -30,7 +31,10 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
                     menge[i] = int.Parse(part[1]);
                     preis[i] = double.Parse(part[2]);
 
-                    gesamtWert += preis[i];
+                    for (int j = 0; j < menge[i]; j++)
+                        gesamtWert += preis[i];
+
+                    gesamtPreis += preis[i];
 
                     if (preis[i] > teuerstePreis)
                     {
@@ -51,12 +55,12 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
                     }
                 }
 
-                durchschnittPreis = gesamtWert / artikel.Length;
+                durchschnittPreis = gesamtPreis / artikel.Length;
 
-                sw.WriteLine($"Durchschnittspreis aller Artikel: {teuerste}");
-                sw.WriteLine($"Durchschnittspreis aller Artikel: {billigste}");
+                sw.WriteLine($"teuerster Artikel: {teuerste}");
+                sw.WriteLine($"billigster Artikel: {billigste}");
                 sw.WriteLine($"Durchschnittspreis aller Artikel: {durchschnittPreis:F2}");
-                sw.WriteLine($"Gesamtwert aller Artikel und Mengen: {gesamtWert:F2}");
+                sw.Write($"Gesamtwert aller Artikel und Mengen: {gesamtWert:F2}");
             }
         }
     }

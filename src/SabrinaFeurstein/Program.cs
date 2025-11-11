@@ -58,13 +58,22 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.CalculateSundays.MitZeitspanne();
             // aufgaben.WorkingDays.Start();
             // aufgaben.DrawCalendar.Start();
-            // aufgaben.ParticipantsList.Start();
-            // aufgaben.ParticipantsList2.Start();
-            // aufgaben.Quadrieren.Start();
-            // aufgaben.PrintFileFormatted.Start();
-            // aufgaben.Inventur.Start();
+            // aufgaben.aufgabe55und56.ParticipantsList.Start();
+            // aufgaben.aufgabe55und56.ParticipantsList2.Start();
+            // aufgaben.aufgabe57.Quadrieren.Start();
+            // aufgaben.aufgabe58.PrintFileFormatted.Start();
+            // aufgaben.aufgabe59.Inventur.Start();
             // aufgaben.Directories.Start();
-            aufgaben.MoreDirectories.Start();
+            // aufgaben.MoreDirectories.Start();
+            // aufgaben.aufgabe62.ReadAndDisplayCSV.Start();
+            // aufgaben.aufgabe62.ReadAndDisplayCSV.StartAlt();
+            // aufgaben.ProcessNumbers.Start();
+            // aufgaben.aufgabe64und65.Cars.Start();
+            // aufgaben.aufgabe66.Personen.Start();
+            // aufgaben.aufgabe67.Inventory.Start();
+            // aufgaben.aufgabe68.Kameras.Start();
+            // aufgaben.aufgabe69.Motorraeder.Start();
+            aufgaben.aufgabe70.Fahrzeuge.Start();
         }
     }
 }

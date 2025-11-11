@@ -4,14 +4,14 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe68
 {
     class Fotoapparat
     {
-        private string _modell;
-        private string _hersteller;
+        private string? _modell;
+        private string? _hersteller;
         private double _brennweite;
         private double _megapixel;
         private double _bildschirmGroesse;
 
 
-        public string Hersteller
+        public string? Hersteller
         {
             get
             {
@@ -23,7 +23,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe68
             }
         }
 
-        public string Modell
+        public string? Modell
         {
             get
             {
@@ -81,10 +81,11 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe68
             BildschirmGroesse = bildschirmGroesse;
         }
 
-        public void TakePhoto()
+        // gehört zur Klasse und nicht zu einem Objekt deswegen Static
+        public static void TakePhoto()
         {
             System.Console.WriteLine("Let's take a photo!\nReady? (Yes/No)");
-            string antwort = Console.ReadLine();
+            string? antwort = Console.ReadLine();
 
             while (antwort == "Yes")
             {
