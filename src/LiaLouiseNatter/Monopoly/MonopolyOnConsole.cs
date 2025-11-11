@@ -127,10 +127,10 @@ public static class MonopolyOnConsole
             "|                  |          ▄██▀▀▀███▀▀▀██▄ ███    ███ ███▀▀▀██▄ ███    ███   ███    ███ ███    ███  ███       ███   ██▄              |      280         |",
             "|------------------|          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███    ███ ███    ███  ███       ███▄▄▄███              |------------------|",
             "|  Münchner Straße |          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███    ███ ███    ███  ███       ▀▀▀▀▀▀███              |   Bahnhofstraße  |",
-           @"|      100         |          ███   ███   ███ ███    ███ ███   ███ ███    ███ ▀█████████▀  ███    ███  ███       ▄██   ███              |      280         |",
-           @"|------------------|          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███        ███    ███  ███       ███   ███              |------------------|",
-           @"|   Westbahnhof    |          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███        ███    ███  ███▌    ▄ ███   ███              |   Hauptbahnhof   |",
-           @"|      200         |           ▀█   ███   █▀   ▀██████▀   ▀█   █▀   ▀██████▀   ▄████▀       ▀██████▀   █████▄▄██  ▀█████▀               |      280         |",
+            "|      100         |          ███   ███   ███ ███    ███ ███   ███ ███    ███ ▀█████████▀  ███    ███  ███       ▄██   ███              |      280         |",
+            "|------------------|          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███        ███    ███  ███       ███   ███              |------------------|",
+            "|   Westbahnhof    |          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███        ███    ███  ███▌    ▄ ███   ███              |   Hauptbahnhof   |",
+            "|      200         |           ▀█   ███   █▀   ▀██████▀   ▀█   █▀   ▀██████▀   ▄████▀       ▀██████▀   █████▄▄██  ▀█████▀               |      280         |",
             "|------------------|                                                                                                                    |------------------|",
             "|   Neue Straße    |                                                                                                                    |   Ereignisfeld   |",
             "|      160         |                                                                                                                    |      280         |",
@@ -154,9 +154,14 @@ public static class MonopolyOnConsole
         while (true)
         {
             System.Console.WriteLine($"Spieler {currentPlayer} ist an der Reihe!");
-            if (currentPlayer > maxPlayers)
+            if (currentPlayer >= maxPlayers)
             {
                 currentPlayer = 1;
+            }
+            else
+            {
+                currentPlayer++; 
+                
             }
             System.Console.WriteLine();
             int number = Dicer(DiceFaces);
@@ -184,10 +189,7 @@ public static class MonopolyOnConsole
             {
                 System.Console.WriteLine($"Du stehst auf: {alleFelder[totalDiceCount]}");
             }
-            currentPlayer++;
             EreignisFelder(number, totalDiceCount, gefaengnissFreischein, alleFelder);
-
-
         }
     }
     public static string Buyer(int[] feldPreise, int totalDiceCount, string[] alleFelder, int currentPlayer, int[] boughtGround)
@@ -428,7 +430,7 @@ public static class MonopolyOnConsole
                 if (feldIndex == totalDiceCount)
                     PlayerColor(currentPlayer);
                 else if (boughtGround[feldIndex] != 0)
-                    PlayerColor(boughtGround[feldIndex]);
+                    PlayerColor(boughtGround[feldIndex-1]);
                 else
                     Console.ForegroundColor = ConsoleColor.Gray;
 
@@ -445,7 +447,4 @@ public static class MonopolyOnConsole
 
         Console.ResetColor();
     }
-
-
-
 }
