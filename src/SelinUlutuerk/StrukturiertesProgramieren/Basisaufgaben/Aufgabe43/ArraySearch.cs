@@ -14,7 +14,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe43
             Console.WriteLine(satz);
 
             Console.WriteLine("\nWelchen Wert möchtest du suchen?");
-            string suche = Console.ReadLine();
+            string? suche = Console.ReadLine();
 
             int indexOf = Array.IndexOf(satzinArray, suche);
             if (indexOf == -1)

@@ -41,7 +41,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe44
 
             // 5. Anzahl bestimmtes Wort
             Console.WriteLine("\nWelches Wort soll gesucht werden?");
-            string wort = Console.ReadLine();
+            string? wort = Console.ReadLine();
 
             int anzahlWort = satzinArray.Count(w => w == wort);
             Console.WriteLine($"\nDie Anzahl des Wortes {wort} beträgt {anzahlWort}.\n");
