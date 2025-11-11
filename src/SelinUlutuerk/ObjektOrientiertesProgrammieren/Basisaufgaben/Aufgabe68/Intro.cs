@@ -12,6 +12,9 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe68
             kameras[1] = new Fotoapparat("Nikon", "Z50", 20.9, 16.0, 3.2);
 
             kameras[0].TakePhoto();
+
+            // Fotoapparat kamera = kameras[0];
+            // kamera.TakePhoto();
         }
     }
 }

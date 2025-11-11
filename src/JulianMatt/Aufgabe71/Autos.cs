@@ -40,7 +40,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe71
 
         public override string ToString()
         {
-            return $"Auto: Farbe= {Colour}, Kennzeichen= {LicensePlate}, km= {Kilometers}, Türen= {CountOfDoors}";
+            return $"Das ist ein Auto";
         }
     }
 }

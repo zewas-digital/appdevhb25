@@ -5,34 +5,36 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV73
 
     class Hardware
     {
-        private string? _modell;
-        private string? _seriennummer;
+        public string? Modell { get; init; }
+        private string? Seriennummer { get; init; }
 
+        // init sorgt dafür das man es nur einmal befüllen kann
 
-        public string? Modell
-        {
-            get
-            {
-                return _modell;
-            }
-            set
-            {
-                _modell = value;
-            }
-        }
-        public string? Seriennummer
-        {
-            get
-            {
-                return _seriennummer;
-            }
-            set
-            {
-                _seriennummer = value;
-            }
-        }
+        // public string? Modell
+        // {
+        //     get
+        //     {
+        //         return _modell;
+        //     }
+        //     set
+        //     {
+        //         _modell = value;
+        //     }
+        // }
 
-        public Hardware(string modell, string seriennummer)
+        // public string? Seriennummer
+        // {
+        //     get
+        //     {
+        //         return _seriennummer;
+        //     }
+        //     set
+        //     {
+        //         _seriennummer = value;
+        //     }
+        // }
+
+        public Hardware(string seriennummer, string modell)
         {
             Modell = modell;
             Seriennummer = seriennummer;
