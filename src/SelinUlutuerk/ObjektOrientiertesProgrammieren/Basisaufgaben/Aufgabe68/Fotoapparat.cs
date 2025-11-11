@@ -80,9 +80,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe68
             Brennweite = brennweite;
             BildschirmGroesse = bildschirmGroesse;
         }
-
-        // gehört zur Klasse und nicht zu einem Objekt deswegen Static
-        public static void TakePhoto()
+        public void TakePhoto()
         {
             System.Console.WriteLine("Let's take a photo!\nReady? (Yes/No)");
             string? antwort = Console.ReadLine();

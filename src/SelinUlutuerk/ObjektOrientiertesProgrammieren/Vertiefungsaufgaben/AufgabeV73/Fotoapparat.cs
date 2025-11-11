@@ -46,7 +46,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV73
             }
         }
 
-        public Fotoapparat(string modell, string seriennummer, Objektiv objektiv, Speicherkarte karte) : base(modell, seriennummer)
+        public Fotoapparat(string seriennummer, string modell, Objektiv objektiv, Speicherkarte karte) : base(seriennummer, modell)
         {
             _objektiv = objektiv;
             _karte = karte;
@@ -120,21 +120,21 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV73
 
     class Objektiv : Hardware
     {
-        private double _brennweite;
+        private double Brennweite { get; init; }
 
-        public double Brennweite
-        {
-            get
-            {
-                return _brennweite;
-            }
-            set
-            {
-                _brennweite = value;
-            }
-        }
+        // public double Brennweite
+        // {
+        //     get
+        //     {
+        //         return _brennweite;
+        //     }
+        //     set
+        //     {
+        //         _brennweite = value;
+        //     }
+        // }
 
-        public Objektiv(string modell, string seriennummer, double brennweite) : base(modell, seriennummer)
+        public Objektiv(string seriennummer, string modell, double brennweite) : base(seriennummer, modell)
         {
             Brennweite = brennweite;
         }
@@ -172,7 +172,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV73
             }
         }
 
-        public Speicherkarte(string modell, string seriennummer, double speicherGroesse) : base(modell, seriennummer)
+        public Speicherkarte(string seriennummer, string modell, double speicherGroesse) : base(seriennummer, modell)
         {
             SpeicherGroesse = speicherGroesse;
             VerfuegbarerSpeicher = speicherGroesse;

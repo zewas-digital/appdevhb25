@@ -1,0 +1,4 @@
+Das teuerste Produkt ist: Wassermelone
+Das billigste Produkt ist: Banane
+Der Durchschnittspreis aller Produkte ist: 1,61
+Der Endwert aller Produkte ist: 481,10
