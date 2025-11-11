@@ -14,7 +14,8 @@ namespace Appdevhb25.OliverBedogg
         static void Main(string[] args)
         {
             Console.Clear();
-            aufgabe73.Aufgabe73.Start();
+            dyndatenstrukturen.dyndatenstrukturenIntro.Start();
+            // aufgabe73.Aufgabe73.Start();
             // objektorientierung.Zugriffsmodifizierer.Start();
             // arrays.MergeSort.Start();
             // arrays.MehrdimensionaleArrays.Start();
