@@ -56,15 +56,7 @@ namespace Appdevhb25.KerimAlkis.Aufgabe74
         }
         public static void GeradeZahlenZaehler(List<int> zufallsZahlen)
         {
-            int ungeradeZaehler = 0;
-            foreach (int zahl in zufallsZahlen)
-            {
-                if (zahl % 2 != 0)
-                {
-                    ungeradeZaehler++;
-                }
-            }
-            System.Console.WriteLine("Ungerade Zahlen: " + ungeradeZaehler);
+            System.Console.WriteLine("Ungerade Zahlen: " + zufallsZahlen.Count(TestUngeradeZahl));
         }
 
         public static void KleinsteZahl(List<int> zufallsZahlen)
@@ -80,6 +72,7 @@ namespace Appdevhb25.KerimAlkis.Aufgabe74
         public static List<int> SortAbsteigend(List<int> zufallsZahlen)
         {
             var geordnet = zufallsZahlen.OrderDescending();
+            
             System.Console.WriteLine("GeordneteZahlen");
             foreach (var zahl in geordnet) { System.Console.Write(zahl + " "); }
             zufallsZahlen = geordnet.ToList();
@@ -89,14 +82,14 @@ namespace Appdevhb25.KerimAlkis.Aufgabe74
 
         public static void LoescheUngeradenZahlen(List<int> zufallsZahlen)
         {
-            zufallsZahlen.RemoveAll(n => n % 2 != 0);
-            //zufallsZahlen.RemoveAll(Test);
+            //zufallsZahlen.RemoveAll(n => n % 2 != 0);
+            zufallsZahlen.RemoveAll(TestUngeradeZahl);
 
             System.Console.WriteLine("ZufallsZahlen");
             foreach (int zahl in zufallsZahlen) { System.Console.Write(zahl + " "); }
             System.Console.WriteLine();
         }
-        public static bool Test(int i)
+        public static bool TestUngeradeZahl(int i)
         {
             if (i % 2 == 0) { return false; }
             else{ return true; }
