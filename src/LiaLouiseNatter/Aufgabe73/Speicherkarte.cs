@@ -2,8 +2,8 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe73
 {
     public class Speicherkarte : Hardware
     {
-        private static double _speicherkartenPlatz;
-        public double SpeicherkartenPLatz
+        private int _speicherkartenPlatz;
+        public int SpeicherkartenPLatz
         {
             get
             {
@@ -22,7 +22,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe73
             }
         }
 
-        public Speicherkarte(string Seriennummer, string Modell, double speicherkartenPlatz):base(Modell, Seriennummer)
+        public Speicherkarte(string Seriennummer, string Modell, int speicherkartenPlatz):base(Modell, Seriennummer)
         {
             SpeicherkartenPLatz = speicherkartenPlatz;
         }
