@@ -5,11 +5,11 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe65
     class Car
     {
         // Felder
-        public string Farbe;
+        public string? Farbe;
 
         public double Kilometerstand;
 
-        public string Kennzeichen;
+        public string? Kennzeichen;
 
         public double Verbrauch;
 
