@@ -61,7 +61,12 @@ namespace Appdevhb25.NoahHois
             // Aufgabe63.ProccesNumbers.Start([]);
             // Aufgabe64.ProgramCar.Start();  //Aufgabe 64 und 65
             // Aufgabe66.ProgramPerson.Start();
-            Aufgabe68.ProgramFotoapparat.Start();
+            // Aufgabe68.ProgramFotoapparat.Start();
+            // Aufgabe69.ProgramMotorrad.Start();
+            // Aufgabe70.ProgramFahrzeuge.Start();
+            // Aufgabe71.ProgramAbstrakteFahrzeuge.Start();
+            // Aufgabe73.ProgramHardwareDerKamera.Start();
+            Aufgabe74.Liste.Start();
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();
             // BonusAufgabe2.PrintCricle.BonusAufgabe2(20);
