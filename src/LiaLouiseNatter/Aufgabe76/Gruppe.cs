@@ -17,7 +17,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe76
         {
             int youngest = group[1].age;
             int smallest = group[1].height;
-             int skinniest = group[1].weight;
+            int skinniest = group[1].weight;
             for (int i = 0; i < group.Count; i++)
             {
                 if (group[i].age < youngest)
@@ -103,7 +103,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe76
         {
             if (ascDesc == true)
             {
-                List<PersonInGruppe> sortedByWeightAsc = group.OrderByDescending(weight => weight.weight).ToList();
+                List<PersonInGruppe> sortedByWeightAsc = group.OrderByDescending(person => person.weight).ToList();
                 ListPrinter(sortedByWeightAsc);
             }
             else
@@ -143,12 +143,55 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe76
             
         }
 
-        public void ListPrinter(List<PersonInGruppe> personen)
+        public void ListPrinter(List<PersonInGruppe> personen/*, PersonInGruppe wishedAttribute*/)
         {
-            foreach(var person in personen)
+            foreach (var person in personen)
             {
                 System.Console.WriteLine(person.name);
+                /*
+                if(wishedAttribute = person.age)
+                {
+                    
+                }
+                */
             }
         }
+
+        public PersonInGruppe findPerson(string name)
+        {
+            PersonInGruppe keinePerson = new PersonInGruppe();
+            for (int i = 0; i < group.Count; i++)
+            {
+                if (name == group[i].name)
+                {
+                    PersonInGruppe person = group[i];
+                    return person;
+                }
+            }
+            return keinePerson;
+            //find methode
+            
+            
+        }
+
+        public List<PersonInGruppe> findAllPersons() // Alle personen die xy heißen
+        {
+            ListPrinter(group);
+            return group;
+        }
+        
+        public void DeletePerson(int social)
+        {
+            for (int i = 0; i < group.Count; i++)
+            {
+                if (social == group[i].socialSecurityNum)
+                {
+                    PersonInGruppe person = group[i];
+                    group.Remove(person);
+                }
+            }
+            ListPrinter(group);
+        }
+
     }
 }
