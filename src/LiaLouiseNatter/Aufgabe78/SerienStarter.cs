@@ -21,6 +21,12 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe78
             System.Console.Write("\nWich series are you looking for? ");
             string series = Console.ReadLine();
             serie.SearchSeries(series);
+            System.Console.WriteLine("\n------------Your Favoites-------------\n");
+            serie.UserFavoriteSeries();
+            System.Console.WriteLine("\n------------Rate your Favorites-------------\n");
+            serie.UserRating();
+            System.Console.WriteLine("\n------------Comparison to Internal Favorites-------------\n");
+            serie.CompareUserToInternal();
 
         }
     }
