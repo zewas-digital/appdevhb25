@@ -20,26 +20,6 @@ namespace Appdevhb25.JulianMatt.Aufgabe73
             }
         }
 
-        private int _usedSaveKapacity;
-
-        public int UsedSaveKapacity
-        {
-            get { return _usedSaveKapacity; }
-            set
-            {
-                if (value < 0)
-                {
-                    System.Console.WriteLine("Der Speicher kann nicht weniger als 0 Aufgenutzt sein");
-                }
-                else
-                {
-                    _usedSaveKapacity = value;
-                }
-
-            }
-
-        }
-
         public Speicherkarte(string seriesNumber, string version, int saveKapacity) : base(seriesNumber, version)
         {
             SaveKapacity = saveKapacity;
