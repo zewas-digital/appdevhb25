@@ -10,12 +10,14 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe76
             person1.height = 180;
             person1.weight = 90;
             person1.name = "Rambo";
+            person1.socialSecurityNum = 1234;
 
             PersonInGruppe person2 = new PersonInGruppe();
             person2.age = 24;
             person2.height = 150;
             person2.weight = 90;
             person2.name = "Ramon";
+            person2.socialSecurityNum = 2345;
             
 
             PersonInGruppe person3 = new PersonInGruppe();
@@ -23,18 +25,21 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe76
             person3.height = 120;
             person3.weight = 190;
             person3.name = "Rainer";
+            person3.socialSecurityNum = 3456;
 
             PersonInGruppe person4 = new PersonInGruppe();
             person4.age = 40;
             person4.height = 170;
             person4.weight = 60;
             person4.name = "Jessica";
+            person4.socialSecurityNum = 4567;
 
             PersonInGruppe person5 = new PersonInGruppe();
             person5.age = 50;
             person5.height = 150;
             person5.weight = 50;
             person5.name = "Chantal";
+            person5.socialSecurityNum = 5678;
 
             Gruppe group = new Gruppe();
             group.neuePerson(person1);
@@ -62,6 +67,14 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe76
             
             System.Console.WriteLine("-----------------Sort by Name---------------");
             group.SortByName(true);
+            System.Console.WriteLine("-----------------Find Person---------------");
+            PersonInGruppe p = group.findPerson("Chantal");
+            Console.WriteLine(p);
+            System.Console.WriteLine("-----------------Find all Person---------------");
+            group.findAllPersons();
+            System.Console.WriteLine("-----------------Delete Person---------------");
+            group.DeletePerson(5678);
+
 
 
 
