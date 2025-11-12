@@ -116,7 +116,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe73.Start.FotoapparatStart();
             // Aufgabe74.Start.ListStarter();
             // Aufgabe75.GroupStarter.Start();
-            Aufgabe76.GroupStarter.Start();
+            // Aufgabe76.GroupStarter.Start();
+            Aufgabe77.Serienstarter.Start();
 
 
 
