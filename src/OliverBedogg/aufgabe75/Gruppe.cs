@@ -33,6 +33,9 @@ namespace Appdevhb25.OliverBedogg.aufgabe75
             var sortiert = _Personen.OrderByDescending(p => p.Groesse).ToList();
             // Die erste Person in der sortierten Liste ist die Größte
             return sortiert[0].Groesse;
+
+            // Kürzere Lösung mit LINQ Max-Methode:
+            // return _Personen.Max(p => p.Groesse);
         }
 
         public double kleinsterWert(string Feld)
@@ -49,14 +52,10 @@ namespace Appdevhb25.OliverBedogg.aufgabe75
             }
             else
             {
-                var sortiert = _Personen.OrderBy(
-                    // dynamischer Zugriff auf das Feld und dessen Wert, um zu sortieren
-                    p => p.GetType().GetProperty(Feld).GetValue(p, null)).ToList();
-
-                // Die erste Person in der sortierten Liste beinhaltet 
-                // den kleinsten Wert im angegebenen Feld
                 return Convert.ToDouble(
-                    sortiert[0].GetType().GetProperty(Feld).GetValue(sortiert[0], null)
+                    _Personen.Min(
+                        p => p.GetType().GetProperty(Feld).GetValue(p, null)
+                        )
                     );
             }
         }
