@@ -4,11 +4,11 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
     {
         public static void Start()
         {
-            Gruppe.AddPerson(new Person(1.23m, 15, "Luise", 34.2m));
-            Gruppe.AddPerson(new Person(1.17m, 13, "Peter", 55.3m));
-            Gruppe.AddPerson(new Person(1.52m, 20, "Luise", 54.9m));
-            Gruppe.AddPerson(new Person(1.79m, 19, "Felix", 43.1m));
-            Gruppe.AddPerson(new Person(1.34m, 14, "Marie", 36.5m));
+            Gruppe.AddPerson(new Person(1.23m, 15, "Luise", 34.2m, 12345));
+            Gruppe.AddPerson(new Person(1.17m, 13, "Peter", 55.3m, 12346));
+            Gruppe.AddPerson(new Person(1.52m, 20, "Luise", 54.9m, 12347));
+            Gruppe.AddPerson(new Person(1.79m, 19, "Felix", 43.1m, 12348));
+            Gruppe.AddPerson(new Person(1.34m, 14, "Marie", 36.5m, 12349));
 
             List<Person> sortedHight = Gruppe.SortedHight();
             List<Person> sortedAge = Gruppe.SortedAge();
@@ -18,25 +18,25 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
             Console.WriteLine("Sortiert nach Größe:");
             foreach (var size in sortedHight)
             {
-                Console.WriteLine($"{size.Name}: | {size.Groesse}m | {size.Alter} Jahre | {size.Gewicht}kg");
+                Console.WriteLine($"{size.Name}: | {size.Groesse}m | {size.Alter} Jahre | {size.Gewicht}kg | SV: {size.Sozialversicherungsnummer}");
             }
             Console.WriteLine();
             Console.WriteLine("Sortiert nach Alter:");
             foreach (var age in sortedAge)
             {
-                Console.WriteLine($"{age.Name}: | {age.Groesse}m | {age.Alter} Jahre | {age.Gewicht}kg");
+                Console.WriteLine($"{age.Name}: | {age.Groesse}m | {age.Alter} Jahre | {age.Gewicht}kg | SV: {age.Sozialversicherungsnummer}");
             }
             Console.WriteLine();
             Console.WriteLine("Sortiert nach Gewicht:");
             foreach (var weight in sortedWeight)
             {
-                Console.WriteLine($"{weight.Name}: | {weight.Groesse}m | {weight.Alter} Jahre | {weight.Gewicht}kg");
+                Console.WriteLine($"{weight.Name}: | {weight.Groesse}m | {weight.Alter} Jahre | {weight.Gewicht}kg | SV: {weight.Sozialversicherungsnummer}");
             }
             Console.WriteLine();
             Console.WriteLine("Sortiert nach Name:");
             foreach (var name in sortedName)
             {
-                Console.WriteLine($"{name.Name}: | {name.Groesse}m | {name.Alter} Jahre | {name.Gewicht}kg");
+                Console.WriteLine($"{name.Name}: | {name.Groesse}m | {name.Alter} Jahre | {name.Gewicht}kg | SV: {name.Sozialversicherungsnummer}");
             }
 
             Gruppe gruppe = new Gruppe();
@@ -45,7 +45,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
             if (foundPerson != null)
             {
 
-                Console.WriteLine($"Gefunden: {foundPerson.Name}: | {foundPerson.Groesse}m | {foundPerson.Alter} Jahre | {foundPerson.Gewicht}kg");
+                Console.WriteLine($"Gefunden: {foundPerson.Name}: | {foundPerson.Groesse}m | {foundPerson.Alter} Jahre | {foundPerson.Gewicht}kg | SV: {foundPerson.Sozialversicherungsnummer}");
             }
             else
             {
@@ -61,18 +61,21 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
                     i++;
                     if (i == 1)
                     {
-                        Console.WriteLine($"Gefunden: {person.Name}: | {person.Groesse}m | {person.Alter} Jahre | {person.Gewicht}kg");
+                        Console.WriteLine($"Gefunden: {person.Name}: | {person.Groesse}m | {person.Alter} Jahre | {person.Gewicht}kg | SV: {person.Sozialversicherungsnummer}");
                     }
                     else
                     {
-                        Console.WriteLine($"          {person.Name}: | {person.Groesse}m | {person.Alter} Jahre | {person.Gewicht}kg");
+                        Console.WriteLine($"          {person.Name}: | {person.Groesse}m | {person.Alter} Jahre | {person.Gewicht}kg | SV: {person.Sozialversicherungsnummer}");
                     }
 
                 }
             }
-            else
+            Console.WriteLine();
+            Console.WriteLine("Die Liste nach dem Entfernen bestimmter Personen:");
+            Gruppe.RemovePeople();
+            foreach (var people in Gruppe.gruppe)
             {
-                Console.WriteLine("Person nicht gefunden");
+                Console.WriteLine($"{people.Name}: | {people.Groesse}m | {people.Alter} Jahre | {people.Gewicht}kg | SV: {people.Sozialversicherungsnummer}");
             }
         }
     }

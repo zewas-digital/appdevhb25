@@ -71,7 +71,13 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe68.Intro.Start();
             //Aufgabe69.Intro.Start();
             //Aufgabe70.Intro.Start();
-            Aufgabe71.Intro.Start();
+            //Aufgabe71.Intro.Start();
+            //Aufgabe73.HardwareDerKamera.Start();
+            //Aufgabe74.Liste.Start();
+            //Aufgabe75.PersonInGruppe.Start();
+            Aufgabe76.PersonInGruppe_Bonus.Start();
+            //Aufgabe77.Serien.Start();
+            //Aufgabe78.Serien.Start();
         }
     }
 }
