@@ -1,0 +1,67 @@
+namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe75
+{
+    public class Person
+    {
+        private decimal _groesse;
+        private int _alter;
+        private decimal _gewicht;
+        private string _name;
+
+        public decimal Groesse
+        {
+            get
+            {
+                return _groesse;
+            }
+            set
+            {
+                _groesse = value;
+            }
+        }
+        public int Alter
+        {
+            get
+            {
+                return _alter;
+            }
+            set
+            {
+                _alter = value;
+            }
+        }
+        public decimal Gewicht
+        {
+            get
+            {
+                return _gewicht;
+            }
+            set
+            {
+                _gewicht= value;
+            }
+        }
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+            }
+        }
+
+        public Person(decimal groesse, int alter, string name, decimal gewicht)
+        {
+            Groesse = groesse;
+            Alter = alter;
+            Name = name;
+            Gewicht = gewicht;
+        }
+        public override string ToString()
+        {
+            return $"Größe: {Groesse}  Alter: {Alter}  Name: {Name}  Gewicht: {Gewicht}";
+        }
+    }
+}
