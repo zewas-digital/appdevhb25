@@ -4,12 +4,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
 {
     class Liste
     {
-        public Liste()
-        {
-
-        }
-
-        // erstellen von Liste mit Ausgabe
+        // erstellen von Liste
         public static List<int> CreateList()
         {
             Random random = new Random();
@@ -44,11 +39,11 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
 
             var geradeZahlen2 = zahlen.Where(zahl => zahl % 2 == 0);
 
-            System.Console.WriteLine(new string ('-',10));
+            System.Console.WriteLine(new string('-', 10));
             System.Console.WriteLine($"Die Anzahl der geraden Zahlen (mit foreach) beträgt: {counter}");
             System.Console.WriteLine($"Die Anzahl der geraden Zahlen (mit Abfrage) beträgt: {geradeZahlen.Count()}");
             System.Console.WriteLine($"Die Anzahl der geraden Zahlen (mit Where Methode) beträgt: {geradeZahlen2.Count()}");
-            System.Console.WriteLine(new string ('-',10));
+            System.Console.WriteLine(new string('-', 10));
         }
 
         // Suche nach der kleinsten Zahl
@@ -69,7 +64,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
 
             System.Console.WriteLine($"Die kleinste Zahl in der Liste ist (mit Schleife): {kleinsteZahl}");
             System.Console.WriteLine($"Die kleinste Zahl in der Liste ist (mit Methode): {kleinsteZahl2}");
-            System.Console.WriteLine(new string ('-',10));
+            System.Console.WriteLine(new string('-', 10));
         }
 
         // Suche nach der größten Zahl
@@ -90,7 +85,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
 
             System.Console.WriteLine($"Die größte Zahl in der Liste ist (mit Schleife): {groessteZahl}");
             System.Console.WriteLine($"Die größte Zahl in der Liste ist (mit Methode): {greossteZahl2}");
-            System.Console.WriteLine(new string ('-',10));
+            System.Console.WriteLine(new string('-', 10));
         }
 
         // Sortieren der Elemente
@@ -109,7 +104,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
             zahlen.Sort();
             System.Console.WriteLine("\nSortierte Liste mit Sort:");
             System.Console.WriteLine(string.Join(", ", zahlen));
-            System.Console.WriteLine(new string ('-',10));
+            System.Console.WriteLine(new string('-', 10));
         }
 
         // Löschen der ungeraden Zahlen
@@ -128,21 +123,20 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
             }
 
             kopie.RemoveAll(n => n % 2 != 0);
-            // foreach (int zahl in zahlen)
+
+            // foreach (int zahl in kopie)
             // {
             //     if (zahl % 2 == 1)
             //     {
             //         zahlen.Remove(zahl);
             //     }
             // }
-            
-            Console.WriteLine("Gelöschte Ungerade Zahlen mit RemoveAll:\n"+string.Join(", ", kopie));
-            Console.WriteLine("Gelöschte Ungerade Zahlen mit RemoveAt und for Schleife:\n"+string.Join(", ", zahlen));
+
+            Console.WriteLine("Gelöschte Ungerade Zahlen mit RemoveAll:\n" + string.Join(", ", kopie));
+            Console.WriteLine("Gelöschte Ungerade Zahlen mit RemoveAt und for Schleife:\n" + string.Join(", ", zahlen));
             System.Console.WriteLine(new string('-', 10));
-
-
         }
-        
+
 
         // 2. Teil der Aufgabenstelung
 
@@ -160,7 +154,6 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
             liste1.AddRange(liste2);
             liste1.Sort();
             Console.WriteLine("Liste 3 sortiert: " + string.Join(", ", liste1));
-            
         }
 
         public static void Start()
@@ -175,9 +168,6 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe74
             System.Console.WriteLine(new string('-', 50));
 
             Teil2();
-
         }
-
     }
-
 }
