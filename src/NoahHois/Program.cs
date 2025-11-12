@@ -58,22 +58,24 @@ namespace Appdevhb25.NoahHois
             // Aufgabe58.PrintFileFormatted.Start();
             // Aufgabe59.Inventur.Start();
             // Aufgabe62.ReadAndDisplayCSV.Start();
-            // Aufgabe63.ProccesNumbers.Start([]);
-            // Aufgabe64.ProgramCar.Start();  //Aufgabe 64 und 65
-            // Aufgabe66.ProgramPerson.Start();
+            // Aufgabe63.ProccesNumbers.Start();
             // Aufgabe68.ProgramFotoapparat.Start();
             // Aufgabe69.ProgramMotorrad.Start();
             // Aufgabe70.ProgramFahrzeuge.Start();
             // Aufgabe71.ProgramAbstrakteFahrzeuge.Start();
             // Aufgabe73.ProgramHardwareDerKamera.Start();
-            Aufgabe74.Liste.Start();
+            // Aufgabe74.Liste.Start();
+            // Aufgabe74.Liste2.Start();
+            // Aufgabe75.ProgramPersonInGruppe.Start();
+            Aufgabe77.ProgramDictionary.Start();
+
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();
             // BonusAufgabe2.PrintCricle.BonusAufgabe2(20);
             // BonusAufgabe3.PrintChristmasTree.BonusAufgabe3();
             // BonusAufgabe4.BubbleSort.SortArray();
             // BonusAufgabe5.Ziffernsumme.DigitSumArray();
-            // BonusAufgabe6.ReplaceStringRegex.Start();
+            // BonuhsAufgabe6.ReplaceStringRegex.Start();
             // BonusAufgabe7.ValidatePhoneNumber.Start();
             // BonusAufgabe8.ValidateEmail.Start();
             // BonusAufgabe9.DrawCalendar.Start();

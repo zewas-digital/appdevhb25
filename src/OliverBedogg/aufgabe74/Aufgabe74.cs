@@ -15,6 +15,7 @@ namespace Appdevhb25.OliverBedogg.aufgabe74
             int min = FindMinimumBySorting(randomList1);
             Console.WriteLine("Minimum: {0}", min);
 
+
             min = FindMinimumByLinqList(randomList1);
             Console.WriteLine("Minimum (LINQ List): {0}", min);
 
