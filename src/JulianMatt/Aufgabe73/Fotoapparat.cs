@@ -26,6 +26,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe73
         public void Foto()
         {
             AnzahlFotos++;
+            Speicherkarte.SaveKapacity -= 5;
         }
 
         public void WechsleObjektiv(Objektiv objektiv)
@@ -49,9 +50,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe73
 
         public double AnzahlVerfuegbarerFotos()
         {
-            Speicherkarte.UsedSaveKapacity = AnzahlFotos * 5;
-            int NotUsedSafe = Speicherkarte.SaveKapacity - Speicherkarte.UsedSaveKapacity;
-            return NotUsedSafe / 5;
+            return Speicherkarte.SaveKapacity / 5;
         }
     }
 }
