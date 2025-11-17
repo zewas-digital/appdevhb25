@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
@@ -26,17 +27,15 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
         {
             AnzahlDerTueren = anzahlDerTueren;
             AnzahlDerProduziertenAutos++;
-            AnzahlDerProduziertenFahrzeuge++;
         }
 
         public override void Fahren(double distanz)
         {
             Kilometerstand += distanz;
         }
-        public override void DruckeDatenblatt()
+        public override string ToString()
         {
-            base.DruckeDatenblatt();
-            Console.WriteLine($"Anzahl der Türen: {AnzahlDerTueren}");
+            return $"{base.DruckeDatenblatt()}Anzahl der Türen: {AnzahlDerTueren}";
         }
     }
 }

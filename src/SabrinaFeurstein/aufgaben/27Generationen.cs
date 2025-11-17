@@ -10,7 +10,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             // Stand: 2025
             Console.WriteLine();
             Console.Write("Name eingeben: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine()!;
 
             Console.Write("Alter eingeben: ");
             int alter = Convert.ToInt32(Console.ReadLine());
@@ -53,7 +53,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             // Stand: 2025
             Console.WriteLine();
             Console.Write("Name eingeben: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine()!;
 
             Console.Write("Alter eingeben: ");
             int alter = Convert.ToInt32(Console.ReadLine());
