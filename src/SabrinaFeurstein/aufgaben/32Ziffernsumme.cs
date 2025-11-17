@@ -8,7 +8,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         public static void array()
         {
             Console.WriteLine("Gib eine Zahl ein: ");
-            string zahl = Console.ReadLine();
+            string zahl = Console.ReadLine()!;
             char[] zeichen = zahl.ToCharArray();
 
             int[] ziffern = new int[zeichen.Length];

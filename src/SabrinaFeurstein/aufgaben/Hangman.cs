@@ -10,7 +10,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         {
             Console.Clear();
             Console.Write("Enter a word: ");
-            string word = Console.ReadLine();
+            string word = Console.ReadLine()!;
 
             char[] lettersWord = word.ToCharArray();
             char[] letterCount = new char[word.Length];
@@ -29,7 +29,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             while (true)
             {
                 Console.Write("Enter a letter: ");
-                char letter = Convert.ToChar(Console.ReadLine());
+                char letter = Convert.ToChar(Console.ReadLine()!);
 
                 for (int i = 0; i < letterCount.Length; i++)
                 {

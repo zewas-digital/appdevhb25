@@ -13,7 +13,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             for (int i = 0; i < teilnehmer.Length; i++)
             {
                 Console.Write("Name des Teilnehmers eingeben: ");
-                teilnehmer[i] = Console.ReadLine();
+                teilnehmer[i] = Console.ReadLine()!;
             }
 
             for (int i = 0; i < teilnehmer.Length; i++)
@@ -32,7 +32,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             for (int i = 0; i < teilnehmer.Length; i++)
             {
                 Console.Write("Name des Teilnehmers eingeben: ");
-                teilnehmer[i] = Console.ReadLine();
+                teilnehmer[i] = Console.ReadLine()!;
             }
 
             for (int i = 0; i < teilnehmer.Length; i++)

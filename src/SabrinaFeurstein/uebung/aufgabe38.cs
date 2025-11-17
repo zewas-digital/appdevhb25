@@ -8,12 +8,12 @@ namespace Appdevhb25.SabrinaFeurstein.uebung
     {
         public static void Pascal()
         {
-            string size = Console.ReadLine();
+            string size = Console.ReadLine()!;
             int sizenew;
             while (!int.TryParse(size, out sizenew))
             {
                 Console.WriteLine("Wrong value! Please try again.");
-                size = Console.ReadLine();
+                size = Console.ReadLine()!;
             }
 
             int[,] triangle = new int[sizenew, sizenew];

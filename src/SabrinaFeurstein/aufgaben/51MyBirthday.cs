@@ -9,14 +9,14 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         {
             DateTime birthday = new DateTime();
             Console.Write("Geburtstag eingeben: ");
-            string birthdayAsString = Console.ReadLine();
+            string birthdayAsString = Console.ReadLine()!;
 
             do
             {
                 if (!DateTime.TryParse(birthdayAsString, out birthday))
                 {
                     Console.WriteLine("Falsches Format! Bitte erneut eingeben: ");
-                    birthdayAsString = Console.ReadLine();
+                    birthdayAsString = Console.ReadLine()!;
                 }         
             } while (!DateTime.TryParse(birthdayAsString, out birthday));
             

@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using Appdevhb25.MarcelSimma.Aufgabe39;
 using Appdevhb25.MarcelSimma.Aufgabe41;
@@ -88,7 +89,12 @@ namespace Appdevhb25.MarcelSimma
             //OOPIntro.Intro.Start();
             //Aufgabe67.Aufgabe67.Start();
             //GetterAndSetter.Start();
-            Vererbung.Start();
+            //Vererbung.Start();
+
+            //RepetitionStatic.RepetitionStatic.Start();
+            //Aufgabe77.Serien.Start();
+
+            Week07.QueueIntro.Start();
             
             
 
