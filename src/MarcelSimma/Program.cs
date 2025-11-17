@@ -92,7 +92,9 @@ namespace Appdevhb25.MarcelSimma
             //Vererbung.Start();
 
             //RepetitionStatic.RepetitionStatic.Start();
-            Aufgabe77.Serien.Start();
+            //Aufgabe77.Serien.Start();
+
+            Week07.QueueIntro.Start();
             
             
 
