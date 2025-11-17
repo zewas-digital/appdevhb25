@@ -1,77 +1,145 @@
+using System.Globalization;
+using System.Net.Http.Headers;
+
 namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe41
 {
     public class CinemaRevenue
     {
         public static void Start()
         {
-            Console.WriteLine("Wir haben ein Kino und berechnen unseren Umsatz");
+            beginsCode();
+            makesPerformances();
+        }
+        public static void beginsCode()
+        {
 
+            Console.WriteLine("Wir haben ein Kino und berechnen unsere Tickets:");
+            Console.WriteLine();
+        }
+        public static void makesPerformances()
+        {
+            Random random = new Random();
+            int[][] tickets = new int[5][];
 
-
-            Random random1 = new Random();
-            int randomNumber1 = random1.Next(2, 7);
-            int[] tickets1 = new int[randomNumber1];
-
-            for (int i = 1; i < randomNumber1; i++)
+            for (int i = 0; i < tickets.Length; i++)
             {
-                Random randomNumb1 = new Random();
-                int randomTicket1 = randomNumb1.Next(1, 100);
-                tickets1[i] = randomTicket1;
-                Console.WriteLine("Raum 1: Vorstellung " + i + ": " + "Anzahl der verkauften Tickets: "+tickets1[i]);
+                int randomVorstellungen = random.Next(2, 7);
+                tickets[i] = new int[randomVorstellungen];
+                for (int j = 0; j < randomVorstellungen; j++)
+                {
+                    tickets[i][j] = random.Next(1, 100);
+                    Console.WriteLine("Raum " + (i + 1) + ": Vorstellung " + (j + 1) + ": Anzahl der verkauften Tickets: " + tickets[i][j]);
+                }
+                Console.WriteLine($"Der Durschnitt der Tickets in Raum {i + 1} ist: {averagePerRoom(tickets[i])}");
+                Console.WriteLine($"Die meist verkauften Tickets in Raum {i + 1} sind: {mostTicketsPerRoom(tickets[i])}");
+                Console.WriteLine($"Die wenigsten verkauften Tickets in Raum {i + 1} sind: {lessTicketsPerRoom(tickets[i])}");
+
+                Console.WriteLine();
+
             }
             Console.WriteLine();
-
-            Random random2 = new Random();
-            int randomNumber2 = random2.Next(2, 7);
-            int[] tickets2 = new int[randomNumber2];
-
-            for (int i = 1; i < randomNumber2; i++)
-            {
-                Random randomNumb2 = new Random();
-                int randomTicket2 = randomNumb2.Next(1, 100);
-                tickets2[i] = randomTicket2;
-                Console.WriteLine("Raum 2: Vorstellung " + i + ": " + "Anzahl der verkauften Tickets: "+tickets2[i]);
-            }
+            allTicketsTogether(tickets);
+            allTicketsMost(tickets);
+            allTicketsLess(tickets);
+            allTicketsAverage(tickets);
             Console.WriteLine();
-
-             Random random3 = new Random();
-            int randomNumber3 = random3.Next(2, 7);
-            int[] tickets3 = new int[randomNumber3];
-
-            for (int i = 1; i < randomNumber3; i++)
+        }
+        public static int mostTicketsPerRoom(int[] ticketsInRoom)
+        {
+            int mostTickets = 0;
+            for (int i = 0; i < ticketsInRoom.Length; i++)
             {
-                Random randomNumb3 = new Random();
-                int randomTicket3 = randomNumb3.Next(1, 100);
-                tickets3[i] = randomTicket3;
-                Console.WriteLine("Raum 3: Vorstellung " + i + ": " + "Anzahl der verkauften Tickets: "+tickets3[i]);
+                if (ticketsInRoom[i] > mostTickets)
+                {
+                    mostTickets = ticketsInRoom[i];
+                }
             }
-            Console.WriteLine();
+            return mostTickets;
 
-             Random random4 = new Random();
-            int randomNumber4 = random4.Next(2, 7);
-            int[] tickets4 = new int[randomNumber4];
-
-            for (int i = 1; i < randomNumber4; i++)
+        }
+        public static int lessTicketsPerRoom(int[] ticketsInRoom)
+        {
+            int lessTickets = 100;
+            for (int i = 0; i < ticketsInRoom.Length; i++)
             {
-                Random randomNumb4 = new Random();
-                int randomTicket4 = randomNumb4.Next(1, 100);
-                tickets4[i] = randomTicket4;
-                Console.WriteLine("Raum 4: Vorstellung " + i + ": " + "Anzahl der verkauften Tickets: "+tickets4[i]);
+
+                if (ticketsInRoom[i] < lessTickets)
+                {
+                    lessTickets = ticketsInRoom[i];
+                }
             }
-            Console.WriteLine();
+            return lessTickets;
 
-             Random random5 = new Random();
-            int randomNumber5 = random5.Next(2, 7);
-            int[] tickets5 = new int[randomNumber5];
-
-            for (int i = 1; i < randomNumber5; i++)
+        }
+        public static int averagePerRoom(int[] ticketsInRoom)
+        {
+            int average = 0;
+            for (int i = 0; i < ticketsInRoom.Length; i++)
             {
-                Random randomNumb5 = new Random();
-                int randomTicket5 = randomNumb5.Next(1, 100);
-                tickets5[i] = randomTicket5;
-                Console.WriteLine("Raum 5: Vorstellung " + i + ": " + "Anzahl der verkauften Tickets: "+tickets5[i]);
+                average = average + ticketsInRoom[i];
             }
-            Console.WriteLine();
+            return average / ticketsInRoom.Length;
+        }
+        public static void allTicketsTogether(int[][] tickets)
+        {
+            int allTickets = 0;
+            for (int i = 0; i < tickets.Length; i++)
+            {
+                for (int j = 0; j < tickets[i].Length; j++)
+                {
+                    allTickets = allTickets + tickets[i][j];
+                }
+            }
+            Console.WriteLine($"Alle Tickets zusammen sind: {allTickets}");
+        }
+        public static void allTicketsAverage(int[][] tickets)
+        {
+            int length = 0;
+            int average = 0;
+            for (int i = 0; i < tickets.Length; i++)
+            {
+                for (int j = 0; j < tickets[i].Length; j++)
+                {
+                    average = average + tickets[i][j];
+                    length = length + 1;
+                }
+            }
+            average = average / length;
+            Console.WriteLine($"Der Durchschnitt von allen Tickets ist: {average}");
+        }
+        public static void allTicketsMost(int[][] tickets)
+        {
+            int room = 0;
+            int mostTickets = 0;
+            for (int i = 0; i < tickets.Length; i++)
+            {
+                for (int j = 0; j < tickets[i].Length; j++)
+                {
+                    if (tickets[i][j] > mostTickets)
+                    {
+                        mostTickets = tickets[i][j];
+                        room = i;
+                    }
+                }
+            }
+            Console.WriteLine($"Die meist verkauften Tickets sind in Raum {room + 1}: {mostTickets}");
+        }
+        public static void allTicketsLess(int[][] tickets)
+        {
+            int room = 0;
+            int lessTickets = 100;
+            for (int i = 0; i < tickets.Length; i++)
+            {
+                for (int j = 0; j < tickets[i].Length; j++)
+                {
+                    if (tickets[i][j] < lessTickets)
+                    {
+                        lessTickets = tickets[i][j];
+                        room = i;
+                    }
+                }
+            }
+            Console.WriteLine($"Die wenigsten verkauften Tickets sind in Raum {room + 1}: {lessTickets}");
         }
     }
 }

@@ -5,13 +5,13 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe70
 {
     public class Fahrzeug
     {
-        private string _farbe;
-        private string _kennzeichen = "";
+        private string? _farbe;
+        private string? _kennzeichen = "";
         private double _kilometerstand = 0;
         public static int AnzahlDerProduziertenFahrzeuge = 0;
 
 
-        public string Farbe
+        public string? Farbe
         {
             get
             {
@@ -23,7 +23,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe70
             }
         }
 
-        public string Kennzeichen
+        public string? Kennzeichen
         {
             get
             {
@@ -33,7 +33,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe70
             {
                 //\s? = kann Leerraum haben oder nicht
                 string pattern = @"^[A-Z]{1,2}-[A-Z]{1,2}\s?[0-9]{1,4}$";
-                if (Regex.IsMatch(value.ToUpper(), pattern))
+                if (Regex.IsMatch(value!.ToUpper(), pattern))
                 {
                     _kennzeichen = value.ToUpper();
                 }

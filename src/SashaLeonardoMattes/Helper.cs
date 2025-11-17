@@ -154,7 +154,7 @@ namespace Appdevhb25.SashaLeonardoMattes
             }
             return max;
         }
-    
+
         public static DateTime checkUserInputDate()
         {
             bool checkInput;
@@ -172,6 +172,14 @@ namespace Appdevhb25.SashaLeonardoMattes
 
             return result;
         }
+    
+        public static void WriteHyphen(Type callerType)
+        {
+            string hyphen = new string('-', 15);
+            string? exercise = callerType?.Namespace?.Substring(31);
+            Console.WriteLine($"\n\n{hyphen}{exercise}{hyphen}\n");
+        }
+    
     }
 }
 
