@@ -1,16 +1,18 @@
+using System.Text.RegularExpressions;
+
 namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
 {
     public abstract class Fahrzeug
     {
-        private string _farbe;
-        private string _kennzeichen;
+        private string? _farbe;
+        private string? _kennzeichen;
         private double _kilometerstand;
 
         public string Farbe
         {
             get
             {
-                return _farbe;
+                return _farbe!;
             }
             private set
             {
@@ -21,11 +23,11 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
         {
             get
             {
-                return _kennzeichen;
+                return _kennzeichen!;
             }
             set
             {
-                if (value.Length > 2 && value.Length < 10)
+                if (Regex.IsMatch(value, @"^([A-Z]{1,2})([- ]{1})([1-9]){1}(([0-9]{0,2})( ?)([A-NP-Z]{1})([A-Z]{2})||([0-9]{1,3})( ?)([A-NP-Z]{1})([A-Z]{1})||([0-9]{2,4})( ?)([A-NP-Z]{1}))$"))
                     _kennzeichen = value;
                 else
                     Console.WriteLine("Ungültiges Kennzeichen!");
@@ -55,12 +57,14 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
             Farbe = farbe;
             Kennzeichen = kennzeichen;
             Kilometerstand = kilometerstand;
+            AnzahlDerProduziertenFahrzeuge++;
         }
 
         public abstract void Fahren(double distanz);
-        public virtual void DruckeDatenblatt()
+
+        public virtual string DruckeDatenblatt()
         {
-            Console.WriteLine($"Farbe: {Farbe}\nKennzeichen: {Kennzeichen}\nKilometerstand: {Kilometerstand} km");
+            return $"Farbe: {Farbe}\nKennzeichen: {Kennzeichen}\nKilometerstand: {Kilometerstand} km\n";
         }
     }
 }

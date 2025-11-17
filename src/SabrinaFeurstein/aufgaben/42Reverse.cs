@@ -9,7 +9,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
         public static void Start()
         {
             Console.Write("Enter a word: ");
-            string word = Console.ReadLine();
+            string word = Console.ReadLine()!;
             char[] charArray = word.ToCharArray();
 
             string reversed = string.Empty;
