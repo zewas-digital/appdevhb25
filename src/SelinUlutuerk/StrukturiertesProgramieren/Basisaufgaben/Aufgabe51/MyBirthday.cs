@@ -11,7 +11,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe51
             CultureInfo austrian = new CultureInfo("de-AT");
 
             System.Console.WriteLine("Gib hier deinen Geburtstag ein: (TT.MM.JJJJ)");
-            string eingabe = Console.ReadLine();
+            string? eingabe = Console.ReadLine();
 
             if (DateTime.TryParseExact(eingabe, "dd.MM.yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime geb))
             {

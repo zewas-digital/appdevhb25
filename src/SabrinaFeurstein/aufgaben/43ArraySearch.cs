@@ -13,7 +13,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             do
             {
                 Console.Write("Gesuchten Wert eingeben: ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
                 for (int i = 0; i < array.Length; i++)
                 {
                     search = array[i].Contains(input);

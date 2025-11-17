@@ -11,12 +11,12 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe58
             {
                 using (StreamWriter sw = new(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe58\output.txt"))
                 {
-                    string line = sr.ReadLine();
+                    string line = sr.ReadLine()!;
                     string[] firstRow = line.Split(' ');
                     
                     sw.Write($"{firstRow[0], -10} | {firstRow[1], -6} | {firstRow[2], -5}");
                     sw.WriteLine();
-                    line = sr.ReadLine();
+                    line = sr.ReadLine()!;
 
                     while (line != null)
                     {
@@ -35,7 +35,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe58
                         sw.Write($"{name, -10} | {sizeStr, 6} | {alter, 5}");
 
                         sw.WriteLine();
-                        line = sr.ReadLine();
+                        line = sr.ReadLine()!;
                     }
                 }
             }

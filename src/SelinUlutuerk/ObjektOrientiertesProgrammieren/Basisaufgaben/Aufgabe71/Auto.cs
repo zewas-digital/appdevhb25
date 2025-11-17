@@ -7,17 +7,15 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
         public int AnzahlDerTueren;
         public static int AnzahlDerProduziertenAutos = 0;
 
-        public Auto(string farbe, int anzahlDerTueren) : base(farbe)
+        public Auto(string farbe, string kennzeichen, double kilometerstand, int anzahlDerTueren) : base(farbe, kennzeichen, kilometerstand)
         {
             AnzahlDerTueren = anzahlDerTueren;
             AnzahlDerProduziertenAutos++;
         }
 
-        public override void DruckeDatenblatt()
+        public override string ToString()
         {
-            base.DruckeDatenblatt();
-            System.Console.WriteLine("Anzahl der Türen: " + AnzahlDerTueren);
-            System.Console.WriteLine(new string('-', 20));
+            return $"{base.DruckeDatenblatt()}Anzahl der Türen: {AnzahlDerTueren}\n {new string('-', 20)}";
         }
 
         public static void PrintAnzahlDerProduziertenAutos()
@@ -25,17 +23,6 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
             System.Console.WriteLine("Anzahl der produzierten Autos: " + AnzahlDerProduziertenAutos);
         }
 
-        public void Fahren(double distanz)
-        {
-            double alterKilometerstand = Kilometerstand;
-            double neuerKilometerstand = alterKilometerstand + distanz;
-
-            Console.WriteLine($"Alter Kilometerstand: {alterKilometerstand} km");
-            Console.WriteLine($"Gefahrene Distanz: {distanz} km");
-            Console.WriteLine($"Neuer Kilometerstand: {neuerKilometerstand} km");
-            System.Console.WriteLine();
-            
-            Kilometerstand = neuerKilometerstand;
-        }
+        
     }
 }

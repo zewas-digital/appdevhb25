@@ -10,7 +10,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe49
         {
             System.Console.WriteLine("Gib eine gültige Telefonnummer in folgendem Format ein: \n (lokaler-Teil@Domain)");
 
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
             bool isValid = Email(input);
 
             if (isValid)

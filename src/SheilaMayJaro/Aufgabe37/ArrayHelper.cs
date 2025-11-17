@@ -5,11 +5,11 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe37
     {
         public static void PrintTwoDIntArray(int[,] array)
         { // GetLength fragt die Länge der jeweiligen Dimension ab 
-            for (int i = 0; i < array.GetLength(0); i++) //array.GetLength(0) - das 0 steht für die erste Dimension 
+            for (int y = 0; y < array.GetLength(0); y++) //array.GetLength(0) - das 0 steht für die erste Dimension 
             {
-                for (int j = 0; j < array.GetLength(1); j++) //array.GetLength(1) - die 1 steht für die zweite Dimension 
+                for (int x = 0; x < array.GetLength(1); x++) //array.GetLength(1) - die 1 steht für die zweite Dimension 
                 {
-                    Console.Write(array[i, j] + " ");
+                    Console.Write(array[y, x] + " ");
                 }
                 Console.WriteLine();
             }

@@ -26,7 +26,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             for (int i = 0; i < anzahl; i++)
             {
                 Console.Write("Wort: ");
-                string wordOg = Console.ReadLine();
+                string wordOg = Console.ReadLine()!;
                 textTemp = text.Replace(wordOg, ersatz);
                 string wordGross = wordOg.ToUpper();
                 text = textTemp.Replace(ersatz, wordGross);
@@ -35,7 +35,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             string[] reversed = new string[words.Length];
 
             Console.Write("Welches Wort soll gezählt werden? ");
-            string wort = Console.ReadLine();
+            string wort = Console.ReadLine()!;
             for (int i = 0; i < words.Length; i++)
             {
                 if (words[i].Contains(wort))

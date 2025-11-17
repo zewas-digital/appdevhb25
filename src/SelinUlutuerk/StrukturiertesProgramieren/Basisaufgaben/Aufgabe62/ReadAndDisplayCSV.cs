@@ -8,7 +8,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe62
     {
         public static void Start()
         {
-            string filePathInput = @"C:\Users\aau28234\Documents\appdevneu\appdevhb25\src\SelinUlutuerk\Aufgabe62\Input.csv";
+            string filePathInput = @"C:\Users\aau28234\Documents\appdevneu\appdevhb25\src\SelinUlutuerk\StrukturiertesProgramieren\Basisaufgaben\Aufgabe62\Input.csv";
 
             string[] lines = File.ReadAllLines(filePathInput);
             string[] parts = new string[lines.Length];
