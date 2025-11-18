@@ -1,6 +1,9 @@
 ﻿
 using System.Security.Cryptography.X509Certificates;
 using Appdevhb25.SelinUlutuerk.Aufgabe25;
+using System.Text.Unicode;
+using System.Text;
+
 
 namespace Appdevhb25.SelinUlutuerk
 {
@@ -8,6 +11,7 @@ namespace Appdevhb25.SelinUlutuerk
     {
         public static void Main(string[] args)
         {
+            Console.OutputEncoding = UnicodeEncoding.UTF8;
             // Console.Clear();
             // Aufgabe01.PrintA.Start();
             // Aufgabe02.Mahlreihen.Start();
@@ -67,7 +71,10 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe74.Liste.Start();
             // AufgabeV75.PerosnenInGruppe.Start();
             // Aufgabe77.DictionaryIntro.Start();
-            AufgabeV78.DictionaryIntro.Start();
+            // AufgabeV78.DictionaryIntro.Start();
+            // Aufgabe81.Ticketsystem.Start();
+            // Aufgabe82.Browserhistory.Start();
+            AufgabeV83.Browserhistory.Start();
 
 
 
@@ -90,6 +97,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe61.MoreDirectories.Start();
             // Bonusaufgabe72.Intro.Start();
             // Bonusaufgabe76.PersonenInGruppe.Start();
+            // Bonusaufgabe79.SerienTopDrei.Start();
+            // Bonusaufgabe80.AbwesenheitIntro.Start();
 
 
 
