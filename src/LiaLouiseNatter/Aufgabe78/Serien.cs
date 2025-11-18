@@ -48,12 +48,12 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe78
 
         }
 
-
+        // Alle serien in denen der string vorkommt
         public void SearchSeries(string searchedSeries)
         {
             foreach (var serie in _serienUndRatings)
             {
-                if (serie.Key == searchedSeries)
+                if (serie.Key.Contains(searchedSeries))
                 {
                     System.Console.WriteLine($"Serie: {serie.Key} Rating: {serie.Value}");
                 }
