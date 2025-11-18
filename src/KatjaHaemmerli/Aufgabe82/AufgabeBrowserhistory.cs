@@ -12,15 +12,13 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe82
 
             do
             {
-                System.Console.WriteLine("Bitte gib eine weitere Webaddresse ein oder wähle 'zurück'.");
-                string userInput = Console.ReadLine();
+                System.Console.WriteLine("Bitte gib eine Webaddresse ein oder wähle 'zurück'.");
+                string userInput = Console.ReadLine();                
                 
-                // Stack hier einbringen
                 if (userInput == "zurück")
                 {
                     if(webseite.Count == 0)
-                    {
-                        // in Stack zurück
+                    {                        
                         System.Console.WriteLine("Programm wurde beendet.");
                         break;
                     }
