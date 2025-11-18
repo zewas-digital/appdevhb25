@@ -13,8 +13,10 @@ namespace Appdevhb25.OliverBedogg
 
         static void Main(string[] args)
         {
-            Console.Clear();
-            dyndatenstrukturen.DictionaryExample.Start();
+            Console.Clear(); Console.WriteLine("\n");
+
+            aufgabe77.Aufgabe77.Start();
+            // dyndatenstrukturen.DictionaryExample.Start();
             // aufgabe75.Aufgabe75.Start();
             // aufgabe74.Aufgabe74.Start();
             // dyndatenstrukturen.dyndatenstrukturenIntro.Start();

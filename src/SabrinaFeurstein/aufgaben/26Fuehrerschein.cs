@@ -12,7 +12,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             {
                 Console.WriteLine();
                 Console.Write("Name eingeben: ");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine()!;
 
                 Console.Write("Alter eingeben: ");
                 int alter = Convert.ToInt32(Console.ReadLine());
@@ -52,7 +52,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             for (int i = 0; i < name.Length; i++)
             {
                 Console.Write("Name eingeben: ");
-                name[i] = Console.ReadLine();    
+                name[i] = Console.ReadLine()!;    
             }
 
             int[] alter = new int[anzahl];

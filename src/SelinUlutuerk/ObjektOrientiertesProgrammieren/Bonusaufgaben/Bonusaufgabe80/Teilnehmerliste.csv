@@ -1,0 +1,14 @@
+T;Lena;Müller;25
+A;12.11.2025 08:00;12.11.2025 11:30;Arzttermin;true
+A;20.11.2025 09:00;20.11.2025 12:00;Verspätung;false
+
+T;Marco;Schneider;32
+A;05.11.2025 13:00;05.11.2025 17:00;Krank;true
+A;10.11.2025 08:00;10.11.2025 09:30;Privater Termin;false
+
+T;Sara;Yilmaz;28
+A;02.11.2025 10:00;02.11.2025 14:00;Kopfschmerzen;true
+A;15.11.2025 08:00;15.11.2025 12:30;Nicht erschienen;false
+
+T;Selin;Ulutürk;30
+A;17.11.2025 09:30;17.11.2025 12:30; Arzttermin;true

@@ -21,20 +21,21 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
             fahrzeuge[1] = autos[1];
             fahrzeuge[2] = motorraeder[0];
             fahrzeuge[3] = motorraeder[1];
-
+            
+            Console.WriteLine(fahrzeuge[3].ToString());
             autos[0].Fahren(100);
 
             for (int i = 0; i < autos.Length; i++)
             {
                 Console.WriteLine($"Auto {i + 1}");
-                autos[i].DruckeDatenblatt();
+                Console.WriteLine(autos[i].ToString());
                 Console.WriteLine();
             }
 
             for (int i = 0; i < motorraeder.Length; i++)
             {
                 Console.WriteLine($"Motorrad {i + 1}");
-                motorraeder[i].DruckeDatenblatt();
+                Console.WriteLine(motorraeder[i].ToString());
                 Console.WriteLine();
             }
             Console.WriteLine("Anzahl der produzierten Autos: " + Auto.AnzahlDerProduziertenAutos);

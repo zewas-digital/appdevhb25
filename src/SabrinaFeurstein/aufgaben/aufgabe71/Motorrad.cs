@@ -42,7 +42,6 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
             Kaufpreis = kaufpreis;
             Umsatz += Kaufpreis;
             AnzahlDerProduziertenMotorraeder++;
-            AnzahlDerProduziertenFahrzeuge++;
         }
 
         public static double BerechneDurchschnittsUmsatz()
@@ -53,10 +52,9 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe71
         {
             Kilometerstand += distanz;
         }
-        public override void DruckeDatenblatt()
+        public override string ToString()
         {
-            base.DruckeDatenblatt();
-            Console.WriteLine($"Leistung: {Leistung} kW\nKaufpreis: {Kaufpreis:F2} EUR");
+            return $"{base.DruckeDatenblatt()}Leistung: {Leistung} kW\nKaufpreis: {Kaufpreis:F2} EUR";
         }
     }
 }

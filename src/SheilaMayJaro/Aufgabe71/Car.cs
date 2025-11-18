@@ -7,6 +7,11 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe71
     {
         //Attribute
         private int _numberOfDoors;
+        public int NumberOfDoors
+        {
+            get{return _numberOfDoors;}
+            set{_numberOfDoors = value;}
+        }
         public static int NumberOfProducedCars = 0;
 
         /*
