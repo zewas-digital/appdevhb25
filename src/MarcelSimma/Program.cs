@@ -94,7 +94,9 @@ namespace Appdevhb25.MarcelSimma
             //RepetitionStatic.RepetitionStatic.Start();
             //Aufgabe77.Serien.Start();
 
-            Week07.QueueIntro.Start();
+            //Week07.QueueIntro.Start();
+
+            Week07.StackIntro.Start();
             
             
 
