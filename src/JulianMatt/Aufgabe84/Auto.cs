@@ -1,10 +1,8 @@
 namespace Appdevhb25.JulianMatt.Aufgabe84
 {
 
-    public class Auto : IGegenstand
+    public class Auto : Fahrzeug
     {
-
-        public string InventoryNumber { get; private set; }
         private int _anzahlDerTueren;
         public int AnzahlDerTueren
         {
@@ -17,15 +15,13 @@ namespace Appdevhb25.JulianMatt.Aufgabe84
                 _anzahlDerTueren = value;
             }
         }
-        public Auto(int anzahlDerTueren, string inventoryNumber)
+        public Auto(int anzahlDerTueren, string fahrgestellnummer) : base(fahrgestellnummer)
         {
-            InventoryNumber = inventoryNumber;
             AnzahlDerTueren = anzahlDerTueren;
         }
-
         public string GetGegenstandInfo()
         {
-            return $"Das ist ein Auto mit {AnzahlDerTueren} Türen {InventoryNumber}";
+            return $"Das ist ein Auto mit {AnzahlDerTueren} Türen";
         }
 
     }

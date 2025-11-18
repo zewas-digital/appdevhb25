@@ -4,15 +4,14 @@ namespace Appdevhb25.JulianMatt.Aufgabe84
     {
         public string InventoryNumber { get; set; }
         public double Brennweite;
-        public Fotoapparat(double brennweite, string inventoryNumber)
+        public Fotoapparat(double brennweite)
         {
-            InventoryNumber = inventoryNumber;
-            Brennweite = brennweite;
+            brennweite = Brennweite;   
         }
 
         public string GetGegenstandInfo()
         {
-            return $"Das ist ein Fotoapparat mit der Brennweite: {Brennweite} {InventoryNumber}";
+            return $"Das ist ein Fotoapparat mit der Brennweite: {Brennweite}";
         }
     }
 }

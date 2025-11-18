@@ -6,10 +6,9 @@ namespace Appdevhb25.JulianMatt.Aufgabe84
         {
             List<IGegenstand> inventarliste = new List<IGegenstand>();
 
-            inventarliste.Add(new Auto(4, "2313"));
-            inventarliste.Add(new Motorrad("KTM", "321"));
-            inventarliste.Add(new Fotoapparat(23.12, "3wd2"));
-            inventarliste.Add(new Fahrzeug ("HHI23", "34SdeE"));
+            inventarliste.Add(new Auto(5, "ABC123"));
+            inventarliste.Add(new Motorrad("Harley Davidson", "XYZ789"));
+            inventarliste.Add(new Fotoapparat(23.12));
 
             foreach (IGegenstand elem in inventarliste)
             {
