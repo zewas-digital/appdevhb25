@@ -5,23 +5,11 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
 {
     public abstract class Fahrzeug
     {
-        private string? _farbe;
+        public string Farbe {get; private set;}
         private string? _kennzeichen ;
         private double _kilometerstand;
         public static int AnzahlDerProduziertenFahrzeuge = 0;
 
-
-        public string? Farbe
-        {
-            get
-            {
-                return _farbe;
-            }
-            private set
-            {
-                _farbe = value;
-            }
-        }
 
         public string? Kennzeichen
         {

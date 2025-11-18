@@ -12,7 +12,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV83
             do
             {
                 System.Console.WriteLine("Gib eine Website ein, welche du besuchen möchtest oder wähle \"back\".");
-                string? eingabe = Console.ReadLine();
+                string eingabe = Console.ReadLine()?? string.Empty;
                 
                 if(eingabe != "back")
                 {
