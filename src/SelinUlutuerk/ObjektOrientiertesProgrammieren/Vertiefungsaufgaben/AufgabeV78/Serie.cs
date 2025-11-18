@@ -109,7 +109,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
             for (int i = 0; i < 3; i++)
             {
                 System.Console.WriteLine($"Serie {i + 1}:");
-                string? eingabe = Console.ReadLine();
+                string eingabe = Console.ReadLine() ?? string.Empty;
                 lserien.Enqueue(eingabe);
                 System.Console.WriteLine($"Deine Bewertung für {eingabe}:");
                 double bewertung = Convert.ToDouble(Console.ReadLine());

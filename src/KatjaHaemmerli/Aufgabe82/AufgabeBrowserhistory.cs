@@ -31,7 +31,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe82
                 else
                 {
                     webseite.Push(userInput);
-                    System.Console.WriteLine("Neue Web-Seite wird geöffnet." + userInput);                
+                    System.Console.WriteLine($"Neue Web-Seite: {userInput} wird geöffnet.");                
                 }               
             } while(webseite.Count > 0); // solange im Stack elemente enthalten zurück möglich
         }

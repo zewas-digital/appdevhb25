@@ -1,12 +1,16 @@
-namespace Appdevhb25.KatjaHaemmerli.Aufgab64
+using Appdevhb25.KatjaHaemmerli.Aufgabe84;
+
+namespace Appdevhb25.KatjaHaemmerli.Aufgab84
 {
-    public class Car
+    public class Car : IGegenstand
     {
         // Felder
-        public string Farbe;
-        public string Kennzeichen;
-        public static double Verbrauch;
-        private string seriennummer;
+        public string Farbe {get; set;}
+        public string Marke {get; set;}
+        public string Seriennummer {get; set;}
+        public string Kennzeichen {get; set;}
+        public static double Verbrauch {get; set;}
+        
 
         // Standartkonstruktor wird nur generiert, wenn kein eigener erstellt wird.
        
@@ -15,11 +19,11 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgab64
         public Car(string farbe, string seriennummer) // ohne Rückgabewert weil Car selbst ist der Rückgabewert
         {
             Farbe = farbe;
-            this.seriennummer = seriennummer;
+            this.Seriennummer = seriennummer;
         }
 
         // Instanz Methode weil nicht static
-        public void PrintCarAttribute()
+        public void AusgabeDerAttributte()
         {
             System.Console.WriteLine(this.Farbe);
             System.Console.WriteLine(this.Kennzeichen);
