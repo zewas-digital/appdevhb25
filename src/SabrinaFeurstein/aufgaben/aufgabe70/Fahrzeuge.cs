@@ -12,7 +12,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe70
 
             Motorrad[] motorraeder =
             [
-                new Motorrad("schwarz", "B-45WL", 98, 25, 10000),
+                new Motorrad("schwarz", "B-45NWL", 98, 25, 10000),
                 new Motorrad("rot", "DO-568E", 1560, 20, 5000)
             ];
 
@@ -31,6 +31,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe70
                 motorraeder[i].DruckeDatenblatt();
                 Console.WriteLine();
             }
+
             Console.WriteLine("Anzahl der produzierten Autos: " + Auto.AnzahlDerProduziertenAutos);
             Console.WriteLine("Anzahl der produzierten Motorräder: " + Motorrad.AnzahlDerProduziertenMotorraeder);
             Console.WriteLine("Durchschnittlicher Umsatz pro Motorrad: " + Motorrad.BerechneDurchschnittsUmsatz());

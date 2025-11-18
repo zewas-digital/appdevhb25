@@ -75,5 +75,9 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
         {
             return gruppe.FindAll(match);
         }
+        public static void RemovePeople()
+        {
+            gruppe.RemoveAll(person => person.Sozialversicherungsnummer == 12345);
+        }
     }
 }

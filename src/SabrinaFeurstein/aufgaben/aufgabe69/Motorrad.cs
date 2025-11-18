@@ -5,10 +5,10 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe69
     public class Motorrad
     {
         private double _kilometerstand;
-        private string _farbe;
+        private string? _farbe;
         private int _leistung;
         private double _kaufpreis;
-        private string _kennzeichen;
+        private string? _kennzeichen;
         public double Kilometerstand
         {
             get
@@ -29,11 +29,11 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe69
         {
             get
             {
-                return _farbe;
+                return _farbe!;
             }
             private set
             {
-                _farbe = value;
+                _farbe = value!;
             }
         }
         public int Leistung
@@ -68,13 +68,11 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe69
         {
             get
             {
-                return _kennzeichen;
+                return _kennzeichen!;
             }
             set
             {
-                // if (Regex.IsMatch(value, @"^([a-z]{1,2})[]"))
-                //     _kennzeichen = value;
-                if (value.Length > 2 && value.Length < 10)
+                if (Regex.IsMatch(value, @"^([A-Z]{1,2})([- ]{1})([1-9]){1}(([0-9]{0,2})( ?)([A-NP-Z]{1})([A-Z]{2})||([0-9]{1,3})( ?)([A-NP-Z]{1})([A-Z]{1})||([0-9]{2,4})( ?)([A-NP-Z]{1}))$"))
                     _kennzeichen = value;
                 else
                     Console.WriteLine("Ungültiges Kennzeichen!");

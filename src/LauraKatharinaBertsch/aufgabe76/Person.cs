@@ -6,6 +6,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
         private int _alter;
         private decimal _gewicht;
         private string _name;
+        private int _sozialversicherungsnummer;
 
         public decimal Groesse
         {
@@ -37,7 +38,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
             }
             set
             {
-                _gewicht= value;
+                _gewicht = value;
             }
         }
         public string Name
@@ -51,19 +52,33 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe76
                 _name = value;
             }
         }
+        public int Sozialversicherungsnummer
+        {
+            get
+            {
+                return _sozialversicherungsnummer;
+            }
+            set
+            {
+                _sozialversicherungsnummer = value;
+            }
+        }
 
-        public Person(decimal groesse, int alter, string name, decimal gewicht)
+        public Person(decimal groesse, int alter, string name, decimal gewicht, int sozialversicherungsnummer)
         {
             Groesse = groesse;
             Alter = alter;
             Name = name;
             Gewicht = gewicht;
+            Sozialversicherungsnummer = sozialversicherungsnummer;
         }
-        public override string ToString()
+        public static void RemovePeople(List<Person> persons, int sozialversicherunsnummer)
         {
-            return $"{Name}: ";
+            var personToRemove = persons.Where(person => person.Sozialversicherungsnummer == sozialversicherunsnummer).ToList();
+            foreach (var person in personToRemove)
+            {
+                persons.Remove(person);
+            }
         }
-        
-       
     }
 }

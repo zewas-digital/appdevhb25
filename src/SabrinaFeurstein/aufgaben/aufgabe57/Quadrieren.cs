@@ -11,14 +11,14 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe57
             {
                 using (StreamWriter sw = new StreamWriter(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe57\output.txt"))
                 {
-                    string line = sr.ReadLine();
+                    string line = sr.ReadLine()!;
 
                     while (line != null)
                     {
                         int faktor = Convert.ToInt32(line);
                         int produkt = faktor * faktor;
                         sw.WriteLine($"{faktor} * {faktor} = {produkt}");
-                        line = sr.ReadLine();
+                        line = sr.ReadLine()!;
                     }
                 }
             }

@@ -31,7 +31,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe77
         {
             return Rating.Aggregate((KVP, KVPNext) => KVPNext.Value > KVP.Value ? KVPNext : KVP);
         }
-        
+
         public List<KeyValuePair<string, double>> SearchRatings(string name)
         {
             return Rating.Where(KVP => KVP.Key == name).ToList();
