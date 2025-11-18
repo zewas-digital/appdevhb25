@@ -33,21 +33,21 @@ namespace Appdevhb25.JulianMatt.Aufgabe81
 
         public void QueuePeopleOut()
         {
-            for( int j = 0; j < concertes.Count; j++)
+            for (int j = 0; j < concertes.Count; j++)
             {
-                for ( int i = 0; i < concertes[j].Queue.Count+2; i++)
+                for (int i = 0; i < concertes[j].Queue.Count + 2; i++)
                 {
                     string name = concertes[j].Queue.Dequeue();
-                    BoughtSomeTicket.Add(name ,concertes[j].ConcertName);
+                    BoughtSomeTicket.Add(name, concertes[j].ConcertName);
                 }
             }
         }
 
         public void PrintOutPeopleWhoGotATicket()
         {
-            foreach ( var ticket in BoughtSomeTicket)
+            foreach (var ticket in BoughtSomeTicket)
             {
-                System.Console.WriteLine($"Name: {ticket.Key,-20} Konzert: {ticket.Value}");
+                System.Console.WriteLine($"Name: {ticket.Key,-10} Konzert: {ticket.Value}");
             }
         }
 
