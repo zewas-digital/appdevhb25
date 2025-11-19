@@ -69,7 +69,7 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe57.Quadrieren.Start();
             // Aufgabe62.ReadAndDisplayCSV.Start();
             // Aufgabe63.ProcessNumbers.Start([100, -6, 23, -87, 1, 0, 77, -543]);
-             Monopoly.MonopolyOnConsole.MonopolyStart();
+            // Monopoly.MonopolyOnConsole.MonopolyStart();
 
             /*
             Car carInfo = new Car();
@@ -126,6 +126,7 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe84.GegenstandStart.Start();
             // Aufgabe85.TelefonBuchStart.Start();
             // Aufgabe86.AnrufStarter.Start();
+            Aufgabe91.Supermarkt.Start();
 
 
 
