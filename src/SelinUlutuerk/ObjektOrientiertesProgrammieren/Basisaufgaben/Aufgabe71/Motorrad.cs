@@ -7,7 +7,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
         private double _leistung;
         public double Kaufpreis;
         public static double Umsatz = 0;
-        public static int AnzahlDerProduziertenMotorräder = 0;
+        public static int AnzahlDerProduziertenMotorraeder = 0;
 
         public double Leistung
         {
@@ -33,7 +33,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
         {
             Leistung = leistung;
             Kaufpreis = kaufpreis;
-            AnzahlDerProduziertenMotorräder++;
+            AnzahlDerProduziertenMotorraeder++;
             Umsatz += kaufpreis;
         }
 
@@ -44,12 +44,12 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
 
         public static void PrintAnzahlDerProduziertenMotorraeder()
         {
-            System.Console.WriteLine("Anzahl der produzierten Autos: " + AnzahlDerProduziertenMotorräder);
+            System.Console.WriteLine("Anzahl der produzierten Autos: " + AnzahlDerProduziertenMotorraeder);
         }
 
         public static void BerechneDurchschnittsumsatz()
         {
-            System.Console.WriteLine($"Es wurden {AnzahlDerProduziertenMotorräder} Motorräder produziert.\nDer Durchschnittliche Umsatz beträgt nun {Umsatz/AnzahlDerProduziertenMotorräder:F2}.");
+            System.Console.WriteLine($"Es wurden {AnzahlDerProduziertenMotorraeder} Motorräder produziert.\nDer Durchschnittliche Umsatz beträgt nun {Umsatz/AnzahlDerProduziertenMotorraeder:F2}.");
         }
     }
 }

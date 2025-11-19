@@ -6,13 +6,13 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgab64
         public string Farbe;
         public string Kennzeichen;
         public static double Verbrauch;
-        private int seriennummer;
+        private string seriennummer;
 
         // Standartkonstruktor wird nur generiert, wenn kein eigener erstellt wird.
        
 
         // selbst erstellter Konstruktor
-        public Car(string farbe, int seriennummer) // ohne Rückgabewert weil Car selbst ist der Rückgabewert
+        public Car(string farbe, string seriennummer) // ohne Rückgabewert weil Car selbst ist der Rückgabewert
         {
             Farbe = farbe;
             this.seriennummer = seriennummer;

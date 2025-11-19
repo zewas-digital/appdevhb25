@@ -11,7 +11,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             while (true)
             {
                 Console.Write("Gib eine ganze Zahl ein: ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (int.TryParse(input, out int number))
                 {
@@ -29,7 +29,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             while (true)
             {
                 Console.Write("Gib eine Kommazahl ein: ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (double.TryParse(input, out double number))
                 {
@@ -47,7 +47,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben
             while (true)
             {
                 Console.Write("Gib 'true' oder 'false' ein: ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (bool.TryParse(input, out bool value))
                 {

@@ -11,17 +11,17 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe55und56
             {
                 using (StreamWriter sw = new StreamWriter(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\aufgabe55und56\output.txt"))
                 {
-                    string line = sr.ReadLine();
+                    string line = sr.ReadLine()!;
                     int anzahl = 0;
 
                     sw.WriteLine(line);
                     sw.WriteLine();
-                    line = sr.ReadLine();
+                    line = sr.ReadLine()!;
 
                     while (line != null)
                     {
                         sw.WriteLine("- " + line);
-                        line = sr.ReadLine();
+                        line = sr.ReadLine()!;
                         anzahl++;
                     }
 

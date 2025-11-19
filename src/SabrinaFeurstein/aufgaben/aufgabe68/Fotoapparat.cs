@@ -45,7 +45,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe68
             {
                 if (value > 0 && value <= 102)
                     _megapixel = value;
-                else if (_megapixel < 0)
+                else if (value < 0)
                     Console.WriteLine("Eine Kamera kann nicht nicht weniger als 0 Megapixel haben!");
                 else
                     Console.WriteLine("Eine Kamera kann nicht derzeit nicht mehr als 102 Megapixel haben!");

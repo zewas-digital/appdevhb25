@@ -7,7 +7,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe52
         public static void Start()
         {
             Console.WriteLine("Die folgenden Datums sind die Sonntage der nächsten drei Wochen");
-            DateTime date = new DateTime(2025, 10, 22);
+            DateTime date = DateTime.Now;
             int foundSundays = 0;
             CultureInfo austria = new CultureInfo("de-AT");
 
