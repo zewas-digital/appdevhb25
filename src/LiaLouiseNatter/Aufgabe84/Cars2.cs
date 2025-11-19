@@ -1,0 +1,38 @@
+using System.Drawing;
+
+namespace Appdevhb25.LiaLouiseNatter.Aufgabe84
+{
+    public class Cars2
+    {
+        public string Color;
+        public int Kilometers;
+        public string NumberPlate;
+        public float Usage;
+
+        public int Distanz;
+        public void PrintCar()
+        {
+            System.Console.WriteLine($"Farbe: {Color}\nKilometerstand: {Kilometers}\nKennzeichen: {NumberPlate}\nVerbrauch: {Usage}");
+        }
+        
+        public void Fahren(int Distanz)
+        {
+            System.Console.WriteLine($"Vorheriger Kilometerstand: {Kilometers}");
+            System.Console.WriteLine($"Neuer Kilometerstabd: {Kilometers+Distanz}");
+        }
+
+        public Cars2(string color, string numberPlate, string Inventarnummer)
+        {
+            Color = color;
+            NumberPlate = numberPlate;
+            inventarnummer = Inventarnummer;
+        }
+
+        
+        public string inventarnummer{get;set;}
+        public string GegenstandInfo()
+        {
+            return $"{inventarnummer}, {Color}, {NumberPlate}";
+        }
+    }
+}
