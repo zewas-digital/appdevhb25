@@ -17,10 +17,13 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
                 ("Outer Banks", 2.2)
             );
 
-            serienVerwaltung.AlleSerienSortiert();
-            serienVerwaltung.SerienUeberAcht(8.0);
-            serienVerwaltung.BesteSerie();
-            serienVerwaltung.SucheSerie();
+            // serienVerwaltung.AlleSerienSortiert();
+            // serienVerwaltung.SerienUeberAcht(8.0);
+            // serienVerwaltung.BesteSerie();
+            // serienVerwaltung.SucheSerie();
+            serienVerwaltung.AusgabeOhneBewertung();
+            serienVerwaltung.LiebsteSerie();
+
         }
     }
 }

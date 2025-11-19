@@ -75,7 +75,9 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe78.Output.Start78();
             //Aufgabe79.Output.Start79();
             //Aufgabe81.Output.Start81();
-            Aufgabe82.BrowseHistory.Start82();
+            //Aufgabe82.BrowseHistory.Start82();
+            //Aufgabe83.BrowseHistory.Start83();
+            //Aufgabe84.Output.Start84();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();

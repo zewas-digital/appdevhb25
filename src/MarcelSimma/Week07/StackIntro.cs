@@ -4,6 +4,7 @@ namespace Appdevhb25.MarcelSimma.Week07
 {
     public class StackIntro
     {
+        // Weitere Informationen zum Stack: https://learn.microsoft.com/de-de/dotnet/api/system.collections.generic.stack-1?view=net-8.0
         public static void Start()
         {
             Stack<string> numbers = new Stack<string>();

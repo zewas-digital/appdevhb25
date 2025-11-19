@@ -89,7 +89,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe74
                     count++;
                 }
             }
-            return count;
+            return count; 
         }
         //Suche nach der kleinsten Zahl 
         public static int SmallestNumber(List<int> list)
