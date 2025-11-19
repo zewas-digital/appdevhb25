@@ -88,6 +88,16 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe71.VehicleCreator.Start();
             //Aufgabe73.CameraHardwareCreator.Start();
             //Aufgabe74.List.Start();
+            //Aufgabe75.PersonGroupCreator.Start();
+            // Aufgabe76.PersonGroupCreator2.Start();
+            //Aufgabe77.SeriesCreator.Start();
+            //Aufgabe78.SeriesCreator.Start();
+            //Aufgabe79.SeriesCreator.Start();
+            //Aufgabe81.StartTicketsystem.Start();
+            //Aufgabe82.BrowserhistoryCreator.Start();
+            //Aufgabe83.BrowserhistoryCreator.Start();
+            //Aufgabe84.InventoryListCreator.Start();
+            Aufgabe91.SupermarketCreator.Start();
         }
     }
 }
