@@ -37,9 +37,9 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
         private static void Veraendern()
         {
             System.Console.WriteLine("Welcher Kontakt soll verändert werden? (Eingabe Nachname)");
-            string sucheNachname = Console.ReadLine();
+            string sucheNachname = Console.ReadLine() ?? string.Empty;
 
-            Kontakte gefundenerKontakt = null;
+            Kontakte? gefundenerKontakt = null;
 
             // suche nach Kontakt
             foreach (var k in kontakte)
@@ -64,7 +64,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
 
             // neuer Nachname
             System.Console.WriteLine("Neuer Nachname (leer lassen, um alten zu behalten): ");
-            string neuerNachname = Console.ReadLine();
+            string neuerNachname = Console.ReadLine()?? string.Empty;
             if(!string.IsNullOrWhiteSpace(neuerNachname))
             {
                 gefundenerKontakt.Nachname = neuerNachname;
@@ -72,7 +72,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
 
              // neuer Ort
             System.Console.WriteLine("Neuer Nachname (leer lassen, um alten zu behalten): ");
-            string neuerOrt = Console.ReadLine();
+            string neuerOrt = Console.ReadLine()?? string.Empty;
             if(!string.IsNullOrWhiteSpace(neuerOrt))
             {
                 gefundenerKontakt.Ort = neuerOrt;
@@ -80,7 +80,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
 
              // neue Tel
             System.Console.WriteLine("Neue Tel (leer lassen, um alten zu behalten): ");
-            string neueTel = Console.ReadLine();
+            string neueTel = Console.ReadLine()?? string.Empty;
             if(!string.IsNullOrWhiteSpace(neueTel))
             {
                 gefundenerKontakt.Telefonnummer = neueTel;
@@ -98,7 +98,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
             System.Console.WriteLine("Welcher Kontakt soll entfernt werden? (Eingabe Nachname)");
             string sucheNachname = Console.ReadLine() ?? string.Empty;
 
-            Kontakte gefundenerKontakt = null;
+            Kontakte? gefundenerKontakt = null;
 
             // suche nach Kontakt
             foreach (var k in kontakte)
