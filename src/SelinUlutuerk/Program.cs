@@ -74,8 +74,9 @@ namespace Appdevhb25.SelinUlutuerk
             // AufgabeV78.DictionaryIntro.Start();
             // Aufgabe81.Ticketsystem.Start();
             // Aufgabe82.Browserhistory.Start();
-            AufgabeV83.Browserhistory.Start();
-
+            // AufgabeV83.Browserhistory.Start();
+            // Aufgabe84.Inventarliste.Start();
+            AufgabeV85.Telefonbuch.Start();
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
