@@ -7,7 +7,6 @@ namespace Appdevhb25.KerimAlkis
     {
         static void Main(string[] args)
         {
-            Console.Clear();
             #region StruktuierteProgrammierung
             #region Bonusaufgaben
             //---Woche 1---
@@ -111,7 +110,22 @@ namespace Appdevhb25.KerimAlkis
 
             //---Woche 6---
             //Bonusaufgabe72.Fotoapparat.Start();
-            Vertiefungsaufgabe73.HardwareDerKamera.Start();
+            //Vertiefungsaufgabe73.HardwareDerKamera.Start();
+            //Aufgabe74.Liste.Start();
+            //Vertiefungsaufgabe75.PersonInGruppe.Start();
+            //Bonusaufgabe76.PersonInGruppeBonus.Start();
+            //Aufgabe77.Dictionary.Start();
+            //Vertiefungsaufgabe78.BewertungDesBenutzers.Start();
+
+            //---Woche 7---
+            //Bonusaufgabe79.SerienTop3.Start();
+            //Test.Test.Start();
+            //Aufgabe81.Ticketsystem.Start();
+            //Aufgabe82.Browserhistory.Start();
+            //Vertiefungsaufgabe83.BrowserhistoryExtended.Start();
+            //Aufgabe84.Inventarliste.Start();
+            //Bonusaufgabe87.Abwesenheitsliste.Start();
+            Aufgabe91.Supermarkt.Start();
         }
     }
 }
