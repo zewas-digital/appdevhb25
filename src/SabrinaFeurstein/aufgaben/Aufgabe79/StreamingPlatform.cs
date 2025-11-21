@@ -51,7 +51,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe79
                         break;
                     else
                     {
-                        Console.Write("Falsche Eingabe! Bitte gib eine Zahl ein: ");
+                        Console.Write("Ungültige Eingabe! Bitte gib eine Zahl ein: ");
                         nutzerEingabe = Console.ReadLine();
                     }
 

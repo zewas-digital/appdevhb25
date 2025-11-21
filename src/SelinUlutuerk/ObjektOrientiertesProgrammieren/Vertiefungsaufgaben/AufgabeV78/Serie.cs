@@ -16,15 +16,6 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
             }
         }
 
-        // public Serien()
-        // {
-        //     serien.Add("TVD", 8.5);
-        //     serien.Add("Peaky Blinders", 9.0);
-        //     serien.Add("Selling Sunset", 6.0);
-        //     serien.Add("Brief an die Zukunft", 5.3);
-        //     serien.Add("Outer Banks", 2.2);
-        // }
-
         // Alle Serien werden Sortiert
         public void AlleSerienSortiert()
         {
@@ -47,7 +38,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
             }
             System.Console.WriteLine(new string('-', 40));
 
-            
+
         }
 
         // Serie mit höchster Bewertung
@@ -59,7 +50,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
         }
 
         // weitere Lösung:
-        public KeyValuePair<string,double> BesteSerieAnders()
+        public KeyValuePair<string, double> BesteSerieAnders()
         {
             // Aggregate, um das KeyValuePair mit der höchsten Bewertung zu finden
             // dabei wird eine Funktion auf jedes Paar im Dictionary angewendet:
@@ -72,7 +63,8 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
         // Suche von Serie über Name
         public void SucheSerie()
         {
-            System.Console.WriteLine("Nach welcher Serienbewertung möchtest du suchen?");
+            System.Console.WriteLine("Nach welcher Serie (Name) möchtest du suchen?");
+
             string? eingabe = Console.ReadLine();
 
             if (eingabe != null && serien.ContainsKey(eingabe))
@@ -86,11 +78,60 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV78
             }
             System.Console.WriteLine(new string('-', 40));
         }
-        
+
         //kürzere Lösung:
         public bool Bewertungsuchen(string name, out double bewertung)
         {
             return serien.TryGetValue(name, out bewertung);
+        }
+
+        // Teil 2/ Vertiefung:
+        // Ausgabe aller Serien ohne Bewertung
+        public void AusgabeOhneBewertung()
+        {
+            System.Console.WriteLine("Serien ohne Bewertung:");
+            foreach (KeyValuePair<string, double> serie in serien)
+            {
+                System.Console.WriteLine(serie.Key);
+            }
+            System.Console.WriteLine(new string('-', 40));
+        }
+
+
+        // Liebsten Serien von Benutzer
+        public void LiebsteSerie()
+        {
+            Queue<string> lserien = new Queue<string>();
+            Dictionary<string, double> userBewertung = new Dictionary<string, double>();
+
+            System.Console.WriteLine("Wähle 3 Lieblingsserien aus dieser Liste:");
+            AusgabeOhneBewertung();
+            for (int i = 0; i < 3; i++)
+            {
+                System.Console.WriteLine($"Serie {i + 1}:");
+                string eingabe = Console.ReadLine() ?? string.Empty;
+                lserien.Enqueue(eingabe);
+                System.Console.WriteLine($"Deine Bewertung für {eingabe}:");
+                double bewertung = Convert.ToDouble(Console.ReadLine());
+                userBewertung.Add(eingabe, bewertung);
+            }
+
+            System.Console.WriteLine("\nDeine Favoriten:");
+            foreach (string serie in lserien)
+            {
+                System.Console.WriteLine(serie);
+            }
+
+            Console.WriteLine("\nVergleich: intern vs. deine Bewertung");
+            Console.WriteLine(new string('-', 40));
+            foreach (var name in lserien)
+            {
+                double intern = serien[name];
+                double user = userBewertung[name];
+
+                Console.WriteLine($"{name,-15} intern: {intern,4:F1}   du: {user,4:F1}");
+            }
+            Console.WriteLine(new string('-', 40));
         }
     }
 }
