@@ -6,8 +6,8 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe91
     {
         public static void Start()
         {
-            Produkt banane = new Produkt("Bananen", 2.49);
-            Produkt birne = new Produkt("Birne", 0.89);
+            Produkt banane = new Produkt("Bananen", 2.49m);
+            Produkt birne = new Produkt("Birne", 0.89m);
             Produkt pflaume = new Produkt("Pflaume", 4);
 
             List<Produkt> sortiment = new List<Produkt>();
@@ -29,8 +29,8 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe91
             kasse.WarenkorbAbrechnen(warenkorb);
             kasse2.WarenkorbAbrechnen(warenkorb2);
 
-            double summe1 = kasse.GesamtpreisBerechnen();
-            double summe2 = kasse2.GesamtpreisBerechnen();
+            decimal summe1 = kasse.GesamtpreisBerechnen();
+            decimal summe2 = kasse2.GesamtpreisBerechnen();
 
             System.Console.WriteLine($"Der Tagesumsatz von Kasse1 beträgt: {summe1}");
             System.Console.WriteLine($"Der Tagesumsatz von Kasse2 beträgt: {summe2}");
