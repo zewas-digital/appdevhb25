@@ -118,7 +118,15 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe75.GroupStarter.Start();
             // Aufgabe76.GroupStarter.Start();
             // Aufgabe77.Serienstarter.Start();
-            Aufgabe78.Serienstarter.Start();
+            // Aufgabe78.Serienstarter.Start();
+            // Aufgabe79.Serienstarter.Start();
+            // Aufgabe81.Concert.Start();
+            // Aufgabe82.Start.StartBrowserhistory();
+            // Aufgabe83.Start.StartBrowserhistory();
+            // Aufgabe84.GegenstandStart.Start();
+            // Aufgabe85.TelefonBuchStart.Start();
+            // Aufgabe86.AnrufStarter.Start();
+            Aufgabe91.Supermarkt.Start();
 
 
 

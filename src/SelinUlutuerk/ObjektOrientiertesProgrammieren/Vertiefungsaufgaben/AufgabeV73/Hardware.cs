@@ -6,7 +6,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV73
     class Hardware
     {
         public string? Modell { get; init; }
-        private string? Seriennummer { get; init; }
+        public string? Seriennummer { get; init; }
 
         // init sorgt dafür das man es nur einmal befüllen kann
 

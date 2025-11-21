@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Security.Cryptography;
 using Appdevhb25.LauraKatharinaBertsch.Aufgabe55;
 
 namespace Appdevhb25.LauraKatharinaBertsch
@@ -71,7 +72,16 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe68.Intro.Start();
             //Aufgabe69.Intro.Start();
             //Aufgabe70.Intro.Start();
-            Aufgabe71.Intro.Start();
+            //Aufgabe71.Intro.Start();
+            //Aufgabe73.HardwareDerKamera.Start();
+            //Aufgabe74.Liste.Start();
+            //Aufgabe75.PersonInGruppe.Start();
+            //Aufgabe76.PersonInGruppe_Bonus.Start();
+            //Aufgabe77.Serien.Start();
+            //Aufgabe78.Serien.Start();
+            //Aufgabe79.SerienTop3.Start();
+            //Aufgabe81.Ticketsystem.Start();
+            Aufgabe82.Browserhistory.Start();
         }
     }
 }
