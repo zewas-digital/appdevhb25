@@ -22,8 +22,8 @@ namespace Appdevhb25.NoahHois.Aufgabe71
 
             foreach (Fahrzeuge i in fahrzeuge)
             {
-                i.DruckeDatenblatt();
-                i.Fahren(0);
+                i.PrintDataSheet();
+                i.Drive(0);
                 System.Console.WriteLine(i);
             }
 

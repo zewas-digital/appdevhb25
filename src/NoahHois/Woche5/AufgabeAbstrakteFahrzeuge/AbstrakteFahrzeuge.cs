@@ -39,14 +39,14 @@ namespace Appdevhb25.NoahHois.Aufgabe71
             AnzahlDerProduziertenFahrzeuge++;
         }
 
-        public virtual void DruckeDatenblatt()
+        public virtual void PrintDataSheet()
         {
             System.Console.WriteLine("Farbe " + Color);
             System.Console.WriteLine("Kennzeichen " + Mark);
             System.Console.WriteLine("Kilometerstand " + Mileage);
         }
 
-        public abstract void Fahren(double distanz);
+        public abstract void Drive(double distanz);
     }
     public class Auto : Fahrzeuge
     {
@@ -58,19 +58,19 @@ namespace Appdevhb25.NoahHois.Aufgabe71
             AmountOfDoors = amountOfDoors;
             AnzahlDerProduziertenAutos++;
         }
-        public override void DruckeDatenblatt()
+        public override void PrintDataSheet()
         {
-            base.DruckeDatenblatt();
+            base.PrintDataSheet();
             System.Console.WriteLine("Anzahl Türen " + AmountOfDoors);
-            PrintAnzahlDerAutos();
+            PrintNumberOfCarsProduced();
             System.Console.WriteLine();
         }
-        public override void Fahren(double distanz)
+        public override void Drive(double distanz)
         {
             Mileage += distanz;
             System.Console.WriteLine("Neuer Kilometerstand: " + Mileage);
         }
-        public void PrintAnzahlDerAutos()
+        public void PrintNumberOfCarsProduced()
         {
             System.Console.WriteLine("Anzahl Autos " + AnzahlDerProduziertenAutos);
         }
@@ -95,19 +95,19 @@ namespace Appdevhb25.NoahHois.Aufgabe71
             SalesVolume += PurchasePrice;
             AnzahlDerProduziertenMotorraeder++;
         }
-        public override void DruckeDatenblatt()
+        public override void PrintDataSheet()
         {
-            base.DruckeDatenblatt();
+            base.PrintDataSheet();
             System.Console.WriteLine("PS " + Horsepower);
             System.Console.WriteLine("Kaufpreis " + PurchasePrice);
-            System.Console.WriteLine("Durchschnitt: " + BerechneDurchschnittsumsatz());
+            System.Console.WriteLine("Durchschnitt: " + CalculateAverageRevenue());
             System.Console.WriteLine();
         }
-        public static double BerechneDurchschnittsumsatz()
+        public static double CalculateAverageRevenue()
         {
             return SalesVolume / AnzahlDerProduziertenMotorraeder;
         }
-        public override void Fahren(double distanz)
+        public override void Drive(double distanz)
         {
             Mileage += distanz;
             System.Console.WriteLine("Neuer Kilometerstand: " + Mileage);
