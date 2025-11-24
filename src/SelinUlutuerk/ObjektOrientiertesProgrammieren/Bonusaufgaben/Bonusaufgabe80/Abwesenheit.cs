@@ -46,7 +46,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe80
         public double EntstandeneKosten()
         {
             double summe = 0;
-            
+
             foreach (var a in Abwesenheiten)
             {
                 // nur unentschuldigte Abwesenheiten werden dazu gezählt
@@ -81,8 +81,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe80
                     // Abwesenheitsloop
                     foreach (var a in t.Abwesenheiten)
                     {
-                        sw.WriteLine($"A;{a.Start:dd.MM.yyyy HH:mm};{a.Ende:dd.MM.yyyy HH:mm};{a.Fehlgrund};{a.Entschuldigt}"
-);
+                        sw.WriteLine($"A;{a.Start:dd.MM.yyyy HH:mm};{a.Ende:dd.MM.yyyy HH:mm};{a.Fehlgrund};{a.Entschuldigt}");
                     }
                 }
             }
