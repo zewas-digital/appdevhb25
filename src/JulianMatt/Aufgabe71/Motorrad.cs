@@ -49,7 +49,7 @@ namespace Appdevhb25.JulianMatt.Aufgabe71
 
         public override string ToString()
         {
-            return $"Motorrad: Farbe= {Colour}, Kennzeichen= {LicensePlate}, km= {Kilometers}, Leistung= {Performance} PS";
+            return $"Das ist ein Motorrad";
         }
     }
 }

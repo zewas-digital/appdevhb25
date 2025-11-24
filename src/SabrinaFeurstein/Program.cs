@@ -73,7 +73,26 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.aufgabe67.Inventory.Start();
             // aufgaben.aufgabe68.Kameras.Start();
             // aufgaben.aufgabe69.Motorraeder.Start();
-            aufgaben.aufgabe70.Fahrzeuge.Start();
+            // aufgaben.aufgabe70.Fahrzeuge.Start();
+            // aufgaben.aufgabe71.Fahrzeuge.Start();
+            // aufgaben.aufgabe72.Kameras.Start();
+            // aufgaben.aufgabe73.Kameras.Start();
+            // aufgaben.aufgabe74.ListeErstellen.Start();
+            // aufgaben.aufgabe74.ListeZusammenfuehren.Start();
+            // aufgaben.aufgabe75.Aufgabe75.Start();
+            // aufgaben.aufgabe76.Aufgabe76.Start();
+            // aufgaben.aufgabe77.Aufgabe77.Start();
+            // aufgaben.aufgabe78.Aufgabe78.Start();
+            // aufgaben.aufgabe79.Aufgabe79.Start();
+            // aufgaben.aufgabe80.Aufgabe80.Start();
+            // aufgaben.aufgabe81.Aufgabe81.Start();
+            // aufgaben.aufgabe82.Browserhistory.Start();
+            // aufgaben.aufgabe83.Browser.Start();
+            // aufgaben.aufgabe84.Inventarliste.Start();
+            // aufgaben.aufgabe85.Aufgabe85.Start();
+            // aufgaben.aufgabe86.Callcenter.Start();
+            // aufgaben.aufgabe87.Aufgabe87.Start();
+            aufgaben.aufgabe91.Einkauf.Start();
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe46.ParticipantList2.StartParticipantList2();
             //Aufgabe47.Square.StartSquare();
             //Aufgabe48.ReadAndDisplayCSV.StartReadAndDisplayCSV();
-            Aufgabe49.ProcessNumbers.StartProcessNumbers();
+            //Aufgabe49.ProcessNumbers.StartProcessNumbers();
 
 
             // BonusAufgabe01.PrintDeltoid.StartPrintDeltoid();
@@ -70,6 +70,34 @@ namespace Appdevhb25.SashaLeonardoMattes
             //BonusAufgabe16.DrawCalendar.StartDrawCalendar();
 
 
+
+
+
+
+
+
+
+            //OOP
+            //Aufgabe64.CarCreator.Start();
+            //Aufgabe65.Car2Creator.Start();
+            //Aufgabe66.PersonCreator.Start();
+            //Aufgabe67.ArticleCreator.Start();
+            //Aufgabe68.CameraCreator.Start();
+            //Aufgabe69.MotorCycleCreator.Start();
+            //Aufgabe70.VehicleCreator.Start();
+            //Aufgabe71.VehicleCreator.Start();
+            //Aufgabe73.CameraHardwareCreator.Start();
+            //Aufgabe74.List.Start();
+            //Aufgabe75.PersonGroupCreator.Start();
+            // Aufgabe76.PersonGroupCreator2.Start();
+            //Aufgabe77.SeriesCreator.Start();
+            //Aufgabe78.SeriesCreator.Start();
+            //Aufgabe79.SeriesCreator.Start();
+            //Aufgabe81.StartTicketsystem.Start();
+            //Aufgabe82.BrowserhistoryCreator.Start();
+            //Aufgabe83.BrowserhistoryCreator.Start();
+            //Aufgabe84.InventoryListCreator.Start();
+            Aufgabe91.SupermarketCreator.Start();
         }
     }
 }

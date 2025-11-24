@@ -7,7 +7,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe66
         // Felder
         public double Groesse;
         private DateTime _geburtsdatum;
-        public string Name;
+        public string? Name;
         public double Gewicht;
 
         // Standardkonstruktor ist immer verfügbar

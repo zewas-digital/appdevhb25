@@ -6,7 +6,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe32
     {
         public static void Start()
         {
-            string zahl;
+            string? zahl;
 
             while (true)
             {

@@ -7,7 +7,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
         private double _leistung;
         public double Kaufpreis;
         public static double Umsatz = 0;
-        public static int AnzahlDerProduziertenMotorräder = 0;
+        public static int AnzahlDerProduziertenMotorraeder = 0;
 
         public double Leistung
         {
@@ -29,30 +29,27 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe71
             }
         }
 
-        public Motorrad(string farbe, double leistung, double kaufpreis) : base(farbe)
+        public Motorrad(string farbe, string kennzeichen, double kilometerstand, double leistung, double kaufpreis) : base(farbe, kennzeichen, kilometerstand)
         {
             Leistung = leistung;
             Kaufpreis = kaufpreis;
-            AnzahlDerProduziertenMotorräder++;
+            AnzahlDerProduziertenMotorraeder++;
             Umsatz += kaufpreis;
         }
 
-        public override void DruckeDatenblatt()
+        public override string ToString()
         {
-            base.DruckeDatenblatt();
-            System.Console.WriteLine("Leistung: " + Leistung);
-            System.Console.WriteLine("Kaufpreis: " + Kaufpreis);
-            System.Console.WriteLine(new string('-', 20));
+            return $"{base.DruckeDatenblatt()}Leistung: {Leistung}\nKaufpreis: {Kaufpreis}\n{new string('-', 20)}";
         }
 
         public static void PrintAnzahlDerProduziertenMotorraeder()
         {
-            System.Console.WriteLine("Anzahl der produzierten Autos: " + AnzahlDerProduziertenMotorräder);
+            System.Console.WriteLine("Anzahl der produzierten Autos: " + AnzahlDerProduziertenMotorraeder);
         }
 
         public static void BerechneDurchschnittsumsatz()
         {
-            System.Console.WriteLine($"Es wurden {AnzahlDerProduziertenMotorräder} Motorräder produziert.\nDer Durchschnittliche Umsatz beträgt nun {Umsatz/AnzahlDerProduziertenMotorräder:F2}.");
+            System.Console.WriteLine($"Es wurden {AnzahlDerProduziertenMotorraeder} Motorräder produziert.\nDer Durchschnittliche Umsatz beträgt nun {Umsatz/AnzahlDerProduziertenMotorraeder:F2}.");
         }
     }
 }
