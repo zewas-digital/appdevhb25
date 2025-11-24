@@ -81,7 +81,12 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe78.Serien.Start();
             //Aufgabe79.SerienTop3.Start();
             //Aufgabe81.Ticketsystem.Start();
-            Aufgabe82.Browserhistory.Start();
+            //Aufgabe82.Browserhistory.Start();
+            //Aufgabe83.BrowserhistoryExtended.Start();
+            //Aufgabe84.Inventarliste.Start();
+            //Aufgabe85.Telefonbuch.Start();
+            //Aufgabe86.Callcenter.Start();
+            Aufgabe91.ShoppingCart.Start();
         }
     }
 }
