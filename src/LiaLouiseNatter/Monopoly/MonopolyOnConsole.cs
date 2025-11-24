@@ -67,42 +67,31 @@ public static class MonopolyOnConsole
 
         string[] DiceFaces = new string[]
         {
-            // Würfel 1
             "+-------+",
             "|       |",
             "|   o   |",
             "|       |",
             "+-------+",
-
-            // Würfel 2
             "+-------+",
             "| o     |",
             "|       |",
             "|     o |",
             "+-------+",
-
-            // Würfel 3
             "+-------+",
             "| o     |",
             "|   o   |",
             "|     o |",
             "+-------+",
-
-            // Würfel 4
             "+-------+",
             "| o   o |",
             "|       |",
             "| o   o |",
             "+-------+",
-
-            // Würfel 5
             "+-------+",
             "| o   o |",
             "|   o   |",
             "| o   o |",
             "+-------+",
-
-            // Würfel 6
             "+-------+",
             "| o   o |",
             "| o   o |",
@@ -131,7 +120,7 @@ public static class MonopolyOnConsole
             "|------------------|          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███        ███    ███  ███       ███   ███              |------------------|",
             "|   Westbahnhof    |          ███   ███   ███ ███    ███ ███   ███ ███    ███   ███        ███    ███  ███▌    ▄ ███   ███              |   Hauptbahnhof   |",
             "|      200         |           ▀█   ███   █▀   ▀██████▀   ▀█   █▀   ▀██████▀   ▄████▀       ▀██████▀   █████▄▄██  ▀█████▀               |      280         |",
-            "|------------------|                                                                                                                    |------------------|",
+            "|------------------|                                                   on Console                                                       |------------------|",
             "|   Neue Straße    |                                                                                                                    |   Ereignisfeld   |",
             "|      160         |                                                                                                                    |      280         |",
             "|------------------|                                                                                                                    |------------------|",
@@ -404,8 +393,6 @@ public static class MonopolyOnConsole
             {
                 int nearestPos = -1;
                 int feldIndex = -1;
-
-                // Such das NÄCHSTE Feld, das in dieser Zeile vorkommt
                 for (int i = 0; i < alleFelder.Length; i++)
                 {
                     int pos = currentLine.IndexOf(alleFelder[i]);
@@ -415,30 +402,22 @@ public static class MonopolyOnConsole
                         feldIndex = i;
                     }
                 }
-
-                // Wenn nix mehr gefunden -> Rest ausgeben & break
                 if (feldIndex == -1)
                 {
                     Console.Write(currentLine);
                     break;
                 }
-
-                // Text VOR dem Feld ausgeben
                 Console.Write(currentLine.Substring(0, nearestPos));
 
-                // Farb setzen
                 if (feldIndex == totalDiceCount)
                     PlayerColor(currentPlayer);
                 else if (boughtGround[feldIndex] != 0)
                     PlayerColor(boughtGround[feldIndex-1]);
                 else
                     Console.ForegroundColor = ConsoleColor.Gray;
-
-                // Feldname farbig ausgeben
                 Console.Write(alleFelder[feldIndex]);
                 Console.ResetColor();
 
-                // Alles nach dem Feld neu setzen
                 currentLine = currentLine.Substring(nearestPos + alleFelder[feldIndex].Length);
             }
 
