@@ -67,7 +67,14 @@ namespace Appdevhb25.NoahHois
             // Aufgabe74.Liste.Start();
             // Aufgabe74.Liste2.Start();
             // Aufgabe75.ProgramPersonInGruppe.Start();
-            Aufgabe77.ProgramDictionary.Start();
+            // Aufgabe77.ProgramDictionary.Start();
+            // Aufgabe78.ProgramBewertungenDesBenutzers.Start();
+            // Aufgabe81.ProgramTicketsystem.Start();
+            // Aufgabe82.Browserhistory.Start();
+            // Aufgabe83.ProgramBrowserhistoryExtended.Start();
+            // Aufgabe84.Program.Start();
+            // Aufgabe91.Supermarkt.Start();
+
 
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();
@@ -81,6 +88,7 @@ namespace Appdevhb25.NoahHois
             // BonusAufgabe9.DrawCalendar.Start();
             // BonusAufgabe10.Directories.Start([]);
             // BonusAufgabe11.MoreDirectories.Start([]);
+            // Aufgabe79.ProgramSerie3.Start();
 
             // CodewarsAufgabe1.Codewars1.Solution("abc", "bc");
 
