@@ -18,7 +18,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
         {
             System.Console.WriteLine("Bitte gib nun folgende Daten ein:");
             System.Console.WriteLine("Nachname: ");
-            string nachname = Console.ReadLine() ?? string.Empty;
+            string? nachname = Console.ReadLine() ?? string.Empty;
 
             System.Console.WriteLine("Ort: ");
             string ort = Console.ReadLine() ?? string.Empty;
@@ -64,23 +64,23 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeV85
 
             // neuer Nachname
             System.Console.WriteLine("Neuer Nachname (leer lassen, um alten zu behalten): ");
-            string neuerNachname = Console.ReadLine()?? string.Empty;
+            string? neuerNachname = Console.ReadLine();
             if(!string.IsNullOrWhiteSpace(neuerNachname))
             {
                 gefundenerKontakt.Nachname = neuerNachname;
             }
 
              // neuer Ort
-            System.Console.WriteLine("Neuer Nachname (leer lassen, um alten zu behalten): ");
-            string neuerOrt = Console.ReadLine()?? string.Empty;
+            System.Console.WriteLine("Neuer Ort (leer lassen, um alten zu behalten): ");
+            string? neuerOrt = Console.ReadLine();
             if(!string.IsNullOrWhiteSpace(neuerOrt))
             {
-                gefundenerKontakt.Ort = neuerOrt;
+                gefundenerKontakt.Ort = neuerOrt!;
             }
 
              // neue Tel
             System.Console.WriteLine("Neue Tel (leer lassen, um alten zu behalten): ");
-            string neueTel = Console.ReadLine()?? string.Empty;
+            string? neueTel = Console.ReadLine();
             if(!string.IsNullOrWhiteSpace(neueTel))
             {
                 gefundenerKontakt.Telefonnummer = neueTel;
