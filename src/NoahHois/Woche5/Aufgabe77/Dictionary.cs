@@ -1,6 +1,6 @@
 namespace Appdevhb25.NoahHois.Aufgabe77
 {
-    public class Dictionary
+    public class Series2
     {
         private Dictionary<string, double> serie = new Dictionary<string, double> { { "One Piece", 10 }, { "Bleach", 9.3 }, { "Naruto", 3.8 }, { "Digimon", 8.9 }, { "Cyberpunk", 7.90 } };
         public void Sotieren()

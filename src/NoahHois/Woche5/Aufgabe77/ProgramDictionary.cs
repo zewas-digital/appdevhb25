@@ -4,7 +4,7 @@ namespace Appdevhb25.NoahHois.Aufgabe77
     {
         public static void Start()
         {
-            Dictionary dictionary = new Dictionary();
+            Series2 dictionary = new Series2();
             dictionary.Sotieren();
             System.Console.WriteLine();
             dictionary.BewertungUeber8();
