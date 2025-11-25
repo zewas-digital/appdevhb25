@@ -14,11 +14,21 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe96
                     Console.WriteLine("Radius kann nicht negativ oder null sein!");
             }
         }
-        private static int AnzahlKreise { get; set; }
-
-        public Kreis(string name, double radius) : base(name)
+        private static int _anzahlKreise;
+        private static int AnzahlKreise 
         {
-            Elementtyp = "Kreis";
+            get { return _anzahlKreise; }
+            set
+            {
+                if (value > _anzahlKreise)
+                    _anzahlKreise = value;
+                else
+                    Console.WriteLine("Anzahl der Kreise erstellt kann nicht verringert werden!");
+            }
+        }
+
+        public Kreis(string name, double radius) : base(name, "Kreis")
+        {
             Radius = radius;
             AnzahlKreise++;
         }

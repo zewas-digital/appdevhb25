@@ -5,10 +5,10 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe96
         protected string Name { get; init; }
         protected string Elementtyp { get; init; }
 
-        public Figur(string name)
+        public Figur(string name, string elementtyp)
         {
             Name = name;
-            Elementtyp = "";
+            Elementtyp = elementtyp;
         }
 
         public abstract double UmfangBerechnen();

@@ -14,11 +14,21 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe96
                     Console.WriteLine("Seitenlänge kann nicht negativ oder null sein!");
             }
         }
-        private static int AnzahlDreiecke { get; set; }
-
-        public GleichseitigesDreieck(string name, double laenge) : base(name)
+        private static int _anzahlDreiecke;
+        private static int AnzahlDreiecke 
         {
-            Elementtyp = "Gleichseitiges Dreieck";
+            get { return _anzahlDreiecke; }
+            set
+            {
+                if (value > _anzahlDreiecke)
+                    _anzahlDreiecke = value;
+                else
+                    Console.WriteLine("Anzahl der gleichseitigen Dreiecke erstellt kann nicht verringert werden!");
+            }
+        }
+
+        public GleichseitigesDreieck(string name, double laenge) : base(name, "Gleichseitiges Dreieck")
+        {
             Laenge = laenge;
             AnzahlDreiecke++;
         }

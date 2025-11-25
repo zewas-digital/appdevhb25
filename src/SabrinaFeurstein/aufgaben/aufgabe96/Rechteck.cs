@@ -26,11 +26,21 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.aufgabe96
                     Console.WriteLine("Breite kann nicht negativ oder null sein!");
             }
         }
-        private static int AnzahlRechtecke { get; set; }
-
-        public Rechteck(string name, double laenge, double breite) : base(name)
+        private static int _anzahlRechtecke;
+        private static int AnzahlRechtecke
         {
-            Elementtyp = "Rechteck";
+            get { return _anzahlRechtecke; }
+            set
+            {
+                if (value > _anzahlRechtecke)
+                    _anzahlRechtecke = value;
+                else
+                    Console.WriteLine("Anzahl der Rechtecke erstellt kann nicht verringert werden!");
+            }
+        }
+
+        public Rechteck(string name, double laenge, double breite) : base(name, "Rechteck")
+        {
             Laenge = laenge;
             Breite = breite;
             AnzahlRechtecke++;
