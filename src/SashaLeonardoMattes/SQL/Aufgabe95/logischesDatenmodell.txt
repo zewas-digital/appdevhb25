@@ -1,0 +1,6 @@
+Firma (FirmenID_PK, Mitarbeiter_MitarbeiterID_FK)
+Mitarbeiter  (MitarbeiterID_PK, Vorname, Nachname, Telefonnummer)
+Abteilung (AbteilungsID_PK, Mitarbeiter_MitarbeiterID_FK, Mitarbeiteranzahl)
+Projekt (ProjektID_PK)
+
+ProjektMitarbeiter (Mitarbeiter_MitarbeiterID_FK, Projekt_ProjektID_FK)

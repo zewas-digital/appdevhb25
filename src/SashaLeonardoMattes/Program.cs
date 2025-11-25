@@ -97,7 +97,8 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe82.BrowserhistoryCreator.Start();
             //Aufgabe83.BrowserhistoryCreator.Start();
             //Aufgabe84.InventoryListCreator.Start();
-            Aufgabe91.SupermarketCreator.Start();
+            //Aufgabe91.SupermarketCreator.Start();
+            Aufgabe96.StartGeometry.Start();
         }
     }
 }
