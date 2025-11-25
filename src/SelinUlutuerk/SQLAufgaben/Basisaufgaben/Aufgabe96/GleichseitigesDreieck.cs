@@ -1,11 +1,49 @@
 using System;
+using System.Dynamic;
 
 namespace Appdevhb25.SelinUlutuerk.Aufgabe96
 {
     class GleichseitigesDreieck : Figur
     {
-        public double Seite {get; private set;}
-        public static int AnzahlDreieck;
+        private double _seite;
+        private static int _anzahlDreieck;
+
+        public double Seite
+        {
+            get
+            {
+                return _seite;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    _seite = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Die Seitenlänge darf nicht negativ sein");
+                }
+            }
+        }
+        public static int AnzahlDreieck
+        {
+             get
+            {
+                return _anzahlDreieck;
+            }
+            set
+            {
+                if (value > _anzahlDreieck)
+                {
+                    _anzahlDreieck = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Anzahl der Dreiecke kann nicht verkleinert werden");
+                }
+            }
+        }
 
 
         public GleichseitigesDreieck(double seite, string name, string elementtyp) : base(name,elementtyp)
@@ -21,7 +59,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe96
 
         public override double Flaeche()
         {
-            return Seite*Seite * Math.Sqrt(3)/4;
+            return Math.Pow(Seite,2) * Math.Sqrt(3)/4;
         }
 
         public static void PrintAnzahl()

@@ -6,10 +6,9 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe96
     {
         public static void Start()
         {
-             Console.Clear();
-            Console.WriteLine("=======================================");
+            Console.WriteLine("=====================================");
             Console.WriteLine("      GEOMETRISCHE FIGUREN");
-            Console.WriteLine("=======================================\n");
+            Console.WriteLine("=====================================\n");
 
             // Figurenliste
             List<Figur> figuren = new List<Figur>();
