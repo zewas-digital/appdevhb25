@@ -4,9 +4,65 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe96
 {
     class Rechteck : Figur, ISkalierbar
     {
-        public double Laenge { get; private set; }
-        public double Breite { get; private set; }
-        public static int AnzahlRechteck { get; private set; }
+        private double _laenge;
+        private double _breite;
+        private static int _anzahlRechteck ;
+
+        public double Laenge
+        {
+            get
+            {
+                return _laenge;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    _laenge = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Die Länge darf nicht negativ sein");
+                }
+            }
+        }
+        public double Breite
+        {
+            get
+            {
+                return _breite;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    _breite = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Die Breite darf nicht negativ sein");
+                }
+            }
+        }
+        public static int AnzahlRechteck
+        {
+            get
+            {
+                return _anzahlRechteck;
+            }
+            set
+            {
+                if (value > _anzahlRechteck)
+                {
+                    _anzahlRechteck = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Anzahl der Rechtecke kann nicht verkleinert werden");
+                }
+            }
+        }
+
 
         public Rechteck(double laenge, double breite, string name, string elementtyp) : base(name, elementtyp)
         {

@@ -4,8 +4,45 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe96
 {
     class Kreis : Figur, ISkalierbar
     {
-        public double Radius { get; private set; }
-        public static int AnzahlKreis { get; private set; }
+        private double _radius;
+        private static int _anzahlKreis;
+
+        public double Radius
+        {
+            get
+            {
+                return _radius;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    _radius = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Der Radius darf nicht negativ sein");
+                }
+            }
+        }
+        public static int AnzahlKreis
+        {
+             get
+            {
+                return _anzahlKreis;
+            }
+            set
+            {
+                if (value > _anzahlKreis)
+                {
+                    _anzahlKreis = value;
+                }
+                else
+                {
+                    System.Console.WriteLine("Anzahl der Kreise kann nicht verkleinert werden");
+                }
+            }
+        }
 
 
         public Kreis(double radius, string name, string elementtyp) : base(name, elementtyp)
