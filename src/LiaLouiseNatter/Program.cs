@@ -126,7 +126,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe84.GegenstandStart.Start();
             // Aufgabe85.TelefonBuchStart.Start();
             // Aufgabe86.AnrufStarter.Start();
-            Aufgabe91.Supermarkt.Start();
+            // Aufgabe91.Supermarkt.Start();
+            Aufgabe96.GeometryStart.Start();
 
 
 
