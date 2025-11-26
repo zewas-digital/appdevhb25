@@ -125,7 +125,8 @@ namespace Appdevhb25.KerimAlkis
             //Vertiefungsaufgabe83.BrowserhistoryExtended.Start();
             //Aufgabe84.Inventarliste.Start();
             //Bonusaufgabe87.Abwesenheitsliste.Start();
-            Aufgabe91.Supermarkt.Start();
+            //Aufgabe91.Supermarkt.Start();
+            Wiederholungsaufgabe96.Geometrie.Start();
         }
     }
 }

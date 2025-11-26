@@ -92,7 +92,8 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.aufgabe85.Aufgabe85.Start();
             // aufgaben.aufgabe86.Callcenter.Start();
             // aufgaben.aufgabe87.Aufgabe87.Start();
-            aufgaben.aufgabe91.Einkauf.Start();
+            // aufgaben.aufgabe91.Einkauf.Start();
+            aufgaben.aufgabe96.Geometrie.Start();
         }
     }
 }
