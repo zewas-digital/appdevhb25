@@ -170,7 +170,11 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             // Aufgabe87.Aufgabe87.Start(); 
             // System.Console.WriteLine();
-            Aufgabe91.Aufgabe91.Start(); 
+            // Aufgabe91.Aufgabe91.Start(); 
+            // System.Console.WriteLine();
+            // Aufgabe89.Aufgabe89.Start(); 
+            // System.Console.WriteLine();
+            Aufgabe96.Aufgabe96.Start(); 
             System.Console.WriteLine();
         }
     }

@@ -7,7 +7,7 @@ namespace Appdevhb25.NoahHois.Aufgabe2
         public static void Aufgabe2()
         {
             var number = 3;
-         for (var i = 0; i < 11; i++)
+            for (var i = 0; i < 11; i++)
             {
                 Console.WriteLine(number * i);
             }

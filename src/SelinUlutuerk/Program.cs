@@ -76,8 +76,10 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe82.Browserhistory.Start();
             // AufgabeV83.Browserhistory.Start();
             // Aufgabe84.Inventarliste.Start();
-            AufgabeV85.Telefonbuch.Start();
-
+            // AufgabeV85.Telefonbuch.Start();
+            // AufgabeV86.Callcenter.Start();
+            // Aufgabe91.SupermarktIntro.Start();
+            Aufgabe96.GeometrischeFormen.Start();
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
             // Bonusaufgabe14.PrintCircle.Start();

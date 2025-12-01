@@ -102,12 +102,31 @@ namespace Appdevhb25.KerimAlkis
             //OOP
             //---Woche 5---
             //Aufgabe64(65).Cars.Start();
-            Aufgabe66.Personen.Start();
-            
+            //Aufgabe66.Personen.Start();
+            //Aufgabe67.Inventur2.Start();
+            //Aufgabe68.Fotoapparat.Start();
+            //Aufgabe69.MotorradAufgabe.Start();
+            //Aufgabe71.Fahrzeuge.Start();
 
+            //---Woche 6---
+            //Bonusaufgabe72.Fotoapparat.Start();
+            //Vertiefungsaufgabe73.HardwareDerKamera.Start();
+            //Aufgabe74.Liste.Start();
+            //Vertiefungsaufgabe75.PersonInGruppe.Start();
+            //Bonusaufgabe76.PersonInGruppeBonus.Start();
+            //Aufgabe77.Dictionary.Start();
+            //Vertiefungsaufgabe78.BewertungDesBenutzers.Start();
 
-
-
+            //---Woche 7---
+            //Bonusaufgabe79.SerienTop3.Start();
+            //Test.Test.Start();
+            //Aufgabe81.Ticketsystem.Start();
+            //Aufgabe82.Browserhistory.Start();
+            //Vertiefungsaufgabe83.BrowserhistoryExtended.Start();
+            //Aufgabe84.Inventarliste.Start();
+            //Bonusaufgabe87.Abwesenheitsliste.Start();
+            //Aufgabe91.Supermarkt.Start();
+            Wiederholungsaufgabe96.Geometrie.Start();
         }
     }
 }

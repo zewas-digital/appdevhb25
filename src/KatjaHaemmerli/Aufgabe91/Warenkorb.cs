@@ -10,12 +10,12 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe91
         {
 
         }
-        public double getGesamtPreis()
+        public decimal getGesamtPreis()
         {
-            double summe = 0;
+            decimal summe = 0;
             foreach (Warenkorbitem item in items)
             {
-                double temp = item.Menge * item.Produkt.Preis;
+                decimal temp = item.Menge * item.EinzelProdukt.Preis;
                 summe += temp;
             }
             return summe;

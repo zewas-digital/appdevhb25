@@ -4,7 +4,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe91
 {
     public class Kasse
     {
-        public double Tagesumsatz;
+        public decimal Tagesumsatz;
 
         List<Warenkorb> abgerechneteWarenkoerbe = new List<Warenkorb>();
         public Kasse()
@@ -16,9 +16,9 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe91
         {
             abgerechneteWarenkoerbe.Add(warenkorb);
         }
-        public double GesamtpreisBerechnen() //Rückgabetyp string weil return einen String zurück gibt
+        public decimal GesamtpreisBerechnen() //Rückgabetyp string weil return einen String zurück gibt
         {
-            double summe = 0;
+            decimal summe = 0;
             foreach(Warenkorb warenkorb in abgerechneteWarenkoerbe)
             {
                 summe += warenkorb.getGesamtPreis();
@@ -29,7 +29,6 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe91
         {
             return $"Der Tagesumsatz von Kasse beträgt: {Tagesumsatz}";
         }
-
 
     }
 }
