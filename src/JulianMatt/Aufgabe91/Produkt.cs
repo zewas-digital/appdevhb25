@@ -41,6 +41,16 @@ namespace Appdevhb25.JulianMatt.Aufgabe91
             }
         }
 
+        public List<string> Nutritions;
+
+        public void FillProduktUp(string product, double price, int count, List<string> nutritions)
+        {
+            ChoosenProduct = product;
+            PriceOfProduct = price;
+            CountOfProducts = count;
+            Nutritions = nutritions;
+        }
+
         public void PrintProductInfo()
         {
             System.Console.WriteLine($"Sie haben {ChoosenProduct} ausgewählt dieses Kostet {PriceOfProduct} Euro");

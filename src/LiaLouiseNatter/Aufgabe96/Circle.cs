@@ -52,7 +52,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe96
             area = calculateArea();
             extent = calculateExtent();
         }
-          public override string ToString()
+        public override string ToString()
         {
             return base.ToString() + $"Radius: {Radius}\nExtent: {extent}\nArea: {area}\nCounted Figures: {countFigures}";
         }

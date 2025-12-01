@@ -1,0 +1,2 @@
+Autor(ID, Vorname, Nachname)
+Buch(ISBN, Titel, Erscheinungsjahr, Sprache, Verlag, Autor_FK)
