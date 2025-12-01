@@ -1,0 +1,21 @@
+Select Titel, Vorname, Nachname FROM Buch JOIN Autor ON Buch.Autor = Autor.Id
+order by Nachname, Vorname ASC
+
+'Der Alchimist', 'Paulo', 'Coelho'
+'Introduction to Algorithms', 'Thomas H.', 'Cormen'
+'Die Physiker. Eine Komödie in zwei Akten', 'Friedrich', 'Dürrenmatt'
+'BLACKOUT - Morgen ist es zu spät', 'Marc', 'Elsberg'
+'GIER - Wie weit würdest du gehen?', 'Marc', 'Elsberg'
+'HELIX - Sie werden uns ersetzen', 'Marc', 'Elsberg'
+'ZERO - Sie wissen, was du tust', 'Marc', 'Elsberg'
+'Der Prophet', 'Khalil', 'Gibran'
+'C/C++: Das umfassende Lehrbuch', 'Ulrich', 'Kaiser'
+'Shining', 'Stephen', 'King'
+'Friedhof der Kuscheltiere', 'Stephen', 'King'
+'Es', 'Stephen', 'King'
+'The Art of Computer Programming: Volume 2: Seminumerical Algorithms', 'Donald E.', 'Knuth'
+'The Art of Computer Programming: Volume 3: Sorting and Searching', 'Donald E.', 'Knuth'
+'The Art of Computer Programming: Volume 1: Fundamental Algorithms', 'Donald E.', 'Knuth'
+'Der Herr der Ringe. Die Rückkehr des Königs.', 'J.R.R.', 'Tolkien'
+'Der Herr der Ringe. Die zwei Türme.', 'J.R.R.', 'Tolkien'
+'Der Herr der Ringe. Die Gefähren.', 'J.R.R.', 'Tolkien'
