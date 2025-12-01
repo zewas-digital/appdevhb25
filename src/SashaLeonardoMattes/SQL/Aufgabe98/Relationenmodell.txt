@@ -1,0 +1,2 @@
+Author (AuthorID_PK, Firstname, Lastname)
+Book (BookID_PK, Author_AuthorID_FK, Title, Publisher, Releaseyear, Language)

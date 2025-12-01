@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.0">
+  <diagram name="Seite-1" id="JKW39JVQAIoE-3m2-3Or">
+    <mxGraphModel dx="778" dy="510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;i&gt;Person&lt;/i&gt;" vertex="1">
+          <mxGeometry height="118" width="180" x="50" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-2" parent="s3dGkJS9-1SEV00nOxHj-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="+ Name: string&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Adresse: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Telefonnummer: string&lt;/div&gt;" vertex="1">
+          <mxGeometry height="84" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9X226yeVc2L0nuKPbnQS-1" parent="s3dGkJS9-1SEV00nOxHj-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Kunde" vertex="1">
+          <mxGeometry height="210" width="460" x="30" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-6" parent="s3dGkJS9-1SEV00nOxHj-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="+ Kundennummer: string&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ UmsatzDurchKunde: double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Seminarbuchungen: List&amp;lt;Seminarbuchung&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="84" width="460" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-7" parent="s3dGkJS9-1SEV00nOxHj-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="460" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-8" parent="s3dGkJS9-1SEV00nOxHj-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="+ SeminarBuchen(Anmeldedatum: DateTime, Rechnungsdatum: DateTime): void&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ VonSeminarAbmelden(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Abmeldedatum: DateTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;UrkundeErhalten(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="92" width="460" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Dozent" vertex="1">
+          <mxGeometry height="160" width="290" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-10" parent="s3dGkJS9-1SEV00nOxHj-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="+ Personalnummer: string&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Biografie: List&amp;lt;Seminarveranstaltung&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Tageshonorar: double&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="290" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-11" parent="s3dGkJS9-1SEV00nOxHj-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-12" parent="s3dGkJS9-1SEV00nOxHj-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;+ SeminarAbsagen(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Absagedatum: DateTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="32" width="290" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-14" edge="1" parent="1" source="s3dGkJS9-1SEV00nOxHj-9" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;labelBackgroundColor=none;fontColor=default;" target="s3dGkJS9-1SEV00nOxHj-1" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="320" y="580" as="sourcePoint" />
+            <mxPoint x="480" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-15" edge="1" parent="1" source="s3dGkJS9-1SEV00nOxHj-5" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;labelBackgroundColor=none;fontColor=default;" target="s3dGkJS9-1SEV00nOxHj-1" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="320" y="580" as="sourcePoint" />
+            <mxPoint x="480" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-16" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Seminartyp" vertex="1">
+          <mxGeometry height="318" width="170" x="600" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-17" parent="s3dGkJS9-1SEV00nOxHj-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="+ Titel: string&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Zielsetzung: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Inhaltsbeschreibung: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Dauer: TimeSpan&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Lehrunterlagen: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Zielgruppe: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Vorkenntnisse: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Preis: double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ TeilnehmerZahlMin: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ TeilnehmerZahlMax: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="284" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9X226yeVc2L0nuKPbnQS-2" parent="s3dGkJS9-1SEV00nOxHj-16" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="170" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-20" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Seminarveranstaltung" vertex="1">
+          <mxGeometry height="240" width="290" x="310" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-21" parent="s3dGkJS9-1SEV00nOxHj-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;+ Seminartyp: Seminartyp&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Nummer: string&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Anfangszeit: DateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Endzeit: DateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Ort: string&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Absagedatum: DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="174" width="290" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-22" parent="s3dGkJS9-1SEV00nOxHj-20" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s3dGkJS9-1SEV00nOxHj-23" parent="s3dGkJS9-1SEV00nOxHj-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ SeminarAbsagen(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Absagedatum: DateTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): void&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="32" width="290" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Seminarbuchung" vertex="1">
+          <mxGeometry height="118" width="270" x="540" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-2" parent="2DhJ9LNHNJHBH9w3LxOM-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;+ Seminarveranstaltung: Seminarveranstaltung&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Anmeldedatum: DateTime&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Abmeldedatum: DateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="84" width="270" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-3" parent="2DhJ9LNHNJHBH9w3LxOM-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-6" edge="1" parent="1" source="2DhJ9LNHNJHBH9w3LxOM-1" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=none;fontColor=default;" target="s3dGkJS9-1SEV00nOxHj-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="580" y="500" as="sourcePoint" />
+            <mxPoint x="420" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-8" edge="1" parent="1" source="s3dGkJS9-1SEV00nOxHj-20" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=none;fontColor=default;" target="s3dGkJS9-1SEV00nOxHj-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="405" as="sourcePoint" />
+            <mxPoint x="410" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-9" edge="1" parent="1" source="2DhJ9LNHNJHBH9w3LxOM-1" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" target="s3dGkJS9-1SEV00nOxHj-20" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="420" y="550" as="sourcePoint" />
+            <mxPoint x="580" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2DhJ9LNHNJHBH9w3LxOM-10" edge="1" parent="1" source="s3dGkJS9-1SEV00nOxHj-20" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" target="s3dGkJS9-1SEV00nOxHj-16" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="799" y="670" as="sourcePoint" />
+            <mxPoint x="730" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
