@@ -1,0 +1,6 @@
+Buch(Buchtitel, Erscheinungsjahr, Signatur, kategorie_name_fk, benutzer_benutzernummer_fk)
+Autor(Geburtstag, Geburtsort, Vorname, Nachname, ID, epoche_name_fk)
+buch_autor(buch_signatur_fk, autor_id_fk)
+Epoche(Name, Anfangsjahr, Endjahr)
+Kategorie(Name, buch_signatur_fk)
+Benutzer(Ausleihdatum, Rückgabedatum, Benutzernummer, Name)

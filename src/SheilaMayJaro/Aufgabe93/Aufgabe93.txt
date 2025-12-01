@@ -1,0 +1,4 @@
+Professor(Personalnummer, Telefonnummer, Name)
+Vorlesung(ID, Titel, professor_personalnummer_fk)
+buch_vorlesung(vorlesung_id_fk, buch_isbn_fk)
+Buch(ISBN, Autor, Titel)

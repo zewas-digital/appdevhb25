@@ -37,7 +37,7 @@ namespace Appdevhb25.OliverBedogg.aufgabe77
             Console.WriteLine();
 
             Console.Write("Gib den Namen einer Serie ein: ");
-            string eingabe = Console.ReadLine();
+            string eingabe = Console.ReadLine() ?? string.Empty;
             
             if (serienVerwaltung.BewertungSuchen(eingabe, out double bewertung))
                 Console.WriteLine($"Bewertung von {eingabe}: {bewertung}");
