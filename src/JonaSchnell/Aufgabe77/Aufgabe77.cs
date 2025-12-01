@@ -83,7 +83,7 @@ namespace Appdevhb25.JonaSchnell.Aufgabe77
             Console.WriteLine();
             Console.WriteLine("Top 3 Serien:");
             Console.WriteLine();
-
+            
             foreach (var kv in nameAndRating.OrderByDescending(kv => kv.Value).Take(3))
             // OrderByDescending sortiert eine Liste absteigend (vom Höchsten zum Niedrigsten) nach einem mir belibigen Wert.
             //.Take(3) nimmt die ersten 3 Elemente aus einer Liste. Es schneidet sie blödgesagt ab. Man kann es gut verwenden um die Top 3 auszugeben wie hier.
