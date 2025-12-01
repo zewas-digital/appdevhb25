@@ -15,7 +15,8 @@ namespace Appdevhb25.OliverBedogg
         {
             Console.Clear(); Console.WriteLine("\n");
 
-            aufgabe77.Aufgabe77.Start();
+            sql.MysqlConnectExample.Start();
+            // aufgabe77.Aufgabe77.Start();
             // dyndatenstrukturen.DictionaryExample.Start();
             // aufgabe75.Aufgabe75.Start();
             // aufgabe74.Aufgabe74.Start();
