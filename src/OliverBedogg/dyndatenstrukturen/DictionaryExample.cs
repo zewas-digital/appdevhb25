@@ -32,7 +32,7 @@ namespace Appdevhb25.OliverBedogg.dyndatenstrukturen
                 };
 
             string englischesWort = "car";
-            if (woerterbuch.TryGetValue(englischesWort, out string deutschesWort))
+            if (woerterbuch.TryGetValue(englischesWort, out string? deutschesWort))
             {
                 Console.WriteLine(
                     "Das deutsche Wort für {0} ist {1}",
