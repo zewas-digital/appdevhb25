@@ -64,7 +64,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe39
             {
                 Console.Write($"Gib die {name}-Koordinate (1-3) ein: ");
 
-                if (int.TryParse(Console.ReadLine(), out coord) && coord >= 1 && coord <= 3)
+                if (int.TryParse(Console.ReadLine() ?? string.Empty, out coord) && coord >= 1 && coord <= 3)
                     return coord;
                 Console.WriteLine("Ungültige Eingabe. Bitte Zahl zwischen 1 und 3 eingeben.");
             }

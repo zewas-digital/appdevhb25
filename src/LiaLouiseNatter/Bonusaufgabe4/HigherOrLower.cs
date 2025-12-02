@@ -21,7 +21,7 @@ namespace Appdevhb25.LiaLouiseNatter.BonusAufgabe4
                 try
                 {
                     System.Console.Write("Guess a Random number from 1-100: ");
-                    int guess = Convert.ToInt32(Console.ReadLine());
+                    int guess = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                     if (guess < randomNumber)
                     {
                         System.Console.WriteLine("Die gesuchte Zahl ist Größer als " + guess);

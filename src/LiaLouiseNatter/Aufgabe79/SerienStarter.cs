@@ -14,11 +14,11 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe79
                 
                 System.Console.WriteLine("==========================");
                 System.Console.WriteLine("Search for a Series!");
-                string UserSeriesName = Console.ReadLine();
+                string UserSeriesName = Console.ReadLine() ?? string.Empty;
                 Series seriesName = new Series { _name = UserSeriesName };
                 System.Console.WriteLine("==========================");
                 System.Console.WriteLine("How do you Rate this Series?");
-                double seriesRating = Convert.ToDouble(Console.ReadLine());
+                double seriesRating = Convert.ToDouble(Console.ReadLine() ?? string.Empty);
                 System.Console.WriteLine("========New Ratings=========");
                 newSeries.UserRateSeries(seriesName, seriesRating);
                 

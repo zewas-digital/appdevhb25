@@ -72,7 +72,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe40
             {
                 Console.Write($"Gib die {name}-Koordinate (1-7) ein: ");
 
-                if (int.TryParse(Console.ReadLine(), out coord) && coord >= 1 && coord <= 7)
+                if (int.TryParse(Console.ReadLine() ?? string.Empty, out coord) && coord >= 1 && coord <= 7)
                     return coord;
                 Console.WriteLine("Ungültige Eingabe. Bitte Zahl zwischen 1 und 7 eingeben.");
             }
