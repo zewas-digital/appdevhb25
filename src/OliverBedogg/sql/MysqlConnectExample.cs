@@ -28,6 +28,7 @@ namespace Appdevhb25.OliverBedogg.sql
                 try
                 {
                     connection.Open();
+                    connection.Close();
 
                     // Datenbank Abfrage erstellen
                     string query = "SELECT * FROM country WHERE code like @code;";
