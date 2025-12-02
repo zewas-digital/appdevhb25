@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 using Appdevhb25.SabrinaFeurstein;
+using Appdevhb25.SabrinaFeurstein.sql;
 
 namespace Appdevhb25.SabrinaFeurstein
 {
@@ -93,7 +94,8 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.aufgabe86.Callcenter.Start();
             // aufgaben.aufgabe87.Aufgabe87.Start();
             // aufgaben.aufgabe91.Einkauf.Start();
-            aufgaben.aufgabe96.Geometrie.Start();
+            // aufgaben.aufgabe96.Geometrie.Start();
+            MysqlConnectExample.Start();
         }
     }
 }
