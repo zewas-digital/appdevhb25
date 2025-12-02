@@ -1,11 +1,12 @@
 // MySQL Package über das Terminal installieren
-// cd in Programm-Verzeichnis
+// cd .\src\SelinUlutuerkin Programm-Verzeichnis
 // dotnet add package MySql.Data
 
 using System;
+using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 
-namespace Appdevhb25.OliverBedogg.sql
+namespace Appdevhb25.SelinUlutuerk.SQLAufgaben
 {
 
     public class MysqlConnectExample
@@ -14,13 +15,11 @@ namespace Appdevhb25.OliverBedogg.sql
         public static void Start()
         {
             // Verbindungsinformation
-            string databaseConnectionString; // die .env fällt über gitignore aus dem commit heraus
-            using(StreamReader sr = new StreamReader("./../../../_secure/mysql-connection.env"))
+            string databaseConnectionString;
+            using(StreamReader sr = new StreamReader(@"..\..\..\SQLAufgaben\_secure\mysql-connection.env"))
             {
                 databaseConnectionString = sr.ReadLine() ?? string.Empty;
             }
-
-            // Console.WriteLine(databaseConnectionString);
 
             // Erstellung der Verbindung zur Datenbank
             using (MySqlConnection connection = new MySqlConnection(databaseConnectionString))
@@ -28,7 +27,6 @@ namespace Appdevhb25.OliverBedogg.sql
                 try
                 {
                     connection.Open();
-                    connection.Close();
 
                     // Datenbank Abfrage erstellen
                     string query = "SELECT * FROM country WHERE code like @code;";
