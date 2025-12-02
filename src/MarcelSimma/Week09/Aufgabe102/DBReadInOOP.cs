@@ -13,12 +13,12 @@ namespace Appdevhb25.MarcelSimma.Week09.Aufgabe102
         public static void Start()
         {
             // Verbindungsinformation
-            string databaseConnectionString = @"
-            server=127.0.0.1;
-            uid=root;
-            pwd=abcd1234!;
-            database=Bibliotheksverwaltung
-            ";
+            string databaseConnectionString; // die .env fällt über gitignore aus dem commit heraus
+            using(StreamReader sr = new StreamReader("./../../../_secure/mysql-connection.env"))
+            {
+                databaseConnectionString = sr.ReadLine() ?? string.Empty;
+            }
+            databaseConnectionString += "database=bibliotheksverwaltung;";
 
             // Erstellung der Verbindung zur Datenbank
             using (MySqlConnection connection = new MySqlConnection(databaseConnectionString))
