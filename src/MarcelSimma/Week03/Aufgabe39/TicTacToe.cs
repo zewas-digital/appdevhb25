@@ -67,7 +67,7 @@ namespace Appdevhb25.MarcelSimma.Aufgabe39
                 }
 
                 System.Console.WriteLine("Gib eine x-Koordinate ein.");
-                string tmp = Console.ReadLine();
+                string? tmp = Console.ReadLine();
                 int xUserInput = Convert.ToInt32(tmp);
 
                 System.Console.WriteLine("Gib eine y-Koordinate ein.");

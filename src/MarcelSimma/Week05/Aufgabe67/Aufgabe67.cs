@@ -16,7 +16,7 @@ namespace Appdevhb25.MarcelSimma.Aufgabe67
                 // Solange gültige Zeichen (= Zeilen) vorhanden sind, soll weiter eingelesen werden.
                 {
                     // Zeile einlesen
-                    string zeile = reader.ReadLine();
+                    string? zeile = reader.ReadLine();
 
                     // Zeile in einzelne Werte aufspalten
                     string[] werteAlsStrings = zeile.Split("  ");
