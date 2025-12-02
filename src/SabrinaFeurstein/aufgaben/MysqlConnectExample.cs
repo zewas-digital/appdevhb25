@@ -5,7 +5,7 @@
 using System;
 using MySql.Data.MySqlClient;
 
-namespace Appdevhb25.SabrinaFeurstein.sql
+namespace Appdevhb25.SabrinaFeurstein
 {
 
     public class MysqlConnectExample
@@ -16,7 +16,7 @@ namespace Appdevhb25.SabrinaFeurstein.sql
             // Verbindungsinformation
             string databaseConnectionString;
 
-            using (StreamReader sr = new StreamReader(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\aufgaben\secure\mysql-connections.env"))
+            using (StreamReader sr = new StreamReader(@"C:\Users\aau30152\Documents\Eigene Dokumente\Visual studio codes\Digital Campus\appdevhb25\src\SabrinaFeurstein\secure\mondial-connection.env"))
             {
                 databaseConnectionString = sr.ReadLine()!;
             }
