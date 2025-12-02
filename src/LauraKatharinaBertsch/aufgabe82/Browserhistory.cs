@@ -11,7 +11,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe82
         public static void Stack()
         {
             Console.WriteLine("Gib eine Website ein, die du besuchen möchtest. Wenn du keine Website besuchen wolltest schreibe CLOSE ");
-            string websiteInput = Console.ReadLine();
+            string websiteInput = Console.ReadLine() ?? string.Empty;
             if (websiteInput == "CLOSE")
             {
                 return;
@@ -24,11 +24,11 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe82
                 while (websites.Count > 0)
                 {
                     Console.WriteLine("Möchtest du eine neue Website aufmachen? ja oder nein");
-                    string answer = Console.ReadLine();
+                    string answer = Console.ReadLine() ?? string.Empty;
                     if (answer == "ja")
                     {
                         Console.WriteLine("Gib den Namen der Website ein");
-                        websiteInput = Console.ReadLine();
+                        websiteInput = Console.ReadLine() ?? string.Empty;
                         websites.Push(websiteInput);
                     }
                     else if (answer == "nein")

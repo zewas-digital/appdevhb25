@@ -8,7 +8,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe43
         {
             string[] words = new string[] { "Maus", "Torte", "Kleid", "Tiger", "Schnecke", "Erdbeere", "Wasser", "Libelle", "Zimtstange", "Blumenstrauß" };
             Console.WriteLine("Schreibe ein Wort");
-            string word = Console.ReadLine();
+            string word = Console.ReadLine() ?? string.Empty;
             int indexOfWord = -1;
             for (int i = 0; i < words.Length; i++)
             {
@@ -28,7 +28,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe43
             }
 
             Console.WriteLine("Schreibe eine Silbe");
-            string silbe = Console.ReadLine();
+            string silbe = Console.ReadLine() ?? string.Empty;
             bool found = false;
             for (int i = 0; i < words.Length; i++)
             {

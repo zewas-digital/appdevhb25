@@ -8,7 +8,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe31
         {
             // Länge des Arrays vom Nutzer abfragen
             Console.WriteLine("Schreibe irgendeine random Zahl");
-            string input = Console.ReadLine();
+            string input = Console.ReadLine() ?? string.Empty;
             int anzahlDerElemente = Convert.ToInt32(input);
 
             int[] randomNumberArray = new int[anzahlDerElemente];
@@ -21,14 +21,14 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe31
             for (int i = 0; i < randomNumberArray.Length; i++)
             {
 
-                string temp = Console.ReadLine();
+                string temp = Console.ReadLine() ?? string.Empty;
                 int zahl = Convert.ToInt32(temp);
                 randomNumberArray[i] = zahl;
             }
 
             // Kleinste Zahl suchen
             int smallest = randomNumberArray[0];
-            
+
             for (int j = 1; j < randomNumberArray.Length; j++)
             {
                 if (randomNumberArray[j] < smallest)

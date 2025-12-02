@@ -11,33 +11,33 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe86
 
             Console.WriteLine("Hat eine Person angerufen? ja oder nein");
 
-            if (Console.ReadLine() == "ja")
+            if ((Console.ReadLine() ?? string.Empty) == "ja")
             {
                 Console.WriteLine("Wie lautet der Name?");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine() ?? string.Empty;
                 Console.WriteLine("Wie lautet ihre Telefonnummer?");
-                string phonenumber = Console.ReadLine();
+                string phonenumber = Console.ReadLine() ?? string.Empty;
                 missedCalls.Enqueue(new MissedCall(name, phonenumber));
                 while (true)
                 {
                     Console.WriteLine("Hat noch eine Person angerufen? ja oder nein");
-                    if (Console.ReadLine() == "nein")
+                    if ((Console.ReadLine() ?? string.Empty) == "nein")
                     {
                         break;
                     }
                     else
                     {
                         Console.WriteLine("Wie lautet der Name?");
-                        name = Console.ReadLine();
+                        name = Console.ReadLine() ?? string.Empty;
                         Console.WriteLine("Wie lautet ihre Telefonnummer?");
-                        phonenumber = Console.ReadLine();
+                        phonenumber = Console.ReadLine() ?? string.Empty;
                         missedCalls.Enqueue(new MissedCall(name, phonenumber));
                     }
                 }
                 while (missedCalls.Count > 0)
                 {
                     Console.WriteLine("Möchtest du den verpassten Anruf zurückrufen? ja oder nein");
-                    if (Console.ReadLine() == "ja")
+                    if ((Console.ReadLine() ?? string.Empty) == "ja")
                     {
                         Console.WriteLine();
                         missedCalls.Dequeue();

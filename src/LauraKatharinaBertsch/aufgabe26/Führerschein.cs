@@ -11,8 +11,8 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe26
             {
                 Console.WriteLine("Wir prüfen ob du einen Führerschein machen darfst");
                 Console.WriteLine("Schreibe ein Alter und einen Namen");
-                int age = int.Parse(Console.ReadLine());
-                string name = Console.ReadLine();
+                int age = int.Parse(Console.ReadLine() ?? string.Empty);
+                string name = Console.ReadLine() ?? string.Empty;
                 bool canDriveMoped = DrivingLicenseMoped(age);
                 bool canDriveAuto = DrivingLicenseAuto(age);
                 string output = "";

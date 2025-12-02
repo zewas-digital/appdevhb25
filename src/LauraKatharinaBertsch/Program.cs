@@ -87,7 +87,8 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe85.Telefonbuch.Start();
             //Aufgabe86.Callcenter.Start();
             //Aufgabe91.ShoppingCart.Start();
-            Aufgabe96.Geometrie.Start();
+           // Aufgabe96.Geometrie.Start();
+           sql.MysqlConnectExample.Start();
             
         }
     }
