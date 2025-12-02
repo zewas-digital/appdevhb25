@@ -5,7 +5,7 @@
 using System;
 using MySql.Data.MySqlClient;
 
-namespace Appdevhb25.OliverBedogg.sql
+namespace Appdevhb25.JonaSchnell.SQLVerzei
 {
 
     public class MysqlConnectExample
@@ -14,16 +14,15 @@ namespace Appdevhb25.OliverBedogg.sql
         public static void Start()
         {
             // Verbindungsinformation
-            string databaseConnectionString; // die .env fällt über gitignore aus dem commit heraus
-            using(StreamReader sr = new StreamReader("./../../../_secure/mysql-connection.env"))
-            {
-                databaseConnectionString = sr.ReadLine() ?? string.Empty;
-            }
-
-            // Console.WriteLine(databaseConnectionString);
+            string databaseConnectionString = @"
+            server=127.0.0.1;
+            uid=admin;
+            pwd=Jonschn2003;
+            database=Mondial
+            ";
 
             // Erstellung der Verbindung zur Datenbank
-            using (MySqlConnection connection = new MySqlConnection(databaseConnectionString))
+            using (MySqlConnection connection = new MySqlConnection())
             {
                 try
                 {
@@ -35,7 +34,6 @@ namespace Appdevhb25.OliverBedogg.sql
                     // Befehl erstellen, der auf der Datenbank ausgeführt werden kann
                     MySqlCommand command = new MySqlCommand(query, connection);
 
-                    // Variablen austauschen
                     command.Parameters.AddWithValue("@code", "A%");
 
                     // Resultate lesen
@@ -45,7 +43,8 @@ namespace Appdevhb25.OliverBedogg.sql
                         {
                             Console.WriteLine(reader.GetString("name"));
                         }
-                    }
+                    }                    // Variablen austauschen<öl<xcfvp89-öße04lkµ
+
 
                 }
                 catch (MySqlException ex)
