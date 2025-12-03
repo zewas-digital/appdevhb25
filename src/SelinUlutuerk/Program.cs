@@ -79,7 +79,10 @@ namespace Appdevhb25.SelinUlutuerk
             // AufgabeV85.Telefonbuch.Start();
             // AufgabeV86.Callcenter.Start();
             // Aufgabe91.SupermarktIntro.Start();
-            Aufgabe96.GeometrischeFormen.Start();
+            // Aufgabe96.GeometrischeFormen.Start();
+            // SQLAufgaben.MysqlConnectExample.Start();
+            Aufgabe102.DBRead.Start();
+
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
             // Bonusaufgabe14.PrintCircle.Start();
