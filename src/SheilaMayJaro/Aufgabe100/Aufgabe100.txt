@@ -1,0 +1,29 @@
+1. Wie viele Einwohner hat Österreich?
+2. Welche Flüsse fließen durch Österreich?
+3. Alle Länder die mit einem A anfangen
+4. Wie viele Einwohner hat der Kontinent Europa?
+5. Welche Flüsse fließen durch Europa (nur den Flussnamen)?
+6. Alle Flüsse die durch Europa fließen (nur Flüsse und deren Länge), sortiert nach Länge
+7. Alle Länder die mit einem A anfangen und deren Bundesländer mit Einwohnerzahl, sortiert nach Einwohnerzahl
+8. Was ist der größte Berg von Österreich? Wie hoch ist er?
+9. Alle Inseln im Pazifik mit >50% islamischem Bekenntnis
+10. Alle 3000er, welche in einem Land sind, welches zu mindestens 60% römisch Katholisch ist
+11. Einwohnerzahl pro Religion
+12. Welches sind die 3 größten Städte von Amerika (Kontinent)?
+13. Das Unabhängigkeitsdatum von Ländern die eine Wüste haben und die ethnische Gruppe African
+14. Welche Länder haben genau 3 Städte? Welche Länder sind dies?
+15. Welche Organisationen haben deren Hauptsitz in Österreich? Wie viele Mitglieder haben diese Organisationen?
+16. Alle Länder mit mindestens einem See mit mindestens 100 Meter Tiefe und mindestens einem Berg mit mindestens 1500 Höhenmeter
+17. Alle Länder, nur die Namen, und wenn sie haben, das Meer dazu
+18. Erstelle eine neue “Organization” mit dem Namen “DCV-Grundkurs”. Suche dir ein paar Länder aus, die Mitglied in dieser "Organization" sind und speichere die Mitgliedschaft in die Datenbank.
+19. Gib alle Mitglieder der neuen Organization aus. Sind alle Mitglieder dabei, die du hinzugefügt hast? Ja
+20. Wir gehen 2 Monate in die Zukunft: Der Kurs ist vorbei. Jetzt gibt es eine neue internationale Organisation: “Alumni DCV-Grundkurs”. Alle Mitglieder von “DCV-Grundkurs” werden nun automatisch Mitglied in der Organisation “Alumni DCV Grundkurs”. Die Mitgliedschaft bei "DCV-Grundkurs" endet im selben Moment.
+21. Nachdem die Organisation “DCV-Grundkurs” keine Mitglieder mehr hat, soll diese gelöscht werden.
+22. Aktualisiere die Höhe des Großglockners.
+23. Erstelle das Land Transnistrien. Es liegt in Europa. Wenn du anschließend einen alle europäischen Staaten inkl. Namen selektierst, soll auch Transnistrien in der Ergebnisliste sein.
+24. Speichere den höchsten Berg und die Hauptstadt von Transnistrien in die Datenbank. Prüfe die Ergebnisse mit einem SELECT.
+25. Ändere den Namen der Türkei auf "Türkiye".
+26. Thailand hat eine neue Hauptstadt: Nusantara. Speichere das in die Datenbank.
+27. Es gibt eine weitere "Organization", die nicht in unserer Datenbank vorhanden ist: die Visegrad Gruppe. Erstelle die "Organization" und ordne ihr Mitglieder zu. Die Hauptstadt dieses Bündnisses ist die ungarische Stadt Visegrad.
+28. Gib eine Liste der Mitglieder EU und deren Hauptstädte aus. Vergleiche deine Ergebnisse mit der aktuellen Mitgliederliste.
+29. DELETE: Großbritannien hat die EU verlassen.

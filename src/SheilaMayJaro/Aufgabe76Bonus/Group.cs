@@ -78,7 +78,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe76Bonus
         public Person FindPerson()
         {
             System.Console.WriteLine("\nGib den Namen der Person ein, die du suchst.");
-            string userInput = Console.ReadLine(); 
+            string userInput = Console.ReadLine() ?? string.Empty; 
             return people.Find(person => person.Name == userInput);
         }
         public List<Person> FindAllPersons() //Personen mit demselben Namen
