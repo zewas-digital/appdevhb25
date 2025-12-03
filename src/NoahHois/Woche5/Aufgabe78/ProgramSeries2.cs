@@ -16,7 +16,7 @@ namespace Appdevhb25.NoahHois.Aufgabe78
             var highestRating = series.HighestRating();
             System.Console.WriteLine($"Serie: {highestRating.Key} Bewertung: {highestRating.Value}");
             System.Console.WriteLine();
-            string seriesName = Console.ReadLine();
+            string seriesName = Console.ReadLine() ?? string.Empty;
             series.SearchSeries(seriesName);
             System.Console.WriteLine();
             series.SeriesWithoutRating();
