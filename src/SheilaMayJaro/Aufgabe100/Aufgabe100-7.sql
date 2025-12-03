@@ -3,7 +3,10 @@ from geo_river
 Inner Join river on geo_river.river = river.name
 Inner Join encompasses on geo_river.country = encompasses.country
 Where continent = 'Europe'
-Order by Length 
+Order by Length
+
+-- falsche Anfrage, das ist die von Aufgabe 6
+-- das Ergebnis ist das von der Abfrage von Aufgabe 7
 
 # name, province, population
 'Anguilla', 'Anguilla', '14436'

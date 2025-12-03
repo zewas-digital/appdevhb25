@@ -81,7 +81,7 @@ namespace Appdevhb25.SelinUlutuerk
             // Aufgabe91.SupermarktIntro.Start();
             // Aufgabe96.GeometrischeFormen.Start();
             // SQLAufgaben.MysqlConnectExample.Start();
-            Aufgabe102.DBRead.Start();
+            // Aufgabe102.DBRead.Start();
 
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
@@ -105,6 +105,7 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe76.PersonenInGruppe.Start();
             // Bonusaufgabe79.SerienTopDrei.Start();
             // Bonusaufgabe80.AbwesenheitIntro.Start();
+            Bonusaufgabe103.DBRead.Start();
 
 
 

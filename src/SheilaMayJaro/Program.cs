@@ -176,7 +176,9 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             // Aufgabe96.Aufgabe96.Start(); 
             // System.Console.WriteLine();
-            sqlExample.MysqlConnectExample.Start(); 
+            // sqlExample.MysqlConnectExample.Start(); 
+            // System.Console.WriteLine();
+            Aufgabe102.Aufgabe102.Start(); 
             System.Console.WriteLine();
         }
     }
