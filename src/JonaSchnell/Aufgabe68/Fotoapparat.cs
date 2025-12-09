@@ -1,6 +1,6 @@
 namespace Appdevhb25.JonaSchnell.Aufgabe68
 {
-    public class Kamera
+    public class Fotoapparat
     {
         private string _model = "";
         private string _hersteller = "";
@@ -8,30 +8,44 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
         private double _brennweiteMax;
         private double _megapixel;
 
-        public Kamera()
+        // Standard Konstruktor
+        public Fotoapparat()
         {
-            _hersteller = "";
-            _model = "";
-            _brennweiteMin = 18;
-            _brennweiteMax = 55;
-            _megapixel = 12;
+            Hersteller = "Unbekannt";
+            Model = "Unbekannt";
+            BrennweiteMin = 18;
+            BrennweiteMax = 55;
+            Megapixel = 12;
         }
 
-        public Kamera(string hersteller, string model) : this()
+        // Konstruktor mit Basis-Informationen
+        public Fotoapparat(string hersteller, string model)
         {
-            _hersteller = hersteller;
-            _model = model;
+            Hersteller = hersteller;
+            Model = model;
+            BrennweiteMin = 18;
+            BrennweiteMax = 55;
+            Megapixel = 12;
         }
 
-        public Kamera(string hersteller, string model, double megapixel) : this(hersteller, model)
+        // Konstruktor mit Megapixel
+        public Fotoapparat(string hersteller, string model, double megapixel)
         {
-            _megapixel = megapixel;
+            Hersteller = hersteller;
+            Model = model;
+            BrennweiteMin = 18;
+            BrennweiteMax = 55;
+            Megapixel = megapixel;
         }
 
-        public Kamera(string hersteller, string model, double brMin, double brMax, double megapixel) : this(hersteller, model, megapixel)
+        // Voller Konstruktor
+        public Fotoapparat(string hersteller, string model, double brMin, double brMax, double megapixel)
         {
-            _brennweiteMin = brMin;
-            _brennweiteMax = brMax;
+            Hersteller = hersteller;
+            Model = model;
+            BrennweiteMin = brMin;
+            BrennweiteMax = brMax;
+            Megapixel = megapixel;
         }
 
         public string Model
@@ -41,9 +55,8 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    System.Console.WriteLine();
-                    Console.WriteLine("Model darf nicht leer sein.");
-                    System.Console.WriteLine();
+                    Console.WriteLine("Model darf nicht leer sein!");
+                    return;
                 }
                 _model = value;
             }
@@ -56,9 +69,8 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    System.Console.WriteLine();
-                    Console.WriteLine("Hersteller muss ausgewählt werden.");
-                    System.Console.WriteLine();
+                    Console.WriteLine("Hersteller darf nicht leer sein!");
+                    return;
                 }
                 _hersteller = value;
             }
@@ -71,9 +83,8 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
             {
                 if (value <= 0)
                 {
-                    System.Console.WriteLine();
-                    Console.WriteLine("Brennweite muss größer als 0 sein!");
-                    System.Console.WriteLine();
+                    Console.WriteLine("Minimale Brennweite muss größer als 0 sein!");
+                    return;
                 }
                 _brennweiteMin = value;
             }
@@ -84,11 +95,15 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
             get { return _brennweiteMax; }
             set
             {
-                if (value < BrennweiteMin)
+                if (value <= 0)
                 {
-                    System.Console.WriteLine();
-                    Console.WriteLine("Brennweite muss größer als 0 sein!");
-                    System.Console.WriteLine();
+                    Console.WriteLine("Maximale Brennweite muss größer als 0 sein!");
+                    return;
+                }
+                if (value < _brennweiteMin)
+                {
+                    Console.WriteLine("Maximale Brennweite muss größer als minimale Brennweite sein!");
+                    return;
                 }
                 _brennweiteMax = value;
             }
@@ -99,12 +114,10 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
             get { return _megapixel; }
             set
             {
-
                 if (value <= 0)
                 {
-                    System.Console.WriteLine();
                     Console.WriteLine("Megapixel muss größer als 0 sein!");
-                    System.Console.WriteLine();
+                    return;
                 }
                 _megapixel = value;
             }
@@ -113,17 +126,23 @@ namespace Appdevhb25.JonaSchnell.Aufgabe68
 
         public void TakePhoto()
         {
-            System.Console.WriteLine();
-            Console.WriteLine($"Das Foto wurde mit der  {Hersteller} {Model} gemacht.");
-            System.Console.WriteLine();
+            if (_model == "" || _hersteller == "")
+            {
+                Console.WriteLine("Kamera ist nicht richtig konfiguriert!");
+                return;
+            }
+            Console.WriteLine($"*KLICK* Ein Foto wurde mit der {Hersteller} {Model} gemacht!");
+            Console.WriteLine($"(Brennweite: {BrennweiteMin}-{BrennweiteMax}mm, {Megapixel}MP)\n");
         }
-        public void Verkäufe()
+
+        public void ZeigeDaten()
         {
-            System.Console.WriteLine();
-            Console.WriteLine($"Kamera: {Hersteller} {Model}");
-            Console.WriteLine($"Brennweite: {BrennweiteMin}-{BrennweiteMax} mm");
+            Console.WriteLine("=== Kamera Daten ===");
+            Console.WriteLine($"Hersteller: {Hersteller}");
+            Console.WriteLine($"Model: {Model}");
+            Console.WriteLine($"Brennweite: {BrennweiteMin}-{BrennweiteMax}mm");
             Console.WriteLine($"Auflösung: {Megapixel} MP");
-            Console.WriteLine();
+            Console.WriteLine("==================\n");
         }
     }
 }

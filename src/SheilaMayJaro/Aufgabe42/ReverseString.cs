@@ -12,7 +12,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe42
             Console.Write(PrintStringReverse(chars));
             System.Console.WriteLine();
             System.Console.WriteLine("Fügen Sie ein Wort ein.");
-            string userInput = Console.ReadLine();
+            string userInput = Console.ReadLine() ?? string.Empty;
             char[] charsUserInput = userInput.ToCharArray();
             Console.WriteLine(userInput);
             Console.Write(PrintStringReverse(charsUserInput)); 

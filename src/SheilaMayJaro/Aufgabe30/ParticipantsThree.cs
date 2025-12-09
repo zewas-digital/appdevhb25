@@ -54,7 +54,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe30
         }
         public static void InputParticipantsTwo()
         {
-            string temp = Console.ReadLine();
+            string temp = Console.ReadLine() ?? string.Empty;
 
             if (int.TryParse(temp, out int participantsNumber))
             {
