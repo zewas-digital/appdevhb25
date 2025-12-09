@@ -41,13 +41,17 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe103
                     {
                         while (reader.Read())
                         {
+                            int autorId = reader.GetInt32("Autor");
+
+                            Autor? autorObj = Autoren.FirstOrDefault(a => a.ID == autorId);
+
                             Buch b = new Buch(
                                 reader.GetString("ISBN"),
                                 reader.GetString("Titel"),
                                 reader.GetInt32("Erscheinungsjahr"),
                                 reader.GetString("Verlag"),
                                 reader.GetString("Sprache"),
-                                reader.GetInt32("Autor")
+                                autorObj
                             );
 
                             Buecher.Add(b);
@@ -86,7 +90,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe103
                                 reader.GetString("Vorname"),
                                 reader.GetString("Nachname")
                             );
-                            
+
                             Autoren.Add(a);
                         }
                     }
