@@ -10,20 +10,20 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe103
         {
             Bibliotheksverwaltung bib = new Bibliotheksverwaltung();
 
-            // Bücher lesen
-            bib.LeseBuecher();
-
             // Autoren lesen
             bib.LeseAutoren();
 
+            // Bücher lesen
+            bib.LeseBuecher();
 
-            foreach(var buch in bib.Buecher)
+
+            foreach (var buch in bib.Buecher)
             {
                 Console.WriteLine(buch);
             }
             System.Console.WriteLine();
 
-            foreach(var autor in bib.Autoren)
+            foreach (var autor in bib.Autoren)
             {
                 Console.WriteLine(autor);
             }
