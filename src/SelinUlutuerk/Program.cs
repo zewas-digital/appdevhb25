@@ -108,8 +108,8 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe103.DBRead.Start();
 
            
-            AufgabeZoo.Teil1.ZooIntro.Start();
-            AufgabeZoo.Teil1.ZooIntroTeil2.Start();
+            // AufgabeZoo.Teil1.ZooIntro.Start();
+            // AufgabeZoo.Teil1.ZooIntroTeil2.Start();
             AufgabeZoo.Teil3.ZooIntro.Start();
 
 
