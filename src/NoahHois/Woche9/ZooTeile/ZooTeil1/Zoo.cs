@@ -1,6 +1,6 @@
 using Org.BouncyCastle.Asn1.Misc;
 
-namespace Appdevhb25.NoahHois.ZooTeile
+namespace Appdevhb25.NoahHois.ZooTeil1
 {
     //  ─ │ ┌ ┐ └ ┘ ├ ┤ ┬ ┴ ┼|│
     public class Zoo

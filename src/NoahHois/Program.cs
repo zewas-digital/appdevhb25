@@ -77,7 +77,8 @@ namespace Appdevhb25.NoahHois
             // Aufgabe96.StartMethod.Start();
             // sql.MysqlConnectExample.Start();
             // Aufgabe102.DBReadIntoOOP.Start();
-            ZooTeile.ProgrammStart.Start();
+            // ZooTeil1.ProgrammStart.Start();
+            ZooTeil2.ProgrammStart.Start();
 
 
             // BonusAufgabe1.PrintDeltoid.BonusAufgabe1();

@@ -1,6 +1,6 @@
 using Org.BouncyCastle.Asn1.Misc;
 
-namespace Appdevhb25.NoahHois.ZooTeil1
+namespace Appdevhb25.NoahHois.ZooTeil2
 {
     //  ─ │ ┌ ┐ └ ┘ ├ ┤ ┬ ┴ ┼|│
     public class Zoo
@@ -28,7 +28,11 @@ namespace Appdevhb25.NoahHois.ZooTeil1
             System.Console.WriteLine($"├── Zoo: {Name} Feldkirch, gegründet {Gruendungsjahr}");
             foreach (var gehege in _gehege)
             {
-                System.Console.WriteLine($"│    ├── Gehege: {gehege.Name}");
+                System.Console.WriteLine($"│   ├── Gehege: {gehege.Name}");
+                foreach (var tier in gehege._tier)
+                {
+                    System.Console.WriteLine($"│   │   ├── Tier: {tier.Name}, {tier.Gattung}");
+                }
             }
         }
     }
