@@ -18,7 +18,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe102
                 _connectionString = sr.ReadLine() ?? string.Empty;
             }
         }
-        
+
         // Bücher laden
         public void LadenDerBuecher()
         {
@@ -55,7 +55,7 @@ namespace Appdevhb25.SelinUlutuerk.Aufgabe102
         {
             List<string> ergebnis = new List<string>();
 
-             using (MySqlConnection connection = new MySqlConnection(_connectionString))
+            using (MySqlConnection connection = new MySqlConnection(_connectionString))
             {
                 try
                 {
