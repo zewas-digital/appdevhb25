@@ -80,7 +80,8 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe84.Output.Start84();
             //Aufgabe91.Output.Start91();
             //Aufgabe96.Output.Start96();
-            Augabe102.DBReadIntoOOP.Start();
+            //Augabe102.DBReadIntoOOP.Start();
+            ZooBase.Main.StartZ1();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();

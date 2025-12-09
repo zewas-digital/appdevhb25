@@ -23,7 +23,7 @@ namespace Appdevhb25.JulianMatt.Augabe102
 
             System.Console.WriteLine("Nach welchem Buchtitel möchten Sie suchen?");
             string input = Console.ReadLine();
-            libraryManagement.SearchForMovie(input);
+            libraryManagement.SearchForBook(input);
             if (libraryManagement.FoundBook.Count == 0)
             {
                 System.Console.WriteLine("Es wurde kein Buch gefunden");

@@ -98,30 +98,154 @@ Einwohnerzahl pro Religion
     group by r.name;
 
 Welches sind die 3 größten Städte von Amerika (Kontinent)?
+    USE Mondial;
+
+    Select c.name, p.name, p.area
+    From Country c
+    JOIN encompasses e ON c.code = e.country 
+	    				AND e.continent = 'America'
+    JOIN Province p ON c.code = p.country
+    ORDER BY p.area DESC
+    LIMIT 3;
 
 Das Unabhängigkeitsdatum von Ländern die eine Wüste haben und die ethnische Gruppe African
+    SELECT p.country, p.independence
+    FROM Politics p
+    JOIN geo_desert gd ON gd.country = p.country
+    JOIN EthnicGroup e ON e.country = p.country
+    WHERE e.name = 'African';
 
 Welche Länder haben genau 3 Städte? Welche Länder sind dies?
+    SELECT country
+    FROM City
+    GROUP BY country
+    HAVING COUNT(*) = 3;
 
 Welche Organisationen haben deren Hauptsitz in Österreich? Wie viele Mitglieder haben diese Organisationen?
+    USE Mondial;
+
+    Select o.name, im.organization, c.code, Count(im.type) AS Anzahl
+    From Organization o
+    JOIN isMember im ON o.abbreviation = im.organization
+    JOIN Country c ON im.country = c.code AND c.code = 'A'
+    Where o.country = 'A'
+    GROUP BY o.name;
+
 
 Alle Länder mit mindestens einem See mit mindestens 100 Meter Tiefe und mindestens einem Berg mit mindestens 1500 Höhenmeter
+    Use Mondial;
+
+    SELECT DISTINCT c.code, c.name, m.name
+    FROM Country c
+    JOIN geo_lake gl ON c.code = gl.country
+    JOIN Lake l ON gl.lake = l.name 
+    JOIN geo_mountain gm ON c.code = gm.country
+    JOIN Mountain m ON gm.mountain = m.name 
+    Where m.Height >= 1500 AND l.depth >= 100;
 
 Alle Länder, nur die Namen, und wenn sie haben, das Meer dazu
+    Use Mondial;
+
+    SELECT distinct c.name, gs.sea
+    From Country c
+    LEFT JOIN geo_sea gs ON c.code = gs.country
+    ORDER BY c.name;
 
 Erstelle eine neue “Organization” mit dem Namen “DCV-Grundkurs”. Suche dir ein paar Länder aus, die Mitglied in dieser "Organization" sind und speichere die Mitgliedschaft in die Datenbank.
+    Use Mondial;
 
+    INSERT INTO Organization (name, abbreviation, city, country, province, established) 
+    VALUES 
+    ('DCV-Grundkurs', 'DG', 'Feldkirch', 'A', 'Vorarlberg', '2010-04-03');
+
+    INSERT INTO isMember (organization, country, type)
+    VALUES
+    ('DG', 'A', 'member'),
+    ('DG', 'G', 'member'),
+    ('DG', 'USA', 'member');
 Gib alle Mitglieder der neuen Organization aus. Sind alle Mitglieder dabei, die du hinzugefügt hast?
+    Use Mondial;
 
+    Select *
+    From isMember im
+    Where organization = 'DG';
 Wir gehen 2 Monate in die Zukunft: Der Kurs ist vorbei. Jetzt gibt es eine neue internationale Organisation: “Alumni DCV-Grundkurs”. Alle Mitglieder von “DCV-Grundkurs” werden nun automatisch Mitglied in der Organisation “Alumni DCV Grundkurs”. Die Mitgliedschaft bei "DCV-Grundkurs" endet im selben Moment.
+    Use Mondial;
+
+    Insert INTO Organization (name, abbreviation, city, country, province, established)
+    Value 
+    ('Alumni DCV-Grundkurs', 'ADG', 'Feldkirch', 'A','Vorarlberg', '2015-06-07');
+
+ 
+    Use Mondial;
+    SET SQL_SAFE_UPDATES = 0;
+
+    UPDATE isMember
+    SET organization = 'ADG' Where organization = 'DG';
 
 Nachdem die Organisation “DCV-Grundkurs” keine Mitglieder mehr hat, soll diese gelöscht werden.
+    Use Mondial;
+    DELETE FROM Organization
+    Where abbreviation = 'DG';
 
 Aktualisiere die Höhe des Großglockners.
+    Use Mondial;
+    SET SQL_SAFE_UPDATES = 0;
+
+    UPDATE Mountain
+    SET Height = 3798
+    WHERE name = 'Grossglockner';
 
 Erstelle das Land Transnistrien. Es liegt in Europa. Wenn du anschließend einen alle europäischen Staaten inkl. Namen selektierst, soll auch Transnistrien in der Ergebnisliste sein.
+    Use Mondial;
+    SET SQL_SAFE_UPDATES = 0;
+    
+    INSERT INTO Country (name, code, capital, province, area, population)
+    value
+    ('Transnistrieren', 'TAN', 'Transania', 'Transa', 45644, 5353029);
 
-Speichere den höchsten Berg und die Hauptstadt in die Datenbank. Prüfe die Ergebnisse mit einem SELECT.
+    INSERT INTO encompasses (continent, country, percentage)
+    value
+    ('Europe', 'TAN', '100');
+
+    Select *
+    From Country c
+    JOIN encompasses e ON c.code = e.country 
+					    AND e.continent = 'Europe';
+
+Speichere den längsten Fluss und die Hauptstadt von Transnistrien in die Datenbank. Prüfe die Ergebnisse mit einem SELECT.
+    UPDATE Country
+    SET capital = 'Tiraspol'
+    Where code = 'TAN';
+
+
+
+
+    Use Mondial;
+SET SQL_SAFE_UPDATES = 0;
+
+INSERT INTO Province (name, country, area, population, capital, capprov)
+value
+('Grigoriopol District', 'TAN', 822, 39795, 'Grigoriopol', 'Grigoriopol District');
+
+INSERT INTO Province (name, country, area, population, capital, capprov)
+value
+('Dubăsari District', 'TAN', 381, 31000, 'Dubăsari', 'Dubăsari District');
+
+INSERT INTO geo_river (river, country, province)
+value
+('Dnister', 'TAN', 'Grigoriopol District');
+
+INSERT INTO geo_river (river, country, province)
+value
+('Dnister', 'TAN', 'Dubăsari District');
+
+INSERT INTO River (name, river, length, area, source, sourceelevation, esuary, estuaryelevation)
+VALUE
+('DNTR', 'Dniester', 1362, 68600, 'Eastern Beskids, Ukrainian Carpathians', 911, 'Dniester Estuary (Black Sea)', 0);
+
+
+
 
 Ändere den Namen der Türkei auf "Türkiye".
 

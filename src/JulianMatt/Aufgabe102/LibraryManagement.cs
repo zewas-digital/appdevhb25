@@ -50,7 +50,7 @@ namespace Appdevhb25.JulianMatt.Augabe102
             }
         }
 
-        public void SearchForMovie(string input)
+        public void SearchForBook(string input)
         {
             string databaseConnectionString = @"
             server=127.0.0.1;
@@ -65,7 +65,7 @@ namespace Appdevhb25.JulianMatt.Augabe102
                 {
                     connection.Open();
 
-                    
+
                     string query = "SELECT Titel FROM buch Where Titel Like @code;";
 
                     MySqlCommand command = new MySqlCommand(query, connection);
