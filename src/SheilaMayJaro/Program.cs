@@ -9,6 +9,7 @@ namespace Appdevhb25.SheilaMayJaro
     {
         static void Main(string[] args)
         {
+            Console.Clear(); 
             // Aufgabe01.PrintA.Start();
             // Aufgabe02.TimeTable.Start();
             // Aufgabe03.SumOverRange.Start();
@@ -180,6 +181,8 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             // Aufgabe102.Aufgabe102.Start();
             // System.Console.WriteLine();
+            AufgabeZoo.AufgabeZoo.Start(); 
+            System.Console.WriteLine();
         }
     }
 }

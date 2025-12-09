@@ -1,21 +1,13 @@
-Select ISBN, Titel, Vorname, Nachname, Erscheinungsjahr FROM Buch JOIN Autor ON Buch.Autor = Autor.Id
-order by Erscheinungsjahr DESC
+Use Bibliotheksverwaltung;
+Select * 
+From Buch 
+Inner Join Autor on Autor.Id = Buch.Autor
+Where Autor.Vorname = 'Marc' AND Autor.Nachname = 'Elsberg'
+Order by Erscheinungsjahr;
 
-'978-3764506322', 'GIER - Wie weit würdest du gehen?', 'Marc', 'Elsberg', '2019'
-'978-3404130894', 'Shining', 'Stephen', 'King', '2019'
-'978-3453504080', 'Es', 'Stephen', 'King', '2019'
-'978-3734105579', 'HELIX - Sie werden uns ersetzen', 'Marc', 'Elsberg', '2018'
-'978-3734100932', 'ZERO - Sie wissen, was du tust', 'Marc', 'Elsberg', '2016'
-'978-3836227575', 'C/C++: Das umfassende Lehrbuch', 'Ulrich', 'Kaiser', '2014'
-'978-0262033848', 'Introduction to Algorithms', 'Thomas H.', 'Cormen', '2013'
-'978-3442380299', 'BLACKOUT - Morgen ist es zu spät', 'Marc', 'Elsberg', '2013'
-'978-3843601757', 'Der Prophet', 'Khalil', 'Gibran', '2012'
-'978-3453435797', 'Friedhof der Kuscheltiere', 'Stephen', 'King', '2011'
-'978-3257237276', 'Der Alchimist', 'Paulo', 'Coelho', '2008'
-'978-3608955385', 'Der Herr der Ringe. Die Rückkehr des Königs.', 'J.R.R.', 'Tolkien', '2008'
-'978-3908934011', 'Der Herr der Ringe. Die Gefähren.', 'J.R.R.', 'Tolkien', '2001'
-'978-3257230475', 'Die Physiker. Eine Komödie in zwei Akten', 'Friedrich', 'Dürrenmatt', '1998'
-'978-0201896855', 'The Art of Computer Programming: Volume 3: Sorting and Searching', 'Donald E.', 'Knuth', '1998'
-'978-0201896848', 'The Art of Computer Programming: Volume 2: Seminumerical Algorithms', 'Donald E.', 'Knuth', '1997'
-'978-0201896831', 'The Art of Computer Programming: Volume 1: Fundamental Algorithms', 'Donald E.', 'Knuth', '1997'
-'978-3608953107', 'Der Herr der Ringe. Die zwei Türme.', 'J.R.R.', 'Tolkien', '1987'
+# ISBN, Titel, Erscheinungsjahr, Verlag, Sprache, Autor, Id, Nachname, Vorname
+'978-3442380299', 'BLACKOUT - Morgen ist es zu spät', '2013', 'Blanvalet Taschenbuch Verlag', 'Deutsch', '1', '1', 'Elsberg', 'Marc'
+'978-3734100932', 'ZERO - Sie wissen, was du tust', '2016', 'Blanvalet Taschenbuch Verlag', 'Deutsch', '1', '1', 'Elsberg', 'Marc'
+'978-3734105579', 'HELIX - Sie werden uns ersetzen', '2018', 'Blanvalet Taschenbuch Verlag', 'Deutsch', '1', '1', 'Elsberg', 'Marc'
+'978-3764506322', 'GIER - Wie weit würdest du gehen?', '2019', 'Blanvalet Taschenbuch Verlag', 'Deutsch', '1', '1', 'Elsberg', 'Marc'
+
