@@ -10,6 +10,9 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
         public int Gruendungsjahr { get; private set; }
         private List<Gehege> _gehegeListe = new List<Gehege>();
 
+        // Alternative Option:
+        // public List<Gehege> _gehegeListe { get; private set; } = new List<Gehege>();
+
         public Zoo(string name, int gruendungsjahr)
         {
             Name = name;
@@ -37,12 +40,18 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
             {
                 foreach (var t in g.HoleTiere())
                 {
-                    if (!bedarf.ContainsKey(t.Futter))
+                    foreach (var e in t.Futterbedarf)
                     {
-                        bedarf[t.Futter] = 0m;
-                    }
+                        Futter futter = e.Key;
+                        decimal menge = e.Value;
 
-                    bedarf[t.Futter] += t.Menge;
+                        if (!bedarf.ContainsKey(futter))
+                        {
+                            bedarf[futter] = 0m;
+                        }
+
+                        bedarf[futter] += menge;
+                    }
                 }
             }
             return bedarf;
@@ -65,11 +74,11 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
 
                 gesamtKosten += kosten;
 
-                Console.WriteLine($"{futter.Name,-10} {menge,8:0.00} {futter.Einheit,-3} {kosten, 8:0.00} €");
+                Console.WriteLine($"{futter.Name,-10} {menge,8:0.00} {futter.Einheit,-3} {kosten,8:0.00} €");
             }
 
             Console.WriteLine(new string('-', 35));
-            Console.WriteLine($"Summe{gesamtKosten, 27:0.00} €");
+            Console.WriteLine($"Summe{gesamtKosten,27:0.00} €");
         }
 
 
