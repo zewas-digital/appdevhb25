@@ -3,7 +3,7 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
     public class Enclosure
     {
         public string Name { get; private init; }
-        private List<Animal> animals { get; set; } = new List<Animal>();
+        public List<Animal> animals { get; private set; } = new List<Animal>();
         public Enclosure(string name)
         {
             Name = name;
