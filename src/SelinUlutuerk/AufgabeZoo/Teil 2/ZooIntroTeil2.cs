@@ -18,11 +18,11 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil1
             zoo.HinzufuegenGehege(terrarium1);
 
             // Tiere
-            alpenwiese.HinzufuegenTier(new Tier("Rijska", "Kuh"));
+            alpenwiese.HinzufuegenTier(new Tier("Rijska", Tier.Gattungen.Kuh));
 
-            ried.HinzufuegenTier(new Tier("Garmond", "Storch"));
-            ried.HinzufuegenTier(new Tier("Hugo", "Storch"));
-            ried.HinzufuegenTier(new Tier("Idaxis", "Storch"));
+            ried.HinzufuegenTier(new Tier("Garmond", Tier.Gattungen.Storch));
+            ried.HinzufuegenTier(new Tier("Hugo", Tier.Gattungen.Storch));
+            ried.HinzufuegenTier(new Tier("Idaxis", Tier.Gattungen.Storch));
 
             Console.WriteLine(zoo);
         }
