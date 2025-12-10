@@ -9,7 +9,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe30
 
             for (int i = 0; i < teilnehmer.Length; i++)
             {
-                teilnehmer[i] = Console.ReadLine();
+                teilnehmer[i] = Console.ReadLine() ?? string.Empty;
             }
             Console.WriteLine();
             Console.WriteLine("Teilnehmerliste:");

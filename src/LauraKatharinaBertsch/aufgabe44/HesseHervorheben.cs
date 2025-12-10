@@ -54,7 +54,7 @@ die Persönlichkeit, das einmalige, nicht normierte Individuum“ (1951).\r\nIn 
 Millionenauflage seiner Bücher, Übersetzungen in 40 Sprachen.";
 
             Console.WriteLine("Welches Wort soll groß geschrieben werden?");
-            string randomWord = Console.ReadLine();
+            string randomWord = Console.ReadLine() ?? string.Empty;
             string wordToUpper = text.Replace(randomWord, randomWord.ToUpper());
             Console.Clear();
             Console.WriteLine(wordToUpper);
@@ -138,7 +138,7 @@ Millionenauflage seiner Bücher, Übersetzungen in 40 Sprachen.";
             int sameWords = 0;
 
             Console.WriteLine("Schreibe ein Wort rein, es wird dann gezählt, wie oft es im Text vorkommt");
-            string word = Console.ReadLine().ToLower();
+            string word = Console.ReadLine() ?? string.Empty.ToLower();
             for (int i = 0; i < words.Length; i++)
             {
                 if (word == words[i])

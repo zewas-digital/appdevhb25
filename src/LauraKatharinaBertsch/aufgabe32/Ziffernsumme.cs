@@ -5,7 +5,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe32
         public static void Start()
         {
             Console.WriteLine("Schreibe eine Zahl hin");
-            int number = Convert.ToInt32(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
             int numberSum = 0;
             while (number > 0)
             {
@@ -13,7 +13,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe32
                 number /= 10;
             }
             Console.WriteLine("Die Ziffernsumme ist: " + numberSum);
-            
+
         }
     }
 }

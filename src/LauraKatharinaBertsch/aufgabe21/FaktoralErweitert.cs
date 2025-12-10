@@ -5,7 +5,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe21
         public static void Start()
         {
             Console.WriteLine("Alle Zahlen von 1 bis 20 werden multipliziert");
-            Console.ReadLine();
+            //Console.ReadLine() ?? string.Empty;
 
             ulong multiplicator = 1;
 
@@ -16,7 +16,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe21
                 multiplicator = multiplicator * i;
                 i++;
             }
-            
+
 
 
 

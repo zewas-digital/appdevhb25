@@ -22,9 +22,9 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe39
             {
                 Console.WriteLine("Spieler 1 ist dran");
                 Console.WriteLine("Welche Zeile von 0-2 soll geändert werden?");
-                int zeile = Convert.ToInt32(Console.ReadLine());
+                int zeile = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                 Console.WriteLine("Welche Spalte von 0-2 soll geändert werden?");
-                int spalte = Convert.ToInt32(Console.ReadLine());
+                int spalte = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                 twoDArray[zeile, spalte] = 1;
                 Console.Clear();
                 for (int y = 0; y < twoDArray.GetLength(0); y++)
@@ -50,9 +50,9 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe39
 
                 Console.WriteLine("Spieler 2 ist dran");
                 Console.WriteLine("Welche Zeile von 0-2 soll geändert werden?");
-                int zeile1 = Convert.ToInt32(Console.ReadLine());
+                int zeile1 = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                 Console.WriteLine("Welche Spalte von 0-2 soll geändert werden?");
-                int spalte1 = Convert.ToInt32(Console.ReadLine());
+                int spalte1 = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                 twoDArray[zeile1, spalte1] = 2;
                 Console.WriteLine("Das aktualisierte Feld:");
                 Console.Clear();
