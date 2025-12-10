@@ -99,7 +99,8 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.aufgabe103.Aufgabe103.Start();
             // aufgaben.zoo.teil1.Verwaltung.Start();
             // aufgaben.zoo.teil2.Verwaltung.Start();
-            aufgaben.zoo.teil3.Verwaltung.Start();
+            // aufgaben.zoo.teil3.Verwaltung.Start();
+            aufgaben.zoo.teil4.Verwaltung.Start();
             // Pruefung.CountriesAndRivers.Start();
         }
     }
