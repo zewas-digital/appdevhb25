@@ -1,6 +1,6 @@
 using System;
 
-namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
+namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil4
 {
     class Gehege
     {
@@ -12,16 +12,17 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
             Name = name;
         }
 
+        // Hinzufügen der Tiere
         public void HinzufuegenTier(Tier tier)
         {
             _tiere.Add(tier);
         }
 
+        // Entfernen der Tiere
         public void EntfernenTier(Tier tier)
         {
             _tiere.Remove(tier);
         }
-
 
         // Tiere mit Methode in anderen Methoden verfügbar machen
         public List<Tier> HoleTiere()

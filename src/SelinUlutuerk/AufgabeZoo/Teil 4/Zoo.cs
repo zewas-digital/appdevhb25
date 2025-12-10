@@ -2,13 +2,15 @@ using System;
 using System.Collections.Generic;
 
 
-namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
+namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil4
 {
     class Zoo
     {
         public string Name { get; private set; }
         public int Gruendungsjahr { get; private set; }
         private List<Gehege> _gehegeListe = new List<Gehege>();
+        private List<Pfleger> _pflegerListe = new List<Pfleger>();
+
 
         // Alternative Option:
         // public List<Gehege> _gehegeListe { get; private set; } = new List<Gehege>();
@@ -19,13 +21,13 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
             Gruendungsjahr = gruendungsjahr;
         }
 
-
+        // Hinzufügen eines Geheges
         public void HinzufuegenGehege(Gehege gehege)
         {
             _gehegeListe.Add(gehege);
         }
 
-
+        // Entfernen eiens Geheges
         public void EntfernenGehege(Gehege gehege)
         {
             _gehegeListe.Remove(gehege);
@@ -57,6 +59,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
             return bedarf;
         }
 
+        // Ausgabe für den Futterbedarf
         public void AusgabeFutterbedarf()
         {
             var bedarf = Futterbedarf();
