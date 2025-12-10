@@ -1,4 +1,4 @@
-namespace Appdevhb25.SabrinaFeurstein.aufgaben.zoo.teil2
+namespace Appdevhb25.SabrinaFeurstein.aufgaben.zoo.teil3
 {
     public class Gehege(string name)
     {
