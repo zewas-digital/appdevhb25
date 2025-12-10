@@ -95,8 +95,10 @@ namespace Appdevhb25.SabrinaFeurstein
             // aufgaben.aufgabe91.Einkauf.Start();
             // aufgaben.aufgabe96.Geometrie.Start();
             // MysqlConnectExample.Start();
-            aufgaben.aufgabe102.Aufgabe102.Start();
+            // aufgaben.aufgabe102.Aufgabe102.Start();
             // aufgaben.aufgabe103.Aufgabe103.Start();
+            // aufgaben.zoo.teil1.Verwaltung.Start();
+            aufgaben.zoo.teil2.Verwaltung.Start();
         }
     }
 }

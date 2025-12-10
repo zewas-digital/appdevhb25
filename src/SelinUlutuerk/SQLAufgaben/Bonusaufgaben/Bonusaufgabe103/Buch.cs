@@ -11,10 +11,10 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe103
         public int Erscheinungsjahr { get; set; }
         public string Verlag { get; set; }
         public string Sprache { get; set; }
-        public int Autor { get; set; }
+        public Autor Autor { get; set; }
 
 
-        public Buch(string isbn, string titel, int erscheinungsjahr, string verlag, string sprache, int autor)
+        public Buch(string isbn, string titel, int erscheinungsjahr, string verlag, string sprache, Autor autor)
         {
             ISBN = isbn;
             Titel = titel;
@@ -26,7 +26,7 @@ namespace Appdevhb25.SelinUlutuerk.Bonusaufgabe103
         
         public override string ToString()
         {
-            return $"{ISBN} | {Titel} | {Erscheinungsjahr} | {Verlag} | {Sprache} | Autor: {Autor}";
+            return $"{ISBN} | {Titel,-45} | {Erscheinungsjahr} | {Verlag,-20} | {Sprache} | Autor: {Autor.Vorname} {Autor.Nachname}";
         }
     }
 }
