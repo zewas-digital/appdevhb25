@@ -18,7 +18,7 @@ namespace Appdevhb25.NoahHois.ZooTeil2
             Tier storch = new Tier("Sven", "Storch");
             Tier spatz = new Tier("Sebastian", "Spatz");
             Tier elefant = new Tier("Tim", "Elefant");
-            Tier adler = new Tier("Kerim", "Adler");
+            Tier adler = new Tier("Kerim", "Steinadler");
             zoo.GehegeHinzufügen(tropisch);
             zoo.GehegeHinzufügen(alpen);
             zoo.GehegeHinzufügen(meer);

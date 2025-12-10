@@ -20,6 +20,7 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
             Gehege terrarium1 = new Gehege("Terrarium (warm)");
             Gehege arktis = new Gehege("Arktis");
 
+            // Hinzufügen der Gehege zum Zoo
             zoo.HinzufuegenGehege(arktis);
             zoo.HinzufuegenGehege(alpenwiese);
             zoo.HinzufuegenGehege(ried);

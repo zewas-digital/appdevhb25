@@ -2,6 +2,7 @@
 
 //Program.cs
 using System;
+using System.Text;
 
 namespace Appdevhb25.SheilaMayJaro
 {
@@ -9,7 +10,7 @@ namespace Appdevhb25.SheilaMayJaro
     {
         static void Main(string[] args)
         {
-            Console.Clear(); 
+            Console.OutputEncoding = Encoding.Default;
             // Aufgabe01.PrintA.Start();
             // Aufgabe02.TimeTable.Start();
             // Aufgabe03.SumOverRange.Start();
@@ -183,6 +184,8 @@ namespace Appdevhb25.SheilaMayJaro
             // System.Console.WriteLine();
             AufgabeZoo.AufgabeZoo.Start(); 
             System.Console.WriteLine();
+            // Kompetenznachweis3.CountriesAndRivers.Start(); 
+            // System.Console.WriteLine();
         }
     }
 }

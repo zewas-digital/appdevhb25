@@ -8,7 +8,6 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil3
         public string Einheit { get; private set; }
         public decimal Einheitspreis { get; private set; }
 
-
         public Futter(string name, string einheit, decimal einheitspreis)
         {
             Name = name;

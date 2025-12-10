@@ -12,11 +12,11 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.zoo.teil2
             zoos[0].GehegeHinzufuegen("Dschungel");
             zoos[0].GehegeEntfernen("dschungel");
 
-            zoos[0].Gehege[0].TierHinzufuegen("Blümchen", "Kuh");
-            zoos[0].Gehege[0].TierHinzufuegen("Gerda", "Kuh");
-            zoos[0].Gehege[1].TierHinzufuegen("Hugo", "Storch");
-            zoos[0].Gehege[1].TierHinzufuegen("Bryan", "Storch");
-            zoos[0].Gehege[1].TierEntfernen("Bryan", "storch");
+            zoos[0].Gehege[0].TierHinzufuegen("Blümchen", Gattung.Kuh);
+            zoos[0].Gehege[0].TierHinzufuegen("Gerda", Gattung.Kuh);
+            zoos[0].Gehege[1].TierHinzufuegen("Hugo", Gattung.Storch);
+            zoos[0].Gehege[1].TierHinzufuegen("Bryan", Gattung.Storch);
+            zoos[0].Gehege[1].TierEntfernen("Bryan");
 
             foreach (Zoo zoo in zoos)
             {
