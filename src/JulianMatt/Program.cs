@@ -79,7 +79,10 @@ namespace Appdevhb25.JulianMatt
             //Aufgabe83.BrowseHistory.Start83();
             //Aufgabe84.Output.Start84();
             //Aufgabe91.Output.Start91();
-            Aufgabe96.Output.Start96();
+            //Aufgabe96.Output.Start96();
+            //Augabe102.DBReadIntoOOP.Start();
+            //ZooBase.Main.StartZ1();
+            JulianMatt.Start.StartPrüfung();
             //Bonusaufgabe01.PrintDeltoid.BonusStart01();
             //Bonusaufgabe03.PrintChirstmasTree.BonusStart03();
             //Bonusaufgabe04.HigherOrLower.BonusStart04();
@@ -93,7 +96,7 @@ namespace Appdevhb25.JulianMatt
             //BonusAufgabe49.CheckEMail.BonusStart49();
             //Üben.Test.Teststart02();
             //SelbstGemachtesProjekt.TheLastOfUs.StartTheLastOfUs();
-
+            //SQLVerzei.MysqlConnectExample.Start();
         }
 
 
