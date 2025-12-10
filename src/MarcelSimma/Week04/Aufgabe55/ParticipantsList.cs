@@ -64,7 +64,7 @@ namespace Appdevhb25.MarcelSimma
 
                 // line ist eine Variable, welche die zuletzt ausgelesene Zeile speichert.
                 // ReadLine() liest die nächste Zeile aus der Datei, gibt die Zeile mit return zurück und speichert sie in die variable line.
-                string line = reader.ReadLine();
+                string? line = reader.ReadLine();
                 System.Console.WriteLine(line);
                 // Die Variable line ist ein Zwischenspeicher, weil ich den Wert für die while-Bedingung und für die Ausgabe brauche.
                 
