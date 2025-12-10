@@ -102,9 +102,20 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
             sandraChimpanzee.AddFodderRequirements(fruit, 87.23);
             sandraChimpanzee.AddFodderRequirements(water, 5); 
             brZoo.ZooFodderRequirements();
-            brZoo.DisplayZooStructure();
+            // brZoo.DisplayZooStructure();
             System.Console.WriteLine();
-            brZoo.DisplaySumOfFodderRequirementsAndCostsPerDay(); 
+            brZoo.DisplaySumOfFodderRequirementsAndCostsPerDay();
+
+            System.Console.WriteLine("Aufgabe Zoo - Teil 4:\nPfleger hinzufügen");
+            CareGiver michael = new CareGiver("Michael"); 
+            CareGiver katja = new CareGiver("Katja"); 
+            brZoo.AddCareGiver(katja); 
+            brZoo.AddCareGiver(michael); 
+            katja.AddEnclosure(aquarium); 
+            katja.AddEnclosure(birdEnclosure); 
+            michael.AddEnclosure(monkeyhouse);
+            michael.AddEnclosure(lionEnclosure);
+            brZoo.DisplayZooStructure(); 
             
          
 

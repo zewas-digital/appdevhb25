@@ -7,8 +7,9 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
     {
         public string Name { get; private init; }
         public string FoundationYear { get; private init; }
-        private List<Enclosure> Enclosures { get; set; } = new List<Enclosure>();
-        private Dictionary<Food, double> FodderRequirementsPerDay { get; set; } = new Dictionary<Food, double>(); //Futtername und Menge vom ganzen Zoo pro Tag
+        public List<Enclosure> Enclosures { get; private set; } = new List<Enclosure>();
+        public Dictionary<Food, double> FodderRequirementsPerDay { get; private set; } = new Dictionary<Food, double>(); //Futtername und Menge vom ganzen Zoo pro Tag
+        public List<CareGiver> CareGivers { get; private set; } = new List<CareGiver>();
         public Zoo(string name, string year)
         {
             Name = name;
@@ -25,27 +26,36 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
         public void DisplayZooStructure()
         {
             System.Console.WriteLine($"\n├── Zoo: {Name}, gegründet {FoundationYear}");
-            foreach (Enclosure enclosure in Enclosures)
+            foreach(CareGiver careGiver in CareGivers)
             {
-                System.Console.WriteLine($"|   ├── Gehege: {enclosure.Name}");
-                if (enclosure.animals.Count > 0)
+                foreach (Enclosure enclosure in Enclosures)
                 {
-                    foreach (Animal animal in enclosure.animals)
+                    foreach (Enclosure careGiverEnclosure in careGiver.enclosuresToDo)
                     {
-                        System.Console.WriteLine($"|       ├── {animal.Name}, {animal.Species}");
-
-                        foreach (KeyValuePair<Food, double> food in animal.FodderRequirements)
+                        if (careGiverEnclosure == enclosure)
                         {
-                            System.Console.WriteLine($"|           *──{food.Key.Name}: {food.Value}{food.Key.Unit}");
+                            System.Console.WriteLine($"|   ├── Pfleger: {careGiver.Name}");
                         }
                     }
-                }
-                else
-                {
-                    System.Console.WriteLine("|       ├── Gehege noch in Bearbeitung.");
+                    System.Console.WriteLine($"|   ├── Gehege: {enclosure.Name}");
+                    if (enclosure.animals.Count > 0)
+                    {
+                        foreach (Animal animal in enclosure.animals)
+                        {
+                            System.Console.WriteLine($"|       ├── {animal.Name}, {animal.Species}");
+
+                            foreach (KeyValuePair<Food, double> food in animal.FodderRequirements)
+                            {
+                                System.Console.WriteLine($"|           *──{food.Key.Name}: {food.Value}{food.Key.Unit}");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("|   ├── Gehege noch in Bearbeitung.");
+                    }
                 }
             }
-            
         }
         internal void DisplaySumOfFodderRequirementsAndCostsPerDay()
         {
@@ -54,7 +64,7 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
             foreach (KeyValuePair<Food, double> foodRequirement in FodderRequirementsPerDay)
             {
                 System.Console.WriteLine(@$"
-{foodRequirement.Key.Name, -20}{foodRequirement.Key.Unit, -10}{foodRequirement.Value, 8:N2}€");
+{foodRequirement.Key.Name,-20}{foodRequirement.Key.Unit,-10}{foodRequirement.Value,8:N2}€");
             }
             System.Console.WriteLine(new string('-', 100));
         }
@@ -77,6 +87,10 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
                     }
                 }
             }
+        }
+        internal void AddCareGiver(CareGiver careGiver)
+        {
+            CareGivers.Add(careGiver);
         }
     }
 }
