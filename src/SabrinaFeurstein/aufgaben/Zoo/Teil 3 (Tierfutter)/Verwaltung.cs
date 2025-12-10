@@ -40,7 +40,6 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.zoo.teil3
 
             Console.WriteLine();
             zoo.FutterbedarfAusgeben();
-            zoo.FutterbedarfAusgeben();
         }
     }
 }
