@@ -89,7 +89,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe44
             System.Console.WriteLine($"Das Wort '{word2}' kommt {sumOfWord} mal vor.");
             System.Console.WriteLine();
             System.Console.WriteLine("Bitte geben Sie das Wort ein, dessen Anzahl Sie herausfinden möchten:");
-            string userInput2 = Console.ReadLine();
+            string userInput2 = Console.ReadLine() ?? string.Empty;
 
             for (int i = 0; i < lifeOfHesseWordArray.Length; i++)
             {

@@ -66,7 +66,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe39mitMarcel
                 }
 
                 System.Console.WriteLine("Gib eine x-Koordinate ein.");
-                string tmp = Console.ReadLine();
+                string tmp = Console.ReadLine() ?? string.Empty;
                 int xUserInput = Convert.ToInt32(tmp);
 
                 System.Console.WriteLine("Gib eine y-Koordinate ein.");

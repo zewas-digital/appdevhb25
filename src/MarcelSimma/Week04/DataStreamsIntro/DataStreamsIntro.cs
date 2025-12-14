@@ -51,7 +51,7 @@ namespace Appdevhb25.MarcelSimma
                 Console.WriteLine((char)c);
 
                 // Mit ReadLine() kann ich eine ganze Zeile aus dem Stream abrufen. Der Cursor verschiebt sich ans Ende der abgerufenen Zeile.
-                string line = FileReader.ReadLine();
+                string? line = FileReader.ReadLine();
                 Console.WriteLine(line);
 
                 // Mit ReadToEnd kann ich alles von der aktuellen Position weg bis zum Ende abrufen. Der Cursor verschiebt sich ans Ende der Datei.

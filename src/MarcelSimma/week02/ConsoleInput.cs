@@ -11,7 +11,7 @@ namespace Appdevhb25.MarcelSimma.ConsoleInput
             Problem: Error Handling; Wenn der User einen falschen Input liefert, stürzt das Programm ab.
             */
 
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
             Console.WriteLine("You entered: " + input);
 
             int zahl = Convert.ToInt32(Console.ReadLine());
@@ -24,7 +24,7 @@ namespace Appdevhb25.MarcelSimma.ConsoleInput
             =====================================
             */
 
-            string ageInput = Console.ReadLine();
+            string? ageInput = Console.ReadLine();
             // int.TryParse liefert true oder false als Rückgabewert
             // out int age liefert den geparsten Wert in die Variable age
 

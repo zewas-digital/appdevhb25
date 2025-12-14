@@ -6,7 +6,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe25
         {
             Console.WriteLine("Gib eine Zahl ein");
 
-            string input = Console.ReadLine();
+            string input = Console.ReadLine() ?? string.Empty;
             while (true)
             {
 
@@ -18,7 +18,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe25
                 else
                 {
                     Console.WriteLine("Die Eingabe zählt nicht. Gib eine neue Zahl ein");
-                    input = Console.ReadLine();
+                    input = Console.ReadLine() ?? string.Empty;
                 }
             }
 

@@ -79,7 +79,10 @@ namespace Appdevhb25.SelinUlutuerk
             // AufgabeV85.Telefonbuch.Start();
             // AufgabeV86.Callcenter.Start();
             // Aufgabe91.SupermarktIntro.Start();
-            Aufgabe96.GeometrischeFormen.Start();
+            // Aufgabe96.GeometrischeFormen.Start();
+            // SQLAufgaben.MysqlConnectExample.Start();
+            // Aufgabe102.DBRead.Start();
+
 
             // Bonusaufgabe13.PrintDeltoid.Deltoid(7);
             // Bonusaufgabe14.PrintCircle.Start();
@@ -102,11 +105,17 @@ namespace Appdevhb25.SelinUlutuerk
             // Bonusaufgabe76.PersonenInGruppe.Start();
             // Bonusaufgabe79.SerienTopDrei.Start();
             // Bonusaufgabe80.AbwesenheitIntro.Start();
+            // Bonusaufgabe103.DBRead.Start();
+
+           
+            // AufgabeZoo.Teil1.ZooIntro.Start();
+            // AufgabeZoo.Teil1.ZooIntroTeil2.Start();
+            // AufgabeZoo.Teil3.ZooIntro.Start();
+            AufgabeZoo.Teil4.ZooIntro.Start();
 
 
 
             // docs.PrimitiveDatentypen.Start();
-
         }
     }
 }

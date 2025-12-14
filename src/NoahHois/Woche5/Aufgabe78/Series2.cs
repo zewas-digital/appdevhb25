@@ -48,7 +48,7 @@ namespace Appdevhb25.NoahHois.Aufgabe78
                 Console.WriteLine("5) Cyberpunk");
                 Console.Write("Eingabe: ");
 
-                string input = Console.ReadLine();
+                string input = Console.ReadLine() ?? string.Empty;
                 switch (input)
                 {
                     case "1":

@@ -11,7 +11,7 @@ namespace Appdevhb25.NoahHois.Aufgabe77
             System.Console.WriteLine();
             dictionary.HoechsteBewertung();
             System.Console.WriteLine();
-            string serienName = Console.ReadLine();
+            string serienName = Console.ReadLine() ?? string.Empty;
             dictionary.SucheSerie(serienName);
         }
     }

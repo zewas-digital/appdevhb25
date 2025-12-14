@@ -7,7 +7,6 @@ namespace Appdevhb25.SashaLeonardoMattes
     {
         static void Main(string[] args)
         {
-            //Console.Clear();
             // Aufgabe01.PrintA.StartPrintA();
             // Aufgabe02.MultiplicationTable.StartMultiplicationTable();
             // Aufgabe03.SumInterval.StartSumInterval();
@@ -73,10 +72,6 @@ namespace Appdevhb25.SashaLeonardoMattes
 
 
 
-
-
-
-
             //OOP
             //Aufgabe64.CarCreator.Start();
             //Aufgabe65.Car2Creator.Start();
@@ -98,7 +93,20 @@ namespace Appdevhb25.SashaLeonardoMattes
             //Aufgabe83.BrowserhistoryCreator.Start();
             //Aufgabe84.InventoryListCreator.Start();
             //Aufgabe91.SupermarketCreator.Start();
-            Aufgabe96.StartGeometry.Start();
+            //Aufgabe96.StartGeometry.Start();
+            //MysqlConnectExample.Start();
+            //Aufgabe102.LibraryManagerCreator.Start();
+            //Aufgabe103.LibraryManagerCreator.Start();
+
+
+
+
+
+
+            //ZOO
+            //AufgabeZoo01.Main.Start();
+            //AufgabeZoo02.Main.Start();
+            //AufgabeZoo03.Main.Start();
         }
     }
 }

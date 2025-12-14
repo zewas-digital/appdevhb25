@@ -57,7 +57,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe39
 
                 //UserInput
                 Console.WriteLine("Bitte gib eine y-Koordinate ein.");
-                string temp = Console.ReadLine();
+                string temp = Console.ReadLine() ?? string.Empty;
                 int yUserInput = Convert.ToInt32(temp);
 
                 Console.WriteLine("Bitte gib eine x-Koordinate ein.");

@@ -10,7 +10,7 @@ namespace Appdevhb25.NoahHois.Aufgabe82
             Stack<string> browserHistory = new Stack<string>();
 
             System.Console.WriteLine("Geben Sie eine Website ein");
-            input = Console.ReadLine();
+            input = Console.ReadLine() ?? string.Empty;
             browserHistory.Push(input);
 
             do
@@ -32,7 +32,7 @@ namespace Appdevhb25.NoahHois.Aufgabe82
                     case '2':
                         Console.Clear();
                         System.Console.WriteLine("Geben Sie eine Website ein");
-                        input = Console.ReadLine();
+                        input = Console.ReadLine() ?? string.Empty;
                         browserHistory.Push(input);
                         break;
                 }

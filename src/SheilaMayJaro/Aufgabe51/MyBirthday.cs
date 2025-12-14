@@ -26,11 +26,11 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe51
 
             
             System.Console.WriteLine("In welchem Monat?");
-            string monthAsString = Console.ReadLine();
+            string monthAsString = Console.ReadLine() ?? string.Empty;
             int.TryParse(monthAsString, out int birthMonth); // Die Rückgabe des Wertes erfolgt erst, wenn die Umwandlung in einen Integer auch erfolgreich war
 
             System.Console.WriteLine("Und zu guter Letzt an welchem Tag?");
-            string dayAsString = Console.ReadLine();
+            string dayAsString = Console.ReadLine() ?? string.Empty;
             int.TryParse(dayAsString, out int birthDay);
 
             DateTime birthday = new DateTime(birthYear, birthMonth, birthDay);

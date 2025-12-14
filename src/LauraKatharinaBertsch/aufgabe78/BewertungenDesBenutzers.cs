@@ -31,14 +31,14 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe78
             while (count < 3)
             {
                 Console.WriteLine("Gib die " + (count + 1) + ". Serie ein");
-                string favouriteSerie = Console.ReadLine();
+                string favouriteSerie = Console.ReadLine() ?? string.Empty;
                 favouriteSeries.Enqueue(favouriteSerie);
                 count++;
             }
             for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine("Was ist deine Bewertung der " + (i + 1) + ". Serie von 0 - 10?");
-                double evaluation = Convert.ToDouble(Console.ReadLine());
+                double evaluation = Convert.ToDouble(Console.ReadLine() ?? string.Empty);
 
                 string firstSeries = favouriteSeries.Dequeue();
                 string userSerie = firstSeries;

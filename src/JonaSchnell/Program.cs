@@ -74,7 +74,8 @@ namespace Appdevhb25.JonaSchnell
             //Aufgabe84.Interface.Start();
             //Aufgabe88 == UML Diagramm in Downloads
             //Aufgabe91.Warenkorb.Produkte();
-            Aufgabe96.Main.Start();
+            //Aufgabe96.Main.Start();
+            SQLVerzei.MysqlConnectExample.Start();
         }
     }
 }

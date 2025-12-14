@@ -213,11 +213,11 @@ namespace Appdevhb25.MarcelSimma
             // Variante 1: drei Integer einlesen
             Console.WriteLine("Bitte gib ein Jahr ein:");
 
-            string yearAsString = Console.ReadLine();
+            string? yearAsString = Console.ReadLine();
             int year = Convert.ToInt32(yearAsString);
 
             Console.WriteLine("Bitte gib einen Monat ein:");
-            string monthAsString = Console.ReadLine();
+            string? monthAsString = Console.ReadLine();
             int.TryParse(monthAsString, out int month);
             // Datentyp.TryParse() hat zwei Rückgabewerte
             // Der klassische return-Rückgabewert gibt uns einen Boolean, der uns angibt, ob die Umwandlung erfolgreich war.
@@ -243,7 +243,7 @@ namespace Appdevhb25.MarcelSimma
         public static void Variant2()
         {
             // Varaiante 2: ganzes Datum einlesen und mit CultureInfo verarbeiten
-            string inputAsString = Console.ReadLine();
+            string? inputAsString = Console.ReadLine();
             DateTime.TryParse(inputAsString, new CultureInfo("de-AT"), out DateTime result);
             Console.WriteLine("Das eingegebene Datum ist: " + result.ToString("dddd, dd.MM.yyyy HH:mm"));
             // Wie soll die Eingabe 05.03.01 interpretiert werden?
@@ -251,7 +251,7 @@ namespace Appdevhb25.MarcelSimma
 
         public static void Variant3()
         {
-            string inputAsString = Console.ReadLine();
+            string? inputAsString = Console.ReadLine();
             // Variante 3 für die Fortgeschrittenen (Bonus)
             try
             {

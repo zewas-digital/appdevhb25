@@ -12,7 +12,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe91
             {
 
                 Console.WriteLine("Hallo Kunde, möchtest du was kaufen? ja oder nein");
-                string answer = Console.ReadLine();
+                string answer = Console.ReadLine() ?? string.Empty;
                 if (answer == "ja")
                 {
                     ShoppingCartPerPerson();
@@ -30,7 +30,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe91
             while (true)
             {
                 Console.WriteLine("Möchtest du noch was kaufen? ja oder nein    Oder möchtest du was löschen? löschen");
-                string answer = Console.ReadLine();
+                string answer = Console.ReadLine() ?? string.Empty;
                 if (answer == "ja")
                 {
                     AddProduct();
@@ -49,9 +49,9 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe91
         public static void AddProduct()
         {
             Console.WriteLine("Gib ein Produkt an, das du kaufen willst");
-            string personProduct = Console.ReadLine();
+            string personProduct = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("Gib die Menge des Produkts an");
-            int personAmount = Convert.ToInt32(Console.ReadLine());
+            int personAmount = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
 
             Console.WriteLine("Das ist der aktualisierte Warenkorb:");
             shoppingCart.Add(personProduct, personAmount);
@@ -72,7 +72,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe91
         public static void DeleteProduct()
         {
             Console.WriteLine("Was möchtest du löschen?");
-            string deleteProduct = Console.ReadLine();
+            string deleteProduct = Console.ReadLine() ?? string.Empty;
 
             int deleteAmount = shoppingCart[deleteProduct];
             shoppingCart.Remove(deleteProduct);
@@ -94,7 +94,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe91
         public static void Pay()
         {
             Console.WriteLine("Bei welcher Kasse möchtest du bezahlen? 1, 2 oder 3");
-            string answer = Console.ReadLine();
+            string answer = Console.ReadLine() ?? string.Empty;
             if (answer == "1")
             {
                 Kasse.DailyTurnoverCheckout1(totalValue);

@@ -44,7 +44,7 @@ namespace Appdevhb25.MarcelSimma
             */
 
             // Wert einlesen
-            string temp = Console.ReadLine();
+            string? temp = Console.ReadLine();
 
             // eingelesenen Wert konvertieren - Variante 1 ohne Fehlerbehandlung
             //int anzahlDerTeilnehmer = Convert.ToInt32(temp);

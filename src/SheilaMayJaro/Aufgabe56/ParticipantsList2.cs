@@ -16,14 +16,14 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe56
 
             using (StreamReader fileReader = new StreamReader(@"C:\Users\JASHE\Documents\DigitalCampus2025\appdevhb25\src\SheilaMayJaro\Aufgabe56\input.txt"))
             {
-                string lineOfFile = fileReader.ReadLine();
+                string lineOfFile = fileReader.ReadLine() ?? string.Empty;
                 int number = 0;
 
                 // System.Console.WriteLine(lineOfFile); //Teilnehmer schonmal ausgeben, damit es bei der nummerierung nicht enthalten ist 
                 // System.Console.WriteLine();
                 while (lineOfFile != null)
                 {
-                    lineOfFile = fileReader.ReadLine();
+                    lineOfFile = fileReader.ReadLine() ?? string.Empty;
                     System.Console.WriteLine($"{++number,2} {lineOfFile}");
                 }
                 // System.Console.WriteLine();
@@ -38,7 +38,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe56
 
                     while (lineOfFile != null)
                     {
-                        lineOfFile = fileReader.ReadLine(); 
+                        lineOfFile = fileReader.ReadLine() ?? string.Empty; 
                         filewriter.WriteLine($"{++number} {lineOfFile}"); 
                     }
                     filewriter.WriteLine();

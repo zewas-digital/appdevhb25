@@ -11,6 +11,7 @@ using Appdevhb25.MarcelSimma.week02;
 using Appdevhb25.MarcelSimma.Week05;
 using Appdevhb25.MarcelSimma.Week05.Aufgabe65;
 using Appdevhb25.MarcelSimma.Week05.GetterAndSetterIntro;
+using Appdevhb25.MarcelSimma.Week08;
 using MarcelSimma.Aufgabe62;
 
 
@@ -98,7 +99,11 @@ namespace Appdevhb25.MarcelSimma
 
             //Week07.StackIntro.Start();
 
-            Week07.InterfaceIntro.InterfaceIntro.Start();
+            //Week07.InterfaceIntro.InterfaceIntro.Start();
+
+            //PruefungOOP.Start();
+
+            Week09.Aufgabe102.MysqlConnectExample.Start();
             
             
 

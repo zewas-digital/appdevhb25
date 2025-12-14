@@ -24,7 +24,7 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe79
         public void AddRating()
         {
             System.Console.WriteLine("Zu welcher Serie willst du eine Bewertung hinzufügen?");
-            string userInputWhichSeries = Console.ReadLine();
+            string userInputWhichSeries = Console.ReadLine() ?? string.Empty;
             System.Console.WriteLine("Welche Bewertung erhält die Serie?");
             double userInputSeriesRating = Convert.ToDouble(Console.ReadLine());
             RatingOfSeries.Remove(userInputWhichSeries);

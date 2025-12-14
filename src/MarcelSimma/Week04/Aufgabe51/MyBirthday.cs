@@ -7,7 +7,7 @@ namespace Appdevhb25.MarcelSimma
         public static void Start()
         {
 
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
 
             DateTime inputDate;
 
