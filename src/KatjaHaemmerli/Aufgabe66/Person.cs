@@ -1,5 +1,5 @@
 
-namespace Appdevhb25.KatjaHaemmerli.Aufgab66
+namespace Appdevhb25.KatjaHaemmerli.Aufgabe66
 {
     public class Person
     {

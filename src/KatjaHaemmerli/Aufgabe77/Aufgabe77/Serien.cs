@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 
-namespace Appdevhb25.KatjaHaemmerli.Aufgabe77
+namespace Appdevhb25.KatjaHaemmerli.Aufgabe78
 {
     public class Serien
     {

@@ -23,10 +23,10 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgab84
         }
 
         // Instanz Methode weil nicht static
-        public void AusgabeDerAttributte()
+        public void AusgabeDerAttribute()
         {
             System.Console.WriteLine(this.Farbe);
-            System.Console.WriteLine(this.Kennzeichen);
+            System.Console.WriteLine(this.Seriennummer);
             System.Console.WriteLine(Verbrauch);
         }
     }

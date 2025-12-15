@@ -1,6 +1,6 @@
 namespace Appdevhb25.KatjaHaemmerli.Aufgabe84
 {
-    public class Motorrad : IGegenstand
+    public class Motorcycle : IGegenstand
     {
         public string Farbe {get; set;}
         public string Marke {get; set;}
@@ -9,15 +9,15 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe84
         public static double Verbrauch {get; set;}
         public static int AnzahlMotorraeder;
 
-        public Motorrad(string model, string farbe, string seriennummer)
+        public Motorcycle(string model, string farbe, string seriennummer)
         {
             Marke = model; // beim erzeugen des Objekts model mitgegeben wird und initialisiert wird
             AnzahlMotorraeder++;
             Farbe = farbe;           
-            AusgabeDerAttributte();
+            AusgabeDerAttribute();
         }
 
-        public void AusgabeDerAttributte()
+        public void AusgabeDerAttribute()
         {
             System.Console.WriteLine($"Model: {Marke}");
             System.Console.WriteLine($"Farbe: {Farbe}");

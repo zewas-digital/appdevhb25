@@ -1,92 +1,24 @@
-public class Motorrad
+
+namespace Appdevhb25.KatjaHaemmerli.Aufgabe69
 {
-    public static int AnzahlMotorraeder;
-    
-    // privates Feld für den Wert
-    private string _model;
-    public string Model
+    public class Motorrad 
     {
-        get
+        public string Model {get; set;}
+        public string Farbe {get; set;}
+        public string Kennzeichen {get; set;}       
+
+        public Motorrad(string marke, string farbe, string kennzeichen)
         {
-            return _model;
+            Model = marke; 
+            Farbe = farbe;
+            Kennzeichen = kennzeichen;            
+            AusgabeMotoradEigenschaften();
         }
 
-        private set // privat, weil von Aussen soll das Model nicht verändert werden dürfen.
+        public void AusgabeMotoradEigenschaften()
         {
-            _model = value;
-        }
-       
-    }
-    
-    // privates Feld für den Wert
-    private string _farbe;
-    public string Farbe { get; set; }
-    // {
-    //     get
-    //     {
-    //         return _farbe;
-    //     }
-    //     set
-    //     {
-    //         _farbe = value;
-    //     }
-    // }
-    
-    // privates Feld für den Wert
-    private double _preis;
-    public double Preis
-    {
-        get
-        {
-            return _preis;
-        }
-        set
-        {
-            _preis = value;
+            System.Console.WriteLine($"Model: {Model}");
+            System.Console.WriteLine($"Farbe: {Farbe}");
         }
     }
-
-    public static double Umsatz;
-   
-    // privates Feld für den Wert
-    private string _kennzeichen;
-    public string Kennzeichen
-    {
-        get
-        {
-            return _kennzeichen;
-        }
-        set
-        {
-            // Kennzeichenprüfung: wenn kennzeichen kürzer als .. "nicht erlaubt."
-            _kennzeichen = value;
-        }
-
-    }
-    
-    public Motorrad(string model, string farbe, int preis)
-    {
-        Model = model; // beim erzeugen des Objekts model mitgegeben wird und initialisiert wird
-        AnzahlMotorraeder++;
-        Farbe = farbe;
-        // Umsatz = preis + Umsatz; 
-        Umsatz += preis;
-        AusgabeMotoradEigenschaften();
-    }
-    
-    public void AusgabeMotoradEigenschaften()
-    {
-        System.Console.WriteLine($"Model: {Model}");        
-        System.Console.WriteLine($"Farbe: {Farbe}");        
-    }
-    public static void BerechneDurchschnittsumsatz()
-    {
-        double durchschnitt = Umsatz / AnzahlMotorraeder;
-        System.Console.WriteLine($"Der Durchschnittumsatz beträgt: {durchschnitt}");
-    }
-    public static void BerechnungUmsatz()
-    {
-        System.Console.WriteLine($"Der Umsatz beträgt: {Umsatz}");
-    }
-    
 }

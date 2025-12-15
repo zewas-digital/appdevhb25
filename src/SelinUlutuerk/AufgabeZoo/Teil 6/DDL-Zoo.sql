@@ -1,3 +1,4 @@
+-- Drop  Database zoo;
 Create Database zoo;
 use zoo;
 
@@ -11,6 +12,14 @@ Create Table Zoo (
 -- Tabelle Gehege
 Create Table Gehege(
 	GehegeID INT Auto_Increment Primary Key,
+    Name Varchar(50),
+    ZooID INT,
+    Foreign Key(ZooID) References Zoo(ZooID)
+);
+
+-- Tabelle Gattung
+Create Table Gattung(
+    GattungID INT Auto_Increment Primary Key,
     Name Varchar(50)
 );
 
@@ -18,7 +27,7 @@ Create Table Gehege(
 Create Table Tiere(
 	TierID INT Auto_Increment Primary Key,
     Name Varchar(50),
-    GattungID Varchar(50),
+    GattungID INT,
     GehegeID INT,
     Foreign Key(GehegeID) References Gehege(GehegeID),
     Foreign Key(GattungID) References Gattung(GattungID)
@@ -57,8 +66,3 @@ Create Table Gehege_Pfleger(
     Foreign Key (PflegerID) References Pfleger(PflegerID)
 );
 
--- Tabelle Gattung
-Create Table Gattung(
-GattungID INT Auto_Increment Primary Key,
-Name Varchar(50)
-);

@@ -13,7 +13,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe31
         {
             System.Console.Write("Anzahl der Elemente: ");
             int number;
-            while (!int.TryParse(Console.ReadLine(), out number))
+            while (!int.TryParse(Console.ReadLine() ?? string.Empty, out number))
             {
                 Console.WriteLine("Nur Zahlen sind erlaubt!");
 

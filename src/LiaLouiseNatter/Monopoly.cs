@@ -77,7 +77,7 @@ class Monopoly
         Console.WriteLine($"It would cost you: {feldPreise[totalDiceCount]}.");
         System.Console.WriteLine("You currently have: " + bank + "€");
         Console.Write("Buy" + alleFelder[totalDiceCount] + "[y/n]");
-        string yesNo = Console.ReadLine();
+        string yesNo = Console.ReadLine() ?? string.Empty;
         
         if (yesNo == "y" || yesNo == "Y")
         {
