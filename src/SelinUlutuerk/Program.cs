@@ -113,8 +113,6 @@ namespace Appdevhb25.SelinUlutuerk
             // AufgabeZoo.Teil3.ZooIntro.Start();
             AufgabeZoo.Teil4.ZooIntro.Start();
 
-
-
             // docs.PrimitiveDatentypen.Start();
         }
     }
