@@ -131,7 +131,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe96.GeometryStart.Start();
             // Text.Start();
             // Aufgabe102.StartDbReadIntoOOP.start();
-            Test3.CountriesAndRivers.Start();
+            // Test3.CountriesAndRivers.Start();
+            Zoo.Main.Start();
 
 
 

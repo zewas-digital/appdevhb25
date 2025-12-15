@@ -11,9 +11,5 @@ namespace Appdevhb25.LiaLouiseNatter.Test3
             Length = length;
             Name = name;
         }
-
-
-    
-
     }
 }
