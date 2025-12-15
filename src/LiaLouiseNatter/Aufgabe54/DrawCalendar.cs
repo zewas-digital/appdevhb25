@@ -23,16 +23,16 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe54
             do
             {
                 System.Console.Write("Year: ");
-            } while (!int.TryParse(Console.ReadLine(), out year));
+            } while (!int.TryParse(Console.ReadLine() ?? string.Empty, out year));
 
             do
             {
                 System.Console.Write("Month: ");
-            } while (!int.TryParse(Console.ReadLine(), out month));
+            } while (!int.TryParse(Console.ReadLine() ?? string.Empty, out month));
              do
             {
                 System.Console.Write("Current Day: ");
-            } while (!int.TryParse(Console.ReadLine(), out day));
+            } while (!int.TryParse(Console.ReadLine() ?? string.Empty, out day));
 
 
             string monthname = new DateTime(year, month, 1).ToString("MMMM");

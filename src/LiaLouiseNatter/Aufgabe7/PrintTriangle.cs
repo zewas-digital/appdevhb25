@@ -9,11 +9,11 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe7
         {
             System.Console.Write("Größe: ");
 
-            var height = Console.ReadLine();
+            var height = Console.ReadLine() ?? string.Empty;
             int result = Convert.ToInt32(height);
  
             System.Console.Write("Zeichen: ");
-            var character = Console.ReadLine();
+            var character = Console.ReadLine() ?? string.Empty;
 
 
             for (int i = 0; i <= result; i++)

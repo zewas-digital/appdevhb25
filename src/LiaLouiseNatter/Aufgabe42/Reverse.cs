@@ -12,7 +12,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe42
         public static void Reverser()
         {
             System.Console.Write("Geben Sie ihren Text ein: ");
-            string? textUnreversed = Console.ReadLine() ??"";
+            string? textUnreversed = Console.ReadLine() ?? string.Empty ??"";
 
             char[]? backwardsArray = textUnreversed.ToCharArray();
             Array.Reverse(backwardsArray);

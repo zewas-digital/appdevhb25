@@ -54,7 +54,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe44
         public static void BeliebigesUppercase(string hesseText)
         {
             System.Console.WriteLine("Suchen Sie sich ein Wort aus das in Uppercase geschrieben werden soll: ");
-            string wishedWord = Console.ReadLine();
+            string wishedWord = Console.ReadLine() ?? string.Empty;
             if (hesseText.Contains(wishedWord))
             {
                 hesseText = hesseText.Replace(wishedWord, wishedWord.ToUpper());
@@ -88,7 +88,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe44
         public static void AnzBestWort(string hesseText, string[] satzInArray)
         {
             System.Console.WriteLine("Suchen Sie sich ein Wort von dem die Anzahl gesucht werden soll: ");
-            string wishedWord = Console.ReadLine();
+            string wishedWord = Console.ReadLine() ?? string.Empty;
             
             int count = 0;
             foreach (string word in satzInArray)

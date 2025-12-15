@@ -7,7 +7,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe9
         public static void Start()
         {
             System.Console.Write("Größe: ");
-            var height = Console.ReadLine();
+            var height = Console.ReadLine() ?? string.Empty;
             int result = Convert.ToInt32(height);
 
             EmptySquare(result);

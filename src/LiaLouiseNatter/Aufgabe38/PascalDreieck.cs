@@ -49,7 +49,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe38
         {
              int number;
             Console.WriteLine("Bitte eine Zahl eingeben: ");
-            while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
+            while (!int.TryParse(Console.ReadLine() ?? string.Empty, out number) || number <= 0)
             {
                 Console.WriteLine("Ungültige Eingabe. Bitte eine positive ganze Zahl eingeben:");
             }
