@@ -19,7 +19,7 @@ public static class MonopolyOnConsole
 
         int maxPlayers;
         System.Console.WriteLine("Wiviele Spieler? [2-8] ");
-        while (!int.TryParse(Console.ReadLine(), out maxPlayers))
+        while (!int.TryParse(Console.ReadLine() ?? string.Empty, out maxPlayers))
         {
             System.Console.WriteLine("Nur Zahlen Erlaubt!!!!!");
         }
@@ -189,7 +189,7 @@ public static class MonopolyOnConsole
 
 
         Console.Write("[y/n]");
-        string yesNo = Console.ReadLine();
+        string yesNo = Console.ReadLine() ?? string.Empty;
 
         if (yesNo == "y" || yesNo == "Y")
         {
@@ -219,7 +219,7 @@ public static class MonopolyOnConsole
         int diceCount = 0;
 
         Console.WriteLine("Press any key to roll the dice.");
-        Console.ReadLine();
+        //Console.ReadLine();
         DiceAnimator(DiceFaces);
 
         int number = random.Next(1, 7);

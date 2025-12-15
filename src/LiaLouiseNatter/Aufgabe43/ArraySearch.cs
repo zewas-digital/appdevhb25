@@ -29,7 +29,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe43
                 try
                 {
                     System.Console.Write("Suche nach einem Namen oder nach einer Silbe: ");
-                    string searched = Console.ReadLine();
+                    string searched = Console.ReadLine() ?? string.Empty;
                     string namesString = String.Concat(names);
 
                     int indexOf = namesString.IndexOf(searched);

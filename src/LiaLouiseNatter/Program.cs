@@ -1,4 +1,5 @@
 using System;
+using Appdevhb25.LiaLouiseNatter.Aufgabe102;
 using Appdevhb25.LiaLouiseNatter.Aufgabe21;
 using Appdevhb25.LiaLouiseNatter.Aufgabe64;
 using Appdevhb25.LiaLouiseNatter.Aufgabe66;
@@ -127,7 +128,11 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe85.TelefonBuchStart.Start();
             // Aufgabe86.AnrufStarter.Start();
             // Aufgabe91.Supermarkt.Start();
-            Aufgabe96.GeometryStart.Start();
+            // Aufgabe96.GeometryStart.Start();
+            // Text.Start();
+            // Aufgabe102.StartDbReadIntoOOP.start();
+            // Test3.CountriesAndRivers.Start();
+            Zoo.Main.Start();
 
 
 

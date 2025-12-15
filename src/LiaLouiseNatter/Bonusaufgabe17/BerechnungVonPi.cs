@@ -8,7 +8,7 @@ namespace Appdevhb25.LiaLouiseNatter.Bonusaufgabe17
         public static void Project()
         {
             Console.Write("How many Numbers of PI? ");
-            int count = Convert.ToInt32(Console.ReadLine());
+            int count = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
             double piNumber = CalculatePi(count);
             Console.WriteLine("Calculated Pi: " + piNumber);
         }

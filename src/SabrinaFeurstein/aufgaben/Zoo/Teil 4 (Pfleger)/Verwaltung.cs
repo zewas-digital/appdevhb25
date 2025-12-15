@@ -33,41 +33,7 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.zoo.teil4
             zoo.Pfleger[1].GehegeZuordnen(zoo.Gehege[1]);
             zoo.Pfleger[1].GehegeZuordnen(zoo.Gehege[2]);
 
-            Console.WriteLine($"├── Zoo: {zoo}");
-            foreach (Gehege gehege in zoo.Gehege)
-            {
-                Console.Write($"│{" ",3}├── Gehege: {gehege} | Pfleger: ");
-                bool gehegeHatPfleger = false;
-                foreach (Pfleger pfleger in zoo.Pfleger)
-                {
-                    foreach (Gehege pflegerGehege in pfleger.Gehege)
-                    {
-                        int i = 0;
-
-                        if (pflegerGehege == gehege && i != 0)
-                            Console.Write($", {pfleger}");
-
-                        else if (pflegerGehege == gehege)
-                        {
-                            Console.Write(pfleger);
-                            i++;
-                            gehegeHatPfleger = true;
-                        }
-                    }
-                }
-                if (!gehegeHatPfleger)
-                    Console.Write("(Keine Zuweisung)");
-
-                Console.WriteLine();
-
-                foreach (Tier tier in gehege.Tiere)
-                {
-                    Console.WriteLine($"│{" ",7}├── {tier}");
-                }
-                if (gehege.Tiere.Count == 0)
-                    Console.WriteLine($"│{" ",7}├── (leer)");
-            }
-
+            zoo.ZooStrukturAusgabe();
             Console.WriteLine();
             zoo.FutterbedarfAusgeben();
         }

@@ -20,7 +20,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe27
             string? name;
             while (true)
             {
-                name = Console.ReadLine();
+                name = Console.ReadLine() ?? string.Empty;
                 if (string.IsNullOrEmpty(name) || int.TryParse(name, out int _))
                 {
                     System.Console.WriteLine("Please enter a valid name");
@@ -36,7 +36,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe27
             Console.Write("Please enter your Age: ");
             int age;
             
-            while(!int.TryParse(Console.ReadLine(), out age))
+            while(!int.TryParse(Console.ReadLine() ?? string.Empty, out age))
             {
                 Console.WriteLine("Enter a valid number.");
             }

@@ -69,7 +69,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe78
             for (int i = 0; i <= 2; i++)
             {
                 System.Console.WriteLine($"Your {i+1}. Favorite Series out of the list: ");
-                favoriteSeries = Console.ReadLine();
+                favoriteSeries = Console.ReadLine() ?? string.Empty;
                 UserFavSeries.Enqueue(favoriteSeries);
             }
         }
@@ -81,7 +81,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe78
             {
                 
                 System.Console.WriteLine($"How do you rate {serie}: ");
-                double userRatings = double.Parse(Console.ReadLine());
+                double userRatings = double.Parse(Console.ReadLine() ?? string.Empty);
                 userFavDict.Add(serie, userRatings);
                 DictPrinter(userFavDict);
                

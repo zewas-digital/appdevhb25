@@ -21,7 +21,7 @@ namespace Appdevhb25.LiaLouiseNatter.BonusAufgabe35
             for (int i = 0; i < unsortetArray.Length; i++)
             {
                 System.Console.Write($"Number{i + 1}: ");
-                int eingabe = Convert.ToInt32(Console.ReadLine());
+                int eingabe = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                 unsortetArray[i] = eingabe;
 
 

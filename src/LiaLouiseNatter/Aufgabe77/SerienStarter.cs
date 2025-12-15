@@ -19,7 +19,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe77
             serie.BestSeries();
             System.Console.WriteLine("\n------------Search Series Rating-------------\n");
             System.Console.Write("\nWich series are you looking for? ");
-            string series = Console.ReadLine();
+            string series = Console.ReadLine() ?? string.Empty;
             serie.SearchSeries(series);
 
         }

@@ -16,7 +16,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe51
         {
             CultureInfo austrian = new CultureInfo("de-AT");
             System.Console.Write("Please enter your Birthday [DD.MM.YYYY]: ");
-            string userBirthday = Console.ReadLine();
+            string userBirthday = Console.ReadLine() ?? string.Empty;
 
             if(DateOnly.TryParse(userBirthday, out DateOnly birthday))
             {

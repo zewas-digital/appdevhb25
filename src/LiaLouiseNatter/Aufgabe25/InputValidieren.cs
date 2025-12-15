@@ -17,7 +17,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe25
         {
             System.Console.WriteLine("Please enter an integer:");
             int numberP;
-            while (!int.TryParse(Console.ReadLine(), out numberP))
+            while (!int.TryParse(Console.ReadLine() ?? string.Empty, out numberP))
             {
                 Console.WriteLine("Invalid input. Please enter a valid integer.");
             }
@@ -28,7 +28,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe25
         {
             System.Console.WriteLine("Please enter a float:");
             float numberF;
-            while (!float.TryParse(Console.ReadLine(), out numberF))
+            while (!float.TryParse(Console.ReadLine() ?? string.Empty, out numberF))
             {
                 Console.WriteLine("Invalid input. Please enter a valid float.");
             }
@@ -39,7 +39,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe25
         {
             System.Console.WriteLine("Please enter true or false:");
             bool boolP;
-            while (!bool.TryParse(Console.ReadLine(), out boolP))
+            while (!bool.TryParse(Console.ReadLine() ?? string.Empty, out boolP))
             {
                 Console.WriteLine("Invalid input. Please enter true or false.");
             }
