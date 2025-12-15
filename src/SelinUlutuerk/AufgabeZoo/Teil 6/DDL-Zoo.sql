@@ -20,9 +20,10 @@ Create Table Gehege(
 Create Table Tiere(
 	TierID INT Auto_Increment Primary Key,
     Name Varchar(50),
-    Gattung Varchar(50),
+    Gattung_GattungID_FK Varchar(50),
     Gehege_GehegeID_FK INT,
-    Foreign Key(Gehege_GehegeID_FK) References Gehege(GehegeID)
+    Foreign Key(Gehege_GehegeID_FK) References Gehege(GehegeID),
+    Foreign Key(Gattung_GattungID_FK) References Gattung(GattungID)
 );
 
 -- Tabelle Futter
@@ -56,4 +57,10 @@ Create Table Gehege_Pfleger(
     Primary Key (Gehege_GehegeID_FK, Pfleger_PflegerID_FK),
     Foreign Key (Gehege_GehegeID_FK) References Gehege(GehegeID),
     Foreign Key (Pfleger_PflegerID_FK) References Pfleger(PflegerID)
+);
+
+-- Tabelle Gattung
+Create Table Gattung(
+GattungID INT Auto_Increment Primary Key,
+Name Varchar(50)
 );
