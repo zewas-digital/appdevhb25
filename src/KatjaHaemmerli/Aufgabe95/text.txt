@@ -1,0 +1,5 @@
+firma(mitarbeiter, telefonnummer)
+mitarbeiter(ID,vorgesetzter)
+projekt(projektname,zeitraum)
+abteilung(mitarbeiter_ID)
+vorlesung(IDnummer, titel, professor_personalnummer_fk)

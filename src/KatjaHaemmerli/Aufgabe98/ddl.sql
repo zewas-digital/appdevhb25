@@ -6,5 +6,8 @@ CREATE TABLE Autor(
 )
 CREATE TABLE Buch(
     ISBN INTEGER NOT NULL PRIMARY KEY,
-    Title VARCHAR(20), Erscheinungsjahr CHAR(4), Sprache VARCHAR(20), Verlag VARCHAR(20)
+    Title VARCHAR(20), 
+    Erscheinungsjahr CHAR(4), 
+    Sprache VARCHAR(20), 
+    Verlag VARCHAR(20)
 ) 

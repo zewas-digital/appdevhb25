@@ -7,7 +7,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe84
         public static void Start()
         {
             Car car = new Car("schwarz", "1234");
-            Motorrad motorrad = new Motorrad("Yamaha", "schwarz", "5678");
+            Motorcycle motorrad = new Motorcycle("Yamaha", "schwarz", "5678");
 
             List<IGegenstand> gegenstandliste = new List<IGegenstand>();
             gegenstandliste.Add(car);

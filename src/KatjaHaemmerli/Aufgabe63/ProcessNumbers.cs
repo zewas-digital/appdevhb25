@@ -15,7 +15,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe63
         {
             int[] numbers = new int[] { 200, -2, 0, 30 };
             int[] result = ProcessNum(numbers);
-            
+
             int[] numbers2 = new int[] { -26, 30, 45, -58, -3 };
             int[] result2 = ProcessNum(numbers2);                       
 

@@ -4,7 +4,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgab65
     public class Car
     {
         // Felder
-        public string Farbe ;
+        public string Farbe;
         public string Kennzeichen;
         public double Verbrauch;
         public int Distanz;
