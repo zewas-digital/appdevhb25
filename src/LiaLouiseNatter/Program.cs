@@ -130,7 +130,8 @@ namespace Appdevhb25.LiaLouiseNatter
             // Aufgabe91.Supermarkt.Start();
             // Aufgabe96.GeometryStart.Start();
             // Text.Start();
-            Aufgabe102.StartDbReadIntoOOP.start();
+            // Aufgabe102.StartDbReadIntoOOP.start();
+            Test3.CountriesAndRivers.Start();
 
 
 

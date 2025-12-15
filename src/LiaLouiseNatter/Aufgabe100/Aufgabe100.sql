@@ -209,7 +209,7 @@ Ausgabe 83893675	Jains
         187080168	Buddhist
         23495818	Bahai
         16076000	Coptic Christian
-        2100	Mormon
+        2100	    Mormon
         ...
 
 
@@ -318,7 +318,7 @@ from geo_lake gl
 		on gl.country = c.country
 	join country co
 		on co.code = gl.country
-group by (co.name)
+group by co.name
 	having count(gl.lake) >= 1;
 
 Ausgabe: 
@@ -360,9 +360,10 @@ Ausgabe:
         CH	VDC	member
         D	VDC	member
 
-20. Wir gehen 2 Monate in die Zukunft: Der Kurs ist vorbei. Jetzt gibt es eine neue internationale Organisation: “Alumni DCV-Grundkurs”. 
-Alle Mitglieder von “DCV-Grundkurs” 
-werden nun automatisch Mitglied in der Organisation “Alumni DCV Grundkurs”. Die Mitgliedschaft bei "DCV-Grundkurs" endet im selben Moment.
+20. Wir gehen 2 Monate in die Zukunft: Der Kurs ist vorbei. Jetzt gibt es eine neue internationale 
+Organisation: “Alumni DCV-Grundkurs”. Alle Mitglieder von “DCV-Grundkurs” werden nun automatisch Mitglied 
+in der Organisation “Alumni DCV Grundkurs”. Die Mitgliedschaft bei "DCV-Grundkurs" endet im selben Moment.
+
 
 
 
@@ -370,19 +371,113 @@ werden nun automatisch Mitglied in der Organisation “Alumni DCV Grundkurs”. 
 
 22. Aktualisiere die Höhe des Großglockners.
 
-23. Erstelle das Land Transnistrien. Es liegt in Europa. Wenn du anschließend einen alle europäischen Staaten inkl. Namen selektierst, soll auch Transnistrien in der Ergebnisliste sein.
+use mondial;
+update Mountain
+SET height = 10
+WHERE name = 'Großglockner';
+
+Ausgabe: 10	Grossglockner
+
+23. Erstelle das Land Transnistrien. Es liegt in Europa. Wenn du anschließend 
+einen alle europäischen Staaten inkl. Namen selektierst, soll auch Transnistrien in der Ergebnisliste sein.
+
+use mondial;
+insert into Country (code, name)
+VALUES ('TNS', 'Transnistrien');
+
+insert into encompasses (continent, country, percentage)
+values ('Europa', 'TNS', 100);
+
+select c.name
+from Country c
+join encompasses e ON c.code = e.country
+where e.continent = 'Europa';
+
+Ausgabe: TNS	Europa
+
 
 24. Speichere den höchsten Berg und die Hauptstadt in die Datenbank. Prüfe die Ergebnisse mit einem SELECT.
 
+use mondial;
+
+insert into Mountain (name, height, type)
+values ('Kahn Tengri',7010, 'Berg');
+
+INSERT INTO geo_mountain (mountain, country, province)
+VALUES ('Kahn Tengri', 'TNS', "Tian SHan-Gebirge ");
+
+Update country
+set capital = "Tiraspol"
+where code = "TNS";
+
+SELECT capital, name, code FROM Country WHERE code = 'TNS';
+
+Ausgabe: Tiraspol	Transnistrien	TNS
+
 25. Ändere den Namen der Türkei auf "Türkiye".
+
+use mondial;
+update country
+set name = "Türkiye"
+where name = "Turkey";
+
+Ausgabe: Türkiye	TR	Ankara	Ankara	780580	62484478
 
 26. Thailand hat eine neue Hauptstadt: Nusantara. Speichere das in die Datenbank.
 
-27. Es gibt eine weitere "Organization", die nicht in unserer Datenbank vorhanden ist: die Visegrad Gruppe. 
-Erstelle die "Organization" und ordne ihr Mitglieder zu. Die Hauptstadt dieses Bündnisses ist die ungarische Stadt Visegrad.
+use mondial;
+update country
+set capital = "Nusantara"
+where country.name Like "Thail%";
 
-28. Gib eine Liste der Mitglieder EU und deren Hauptstädte aus. Vergleiche deine Ergebnisse mit der aktuellen Mitgliederliste.
+Ausgabe: Thailand	THA	Nusantara	Thailand	514000	58851357
+
+27. Es gibt eine weitere "Organization", die nicht in unserer Datenbank vorhanden ist: 
+die Visegrad Gruppe. Erstelle die "Organization" und ordne ihr Mitglieder zu. 
+Die Hauptstadt dieses Bündnisses ist die ungarische Stadt Visegrad.
+
+28. Gib eine Liste der Mitglieder EU und deren Hauptstädte aus. 
+Vergleiche deine Ergebnisse mit der aktuellen Mitgliederliste.
+
+USE mondial;
+
+select im.organization,im.country,co.name as country, co.capital
+from isMember im
+join organization o
+    on o.abbreviation = im.organization
+join Country co
+	on co.code = im.country
+    
+where im.organization = 'EU'
+
+Ausgabe: 
+        EU	A	Austria	Vienna
+        EU	B	Belgium	Brussels
+        EU	BG	Bulgaria	Sofia
+        EU	CY	Cyprus	Nicosia
+        EU	CZ	Czech Republic	Prague
+        EU	D	Germany	Berlin
+        EU	DK	Denmark	Copenhagen
+        EU	E	Spain	Madrid
+        EU	EW	Estonia	Tallinn
+        EU	F	France	Paris
+        EU	GB	United Kingdom	London
+        EU	GR	Greece	Athens
+        EU	H	Hungary	Budapest
+        EU	HR	Croatia	Zagreb
+        EU	I	Italy	Rome
+        EU	IRL	Ireland	Dublin
+        EU	L	Luxembourg	Luxembourg
+        EU	LT	Lithuania	Vilnius
+        ...
 
 29. DELETE: Großbritannien hat die EU verlassen.
+
+USE mondial;
+
+delete from isMember im
+where im.organization = "EU"
+	and im.country = "GB";
+    
 
 
