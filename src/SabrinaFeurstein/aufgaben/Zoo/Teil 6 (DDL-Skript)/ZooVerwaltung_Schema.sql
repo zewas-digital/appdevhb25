@@ -8,7 +8,7 @@ Name varchar(30) not null,
 Gruendungsjahr year not null);
 
 create table Pfleger
-(Personalnummer int primary key,
+(Personalnummer varchar(20) primary key,
 Vorname varchar(30) not null,
 Nachname varchar(30) not null);
 
@@ -23,17 +23,12 @@ create table Verpflegung
 Gehege int not null,
 primary key (Pfleger, Gehege));
 
-create table Gattung
-(ID int auto_increment primary key,
-Bezeichnung varchar(30) not null);
-
 create table Tier
 (ID int auto_increment primary key,
 Name varchar(30) not null,
 Gehege int not null,
-Gattung int not null,
-foreign key (Gehege) references Gehege(ID),
-foreign key (Gattung) references Gattung(ID));
+Gattung varchar(30) not null,
+foreign key (Gehege) references Gehege(ID));
 
 create table Futter
 (ID int auto_increment primary key,
