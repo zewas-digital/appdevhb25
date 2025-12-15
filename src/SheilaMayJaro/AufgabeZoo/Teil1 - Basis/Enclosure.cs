@@ -16,20 +16,5 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
         {
             animals.Remove(animal);
         }
-        public void DisplayAnimals()
-        {
-            if (animals.Count > 0)
-            {
-                foreach (Animal animal in animals)
-                {
-                    System.Console.WriteLine($"|       ├── {animal.Name}, {animal.Species}");
-                }
-            }
-            else
-            {
-                System.Console.WriteLine("|       ├── Gehege noch in Bearbeitung.");
-            }
-
-        }
     }
 }

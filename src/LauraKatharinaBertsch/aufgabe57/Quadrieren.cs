@@ -12,7 +12,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe57
                 {
                     while (reader.Peek() >= 0)
                     {
-                        int line = Convert.ToInt32(reader.ReadLine());
+                        int line = Convert.ToInt32(reader.ReadLine() ?? string.Empty);
 
                         writer.WriteLine($"{line} * {line} = {line * line}");
                     }

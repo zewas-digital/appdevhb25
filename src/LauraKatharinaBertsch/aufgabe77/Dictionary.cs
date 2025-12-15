@@ -46,7 +46,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe77
             {
                 if (serie.Key.Contains(serieName))
                 {
-                    Console.WriteLine("Die Bewertung dieser Serie ist: " + serie.Value+ " von 10");
+                    Console.WriteLine("Die Bewertung dieser Serie ist: " + serie.Value + " von 10");
                 }
             }
             if (!Series.Keys.Contains(serieName))
@@ -66,7 +66,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe77
         }
         public static string LookingForSeries()
         {
-            string lookingForSeries = Console.ReadLine();
+            string lookingForSeries = Console.ReadLine() ?? string.Empty;
             return lookingForSeries;
         }
     }

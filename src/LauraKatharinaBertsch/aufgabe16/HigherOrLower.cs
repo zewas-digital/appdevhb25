@@ -11,14 +11,14 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe16
 
             Random random = new Random();
             int randomNumber = random.Next(1, 100);
-            int myNumber = Convert.ToInt32(Console.ReadLine());
+            int myNumber = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
 
 
 
             while (myNumber != randomNumber)
             {
 
-                int eingabe = Convert.ToInt32(Console.ReadLine());
+                int eingabe = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
 
 
 

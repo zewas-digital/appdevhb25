@@ -6,7 +6,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe38
         {
 
             Console.WriteLine("Gib eine Zahl zwischen 1 und 20 ein");
-            int lenght = Convert.ToInt32(Console.ReadLine());
+            int lenght = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
             int[,] twoDArray = new int[lenght, lenght];
 
 

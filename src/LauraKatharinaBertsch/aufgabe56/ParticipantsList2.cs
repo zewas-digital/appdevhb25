@@ -13,16 +13,16 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe56
                 string output = "/home/laura/Documents/appdevhb25/src/LauraKatharinaBertsch/aufgabe56/output.txt";
                 using (StreamWriter writer = new StreamWriter(output))
                 {
-                    string line = reader.ReadLine();
+                    string line = reader.ReadLine() ?? string.Empty;
                     writer.WriteLine(line);
                     int list = 0;
-                    line = reader.ReadLine();
+                    line = reader.ReadLine() ?? string.Empty;
                     writer.WriteLine();
                     while (line != null)
                     {
                         writer.WriteLine(line);
                         list++;
-                        line = reader.ReadLine();
+                        line = reader.ReadLine() ?? string.Empty;
                     }
                     writer.WriteLine();
                     writer.WriteLine($"{list} Teilnehmer");
