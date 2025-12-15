@@ -10,9 +10,7 @@ Gruendungsjahr year not null);
 create table Pfleger
 (Personalnummer int primary key,
 Vorname varchar(30) not null,
-Nachname varchar(30) not null,
-Zoo int not null,
-foreign key (Zoo) references Zoo(ID));
+Nachname varchar(30) not null);
 
 create table Gehege
 (ID int auto_increment primary key,
