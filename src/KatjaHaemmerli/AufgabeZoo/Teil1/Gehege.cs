@@ -9,13 +9,13 @@ namespace Appdevhb25.KatjaHaemmerli.AufgabeZoo
         {
             GehegeName = gehegeName;
         }
-        public void TierHinzugfügen(Tier tier)
+        public void TierHinzugfuegen(Tier tier)
         {
             tierListe.Add(tier);
         }
         public void TierEntfernen(Tier tier)
         {
             tierListe.Remove(tier);
-        }
+        }       
     }
 }

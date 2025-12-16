@@ -7,7 +7,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe84
         string Farbe {get; set;}
         string Seriennummer {get; set;}
 
-         public void AusgabeDerAttributte();       
+         public void AusgabeDerAttribute();       
         
     }
 }

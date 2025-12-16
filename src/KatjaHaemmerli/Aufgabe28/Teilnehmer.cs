@@ -22,7 +22,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe28
             teilnehmer[7] = "Sabrina";
             teilnehmer[8] = "Lia";
             teilnehmer[9] = "Sasha";
-            teilnehmer[10] = "Katja";
+            teilnehmer[10] = "Katja";            
 
             // for (int i = 0; i < teilnehmer.Length; i++)
             // {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
 
-namespace Appdevhb25.KatjaHaemmerli.Aufgabe77
+namespace Appdevhb25.KatjaHaemmerli.Aufgabe78
 {
-    public  class DictionaryAufgabe
+    public class DictionaryAufgabe
     {   
         public static void Start()
         {
