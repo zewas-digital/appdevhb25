@@ -92,7 +92,9 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe102.Aufgabe102.Start();
            // Test.CountriesAndRivers.Start();
            //ZooTeil1.Main.Start();
-           ZooTeil2.Main.Start();
+           //ZooTeil2.Main.Start();
+           //ZooTeil3.Main.Start();
+           ZooTeil4.Main.Start();
         }
     }
 }
