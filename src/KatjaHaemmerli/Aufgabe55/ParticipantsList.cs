@@ -7,7 +7,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgabe55
         {
             string dateipfad = @"C:/Users/haka/DigitalCampus/appdevhb25/src/KatjaHaemmerli/Aufgabe55/beispieltext.txt";
 
-            // StreamReader den Text lesen
+            // StreamReader: den Text aus einer Datei lesen
             using (StreamReader reader = new StreamReader(dateipfad))
             {
                 // ReadLine() liest die nächste Zeile aus der Datei, gibt die Zeile mit return zurück und speichert sie in die variable line.

@@ -17,7 +17,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe37
                 for (int j = 0; j < twoDArray.GetLength(1); j++)
                 {
                     Console.Write($"Schreibe eine Zahl für die Position [{i},{j}]");
-                    int input = Convert.ToInt32(Console.ReadLine());
+                    int input = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                     twoDArray[i, j] = input;
                 }
             }

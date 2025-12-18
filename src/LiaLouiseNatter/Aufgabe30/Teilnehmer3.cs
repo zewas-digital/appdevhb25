@@ -13,7 +13,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe30
         {
             System.Console.Write("How many Participants do you have? ");
             int numbert;
-            while (!int.TryParse(Console.ReadLine(), out numbert))
+            while (!int.TryParse(Console.ReadLine() ?? string.Empty, out numbert))
             {
                 Console.WriteLine("Enter a valid number!");
 
@@ -28,7 +28,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe30
             for (int i = 0; i < numbert; i++)
             {
                 System.Console.Write($"Person{i + 1}: ");
-                string? eingabe = Console.ReadLine();
+                string? eingabe = Console.ReadLine() ?? string.Empty;
                 teilnehmer[i] = eingabe ?? "";
 
             }

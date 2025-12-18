@@ -1,0 +1,1 @@
+-- 20) Von welchen Autor scheint kein Buch in der Datenbank zu sein?

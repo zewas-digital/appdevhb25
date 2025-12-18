@@ -75,6 +75,44 @@ namespace Appdevhb25.SabrinaFeurstein.aufgaben.zoo.teil4
             Console.WriteLine($"----------------------------------------\nSumme{summe,31:F2} EUR");
         }
 
+        public void ZooStrukturAusgabe()
+        {
+             Console.WriteLine($"├── Zoo: {Name}");
+            foreach (Gehege gehege in Gehege)
+            {
+                Console.Write($"│{" ",3}├── Gehege: {gehege} | Pfleger: ");
+                bool gehegeHatPfleger = false;
+                foreach (Pfleger pfleger in Pfleger)
+                {
+                    foreach (Gehege pflegerGehege in pfleger.Gehege)
+                    {
+                        int i = 0;
+
+                        if (pflegerGehege == gehege && i != 0)
+                            Console.Write($", {pfleger}");
+
+                        else if (pflegerGehege == gehege)
+                        {
+                            Console.Write(pfleger);
+                            i++;
+                            gehegeHatPfleger = true;
+                        }
+                    }
+                }
+                if (!gehegeHatPfleger)
+                    Console.Write("(Keine Zuweisung)");
+
+                Console.WriteLine();
+
+                foreach (Tier tier in gehege.Tiere)
+                {
+                    Console.WriteLine($"│{" ",7}├── {tier}");
+                }
+                if (gehege.Tiere.Count == 0)
+                    Console.WriteLine($"│{" ",7}├── (leer)");
+            }
+        }
+
         public override string ToString()
         {
             return $"{Name}, gegründet {Gruendungsjahr}";

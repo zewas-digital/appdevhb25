@@ -86,7 +86,15 @@ namespace Appdevhb25.LauraKatharinaBertsch
             //Aufgabe84.Inventarliste.Start();
             //Aufgabe85.Telefonbuch.Start();
             //Aufgabe86.Callcenter.Start();
-            Aufgabe91.ShoppingCart.Start();
+            //Aufgabe91.ShoppingCart.Start();
+            // Aufgabe96.Geometrie.Start();
+            //sql.MysqlConnectExample.Start();
+            //Aufgabe102.Aufgabe102.Start();
+           // Test.CountriesAndRivers.Start();
+           //ZooTeil1.Main.Start();
+           //ZooTeil2.Main.Start();
+           //ZooTeil3.Main.Start();
+           ZooTeil4.Main.Start();
         }
     }
 }

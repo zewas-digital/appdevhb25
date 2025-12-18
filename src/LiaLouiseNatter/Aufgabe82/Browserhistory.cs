@@ -9,7 +9,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe82
         public void NewWebsite()
         {
             System.Console.WriteLine("Search for your Website: ");
-            string wantedWebsite = Console.ReadLine();
+            string wantedWebsite = Console.ReadLine() ?? string.Empty;
             browserHistory.Push(wantedWebsite);
             printBrowserHistory();
         }
@@ -40,7 +40,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe82
             if(browserHistory.Count == 0 || browserHistory.Count == 1)
             {
                 System.Console.WriteLine("You cannot go back, search for a new website [w] or end the Program.");
-                string chosenActionEmptyHistory = Console.ReadLine();
+                string chosenActionEmptyHistory = Console.ReadLine() ?? string.Empty;
 
                 if(chosenActionEmptyHistory == "w" || chosenActionEmptyHistory == "W")
                 {
@@ -54,7 +54,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe82
             else
             {
                 System.Console.WriteLine("Do you want to go back[r] or open a new Website[w]? [r/w] ");
-                string chosenAction = Console.ReadLine();
+                string chosenAction = Console.ReadLine() ?? string.Empty;
 
                 if(chosenAction == "r" || chosenAction == "R")
                 {

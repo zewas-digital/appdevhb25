@@ -20,10 +20,10 @@ namespace Appdevhb25.LiaLouiseNatter.BonusaufgabeDoppelmayr
                 try
                 {
                     System.Console.Write("Do you want Tree 1 or Tree 2 [1 2]:");
-                    int Treechoice = Convert.ToInt32(Console.ReadLine());
+                    int Treechoice = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
 
                     System.Console.Write("How tall should the Tree be?:");
-                    size = Convert.ToInt32(Console.ReadLine());
+                    size = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
                     
                     
                 }

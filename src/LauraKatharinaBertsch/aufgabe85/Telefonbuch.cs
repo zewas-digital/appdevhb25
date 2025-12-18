@@ -1,5 +1,7 @@
 using System.Data;
 using Appdevhb25.LauraKatharinaBertsch.Aufgabe75;
+using Google.Protobuf.WellKnownTypes;
+using Microsoft.VisualBasic;
 
 namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
 {
@@ -18,7 +20,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
             while (true)
             {
                 Console.WriteLine("Möchtest du eine Person zum Telefonbuch hinzufügen? ja oder nein");
-                string answer = Console.ReadLine();
+                string answer = Console.ReadLine() ?? string.Empty;
                 if (answer == "nein")
                 {
                     break;
@@ -26,11 +28,11 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
                 else
                 {
                     Console.WriteLine("Person hinzufügen: Gib einen Nachnamen ein");
-                    string lastName = Console.ReadLine();
+                    string lastName = Console.ReadLine() ?? string.Empty;
                     Console.WriteLine("Gib einen Ort ein, woher die Person kommt");
-                    string location = Console.ReadLine();
+                    string location = Console.ReadLine() ?? string.Empty;
                     Console.WriteLine("Gib die Telefonnummer der Person ein");
-                    string phonenumber = Console.ReadLine();
+                    string phonenumber = Console.ReadLine() ?? string.Empty;
                     Kontakt kontakt = new Kontakt(lastName, location, phonenumber);
                     kontakts.Add(kontakt);
                 }
@@ -49,7 +51,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
             {
                 Kontakt kontaktToChange = kontakts.Find(item => item.LastName == "");
                 Console.WriteLine("Möchtest du einen Namen ändern? ja oder nein");
-                string answer = Console.ReadLine();
+                string answer = Console.ReadLine() ?? string.Empty;
                 if (answer == "nein")
                 {
                     Console.WriteLine("Die Liste wurde erneuert:");
@@ -62,10 +64,10 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
                 else
                 {
                     Console.WriteLine("Gib einen Namen ein, den du ändern willst");
-                    string nameToChange = Console.ReadLine();
+                    string nameToChange = Console.ReadLine() ?? string.Empty;
                     kontaktToChange = kontakts.Find(item => item.LastName == nameToChange);
                     Console.WriteLine("Gib einen Namen ein, um den du den gesuchten Namen ändern willst:");
-                    string changing = Console.ReadLine();
+                    string changing = Console.ReadLine() ?? string.Empty;
 
                     kontaktToChange.LastName = changing;
 
@@ -78,7 +80,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
             while (true)
             {
                 Console.WriteLine("Möchtest du eine Person löschen? ja oder nein");
-                string answer = Console.ReadLine();
+                string answer = Console.ReadLine() ?? string.Empty;
                 if (answer == "nein")
                 {
                     Console.WriteLine("Die Liste wurde erneuert:");
@@ -91,7 +93,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
                 else
                 {
                     Console.WriteLine("Person löschen: Gib einem Namen ein, den du löschen willst");
-                    string findPerson = Console.ReadLine();
+                    string findPerson = Console.ReadLine() ?? string.Empty;
                     kontakts.Remove(kontakts.Find(element => element.LastName == findPerson));
                 }
             }
@@ -101,11 +103,11 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe85
             Console.WriteLine();
 
             Console.WriteLine("Möchstest du eine Person suchen? ja oder nein");
-            string answer = Console.ReadLine();
+            string answer = Console.ReadLine() ?? string.Empty;
             if (answer == "ja")
             {
                 Console.WriteLine("Kontakt nach Nachnamen suchen: Gib einen Namen ein, den du suchen willst");
-                string findPerson = Console.ReadLine();
+                string findPerson = Console.ReadLine() ?? string.Empty;
                 Console.WriteLine("Die gefundenen Personen:");
                 foreach (var k in kontakts)
                 {

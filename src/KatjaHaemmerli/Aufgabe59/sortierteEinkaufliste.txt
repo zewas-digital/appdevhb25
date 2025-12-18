@@ -1,0 +1,5 @@
+Der teuerste Artikel kostet: 4,00
+Der billigste Artikel kostet: 0,30
+Der Durchschnittspreis aller Artikel beträgt: 1,6116666666666666666666666667
+Die Anzahl aller Artikel beträgt: 30
+Der Gesamtwert aller Artikel beträgt: 48,35

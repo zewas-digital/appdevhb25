@@ -8,8 +8,8 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe27
         public static void Start()
         {
             Console.WriteLine("Schreibe deinen Namen und dein Alter");
-            string name = Console.ReadLine();
-            int age = Convert.ToInt32(Console.ReadLine());
+            string name = Console.ReadLine() ?? string.Empty;
+            int age = Convert.ToInt32(Console.ReadLine() ?? string.Empty);
 
             string output = "";
 

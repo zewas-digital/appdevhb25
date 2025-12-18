@@ -10,7 +10,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe24
         {
             Console.Write("Wich number do you want to round? ");
             float number;
-            while (!float.TryParse(Console.ReadLine(), out number))
+            while (!float.TryParse(Console.ReadLine() ?? string.Empty, out number))
             {
                 Console.WriteLine("Enter a valid number!");
                 Console.Write("Wich number do you want to round? ");
@@ -18,7 +18,7 @@ namespace Appdevhb25.LiaLouiseNatter.Aufgabe24
 
             Console.Write("How many decimal places do you want to round to? ");
             float roundNumber;
-            while (!float.TryParse(Console.ReadLine(), out roundNumber))
+            while (!float.TryParse(Console.ReadLine() ?? string.Empty, out roundNumber))
             {
                 Console.WriteLine("Enter a valid number!");
                 Console.Write("How many decimal places do you want to round to? ");

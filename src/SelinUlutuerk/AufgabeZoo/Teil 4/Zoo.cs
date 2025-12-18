@@ -91,9 +91,24 @@ namespace Appdevhb25.SelinUlutuerk.AufgabeZoo.Teil4
 
             foreach (var g in _gehegeListe)
             {
-                result += $"{g}";
-            }
+                // Prüfung ob Pfleger vorhanden ist
+                string pflegerName = g.Pfleger == null ? "(Kein Pfleger)" : g.Pfleger.Name;
+                
+                result += $"│   ├── Gehege: {g.Name,-20} | Pfleger: {pflegerName}\n";
 
+                var tiere = g.HoleTiere();
+                if(tiere.Count == 0)
+                {
+                    result += "│       ├── (leer)\n";
+                }
+                else
+                {
+                    foreach(var t in tiere)
+                    {
+                        result += $"│       {t}\n";
+                    }
+                }
+            }
             return result;
         }
     }

@@ -1,0 +1,5 @@
+benutzer(benutzernummer)
+buch(signatur, buchtitel, erscheinungsjahr)
+kategorie(name)
+autor(vor-/ nachname, geburtstag-/ ort)
+epoche(name, anfangsjahr, endjahr)

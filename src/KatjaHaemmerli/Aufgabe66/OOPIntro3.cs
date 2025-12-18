@@ -1,4 +1,4 @@
-namespace Appdevhb25.KatjaHaemmerli.Aufgab66
+namespace Appdevhb25.KatjaHaemmerli.Aufgabe66
 {
     public class OOPIntro3
     {
@@ -36,7 +36,7 @@ namespace Appdevhb25.KatjaHaemmerli.Aufgab66
             Person[] personen = new Person[3];
 
             System.Console.WriteLine("Personen im Array:");
-            personen[0] = new Person("Kat", 1,63);
+            personen[0] = new Person("Kat", 1.63);
             personen[1] = new Person("Carola", 1.61);
             personen[2] = new Person("Jessica", 1.60);           
 

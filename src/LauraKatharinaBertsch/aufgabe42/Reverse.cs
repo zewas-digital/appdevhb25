@@ -8,7 +8,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe42
         public static void Start()
         {
             Console.WriteLine("Gib ein Wort ein");
-            string word = Console.ReadLine();
+            string word = Console.ReadLine() ?? string.Empty;
             char[] letter = word.ToCharArray();
 
             Console.WriteLine("Das Wort umgedreht:");

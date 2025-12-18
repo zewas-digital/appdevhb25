@@ -25,7 +25,7 @@ namespace Appdevhb25.LauraKatharinaBertsch.Aufgabe79
         {
 
             Console.WriteLine("Gib eine der gezeigten Serien und eine Bewertung von 1-10 an");
-            string userEvaluate = Console.ReadLine();
+            string userEvaluate = Console.ReadLine() ?? string.Empty;
             string[] split = userEvaluate.Split(" ");
 
             int rating = Convert.ToInt32(split[1]);
