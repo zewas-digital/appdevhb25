@@ -74,7 +74,7 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
             Food waterSnails = new Food("Wasserschnecken", "g", 28.24, 345); 
             Food shrimps = new Food("Garnelen", "kg", 32.78, 456); 
             Food crustaceans = new Food("Krebstiere", "kg", 22.68, 567);
-            Food fish = new Food("Fisch", "kg", 98.45, 6789); 
+            Food fish = new Food("Fisch", "kg", 98.45, 678); 
             Food vegetables = new Food("Gemüse", "kg", 74.53, 789);
             Food steak = new Food("Steak", "kg", 154.26, 891);
             Food nectar = new Food("Nektar", "L", 28, 912); 
