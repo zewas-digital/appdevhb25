@@ -1,73 +1,46 @@
 namespace Appdevhb25.SheilaMayJaro.Aufgabe96
 {
-    public class EquiliteralTriangle : Shape, IScalable
+    public class EquiliteralTriangle : Shape
     {
+        private double _length = 1;
         public double Length
         {
-            get { return Length; }
+            get { return _length; }
             private set
             {
                 if (value > 0)
                 {
-                    Length = value;
-                }
-                else
-                {
-                    System.Console.WriteLine("Der Wert kann nicht 0 sein oder eine negative Zahl.");
+                    _length = value;
                 }
             }
         }
-        public double Area { get; private set; }
-        public double Perimeter { get; private set; }
-        public int EquiliteralTriangleCreated
-        {
-            get { return EquiliteralTriangleCreated; }
-            private set
-            {
-                if (value > EquiliteralTriangleCreated)
-                {
-                    EquiliteralTriangleCreated = value;
-                }
-                else
-                {
-                    System.Console.WriteLine("Der Wert kann nicht kleiner sein, als der momentane Wert.");
-                }
-            }
-        }
+        private static int EquiliteralTriangleCreated { get; set; }
         public EquiliteralTriangle(double length, string name) : base(name)
         {
-            Name = name;
-            Elementtype = "Gleichseitiges Dreieck";
             Length = length;
             EquiliteralTriangleCreated++;
         }
         public override double CalculateArea()
         {
-            Area = Length * (Length * Math.Sqrt(3 / 2));
-            return Area;
+            return Length * Length * (Math.Sqrt(3) / 4);
         }
         public override double CalculatePerimeter()
         {
-            Perimeter = Length * 3;
-            return Perimeter;
+            return Length * 3;
         }
         public override string ToString()
         {
-            return $"{base.ToString()}\nLänge: {Length}\nUmfang: {Perimeter} \nFlächeninhalt: {Area} ";
+            return $"{base.ToString()}\nLänge: {Length,40:N2}\nUmfang: {CalculatePerimeter(),39:N2} \nFlächeninhalt: {CalculateArea(),32:N2}\n{new string('-', 50)}";
         }
-        public void Scaling(double factor)
-        {
-            Length *= factor;
-        }
-        public void DisplayNumberOfTriangles()
+        public static string DisplayNumberOfTriangles()
         {
             if (EquiliteralTriangleCreated == 1)
             {
-                System.Console.WriteLine($"Es ist {EquiliteralTriangleCreated} Kreis erstellt worden.");
+                return $"Es ist 1 gleichseitiges Dreieck erstellt worden."; 
             }
             else
             {
-                System.Console.WriteLine($"Es sind {EquiliteralTriangleCreated} Kreise erstellt wurden.");
+                return $"Es sind {EquiliteralTriangleCreated} gleichseitige Dreiecke erstellt worden.";
             }
         }
     }

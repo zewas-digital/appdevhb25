@@ -1,3 +1,5 @@
+using MySql.Data.MySqlClient;
+
 namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
 {
     public class Enclosure
@@ -7,6 +9,7 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
         public Enclosure(string name)
         {
             Name = name;
+            Connection.InsertAttributesToTableEnclosure(name);
         }
         internal void AddAnimal(Animal animal)
         {
@@ -15,6 +18,10 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
         internal void RemoveAnimal(Animal animal)
         {
             animals.Remove(animal);
+        }
+        internal string ReturnName()
+        {
+            return $"|   ├── Gehege: {Name}";
         }
     }
 }

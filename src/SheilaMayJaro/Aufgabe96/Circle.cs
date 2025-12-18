@@ -2,78 +2,45 @@ namespace Appdevhb25.SheilaMayJaro.Aufgabe96
 {
     public class Circle : Shape, IScalable
     {
-        public double Radius
-        {
-            get { return Radius; }
-            private set
-            {
-                if (value > 0)
-                {
-                    Radius = value;
-                }
-                else
-                {
-                    System.Console.WriteLine("Der Wert kann nicht 0 sein oder eine negative Zahl.");
-                }
-            }
-        }
-        public double Area { get; private set; }
-        public double Perimeter { get; private set; }
-        public int CircleCreated
-        {
-            get
-            {
-                return CircleCreated;
-            }
-
-            private set
-            {
-                if (value > CircleCreated)
-                {
-                    CircleCreated = value;
-                }
-                else
-                {
-                    System.Console.WriteLine("Der Wert kann nicht kleiner sein, als der momentane Wert.");
-                }
-            }
-        }
+        public double Radius {get; private set;} = 1;
+        private static int CircleCreated {get; set; }
         public Circle(int radius, string name) : base(name)
         {
-            Name = name;
-            Elementtype = "Kreis";
-            Radius = radius;
+            if (radius > 0)
+            {
+                Radius = radius;
+            }
             CircleCreated++;
         }
         public override double CalculateArea()
         {
-            Area = Math.PI * (Radius * Radius);
-            return Area;
+            return Math.PI * (Radius * Radius);
         }
         public override double CalculatePerimeter()
         {
-            Perimeter = 2 * Math.PI * Radius;
-            return Perimeter;
+            return 2 * Math.PI * Radius;
         }
         public override string ToString()
         {
-            return $"{base.ToString()}\nRadius: {Radius}\nUmfang: {Perimeter:F2} \nFlächeninhalt: {Area:F2} ";
+            return $"{base.ToString()}\nRadius: {Radius, 39:N2}\nUmfang: {CalculatePerimeter(), 39:N2} \nFlächeninhalt: {CalculateArea(), 32:N2}\n{new string('-', 50)}";
         }
         public void Scaling(double factor)
         {
-            Radius *= factor;
+            if (factor > 0)
+            {
+               Radius *= factor; 
+            }
         }
-        public void DisplayNumberOfCircles()
+        public static string DisplayNumberOfCircles()
         {
             if (CircleCreated == 1)
             {
-                System.Console.WriteLine($"Es ist {CircleCreated} Kreis erstellt worden.");
+                return $"Es ist 1 Kreis erstellt worden.";
             }
             else
             {
-                System.Console.WriteLine($"Es sind {CircleCreated} Kreise erstellt wurden.");
+                return $"Es sind {CircleCreated} Kreise erstellt worden.";
             }
         }
     }
-
 }

@@ -6,9 +6,10 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
     {
         public static void Start()
         {
+            string seperator = new string('-', 70); 
             System.Console.WriteLine("Aufgabe Zoo - Teil 1:\nBasis vom Zoo erstellen");
             System.Console.WriteLine();
-            Zoo brZoo = new Zoo("Bregenzer Zoo", "2025");
+            Zoo brZoo = new Zoo("Bregenzer Zoo", new DateTime(2025,04,13));
             Enclosure lionEnclosure = new Enclosure("Löwengehege"); 
             Enclosure birdEnclosure = new Enclosure("Vögelparadies"); 
             Enclosure capybaraEnclosure = new Enclosure("Wasserschweingehege"); 
@@ -24,7 +25,7 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
             brZoo.RemoveEnclosure(capybaraEnclosure);
             Enclosure monkeyhouse = new Enclosure("Affengehege");
             brZoo.AddEnclosure(monkeyhouse);
-            System.Console.WriteLine(new string('-', 70));
+            System.Console.WriteLine(seperator);
             // brZoo.DisplayZooStructure();
 
             System.Console.WriteLine("Aufgabe Zoo - Teil 2:\nTiere hinzufügen");
@@ -64,18 +65,19 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
             monkeyhouse.AddAnimal(mauriceLemur); 
             monkeyhouse.AddAnimal(sandraChimpanzee); 
             System.Console.WriteLine();
-            System.Console.WriteLine(new string('-', 70));
+            System.Console.WriteLine(seperator);
             System.Console.WriteLine("Aufgabe Zoo - Teil 3:\nTierfutter hinzufügen");
             // brZoo.DisplayZooStructure();
             //Futter 
-            Food water = new Food("Wasser", "L", 0.80);
-            Food fruit = new Food("Frucht", "kg", 2.30); 
-            Food waterSnails = new Food("Wasserschnecken", "g", 28.24); 
-            Food shrimps = new Food("Garnelen", "kg", 32.78); 
-            Food crustaceans = new Food("Krebstiere", "kg", 22.68); //Krebstiere
-            Food fish = new Food("Fisch", "kg", 98.45); 
-            Food vegetables = new Food("Gemüse", "kg", 74.53);
-            Food steak = new Food("Steak", "kg", 154.26);   
+            Food water = new Food("Wasser", "L", 0.80, 123);
+            Food fruit = new Food("Frucht", "kg", 2.30, 234); 
+            Food waterSnails = new Food("Wasserschnecken", "g", 28.24, 345); 
+            Food shrimps = new Food("Garnelen", "kg", 32.78, 456); 
+            Food crustaceans = new Food("Krebstiere", "kg", 22.68, 567);
+            Food fish = new Food("Fisch", "kg", 98.45, 6789); 
+            Food vegetables = new Food("Gemüse", "kg", 74.53, 789);
+            Food steak = new Food("Steak", "kg", 154.26, 891);
+            Food nectar = new Food("Nektar", "L", 28, 912); 
             bobLion.AddFodderRequirements(steak, 78.78);
             bobLion.AddFodderRequirements(water, 8); 
             carmenCapybara.AddFodderRequirements(vegetables, 75.12); 
@@ -101,29 +103,38 @@ namespace Appdevhb25.SheilaMayJaro.AufgabeZoo
             mauriceLemur.AddFodderRequirements(water, 4); 
             sandraChimpanzee.AddFodderRequirements(fruit, 87.23);
             sandraChimpanzee.AddFodderRequirements(water, 5); 
+            tigeraugeButterfly.AddFodderRequirements(nectar, 0.30); 
+            tigeraugeButterfly.AddFodderRequirements(water, 0.40); 
+            mariaButterfly.AddFodderRequirements(nectar, 0.70); 
+            mariaButterfly.AddFodderRequirements(water, 0.85);
             brZoo.ZooFodderRequirements();
             // brZoo.DisplayZooStructure();
             System.Console.WriteLine();
-            brZoo.DisplaySumOfFodderRequirementsAndCostsPerDay();
-
+            foreach (string item in brZoo.SumOfFodderRequirementsPerDay())
+            {
+                System.Console.WriteLine(item);
+            }
+            System.Console.WriteLine(seperator);
             System.Console.WriteLine("Aufgabe Zoo - Teil 4:\nPfleger hinzufügen");
             CareGiver michael = new CareGiver("Michael"); 
             CareGiver katja = new CareGiver("Katja"); 
+            CareGiver alwin = new CareGiver("Alwin"); 
             brZoo.AddCareGiver(katja); 
             brZoo.AddCareGiver(michael); 
+            brZoo.AddCareGiver(alwin); 
             katja.AddEnclosure(aquarium); 
-            katja.AddEnclosure(birdEnclosure); 
+            katja.AddEnclosure(birdEnclosure);
+            katja.AddEnclosure(butterflyHouse); 
             michael.AddEnclosure(monkeyhouse);
             michael.AddEnclosure(lionEnclosure);
-            brZoo.DisplayZooStructure(); 
-            
-         
-
-
-        
-
-
-            
+            alwin.AddEnclosure(capybaraEnclosure); 
+            alwin.AddEnclosure(aquarium);
+            foreach (string item in brZoo.ZooStructure())
+            {
+                System.Console.WriteLine(item);
+            }
+            System.Console.WriteLine(seperator);
+            System.Console.WriteLine("Aufgabe Zoo - Teil 7:\nVerbindung mit Datenbank");
         }
     }
 }
